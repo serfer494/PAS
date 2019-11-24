@@ -64,25 +64,22 @@
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
             this.trigli = new System.Windows.Forms.TextBox();
             this.hemo = new System.Windows.Forms.TextBox();
-            this.glico = new System.Windows.Forms.TextBox();
             this.colest = new System.Windows.Forms.TextBox();
-            this.antigenoPro = new System.Windows.Forms.TextBox();
             this.gluco = new System.Windows.Forms.TextBox();
-            this.urea = new System.Windows.Forms.TextBox();
             this.creati = new System.Windows.Forms.TextBox();
             this.nitroUre = new System.Windows.Forms.TextBox();
             this.bioq = new System.Windows.Forms.Button();
             this.sig = new System.Windows.Forms.Button();
             this.panelGenerales2 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // panel1
@@ -254,7 +251,7 @@
             this.fam.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.fam.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fam.ForeColor = System.Drawing.Color.White;
-            this.fam.Location = new System.Drawing.Point(169, 240);
+            this.fam.Location = new System.Drawing.Point(67, 240);
             this.fam.Name = "fam";
             this.fam.Size = new System.Drawing.Size(100, 30);
             this.fam.TabIndex = 17;
@@ -393,7 +390,7 @@
             this.noPato.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.noPato.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.noPato.ForeColor = System.Drawing.Color.White;
-            this.noPato.Location = new System.Drawing.Point(274, 488);
+            this.noPato.Location = new System.Drawing.Point(153, 488);
             this.noPato.Name = "noPato";
             this.noPato.Size = new System.Drawing.Size(100, 30);
             this.noPato.TabIndex = 31;
@@ -442,29 +439,18 @@
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.Color.DarkRed;
-            this.label19.Location = new System.Drawing.Point(474, 68);
+            this.label19.Location = new System.Drawing.Point(474, 73);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(117, 18);
             this.label19.TabIndex = 35;
             this.label19.Text = "Hemoglobina:";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.Color.DarkRed;
-            this.label20.Location = new System.Drawing.Point(474, 99);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(94, 18);
-            this.label20.TabIndex = 36;
-            this.label20.Text = "Glicosuria:";
             // 
             // label21
             // 
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.ForeColor = System.Drawing.Color.DarkRed;
-            this.label21.Location = new System.Drawing.Point(473, 133);
+            this.label21.Location = new System.Drawing.Point(473, 108);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(135, 18);
             this.label21.TabIndex = 37;
@@ -475,29 +461,18 @@
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.ForeColor = System.Drawing.Color.DarkRed;
-            this.label22.Location = new System.Drawing.Point(474, 202);
+            this.label22.Location = new System.Drawing.Point(474, 143);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(79, 18);
             this.label22.TabIndex = 38;
             this.label22.Text = "Glucosa:";
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.ForeColor = System.Drawing.Color.DarkRed;
-            this.label23.Location = new System.Drawing.Point(474, 230);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(52, 18);
-            this.label23.TabIndex = 39;
-            this.label23.Text = "Urea:";
             // 
             // label24
             // 
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label24.ForeColor = System.Drawing.Color.DarkRed;
-            this.label24.Location = new System.Drawing.Point(474, 262);
+            this.label24.Location = new System.Drawing.Point(473, 178);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(96, 18);
             this.label24.TabIndex = 40;
@@ -508,22 +483,11 @@
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label25.ForeColor = System.Drawing.Color.DarkRed;
-            this.label25.Location = new System.Drawing.Point(473, 295);
+            this.label25.Location = new System.Drawing.Point(474, 213);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(147, 18);
             this.label25.TabIndex = 41;
             this.label25.Text = "Nitrogeno ureico:";
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.ForeColor = System.Drawing.Color.DarkRed;
-            this.label26.Location = new System.Drawing.Point(474, 165);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(171, 18);
-            this.label26.TabIndex = 42;
-            this.label26.Text = "Antigeno prostatico:";
             // 
             // trigli
             // 
@@ -539,51 +503,30 @@
             this.hemo.Size = new System.Drawing.Size(100, 20);
             this.hemo.TabIndex = 44;
             // 
-            // glico
-            // 
-            this.glico.Location = new System.Drawing.Point(650, 100);
-            this.glico.Name = "glico";
-            this.glico.Size = new System.Drawing.Size(100, 20);
-            this.glico.TabIndex = 45;
-            // 
             // colest
             // 
-            this.colest.Location = new System.Drawing.Point(651, 133);
+            this.colest.Location = new System.Drawing.Point(650, 100);
             this.colest.Name = "colest";
             this.colest.Size = new System.Drawing.Size(100, 20);
             this.colest.TabIndex = 46;
             // 
-            // antigenoPro
-            // 
-            this.antigenoPro.Location = new System.Drawing.Point(651, 166);
-            this.antigenoPro.Name = "antigenoPro";
-            this.antigenoPro.Size = new System.Drawing.Size(100, 20);
-            this.antigenoPro.TabIndex = 47;
-            // 
             // gluco
             // 
-            this.gluco.Location = new System.Drawing.Point(651, 202);
+            this.gluco.Location = new System.Drawing.Point(650, 136);
             this.gluco.Name = "gluco";
             this.gluco.Size = new System.Drawing.Size(100, 20);
             this.gluco.TabIndex = 48;
             // 
-            // urea
-            // 
-            this.urea.Location = new System.Drawing.Point(651, 231);
-            this.urea.Name = "urea";
-            this.urea.Size = new System.Drawing.Size(100, 20);
-            this.urea.TabIndex = 49;
-            // 
             // creati
             // 
-            this.creati.Location = new System.Drawing.Point(650, 263);
+            this.creati.Location = new System.Drawing.Point(650, 177);
             this.creati.Name = "creati";
             this.creati.Size = new System.Drawing.Size(100, 20);
             this.creati.TabIndex = 50;
             // 
             // nitroUre
             // 
-            this.nitroUre.Location = new System.Drawing.Point(651, 296);
+            this.nitroUre.Location = new System.Drawing.Point(650, 214);
             this.nitroUre.Name = "nitroUre";
             this.nitroUre.Size = new System.Drawing.Size(100, 20);
             this.nitroUre.TabIndex = 51;
@@ -619,11 +562,53 @@
             // 
             // panelGenerales2
             // 
-            this.panelGenerales2.Location = new System.Drawing.Point(0, 0);
+            this.panelGenerales2.Location = new System.Drawing.Point(813, 524);
             this.panelGenerales2.Name = "panelGenerales2";
             this.panelGenerales2.Size = new System.Drawing.Size(884, 544);
             this.panelGenerales2.TabIndex = 54;
             this.panelGenerales2.Visible = false;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.DarkRed;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(274, 240);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(100, 30);
+            this.button1.TabIndex = 55;
+            this.button1.Text = "Modificar";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.DarkRed;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(695, 355);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(160, 40);
+            this.button2.TabIndex = 56;
+            this.button2.Text = "Modificar";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.DarkRed;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(274, 488);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(100, 30);
+            this.button3.TabIndex = 57;
+            this.button3.Text = "Modificar";
+            this.button3.UseVisualStyleBackColor = false;
             // 
             // Generales2
             // 
@@ -631,25 +616,22 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(884, 544);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.panelGenerales2);
             this.Controls.Add(this.sig);
             this.Controls.Add(this.bioq);
             this.Controls.Add(this.nitroUre);
             this.Controls.Add(this.creati);
-            this.Controls.Add(this.urea);
             this.Controls.Add(this.gluco);
-            this.Controls.Add(this.antigenoPro);
             this.Controls.Add(this.colest);
-            this.Controls.Add(this.glico);
             this.Controls.Add(this.hemo);
             this.Controls.Add(this.trigli);
-            this.Controls.Add(this.label26);
             this.Controls.Add(this.label25);
             this.Controls.Add(this.label24);
-            this.Controls.Add(this.label23);
             this.Controls.Add(this.label22);
             this.Controls.Add(this.label21);
-            this.Controls.Add(this.label20);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.label17);
@@ -732,24 +714,21 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Label label26;
         private System.Windows.Forms.TextBox trigli;
         private System.Windows.Forms.TextBox hemo;
-        private System.Windows.Forms.TextBox glico;
         private System.Windows.Forms.TextBox colest;
-        private System.Windows.Forms.TextBox antigenoPro;
         private System.Windows.Forms.TextBox gluco;
-        private System.Windows.Forms.TextBox urea;
         private System.Windows.Forms.TextBox creati;
         private System.Windows.Forms.TextBox nitroUre;
         private System.Windows.Forms.Button bioq;
         private System.Windows.Forms.Button sig;
         private System.Windows.Forms.Panel panelGenerales2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
     }
 }

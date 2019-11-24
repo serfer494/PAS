@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -20,6 +21,8 @@ namespace Ingeneria_Software
             panel1.Visible = false;
 
         }
+        private string connectionString = "server=DESKTOP-RKNO24A; database=DBPAS; integrated security=true";
+        private int id;
 
         private void AbrirFormHija(object form)
         {
@@ -62,7 +65,18 @@ namespace Ingeneria_Software
 
         private void selec_Click(object sender, EventArgs e)
         {
-            panel1.Visible = true;
+            if(cbxCliente.SelectedIndex == 0)
+            {
+                NuevoCliente nc = new NuevoCliente();
+                nc.Show();
+            }
+            else
+            {
+                
+                
+                panel1.Visible = true;
+            }
+            
         }
 
         private void alimentos_Click(object sender, EventArgs e)
@@ -77,7 +91,7 @@ namespace Ingeneria_Software
 
         private void button4_Click(object sender, EventArgs e)
         {
-            AbrirFormHija(new DatosxCita());
+            AbrirFormHija(new DatosxCita(id));
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -87,12 +101,209 @@ namespace Ingeneria_Software
 
         private void button3_Click(object sender, EventArgs e)
         {
-            AbrirFormHija(new DatosGenerales());
+            AbrirFormHija(new DatosGenerales(id));
         }
 
         private void cont_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void MenuPpal_Load(object sender, EventArgs e)
+        {
+            using (SqlConnection conexion = new SqlConnection(connectionString))
+            {
+                try
+                {
+                    conexion.Open();
+                    Console.WriteLine("Conexion aceptada");
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.ToString());
+                }
+            }
+            
+            FillClients();
+        }
+
+        public void ActualizarClientes()
+        {
+
+        }
+
+        public void FillClients()
+        {
+            cbxCliente.Items.Clear();
+            cbxCliente.Text = "";
+            cbxCliente.Items.Add("Nuevo cliente");
+            string query = "SELECT nombrePaciente FROM PACIENTE";
+            using (SqlConnection conexion = new SqlConnection(connectionString))
+            {
+                try
+                {
+                    conexion.Open();
+                    using (SqlCommand cmd = new SqlCommand(query, conexion))
+                    {
+                        SqlDataReader reader = cmd.ExecuteReader();
+                        while (reader.Read())
+                        {
+                            cbxCliente.Items.Add(reader["nombrePaciente"].ToString());
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Error: " + ex.ToString());
+                }
+            }
+        }
+
+        private void cbxCliente_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string str = cbxCliente.SelectedItem.ToString();
+            label2.Text = str;
+            string query = "SELECT idPaciente FROM PACIENTE WHERE nombrePaciente=@nombre";
+            using (SqlConnection conexion = new SqlConnection(connectionString))
+            {
+                try
+                {
+                    conexion.Open();
+                    using (SqlCommand cmd = new SqlCommand(query, conexion))
+                    {
+                        cmd.Parameters.Add("@nombre", SqlDbType.VarChar).Value = str;
+                        id = Convert.ToInt32(cmd.ExecuteScalar());
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Error: " + ex.ToString());
+                }
+
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FillClients();
+        }
+
+        private void MenuPpal_Activated(object sender, EventArgs e)
+        {
+            FillClients();
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            string query = "DELETE FROM DATOSCT WHERE idPaciente=@id";
+
+            using (SqlConnection conexion = new SqlConnection(connectionString))
+            {
+                try
+                {
+                    conexion.Open();
+                    using (SqlCommand cmd = new SqlCommand(query, conexion))
+                    {
+                        cmd.Parameters.Add("@id", SqlDbType.Int).Value = id;
+                        cmd.ExecuteNonQuery();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Error: " + ex.ToString());
+                }
+            }
+
+            query = "DELETE FROM DATOSGNANTENOPATO WHERE idpaciente=@id";
+            using (SqlConnection conexion = new SqlConnection(connectionString))
+            {
+                try
+                {
+                    conexion.Open();
+                    using (SqlCommand cmd = new SqlCommand(query, conexion))
+                    {
+                        cmd.Parameters.Add("@id", SqlDbType.Int).Value = id;
+                        cmd.ExecuteNonQuery();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Error: " + ex.ToString());
+                }
+            }
+
+            query = "DELETE FROM DATOSGNANTEPATO WHERE idPaciente=@id";
+            using (SqlConnection conexion = new SqlConnection(connectionString))
+            {
+                try
+                {
+                    conexion.Open();
+                    using (SqlCommand cmd = new SqlCommand(query, conexion))
+                    {
+                        cmd.Parameters.Add("@id", SqlDbType.Int).Value = id;
+                        cmd.ExecuteNonQuery();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Error: " + ex.ToString());
+                }
+            }
+
+            query = "DELETE FROM DATOSGNINDBIO WHERE idPaciente=@id";
+            using (SqlConnection conexion = new SqlConnection(connectionString))
+            {
+                try
+                {
+                    conexion.Open();
+                    using (SqlCommand cmd = new SqlCommand(query, conexion))
+                    {
+                        cmd.Parameters.Add("@id", SqlDbType.Int).Value = id;
+                        cmd.ExecuteNonQuery();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Error: " + ex.ToString());
+                }
+            }
+
+            query = "DELETE FROM DATOSGNINDDIE WHERE idPaciente=@id";
+            using (SqlConnection conexion = new SqlConnection(connectionString))
+            {
+                try
+                {
+                    conexion.Open();
+                    using (SqlCommand cmd = new SqlCommand(query, conexion))
+                    {
+                        cmd.Parameters.Add("@id", SqlDbType.Int).Value = id;
+                        cmd.ExecuteNonQuery();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Error: " + ex.ToString());
+                }
+            }
+
+            query = "DELETE FROM PACIENTE WHERE idPaciente=@id";
+            using (SqlConnection conexion = new SqlConnection(connectionString))
+            {
+                try
+                {
+                    conexion.Open();
+                    using (SqlCommand cmd = new SqlCommand(query, conexion))
+                    {
+                        cmd.Parameters.Add("@id", SqlDbType.Int).Value = id;
+                        cmd.ExecuteNonQuery();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Error: " + ex.ToString());
+                }
+            }
+            FillClients();
         }
     }
 }

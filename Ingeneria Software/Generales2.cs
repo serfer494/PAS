@@ -12,14 +12,17 @@ namespace Ingeneria_Software
 {
     public partial class Generales2 : Form
     {
-        public Generales2()
+        public Generales2(int id)
         {
             InitializeComponent();
+            this.id = id;
         }
 
+        int id;
+        
         private void back_Click(object sender, EventArgs e)
         {
-            AbrirFormHija(new DatosGenerales());
+            AbrirFormHija(new DatosGenerales(id));
         }
 
         private void AbrirFormHija(object form)
@@ -39,7 +42,7 @@ namespace Ingeneria_Software
 
         private void sig_Click(object sender, EventArgs e)
         {
-            AbrirFormHija(new Generales3());
+            AbrirFormHija(new Generales3(id));
         }
     }
 }

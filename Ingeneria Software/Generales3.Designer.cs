@@ -34,20 +34,21 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.foodDay = new System.Windows.Forms.RichTextBox();
             this.who = new System.Windows.Forms.RichTextBox();
             this.bouta = new System.Windows.Forms.RichTextBox();
             this.pref = new System.Windows.Forms.RichTextBox();
-            this.disgust = new System.Windows.Forms.RichTextBox();
             this.aler = new System.Windows.Forms.RichTextBox();
             this.water = new System.Windows.Forms.RichTextBox();
             this.dia = new System.Windows.Forms.RichTextBox();
             this.dieteticos = new System.Windows.Forms.Button();
             this.regre = new System.Windows.Forms.Button();
             this.panelGenerales3 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.disgust = new System.Windows.Forms.RichTextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -116,17 +117,6 @@
             this.label6.TabIndex = 5;
             this.label6.Text = "Alergias/ Intolerancias a comidas:";
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.DarkRed;
-            this.label7.Location = new System.Drawing.Point(12, 173);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(193, 18);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "Alimentos que disgusta";
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -134,9 +124,9 @@
             this.label8.ForeColor = System.Drawing.Color.DarkRed;
             this.label8.Location = new System.Drawing.Point(454, 176);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(55, 18);
+            this.label8.Size = new System.Drawing.Size(60, 18);
             this.label8.TabIndex = 7;
-            this.label8.Text = "Agua:";
+            this.label8.Text = "Notas:";
             // 
             // label9
             // 
@@ -181,14 +171,6 @@
             this.pref.TabIndex = 12;
             this.pref.Text = "";
             // 
-            // disgust
-            // 
-            this.disgust.Location = new System.Drawing.Point(15, 194);
-            this.disgust.Name = "disgust";
-            this.disgust.Size = new System.Drawing.Size(185, 96);
-            this.disgust.TabIndex = 13;
-            this.disgust.Text = "";
-            // 
             // aler
             // 
             this.aler.Location = new System.Drawing.Point(211, 194);
@@ -220,7 +202,7 @@
             this.dieteticos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.dieteticos.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dieteticos.ForeColor = System.Drawing.Color.White;
-            this.dieteticos.Location = new System.Drawing.Point(673, 348);
+            this.dieteticos.Location = new System.Drawing.Point(482, 344);
             this.dieteticos.Name = "dieteticos";
             this.dieteticos.Size = new System.Drawing.Size(160, 40);
             this.dieteticos.TabIndex = 17;
@@ -246,11 +228,44 @@
             // panelGenerales3
             // 
             this.panelGenerales3.BackColor = System.Drawing.Color.White;
-            this.panelGenerales3.Location = new System.Drawing.Point(0, 0);
+            this.panelGenerales3.Location = new System.Drawing.Point(726, 407);
             this.panelGenerales3.Name = "panelGenerales3";
             this.panelGenerales3.Size = new System.Drawing.Size(884, 544);
             this.panelGenerales3.TabIndex = 19;
             this.panelGenerales3.Visible = false;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.DarkRed;
+            this.label7.Location = new System.Drawing.Point(12, 173);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(50, 18);
+            this.label7.TabIndex = 6;
+            this.label7.Text = "Agua";
+            // 
+            // disgust
+            // 
+            this.disgust.Location = new System.Drawing.Point(15, 194);
+            this.disgust.Name = "disgust";
+            this.disgust.Size = new System.Drawing.Size(185, 96);
+            this.disgust.TabIndex = 13;
+            this.disgust.Text = "";
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.DarkRed;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(673, 344);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(160, 40);
+            this.button1.TabIndex = 20;
+            this.button1.Text = "Modificar";
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // Generales3
             // 
@@ -258,6 +273,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(868, 505);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.panelGenerales3);
             this.Controls.Add(this.regre);
             this.Controls.Add(this.dieteticos);
@@ -295,19 +311,20 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.RichTextBox foodDay;
         private System.Windows.Forms.RichTextBox who;
         private System.Windows.Forms.RichTextBox bouta;
         private System.Windows.Forms.RichTextBox pref;
-        private System.Windows.Forms.RichTextBox disgust;
         private System.Windows.Forms.RichTextBox aler;
         private System.Windows.Forms.RichTextBox water;
         private System.Windows.Forms.RichTextBox dia;
         private System.Windows.Forms.Button dieteticos;
         private System.Windows.Forms.Button regre;
         private System.Windows.Forms.Panel panelGenerales3;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.RichTextBox disgust;
+        private System.Windows.Forms.Button button1;
     }
 }

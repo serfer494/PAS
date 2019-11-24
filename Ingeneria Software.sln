@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2019
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ingeneria Software", "Ingeneria Software\Ingeneria Software.csproj", "{2566C67E-0EF4-4CE7-A617-4AC688CBB0A2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VISTA", "Ingeneria Software\VISTA.csproj", "{2566C67E-0EF4-4CE7-A617-4AC688CBB0A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CONTROLADOR", "CONTROLADOR\CONTROLADOR.csproj", "{BB7AC9DC-8099-4702-9747-524BE6157922}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MODELO", "MODELO\MODELO.csproj", "{F983B6CB-7E3B-4C1B-A78D-6A090D2AE431}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,8 +19,19 @@ Global
 		{2566C67E-0EF4-4CE7-A617-4AC688CBB0A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2566C67E-0EF4-4CE7-A617-4AC688CBB0A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2566C67E-0EF4-4CE7-A617-4AC688CBB0A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB7AC9DC-8099-4702-9747-524BE6157922}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB7AC9DC-8099-4702-9747-524BE6157922}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB7AC9DC-8099-4702-9747-524BE6157922}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB7AC9DC-8099-4702-9747-524BE6157922}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F983B6CB-7E3B-4C1B-A78D-6A090D2AE431}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F983B6CB-7E3B-4C1B-A78D-6A090D2AE431}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F983B6CB-7E3B-4C1B-A78D-6A090D2AE431}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F983B6CB-7E3B-4C1B-A78D-6A090D2AE431}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E4BE521F-A418-4DB1-BFB4-68DB78C9E373}
 	EndGlobalSection
 EndGlobal

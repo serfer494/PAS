@@ -33,11 +33,12 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Bases = new System.Windows.Forms.Panel();
-            this.selec = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.btnSeleccionar = new System.Windows.Forms.Button();
+            this.cbxCliente = new System.Windows.Forms.ComboBox();
             this.button2 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.Cliente = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -45,6 +46,7 @@
             this.Comidas = new System.Windows.Forms.Button();
             this.agenda = new System.Windows.Forms.Button();
             this.cont = new System.Windows.Forms.Panel();
+            this.btnEliminar = new System.Windows.Forms.Button();
             this.Barra.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -90,8 +92,9 @@
             // 
             this.Bases.BackColor = System.Drawing.Color.DarkRed;
             this.Bases.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Bases.Controls.Add(this.selec);
-            this.Bases.Controls.Add(this.comboBox1);
+            this.Bases.Controls.Add(this.btnEliminar);
+            this.Bases.Controls.Add(this.btnSeleccionar);
+            this.Bases.Controls.Add(this.cbxCliente);
             this.Bases.Controls.Add(this.button2);
             this.Bases.Controls.Add(this.label1);
             this.Bases.Controls.Add(this.panel1);
@@ -105,23 +108,24 @@
             this.Bases.TabIndex = 1;
             this.Bases.Paint += new System.Windows.Forms.PaintEventHandler(this.Bases_Paint);
             // 
-            // selec
+            // btnSeleccionar
             // 
-            this.selec.Location = new System.Drawing.Point(57, 195);
-            this.selec.Name = "selec";
-            this.selec.Size = new System.Drawing.Size(75, 23);
-            this.selec.TabIndex = 8;
-            this.selec.Text = "Seleccionar";
-            this.selec.UseVisualStyleBackColor = true;
-            this.selec.Click += new System.EventHandler(this.selec_Click);
+            this.btnSeleccionar.Location = new System.Drawing.Point(11, 195);
+            this.btnSeleccionar.Name = "btnSeleccionar";
+            this.btnSeleccionar.Size = new System.Drawing.Size(72, 23);
+            this.btnSeleccionar.TabIndex = 8;
+            this.btnSeleccionar.Text = "Seleccionar";
+            this.btnSeleccionar.UseVisualStyleBackColor = true;
+            this.btnSeleccionar.Click += new System.EventHandler(this.selec_Click);
             // 
-            // comboBox1
+            // cbxCliente
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(38, 168);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 7;
+            this.cbxCliente.FormattingEnabled = true;
+            this.cbxCliente.Location = new System.Drawing.Point(38, 155);
+            this.cbxCliente.Name = "cbxCliente";
+            this.cbxCliente.Size = new System.Drawing.Size(121, 21);
+            this.cbxCliente.TabIndex = 7;
+            this.cbxCliente.SelectedIndexChanged += new System.EventHandler(this.cbxCliente_SelectedIndexChanged);
             // 
             // button2
             // 
@@ -145,7 +149,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(58, 143);
+            this.label1.Location = new System.Drawing.Point(58, 130);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(74, 22);
             this.label1.TabIndex = 6;
@@ -155,6 +159,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.Cliente);
             this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.button3);
@@ -163,6 +168,16 @@
             this.panel1.Size = new System.Drawing.Size(179, 255);
             this.panel1.TabIndex = 5;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(3, 41);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(0, 18);
+            this.label2.TabIndex = 6;
             // 
             // Cliente
             // 
@@ -218,9 +233,9 @@
             this.alimentos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.alimentos.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.alimentos.ForeColor = System.Drawing.Color.Transparent;
-            this.alimentos.Location = new System.Drawing.Point(38, 52);
+            this.alimentos.Location = new System.Drawing.Point(38, 41);
             this.alimentos.Name = "alimentos";
-            this.alimentos.Size = new System.Drawing.Size(161, 41);
+            this.alimentos.Size = new System.Drawing.Size(134, 41);
             this.alimentos.TabIndex = 4;
             this.alimentos.Text = "Alimentos";
             this.alimentos.UseVisualStyleBackColor = true;
@@ -235,9 +250,9 @@
             this.Comidas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Comidas.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Comidas.ForeColor = System.Drawing.Color.Transparent;
-            this.Comidas.Location = new System.Drawing.Point(38, 99);
+            this.Comidas.Location = new System.Drawing.Point(38, 88);
             this.Comidas.Name = "Comidas";
-            this.Comidas.Size = new System.Drawing.Size(161, 41);
+            this.Comidas.Size = new System.Drawing.Size(121, 41);
             this.Comidas.TabIndex = 3;
             this.Comidas.Text = "Comidas";
             this.Comidas.UseVisualStyleBackColor = true;
@@ -254,7 +269,7 @@
             this.agenda.ForeColor = System.Drawing.Color.Transparent;
             this.agenda.Location = new System.Drawing.Point(38, 5);
             this.agenda.Name = "agenda";
-            this.agenda.Size = new System.Drawing.Size(161, 41);
+            this.agenda.Size = new System.Drawing.Size(121, 30);
             this.agenda.TabIndex = 0;
             this.agenda.Text = "Agenda";
             this.agenda.UseVisualStyleBackColor = true;
@@ -267,6 +282,16 @@
             this.cont.Size = new System.Drawing.Size(884, 544);
             this.cont.TabIndex = 2;
             this.cont.Paint += new System.Windows.Forms.PaintEventHandler(this.cont_Paint);
+            // 
+            // btnEliminar
+            // 
+            this.btnEliminar.Location = new System.Drawing.Point(118, 195);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(72, 23);
+            this.btnEliminar.TabIndex = 10;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // MenuPpal
             // 
@@ -282,6 +307,8 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MenuPpal";
             this.Text = "MenuPpal";
+            this.Activated += new System.EventHandler(this.MenuPpal_Activated);
+            this.Load += new System.EventHandler(this.MenuPpal_Load);
             this.Barra.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -306,10 +333,12 @@
         private System.Windows.Forms.Button Comidas;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Panel cont;
-        private System.Windows.Forms.Button selec;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button btnSeleccionar;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label Cliente;
+        public System.Windows.Forms.ComboBox cbxCliente;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnEliminar;
     }
 }

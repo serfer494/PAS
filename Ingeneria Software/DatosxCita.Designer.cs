@@ -30,50 +30,50 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.newPeso = new System.Windows.Forms.TextBox();
+            this.txtPeso = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtGrasaPorc = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.newIMC = new System.Windows.Forms.TextBox();
+            this.txtIMC = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtGrasaVis = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtMusculoPorc = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtCirCad = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.txtCMB = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.txtBodyAge = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.newAntro = new System.Windows.Forms.Button();
+            this.txtCirCin = new System.Windows.Forms.TextBox();
+            this.dtpFecha = new System.Windows.Forms.DateTimePicker();
+            this.btnCrear = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.dtpFechaMod = new System.Windows.Forms.DateTimePicker();
             this.label13 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtBodyAgeMod = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.txtCirCinMod = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.txtCirCadMod = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.txtCMBMod = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
-            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.txtGrasaVisMod = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
-            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.txtMusculoPorcMod = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
-            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.txtGrasaPorcMod = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
-            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.txtIMCMod = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
-            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.txtPesoMod = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
-            this.modAntro = new System.Windows.Forms.Button();
-            this.elimAntro = new System.Windows.Forms.Button();
+            this.btnModificar = new System.Windows.Forms.Button();
+            this.btnEliminar = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -100,12 +100,12 @@
             this.label2.TabIndex = 47;
             this.label2.Text = "Peso:";
             // 
-            // newPeso
+            // txtPeso
             // 
-            this.newPeso.Location = new System.Drawing.Point(150, 81);
-            this.newPeso.Name = "newPeso";
-            this.newPeso.Size = new System.Drawing.Size(75, 20);
-            this.newPeso.TabIndex = 46;
+            this.txtPeso.Location = new System.Drawing.Point(150, 81);
+            this.txtPeso.Name = "txtPeso";
+            this.txtPeso.Size = new System.Drawing.Size(75, 20);
+            this.txtPeso.TabIndex = 46;
             // 
             // label3
             // 
@@ -118,12 +118,12 @@
             this.label3.TabIndex = 51;
             this.label3.Text = "% Grasa:";
             // 
-            // textBox3
+            // txtGrasaPorc
             // 
-            this.textBox3.Location = new System.Drawing.Point(150, 155);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(75, 20);
-            this.textBox3.TabIndex = 50;
+            this.txtGrasaPorc.Location = new System.Drawing.Point(150, 155);
+            this.txtGrasaPorc.Name = "txtGrasaPorc";
+            this.txtGrasaPorc.Size = new System.Drawing.Size(75, 20);
+            this.txtGrasaPorc.TabIndex = 50;
             // 
             // label4
             // 
@@ -136,12 +136,13 @@
             this.label4.TabIndex = 49;
             this.label4.Text = "IMC:";
             // 
-            // newIMC
+            // txtIMC
             // 
-            this.newIMC.Location = new System.Drawing.Point(150, 115);
-            this.newIMC.Name = "newIMC";
-            this.newIMC.Size = new System.Drawing.Size(75, 20);
-            this.newIMC.TabIndex = 48;
+            this.txtIMC.Location = new System.Drawing.Point(150, 115);
+            this.txtIMC.Name = "txtIMC";
+            this.txtIMC.Size = new System.Drawing.Size(75, 20);
+            this.txtIMC.TabIndex = 48;
+            this.txtIMC.TextChanged += new System.EventHandler(this.newIMC_TextChanged);
             // 
             // label5
             // 
@@ -154,12 +155,12 @@
             this.label5.TabIndex = 55;
             this.label5.Text = "Grasa Visceral:";
             // 
-            // textBox5
+            // txtGrasaVis
             // 
-            this.textBox5.Location = new System.Drawing.Point(150, 242);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(75, 20);
-            this.textBox5.TabIndex = 54;
+            this.txtGrasaVis.Location = new System.Drawing.Point(150, 242);
+            this.txtGrasaVis.Name = "txtGrasaVis";
+            this.txtGrasaVis.Size = new System.Drawing.Size(75, 20);
+            this.txtGrasaVis.TabIndex = 54;
             // 
             // label6
             // 
@@ -172,12 +173,12 @@
             this.label6.TabIndex = 53;
             this.label6.Text = "% Músculo:";
             // 
-            // textBox6
+            // txtMusculoPorc
             // 
-            this.textBox6.Location = new System.Drawing.Point(150, 201);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(75, 20);
-            this.textBox6.TabIndex = 52;
+            this.txtMusculoPorc.Location = new System.Drawing.Point(150, 201);
+            this.txtMusculoPorc.Name = "txtMusculoPorc";
+            this.txtMusculoPorc.Size = new System.Drawing.Size(75, 20);
+            this.txtMusculoPorc.TabIndex = 52;
             // 
             // label7
             // 
@@ -190,12 +191,12 @@
             this.label7.TabIndex = 59;
             this.label7.Text = "Cir. cadera";
             // 
-            // textBox7
+            // txtCirCad
             // 
-            this.textBox7.Location = new System.Drawing.Point(150, 318);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(75, 20);
-            this.textBox7.TabIndex = 58;
+            this.txtCirCad.Location = new System.Drawing.Point(150, 318);
+            this.txtCirCad.Name = "txtCirCad";
+            this.txtCirCad.Size = new System.Drawing.Size(75, 20);
+            this.txtCirCad.TabIndex = 58;
             // 
             // label8
             // 
@@ -208,12 +209,12 @@
             this.label8.TabIndex = 57;
             this.label8.Text = "CMB:";
             // 
-            // textBox8
+            // txtCMB
             // 
-            this.textBox8.Location = new System.Drawing.Point(150, 280);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(75, 20);
-            this.textBox8.TabIndex = 56;
+            this.txtCMB.Location = new System.Drawing.Point(150, 280);
+            this.txtCMB.Name = "txtCMB";
+            this.txtCMB.Size = new System.Drawing.Size(75, 20);
+            this.txtCMB.TabIndex = 56;
             // 
             // label9
             // 
@@ -226,12 +227,12 @@
             this.label9.TabIndex = 63;
             this.label9.Text = "Body Age:";
             // 
-            // textBox9
+            // txtBodyAge
             // 
-            this.textBox9.Location = new System.Drawing.Point(150, 399);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(75, 20);
-            this.textBox9.TabIndex = 62;
+            this.txtBodyAge.Location = new System.Drawing.Point(150, 399);
+            this.txtBodyAge.Name = "txtBodyAge";
+            this.txtBodyAge.Size = new System.Drawing.Size(75, 20);
+            this.txtBodyAge.TabIndex = 62;
             // 
             // label10
             // 
@@ -244,33 +245,34 @@
             this.label10.TabIndex = 61;
             this.label10.Text = "Cir. cintura";
             // 
-            // textBox10
+            // txtCirCin
             // 
-            this.textBox10.Location = new System.Drawing.Point(150, 357);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(75, 20);
-            this.textBox10.TabIndex = 60;
+            this.txtCirCin.Location = new System.Drawing.Point(150, 357);
+            this.txtCirCin.Name = "txtCirCin";
+            this.txtCirCin.Size = new System.Drawing.Size(75, 20);
+            this.txtCirCin.TabIndex = 60;
             // 
-            // dateTimePicker1
+            // dtpFecha
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(89, 46);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(211, 20);
-            this.dateTimePicker1.TabIndex = 64;
+            this.dtpFecha.Location = new System.Drawing.Point(89, 46);
+            this.dtpFecha.Name = "dtpFecha";
+            this.dtpFecha.Size = new System.Drawing.Size(211, 20);
+            this.dtpFecha.TabIndex = 64;
             // 
-            // newAntro
+            // btnCrear
             // 
-            this.newAntro.BackColor = System.Drawing.Color.DarkRed;
-            this.newAntro.FlatAppearance.BorderSize = 0;
-            this.newAntro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.newAntro.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.newAntro.ForeColor = System.Drawing.Color.White;
-            this.newAntro.Location = new System.Drawing.Point(65, 457);
-            this.newAntro.Name = "newAntro";
-            this.newAntro.Size = new System.Drawing.Size(160, 40);
-            this.newAntro.TabIndex = 65;
-            this.newAntro.Text = "Crear";
-            this.newAntro.UseVisualStyleBackColor = false;
+            this.btnCrear.BackColor = System.Drawing.Color.DarkRed;
+            this.btnCrear.FlatAppearance.BorderSize = 0;
+            this.btnCrear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCrear.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCrear.ForeColor = System.Drawing.Color.White;
+            this.btnCrear.Location = new System.Drawing.Point(65, 457);
+            this.btnCrear.Name = "btnCrear";
+            this.btnCrear.Size = new System.Drawing.Size(160, 40);
+            this.btnCrear.TabIndex = 65;
+            this.btnCrear.Text = "Crear";
+            this.btnCrear.UseVisualStyleBackColor = false;
+            this.btnCrear.Click += new System.EventHandler(this.btnCrear_Click);
             // 
             // panel1
             // 
@@ -302,12 +304,12 @@
             this.label12.TabIndex = 68;
             this.label12.Text = "Modificar";
             // 
-            // dateTimePicker2
+            // dtpFechaMod
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(400, 349);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(211, 20);
-            this.dateTimePicker2.TabIndex = 88;
+            this.dtpFechaMod.Location = new System.Drawing.Point(400, 349);
+            this.dtpFechaMod.Name = "dtpFechaMod";
+            this.dtpFechaMod.Size = new System.Drawing.Size(211, 20);
+            this.dtpFechaMod.TabIndex = 88;
             // 
             // label13
             // 
@@ -320,12 +322,12 @@
             this.label13.TabIndex = 87;
             this.label13.Text = "Body Age:";
             // 
-            // textBox1
+            // txtBodyAgeMod
             // 
-            this.textBox1.Location = new System.Drawing.Point(668, 483);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(75, 20);
-            this.textBox1.TabIndex = 86;
+            this.txtBodyAgeMod.Location = new System.Drawing.Point(668, 483);
+            this.txtBodyAgeMod.Name = "txtBodyAgeMod";
+            this.txtBodyAgeMod.Size = new System.Drawing.Size(75, 20);
+            this.txtBodyAgeMod.TabIndex = 86;
             // 
             // label14
             // 
@@ -338,12 +340,12 @@
             this.label14.TabIndex = 85;
             this.label14.Text = "Cir. cintura:";
             // 
-            // textBox11
+            // txtCirCinMod
             // 
-            this.textBox11.Location = new System.Drawing.Point(668, 447);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(75, 20);
-            this.textBox11.TabIndex = 84;
+            this.txtCirCinMod.Location = new System.Drawing.Point(668, 447);
+            this.txtCirCinMod.Name = "txtCirCinMod";
+            this.txtCirCinMod.Size = new System.Drawing.Size(75, 20);
+            this.txtCirCinMod.TabIndex = 84;
             // 
             // label15
             // 
@@ -356,12 +358,12 @@
             this.label15.TabIndex = 83;
             this.label15.Text = "Cir. cadera:";
             // 
-            // textBox12
+            // txtCirCadMod
             // 
-            this.textBox12.Location = new System.Drawing.Point(668, 413);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(75, 20);
-            this.textBox12.TabIndex = 82;
+            this.txtCirCadMod.Location = new System.Drawing.Point(668, 413);
+            this.txtCirCadMod.Name = "txtCirCadMod";
+            this.txtCirCadMod.Size = new System.Drawing.Size(75, 20);
+            this.txtCirCadMod.TabIndex = 82;
             // 
             // label16
             // 
@@ -374,12 +376,12 @@
             this.label16.TabIndex = 81;
             this.label16.Text = "CMB:";
             // 
-            // textBox13
+            // txtCMBMod
             // 
-            this.textBox13.Location = new System.Drawing.Point(668, 377);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(75, 20);
-            this.textBox13.TabIndex = 80;
+            this.txtCMBMod.Location = new System.Drawing.Point(668, 377);
+            this.txtCMBMod.Name = "txtCMBMod";
+            this.txtCMBMod.Size = new System.Drawing.Size(75, 20);
+            this.txtCMBMod.TabIndex = 80;
             // 
             // label17
             // 
@@ -392,12 +394,12 @@
             this.label17.TabIndex = 79;
             this.label17.Text = "Grasa Visceral:";
             // 
-            // textBox14
+            // txtGrasaVisMod
             // 
-            this.textBox14.Location = new System.Drawing.Point(468, 512);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(75, 20);
-            this.textBox14.TabIndex = 78;
+            this.txtGrasaVisMod.Location = new System.Drawing.Point(468, 512);
+            this.txtGrasaVisMod.Name = "txtGrasaVisMod";
+            this.txtGrasaVisMod.Size = new System.Drawing.Size(75, 20);
+            this.txtGrasaVisMod.TabIndex = 78;
             // 
             // label18
             // 
@@ -410,12 +412,12 @@
             this.label18.TabIndex = 77;
             this.label18.Text = "% Músculo:";
             // 
-            // textBox15
+            // txtMusculoPorcMod
             // 
-            this.textBox15.Location = new System.Drawing.Point(468, 480);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(75, 20);
-            this.textBox15.TabIndex = 76;
+            this.txtMusculoPorcMod.Location = new System.Drawing.Point(468, 480);
+            this.txtMusculoPorcMod.Name = "txtMusculoPorcMod";
+            this.txtMusculoPorcMod.Size = new System.Drawing.Size(75, 20);
+            this.txtMusculoPorcMod.TabIndex = 76;
             // 
             // label19
             // 
@@ -428,12 +430,12 @@
             this.label19.TabIndex = 75;
             this.label19.Text = "% Grasa:";
             // 
-            // textBox16
+            // txtGrasaPorcMod
             // 
-            this.textBox16.Location = new System.Drawing.Point(468, 445);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(75, 20);
-            this.textBox16.TabIndex = 74;
+            this.txtGrasaPorcMod.Location = new System.Drawing.Point(468, 445);
+            this.txtGrasaPorcMod.Name = "txtGrasaPorcMod";
+            this.txtGrasaPorcMod.Size = new System.Drawing.Size(75, 20);
+            this.txtGrasaPorcMod.TabIndex = 74;
             // 
             // label20
             // 
@@ -446,12 +448,12 @@
             this.label20.TabIndex = 73;
             this.label20.Text = "IMC:";
             // 
-            // textBox17
+            // txtIMCMod
             // 
-            this.textBox17.Location = new System.Drawing.Point(468, 410);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(75, 20);
-            this.textBox17.TabIndex = 72;
+            this.txtIMCMod.Location = new System.Drawing.Point(468, 410);
+            this.txtIMCMod.Name = "txtIMCMod";
+            this.txtIMCMod.Size = new System.Drawing.Size(75, 20);
+            this.txtIMCMod.TabIndex = 72;
             // 
             // label21
             // 
@@ -464,12 +466,12 @@
             this.label21.TabIndex = 71;
             this.label21.Text = "Peso:";
             // 
-            // textBox18
+            // txtPesoMod
             // 
-            this.textBox18.Location = new System.Drawing.Point(468, 374);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(75, 20);
-            this.textBox18.TabIndex = 70;
+            this.txtPesoMod.Location = new System.Drawing.Point(468, 374);
+            this.txtPesoMod.Name = "txtPesoMod";
+            this.txtPesoMod.Size = new System.Drawing.Size(75, 20);
+            this.txtPesoMod.TabIndex = 70;
             // 
             // label22
             // 
@@ -482,33 +484,35 @@
             this.label22.TabIndex = 69;
             this.label22.Text = "Fecha:";
             // 
-            // modAntro
+            // btnModificar
             // 
-            this.modAntro.BackColor = System.Drawing.Color.DarkRed;
-            this.modAntro.FlatAppearance.BorderSize = 0;
-            this.modAntro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.modAntro.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.modAntro.ForeColor = System.Drawing.Color.White;
-            this.modAntro.Location = new System.Drawing.Point(764, 471);
-            this.modAntro.Name = "modAntro";
-            this.modAntro.Size = new System.Drawing.Size(108, 33);
-            this.modAntro.TabIndex = 89;
-            this.modAntro.Text = "Modificar";
-            this.modAntro.UseVisualStyleBackColor = false;
+            this.btnModificar.BackColor = System.Drawing.Color.DarkRed;
+            this.btnModificar.FlatAppearance.BorderSize = 0;
+            this.btnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnModificar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModificar.ForeColor = System.Drawing.Color.White;
+            this.btnModificar.Location = new System.Drawing.Point(764, 471);
+            this.btnModificar.Name = "btnModificar";
+            this.btnModificar.Size = new System.Drawing.Size(108, 33);
+            this.btnModificar.TabIndex = 89;
+            this.btnModificar.Text = "Modificar";
+            this.btnModificar.UseVisualStyleBackColor = false;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
-            // elimAntro
+            // btnEliminar
             // 
-            this.elimAntro.BackColor = System.Drawing.Color.DarkRed;
-            this.elimAntro.FlatAppearance.BorderSize = 0;
-            this.elimAntro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.elimAntro.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.elimAntro.ForeColor = System.Drawing.Color.White;
-            this.elimAntro.Location = new System.Drawing.Point(764, 357);
-            this.elimAntro.Name = "elimAntro";
-            this.elimAntro.Size = new System.Drawing.Size(108, 33);
-            this.elimAntro.TabIndex = 90;
-            this.elimAntro.Text = "Eliminar";
-            this.elimAntro.UseVisualStyleBackColor = false;
+            this.btnEliminar.BackColor = System.Drawing.Color.DarkRed;
+            this.btnEliminar.FlatAppearance.BorderSize = 0;
+            this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEliminar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminar.ForeColor = System.Drawing.Color.White;
+            this.btnEliminar.Location = new System.Drawing.Point(764, 357);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(108, 33);
+            this.btnEliminar.TabIndex = 90;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // dataGridView1
             // 
@@ -517,6 +521,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(524, 292);
             this.dataGridView1.TabIndex = 91;
+            this.dataGridView1.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_RowHeaderMouseClick);
             // 
             // DatosxCita
             // 
@@ -525,55 +530,56 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(884, 544);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.elimAntro);
-            this.Controls.Add(this.modAntro);
-            this.Controls.Add(this.dateTimePicker2);
+            this.Controls.Add(this.btnEliminar);
+            this.Controls.Add(this.btnModificar);
+            this.Controls.Add(this.dtpFechaMod);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtBodyAgeMod);
             this.Controls.Add(this.label14);
-            this.Controls.Add(this.textBox11);
+            this.Controls.Add(this.txtCirCinMod);
             this.Controls.Add(this.label15);
-            this.Controls.Add(this.textBox12);
+            this.Controls.Add(this.txtCirCadMod);
             this.Controls.Add(this.label16);
-            this.Controls.Add(this.textBox13);
+            this.Controls.Add(this.txtCMBMod);
             this.Controls.Add(this.label17);
-            this.Controls.Add(this.textBox14);
+            this.Controls.Add(this.txtGrasaVisMod);
             this.Controls.Add(this.label18);
-            this.Controls.Add(this.textBox15);
+            this.Controls.Add(this.txtMusculoPorcMod);
             this.Controls.Add(this.label19);
-            this.Controls.Add(this.textBox16);
+            this.Controls.Add(this.txtGrasaPorcMod);
             this.Controls.Add(this.label20);
-            this.Controls.Add(this.textBox17);
+            this.Controls.Add(this.txtIMCMod);
             this.Controls.Add(this.label21);
-            this.Controls.Add(this.textBox18);
+            this.Controls.Add(this.txtPesoMod);
             this.Controls.Add(this.label22);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.newAntro);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.btnCrear);
+            this.Controls.Add(this.dtpFecha);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.textBox9);
+            this.Controls.Add(this.txtBodyAge);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.textBox10);
+            this.Controls.Add(this.txtCirCin);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.txtCirCad);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.textBox8);
+            this.Controls.Add(this.txtCMB);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.txtGrasaVis);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.txtMusculoPorc);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtGrasaPorc);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.newIMC);
+            this.Controls.Add(this.txtIMC);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.newPeso);
+            this.Controls.Add(this.txtPeso);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "DatosxCita";
             this.Text = "Datos Antropometricos";
+            this.Load += new System.EventHandler(this.DatosxCita_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -583,50 +589,50 @@
         #endregion
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox newPeso;
+        private System.Windows.Forms.TextBox txtPeso;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtGrasaPorc;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox newIMC;
+        private System.Windows.Forms.TextBox txtIMC;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtGrasaVis;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtMusculoPorc;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txtCirCad;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox txtCMB;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox txtBodyAge;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Button newAntro;
+        private System.Windows.Forms.TextBox txtCirCin;
+        private System.Windows.Forms.DateTimePicker dtpFecha;
+        private System.Windows.Forms.Button btnCrear;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker dtpFechaMod;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtBodyAgeMod;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox txtCirCinMod;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox txtCirCadMod;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.TextBox txtCMBMod;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.TextBox txtGrasaVisMod;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.TextBox txtMusculoPorcMod;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.TextBox textBox16;
+        private System.Windows.Forms.TextBox txtGrasaPorcMod;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.TextBox textBox17;
+        private System.Windows.Forms.TextBox txtIMCMod;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.TextBox textBox18;
+        private System.Windows.Forms.TextBox txtPesoMod;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Button modAntro;
-        private System.Windows.Forms.Button elimAntro;
+        private System.Windows.Forms.Button btnModificar;
+        private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

@@ -28,33 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.fech = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
-            this.nombre = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.edad = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.genero = new System.Windows.Forms.TextBox();
+            this.txtGenero = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.EdoCiv = new System.Windows.Forms.TextBox();
-            this.naci = new System.Windows.Forms.DateTimePicker();
+            this.txtEstadoCivil = new System.Windows.Forms.TextBox();
+            this.dtpFechaNac = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
-            this.escol = new System.Windows.Forms.TextBox();
+            this.txtEscolaridad = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.occ = new System.Windows.Forms.TextBox();
+            this.txtOcupacion = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.tel = new System.Windows.Forms.TextBox();
-            this.email = new System.Windows.Forms.TextBox();
-            this.horarios = new System.Windows.Forms.TextBox();
-            this.consul = new System.Windows.Forms.RichTextBox();
+            this.txtTelefono = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.rtxtMotivos = new System.Windows.Forms.RichTextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.personal = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
@@ -66,11 +59,6 @@
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
@@ -78,51 +66,29 @@
             this.label34 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
-            this.diarr = new System.Windows.Forms.TextBox();
-            this.vom = new System.Windows.Forms.TextBox();
-            this.coli = new System.Windows.Forms.TextBox();
-            this.ans = new System.Windows.Forms.TextBox();
-            this.gast = new System.Windows.Forms.TextBox();
-            this.naus = new System.Windows.Forms.TextBox();
-            this.estr = new System.Windows.Forms.TextBox();
-            this.disfa = new System.Windows.Forms.TextBox();
-            this.agru = new System.Windows.Forms.TextBox();
-            this.reflu = new System.Windows.Forms.TextBox();
-            this.menosAp = new System.Windows.Forms.TextBox();
-            this.cabe = new System.Windows.Forms.TextBox();
-            this.masAp = new System.Windows.Forms.TextBox();
-            this.label37 = new System.Windows.Forms.Label();
-            this.abd = new System.Windows.Forms.TextBox();
-            this.flat = new System.Windows.Forms.TextBox();
-            this.enfermedad = new System.Windows.Forms.RichTextBox();
-            this.medicina = new System.Windows.Forms.RichTextBox();
-            this.sup = new System.Windows.Forms.RichTextBox();
-            this.masti = new System.Windows.Forms.TextBox();
-            this.diu = new System.Windows.Forms.RichTextBox();
-            this.lax = new System.Windows.Forms.RichTextBox();
-            this.ciru = new System.Windows.Forms.RichTextBox();
-            this.pato = new System.Windows.Forms.Button();
+            this.txtDiarrea = new System.Windows.Forms.TextBox();
+            this.txtVomito = new System.Windows.Forms.TextBox();
+            this.txtColitis = new System.Windows.Forms.TextBox();
+            this.txtAnsiedad = new System.Windows.Forms.TextBox();
+            this.txtGastritis = new System.Windows.Forms.TextBox();
+            this.txtNauseas = new System.Windows.Forms.TextBox();
+            this.txtEstrenimiento = new System.Windows.Forms.TextBox();
+            this.txtDisfagia = new System.Windows.Forms.TextBox();
+            this.txtDolorCabeza = new System.Windows.Forms.TextBox();
+            this.txtFlatulencias = new System.Windows.Forms.TextBox();
+            this.txtEnfermedad = new System.Windows.Forms.RichTextBox();
+            this.txtMedicamentos = new System.Windows.Forms.RichTextBox();
+            this.txtSuplementos = new System.Windows.Forms.RichTextBox();
+            this.txtMasticacion = new System.Windows.Forms.TextBox();
+            this.txtDiureticos = new System.Windows.Forms.RichTextBox();
+            this.txtLaxantes = new System.Windows.Forms.RichTextBox();
+            this.txtCirugia = new System.Windows.Forms.RichTextBox();
+            this.btnAPAgregar = new System.Windows.Forms.Button();
             this.next = new System.Windows.Forms.Button();
             this.panelDatosGenerales = new System.Windows.Forms.Panel();
+            this.btnDatosPersonalesMod = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.DarkRed;
-            this.label1.Location = new System.Drawing.Point(91, 48);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(63, 18);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Fecha:";
-            // 
-            // fech
-            // 
-            this.fech.Location = new System.Drawing.Point(169, 46);
-            this.fech.Name = "fech";
-            this.fech.Size = new System.Drawing.Size(212, 20);
-            this.fech.TabIndex = 1;
             // 
             // label2
             // 
@@ -135,30 +101,12 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Nombre:";
             // 
-            // nombre
+            // txtNombre
             // 
-            this.nombre.Location = new System.Drawing.Point(94, 84);
-            this.nombre.Name = "nombre";
-            this.nombre.Size = new System.Drawing.Size(176, 20);
-            this.nombre.TabIndex = 3;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.DarkRed;
-            this.label3.Location = new System.Drawing.Point(276, 84);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(54, 18);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Edad:";
-            // 
-            // edad
-            // 
-            this.edad.Location = new System.Drawing.Point(336, 84);
-            this.edad.Name = "edad";
-            this.edad.Size = new System.Drawing.Size(100, 20);
-            this.edad.TabIndex = 5;
+            this.txtNombre.Location = new System.Drawing.Point(94, 84);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(176, 20);
+            this.txtNombre.TabIndex = 3;
             // 
             // label4
             // 
@@ -171,12 +119,12 @@
             this.label4.TabIndex = 6;
             this.label4.Text = "Genero:";
             // 
-            // genero
+            // txtGenero
             // 
-            this.genero.Location = new System.Drawing.Point(94, 114);
-            this.genero.Name = "genero";
-            this.genero.Size = new System.Drawing.Size(100, 20);
-            this.genero.TabIndex = 7;
+            this.txtGenero.Location = new System.Drawing.Point(94, 114);
+            this.txtGenero.Name = "txtGenero";
+            this.txtGenero.Size = new System.Drawing.Size(100, 20);
+            this.txtGenero.TabIndex = 7;
             // 
             // label5
             // 
@@ -200,19 +148,19 @@
             this.label6.TabIndex = 9;
             this.label6.Text = "Estado civil:";
             // 
-            // EdoCiv
+            // txtEstadoCivil
             // 
-            this.EdoCiv.Location = new System.Drawing.Point(336, 117);
-            this.EdoCiv.Name = "EdoCiv";
-            this.EdoCiv.Size = new System.Drawing.Size(100, 20);
-            this.EdoCiv.TabIndex = 10;
+            this.txtEstadoCivil.Location = new System.Drawing.Point(336, 117);
+            this.txtEstadoCivil.Name = "txtEstadoCivil";
+            this.txtEstadoCivil.Size = new System.Drawing.Size(100, 20);
+            this.txtEstadoCivil.TabIndex = 10;
             // 
-            // naci
+            // dtpFechaNac
             // 
-            this.naci.Location = new System.Drawing.Point(223, 146);
-            this.naci.Name = "naci";
-            this.naci.Size = new System.Drawing.Size(213, 20);
-            this.naci.TabIndex = 11;
+            this.dtpFechaNac.Location = new System.Drawing.Point(223, 146);
+            this.dtpFechaNac.Name = "dtpFechaNac";
+            this.dtpFechaNac.Size = new System.Drawing.Size(213, 20);
+            this.dtpFechaNac.TabIndex = 11;
             // 
             // label7
             // 
@@ -225,12 +173,12 @@
             this.label7.TabIndex = 12;
             this.label7.Text = "Escolaridad:";
             // 
-            // escol
+            // txtEscolaridad
             // 
-            this.escol.Location = new System.Drawing.Point(124, 177);
-            this.escol.Name = "escol";
-            this.escol.Size = new System.Drawing.Size(100, 20);
-            this.escol.TabIndex = 13;
+            this.txtEscolaridad.Location = new System.Drawing.Point(124, 177);
+            this.txtEscolaridad.Name = "txtEscolaridad";
+            this.txtEscolaridad.Size = new System.Drawing.Size(100, 20);
+            this.txtEscolaridad.TabIndex = 13;
             // 
             // label8
             // 
@@ -243,12 +191,12 @@
             this.label8.TabIndex = 14;
             this.label8.Text = "Ocupacion:";
             // 
-            // occ
+            // txtOcupacion
             // 
-            this.occ.Location = new System.Drawing.Point(336, 179);
-            this.occ.Name = "occ";
-            this.occ.Size = new System.Drawing.Size(100, 20);
-            this.occ.TabIndex = 15;
+            this.txtOcupacion.Location = new System.Drawing.Point(336, 179);
+            this.txtOcupacion.Name = "txtOcupacion";
+            this.txtOcupacion.Size = new System.Drawing.Size(100, 20);
+            this.txtOcupacion.TabIndex = 15;
             // 
             // label9
             // 
@@ -272,17 +220,6 @@
             this.label10.TabIndex = 17;
             this.label10.Text = "Email:";
             // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.DarkRed;
-            this.label11.Location = new System.Drawing.Point(17, 233);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(82, 18);
-            this.label11.TabIndex = 18;
-            this.label11.Text = "Horarios:";
-            // 
             // label12
             // 
             this.label12.AutoSize = true;
@@ -305,35 +242,28 @@
             this.label13.TabIndex = 20;
             this.label13.Text = "Datos Personales";
             // 
-            // tel
+            // txtTelefono
             // 
-            this.tel.Location = new System.Drawing.Point(105, 205);
-            this.tel.Name = "tel";
-            this.tel.Size = new System.Drawing.Size(126, 20);
-            this.tel.TabIndex = 21;
+            this.txtTelefono.Location = new System.Drawing.Point(105, 205);
+            this.txtTelefono.Name = "txtTelefono";
+            this.txtTelefono.Size = new System.Drawing.Size(126, 20);
+            this.txtTelefono.TabIndex = 21;
             // 
-            // email
+            // txtEmail
             // 
-            this.email.Location = new System.Drawing.Point(299, 205);
-            this.email.Name = "email";
-            this.email.Size = new System.Drawing.Size(137, 20);
-            this.email.TabIndex = 22;
+            this.txtEmail.Location = new System.Drawing.Point(299, 205);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(137, 20);
+            this.txtEmail.TabIndex = 22;
             // 
-            // horarios
+            // rtxtMotivos
             // 
-            this.horarios.Location = new System.Drawing.Point(105, 231);
-            this.horarios.Name = "horarios";
-            this.horarios.Size = new System.Drawing.Size(331, 20);
-            this.horarios.TabIndex = 23;
-            // 
-            // consul
-            // 
-            this.consul.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.consul.Location = new System.Drawing.Point(20, 282);
-            this.consul.Name = "consul";
-            this.consul.Size = new System.Drawing.Size(416, 96);
-            this.consul.TabIndex = 24;
-            this.consul.Text = "";
+            this.rtxtMotivos.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.rtxtMotivos.Location = new System.Drawing.Point(20, 282);
+            this.rtxtMotivos.Name = "rtxtMotivos";
+            this.rtxtMotivos.Size = new System.Drawing.Size(416, 96);
+            this.rtxtMotivos.TabIndex = 24;
+            this.rtxtMotivos.Text = "";
             // 
             // panel1
             // 
@@ -342,20 +272,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(10, 520);
             this.panel1.TabIndex = 25;
-            // 
-            // personal
-            // 
-            this.personal.BackColor = System.Drawing.Color.DarkRed;
-            this.personal.FlatAppearance.BorderSize = 0;
-            this.personal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.personal.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.personal.ForeColor = System.Drawing.Color.White;
-            this.personal.Location = new System.Drawing.Point(129, 451);
-            this.personal.Name = "personal";
-            this.personal.Size = new System.Drawing.Size(160, 40);
-            this.personal.TabIndex = 26;
-            this.personal.Text = "Agregar";
-            this.personal.UseVisualStyleBackColor = false;
             // 
             // label14
             // 
@@ -439,7 +355,7 @@
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.ForeColor = System.Drawing.Color.DarkRed;
-            this.label21.Location = new System.Drawing.Point(622, 133);
+            this.label21.Location = new System.Drawing.Point(622, 104);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(103, 15);
             this.label21.TabIndex = 34;
@@ -450,7 +366,7 @@
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.ForeColor = System.Drawing.Color.DarkRed;
-            this.label22.Location = new System.Drawing.Point(622, 156);
+            this.label22.Location = new System.Drawing.Point(622, 127);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(116, 15);
             this.label22.TabIndex = 35;
@@ -461,7 +377,7 @@
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label23.ForeColor = System.Drawing.Color.DarkRed;
-            this.label23.Location = new System.Drawing.Point(458, 219);
+            this.label23.Location = new System.Drawing.Point(622, 148);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(77, 18);
             this.label23.TabIndex = 36;
@@ -472,66 +388,11 @@
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label24.ForeColor = System.Drawing.Color.DarkRed;
-            this.label24.Location = new System.Drawing.Point(622, 105);
+            this.label24.Location = new System.Drawing.Point(622, 76);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(183, 15);
             this.label24.TabIndex = 37;
             this.label24.Text = "Problemas de masticacion:";
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.ForeColor = System.Drawing.Color.DarkRed;
-            this.label25.Location = new System.Drawing.Point(458, 247);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(78, 18);
-            this.label25.TabIndex = 38;
-            this.label25.Text = "Agruras:";
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.ForeColor = System.Drawing.Color.DarkRed;
-            this.label26.Location = new System.Drawing.Point(622, 73);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(68, 18);
-            this.label26.TabIndex = 39;
-            this.label26.Text = "Reflujo:";
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.ForeColor = System.Drawing.Color.DarkRed;
-            this.label27.Location = new System.Drawing.Point(622, 185);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(164, 15);
-            this.label27.TabIndex = 40;
-            this.label27.Text = "Disminucion del apetito:";
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.ForeColor = System.Drawing.Color.DarkRed;
-            this.label28.Location = new System.Drawing.Point(622, 215);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(141, 15);
-            this.label28.TabIndex = 41;
-            this.label28.Text = "Aumento del apetito:";
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.ForeColor = System.Drawing.Color.DarkRed;
-            this.label29.Location = new System.Drawing.Point(622, 238);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(95, 15);
-            this.label29.TabIndex = 42;
-            this.label29.Text = "Infalamacion/";
             // 
             // label30
             // 
@@ -610,201 +471,156 @@
             this.label36.TabIndex = 49;
             this.label36.Text = "Cirugia:";
             // 
-            // diarr
+            // txtDiarrea
             // 
-            this.diarr.Location = new System.Drawing.Point(545, 47);
-            this.diarr.Name = "diarr";
-            this.diarr.Size = new System.Drawing.Size(60, 20);
-            this.diarr.TabIndex = 50;
+            this.txtDiarrea.Location = new System.Drawing.Point(545, 47);
+            this.txtDiarrea.Name = "txtDiarrea";
+            this.txtDiarrea.Size = new System.Drawing.Size(60, 20);
+            this.txtDiarrea.TabIndex = 50;
             // 
-            // vom
+            // txtVomito
             // 
-            this.vom.Location = new System.Drawing.Point(545, 74);
-            this.vom.Name = "vom";
-            this.vom.Size = new System.Drawing.Size(60, 20);
-            this.vom.TabIndex = 51;
+            this.txtVomito.Location = new System.Drawing.Point(545, 74);
+            this.txtVomito.Name = "txtVomito";
+            this.txtVomito.Size = new System.Drawing.Size(60, 20);
+            this.txtVomito.TabIndex = 51;
             // 
-            // coli
+            // txtColitis
             // 
-            this.coli.Location = new System.Drawing.Point(544, 103);
-            this.coli.Name = "coli";
-            this.coli.Size = new System.Drawing.Size(60, 20);
-            this.coli.TabIndex = 52;
+            this.txtColitis.Location = new System.Drawing.Point(544, 103);
+            this.txtColitis.Name = "txtColitis";
+            this.txtColitis.Size = new System.Drawing.Size(60, 20);
+            this.txtColitis.TabIndex = 52;
             // 
-            // ans
+            // txtAnsiedad
             // 
-            this.ans.Location = new System.Drawing.Point(545, 133);
-            this.ans.Name = "ans";
-            this.ans.Size = new System.Drawing.Size(60, 20);
-            this.ans.TabIndex = 53;
+            this.txtAnsiedad.Location = new System.Drawing.Point(545, 133);
+            this.txtAnsiedad.Name = "txtAnsiedad";
+            this.txtAnsiedad.Size = new System.Drawing.Size(60, 20);
+            this.txtAnsiedad.TabIndex = 53;
             // 
-            // gast
+            // txtGastritis
             // 
-            this.gast.Location = new System.Drawing.Point(545, 159);
-            this.gast.Name = "gast";
-            this.gast.Size = new System.Drawing.Size(60, 20);
-            this.gast.TabIndex = 54;
+            this.txtGastritis.Location = new System.Drawing.Point(545, 159);
+            this.txtGastritis.Name = "txtGastritis";
+            this.txtGastritis.Size = new System.Drawing.Size(60, 20);
+            this.txtGastritis.TabIndex = 54;
             // 
-            // naus
+            // txtNauseas
             // 
-            this.naus.Location = new System.Drawing.Point(544, 189);
-            this.naus.Name = "naus";
-            this.naus.Size = new System.Drawing.Size(60, 20);
-            this.naus.TabIndex = 55;
+            this.txtNauseas.Location = new System.Drawing.Point(544, 189);
+            this.txtNauseas.Name = "txtNauseas";
+            this.txtNauseas.Size = new System.Drawing.Size(60, 20);
+            this.txtNauseas.TabIndex = 55;
             // 
-            // estr
+            // txtEstrenimiento
             // 
-            this.estr.Location = new System.Drawing.Point(808, 127);
-            this.estr.Name = "estr";
-            this.estr.Size = new System.Drawing.Size(60, 20);
-            this.estr.TabIndex = 56;
+            this.txtEstrenimiento.Location = new System.Drawing.Point(808, 98);
+            this.txtEstrenimiento.Name = "txtEstrenimiento";
+            this.txtEstrenimiento.Size = new System.Drawing.Size(60, 20);
+            this.txtEstrenimiento.TabIndex = 56;
             // 
-            // disfa
+            // txtDisfagia
             // 
-            this.disfa.Location = new System.Drawing.Point(544, 219);
-            this.disfa.Name = "disfa";
-            this.disfa.Size = new System.Drawing.Size(60, 20);
-            this.disfa.TabIndex = 57;
+            this.txtDisfagia.Location = new System.Drawing.Point(808, 150);
+            this.txtDisfagia.Name = "txtDisfagia";
+            this.txtDisfagia.Size = new System.Drawing.Size(60, 20);
+            this.txtDisfagia.TabIndex = 57;
             // 
-            // agru
+            // txtDolorCabeza
             // 
-            this.agru.Location = new System.Drawing.Point(545, 245);
-            this.agru.Name = "agru";
-            this.agru.Size = new System.Drawing.Size(60, 20);
-            this.agru.TabIndex = 58;
+            this.txtDolorCabeza.Location = new System.Drawing.Point(808, 124);
+            this.txtDolorCabeza.Name = "txtDolorCabeza";
+            this.txtDolorCabeza.Size = new System.Drawing.Size(60, 20);
+            this.txtDolorCabeza.TabIndex = 61;
             // 
-            // reflu
+            // txtFlatulencias
             // 
-            this.reflu.Location = new System.Drawing.Point(808, 75);
-            this.reflu.Name = "reflu";
-            this.reflu.Size = new System.Drawing.Size(60, 20);
-            this.reflu.TabIndex = 59;
+            this.txtFlatulencias.Location = new System.Drawing.Point(808, 47);
+            this.txtFlatulencias.Name = "txtFlatulencias";
+            this.txtFlatulencias.Size = new System.Drawing.Size(60, 20);
+            this.txtFlatulencias.TabIndex = 65;
             // 
-            // menosAp
+            // txtEnfermedad
             // 
-            this.menosAp.Location = new System.Drawing.Point(808, 183);
-            this.menosAp.Name = "menosAp";
-            this.menosAp.Size = new System.Drawing.Size(60, 20);
-            this.menosAp.TabIndex = 60;
+            this.txtEnfermedad.Location = new System.Drawing.Point(461, 303);
+            this.txtEnfermedad.Name = "txtEnfermedad";
+            this.txtEnfermedad.Size = new System.Drawing.Size(118, 65);
+            this.txtEnfermedad.TabIndex = 66;
+            this.txtEnfermedad.Text = "";
             // 
-            // cabe
+            // txtMedicamentos
             // 
-            this.cabe.Location = new System.Drawing.Point(808, 153);
-            this.cabe.Name = "cabe";
-            this.cabe.Size = new System.Drawing.Size(60, 20);
-            this.cabe.TabIndex = 61;
+            this.txtMedicamentos.Location = new System.Drawing.Point(599, 301);
+            this.txtMedicamentos.Name = "txtMedicamentos";
+            this.txtMedicamentos.Size = new System.Drawing.Size(126, 67);
+            this.txtMedicamentos.TabIndex = 67;
+            this.txtMedicamentos.Text = "";
             // 
-            // masAp
+            // txtSuplementos
             // 
-            this.masAp.Location = new System.Drawing.Point(808, 214);
-            this.masAp.Name = "masAp";
-            this.masAp.Size = new System.Drawing.Size(60, 20);
-            this.masAp.TabIndex = 62;
+            this.txtSuplementos.Location = new System.Drawing.Point(742, 301);
+            this.txtSuplementos.Name = "txtSuplementos";
+            this.txtSuplementos.Size = new System.Drawing.Size(126, 67);
+            this.txtSuplementos.TabIndex = 68;
+            this.txtSuplementos.Text = "";
             // 
-            // label37
+            // txtMasticacion
             // 
-            this.label37.AutoSize = true;
-            this.label37.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label37.ForeColor = System.Drawing.Color.DarkRed;
-            this.label37.Location = new System.Drawing.Point(622, 253);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(118, 15);
-            this.label37.TabIndex = 63;
-            this.label37.Text = "Dolor abdominal:";
+            this.txtMasticacion.Location = new System.Drawing.Point(808, 75);
+            this.txtMasticacion.Name = "txtMasticacion";
+            this.txtMasticacion.Size = new System.Drawing.Size(60, 20);
+            this.txtMasticacion.TabIndex = 69;
             // 
-            // abd
+            // txtDiureticos
             // 
-            this.abd.Location = new System.Drawing.Point(808, 249);
-            this.abd.Name = "abd";
-            this.abd.Size = new System.Drawing.Size(60, 20);
-            this.abd.TabIndex = 64;
+            this.txtDiureticos.Location = new System.Drawing.Point(461, 401);
+            this.txtDiureticos.Name = "txtDiureticos";
+            this.txtDiureticos.Size = new System.Drawing.Size(118, 65);
+            this.txtDiureticos.TabIndex = 70;
+            this.txtDiureticos.Text = "";
             // 
-            // flat
+            // txtLaxantes
             // 
-            this.flat.Location = new System.Drawing.Point(808, 47);
-            this.flat.Name = "flat";
-            this.flat.Size = new System.Drawing.Size(60, 20);
-            this.flat.TabIndex = 65;
+            this.txtLaxantes.Location = new System.Drawing.Point(599, 401);
+            this.txtLaxantes.Name = "txtLaxantes";
+            this.txtLaxantes.Size = new System.Drawing.Size(118, 65);
+            this.txtLaxantes.TabIndex = 71;
+            this.txtLaxantes.Text = "";
             // 
-            // enfermedad
+            // txtCirugia
             // 
-            this.enfermedad.Location = new System.Drawing.Point(461, 303);
-            this.enfermedad.Name = "enfermedad";
-            this.enfermedad.Size = new System.Drawing.Size(118, 65);
-            this.enfermedad.TabIndex = 66;
-            this.enfermedad.Text = "";
+            this.txtCirugia.Location = new System.Drawing.Point(742, 401);
+            this.txtCirugia.Name = "txtCirugia";
+            this.txtCirugia.Size = new System.Drawing.Size(118, 65);
+            this.txtCirugia.TabIndex = 72;
+            this.txtCirugia.Text = "";
             // 
-            // medicina
+            // btnAPAgregar
             // 
-            this.medicina.Location = new System.Drawing.Point(599, 301);
-            this.medicina.Name = "medicina";
-            this.medicina.Size = new System.Drawing.Size(126, 67);
-            this.medicina.TabIndex = 67;
-            this.medicina.Text = "";
-            // 
-            // sup
-            // 
-            this.sup.Location = new System.Drawing.Point(742, 301);
-            this.sup.Name = "sup";
-            this.sup.Size = new System.Drawing.Size(126, 67);
-            this.sup.TabIndex = 68;
-            this.sup.Text = "";
-            // 
-            // masti
-            // 
-            this.masti.Location = new System.Drawing.Point(808, 104);
-            this.masti.Name = "masti";
-            this.masti.Size = new System.Drawing.Size(60, 20);
-            this.masti.TabIndex = 69;
-            // 
-            // diu
-            // 
-            this.diu.Location = new System.Drawing.Point(461, 401);
-            this.diu.Name = "diu";
-            this.diu.Size = new System.Drawing.Size(118, 65);
-            this.diu.TabIndex = 70;
-            this.diu.Text = "";
-            // 
-            // lax
-            // 
-            this.lax.Location = new System.Drawing.Point(599, 401);
-            this.lax.Name = "lax";
-            this.lax.Size = new System.Drawing.Size(118, 65);
-            this.lax.TabIndex = 71;
-            this.lax.Text = "";
-            // 
-            // ciru
-            // 
-            this.ciru.Location = new System.Drawing.Point(742, 401);
-            this.ciru.Name = "ciru";
-            this.ciru.Size = new System.Drawing.Size(118, 65);
-            this.ciru.TabIndex = 72;
-            this.ciru.Text = "";
-            // 
-            // pato
-            // 
-            this.pato.BackColor = System.Drawing.Color.DarkRed;
-            this.pato.FlatAppearance.BorderSize = 0;
-            this.pato.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.pato.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pato.ForeColor = System.Drawing.Color.White;
-            this.pato.Location = new System.Drawing.Point(483, 483);
-            this.pato.Name = "pato";
-            this.pato.Size = new System.Drawing.Size(160, 40);
-            this.pato.TabIndex = 73;
-            this.pato.Text = "Agregar";
-            this.pato.UseVisualStyleBackColor = false;
+            this.btnAPAgregar.BackColor = System.Drawing.Color.DarkRed;
+            this.btnAPAgregar.FlatAppearance.BorderSize = 0;
+            this.btnAPAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAPAgregar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAPAgregar.ForeColor = System.Drawing.Color.White;
+            this.btnAPAgregar.Location = new System.Drawing.Point(483, 483);
+            this.btnAPAgregar.Name = "btnAPAgregar";
+            this.btnAPAgregar.Size = new System.Drawing.Size(96, 40);
+            this.btnAPAgregar.TabIndex = 73;
+            this.btnAPAgregar.Text = "Agregar";
+            this.btnAPAgregar.UseVisualStyleBackColor = false;
+            this.btnAPAgregar.Click += new System.EventHandler(this.btnAPAgregar_Click);
             // 
             // next
             // 
             this.next.BackColor = System.Drawing.Color.DarkRed;
             this.next.FlatAppearance.BorderSize = 0;
             this.next.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.next.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.next.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.next.ForeColor = System.Drawing.Color.White;
-            this.next.Location = new System.Drawing.Point(696, 483);
+            this.next.Location = new System.Drawing.Point(742, 483);
             this.next.Name = "next";
-            this.next.Size = new System.Drawing.Size(160, 40);
+            this.next.Size = new System.Drawing.Size(118, 40);
             this.next.TabIndex = 74;
             this.next.Text = "Sig. Pagina";
             this.next.UseVisualStyleBackColor = false;
@@ -812,11 +628,40 @@
             // 
             // panelDatosGenerales
             // 
-            this.panelDatosGenerales.Location = new System.Drawing.Point(0, 0);
+            this.panelDatosGenerales.Location = new System.Drawing.Point(808, 529);
             this.panelDatosGenerales.Name = "panelDatosGenerales";
             this.panelDatosGenerales.Size = new System.Drawing.Size(884, 544);
             this.panelDatosGenerales.TabIndex = 75;
             this.panelDatosGenerales.Visible = false;
+            // 
+            // btnDatosPersonalesMod
+            // 
+            this.btnDatosPersonalesMod.BackColor = System.Drawing.Color.DarkRed;
+            this.btnDatosPersonalesMod.FlatAppearance.BorderSize = 0;
+            this.btnDatosPersonalesMod.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDatosPersonalesMod.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDatosPersonalesMod.ForeColor = System.Drawing.Color.White;
+            this.btnDatosPersonalesMod.Location = new System.Drawing.Point(147, 448);
+            this.btnDatosPersonalesMod.Name = "btnDatosPersonalesMod";
+            this.btnDatosPersonalesMod.Size = new System.Drawing.Size(160, 40);
+            this.btnDatosPersonalesMod.TabIndex = 76;
+            this.btnDatosPersonalesMod.Text = "Modificar";
+            this.btnDatosPersonalesMod.UseVisualStyleBackColor = false;
+            this.btnDatosPersonalesMod.Click += new System.EventHandler(this.btnDatosPersonalesMod_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.DarkRed;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(621, 483);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(96, 40);
+            this.button2.TabIndex = 77;
+            this.button2.Text = "Modificar";
+            this.button2.UseVisualStyleBackColor = false;
             // 
             // DatosGenerales
             // 
@@ -824,32 +669,28 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(884, 544);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnDatosPersonalesMod);
             this.Controls.Add(this.panelDatosGenerales);
             this.Controls.Add(this.next);
-            this.Controls.Add(this.pato);
-            this.Controls.Add(this.ciru);
-            this.Controls.Add(this.lax);
-            this.Controls.Add(this.diu);
-            this.Controls.Add(this.masti);
-            this.Controls.Add(this.sup);
-            this.Controls.Add(this.medicina);
-            this.Controls.Add(this.enfermedad);
-            this.Controls.Add(this.flat);
-            this.Controls.Add(this.abd);
-            this.Controls.Add(this.label37);
-            this.Controls.Add(this.masAp);
-            this.Controls.Add(this.cabe);
-            this.Controls.Add(this.menosAp);
-            this.Controls.Add(this.reflu);
-            this.Controls.Add(this.agru);
-            this.Controls.Add(this.disfa);
-            this.Controls.Add(this.estr);
-            this.Controls.Add(this.naus);
-            this.Controls.Add(this.gast);
-            this.Controls.Add(this.ans);
-            this.Controls.Add(this.coli);
-            this.Controls.Add(this.vom);
-            this.Controls.Add(this.diarr);
+            this.Controls.Add(this.btnAPAgregar);
+            this.Controls.Add(this.txtCirugia);
+            this.Controls.Add(this.txtLaxantes);
+            this.Controls.Add(this.txtDiureticos);
+            this.Controls.Add(this.txtMasticacion);
+            this.Controls.Add(this.txtSuplementos);
+            this.Controls.Add(this.txtMedicamentos);
+            this.Controls.Add(this.txtEnfermedad);
+            this.Controls.Add(this.txtFlatulencias);
+            this.Controls.Add(this.txtDolorCabeza);
+            this.Controls.Add(this.txtDisfagia);
+            this.Controls.Add(this.txtEstrenimiento);
+            this.Controls.Add(this.txtNauseas);
+            this.Controls.Add(this.txtGastritis);
+            this.Controls.Add(this.txtAnsiedad);
+            this.Controls.Add(this.txtColitis);
+            this.Controls.Add(this.txtVomito);
+            this.Controls.Add(this.txtDiarrea);
             this.Controls.Add(this.label36);
             this.Controls.Add(this.label35);
             this.Controls.Add(this.label34);
@@ -857,11 +698,6 @@
             this.Controls.Add(this.label32);
             this.Controls.Add(this.label31);
             this.Controls.Add(this.label30);
-            this.Controls.Add(this.label29);
-            this.Controls.Add(this.label28);
-            this.Controls.Add(this.label27);
-            this.Controls.Add(this.label26);
-            this.Controls.Add(this.label25);
             this.Controls.Add(this.label24);
             this.Controls.Add(this.label23);
             this.Controls.Add(this.label22);
@@ -873,70 +709,56 @@
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label14);
-            this.Controls.Add(this.personal);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.consul);
-            this.Controls.Add(this.horarios);
-            this.Controls.Add(this.email);
-            this.Controls.Add(this.tel);
+            this.Controls.Add(this.rtxtMotivos);
+            this.Controls.Add(this.txtEmail);
+            this.Controls.Add(this.txtTelefono);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.occ);
+            this.Controls.Add(this.txtOcupacion);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.escol);
+            this.Controls.Add(this.txtEscolaridad);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.naci);
-            this.Controls.Add(this.EdoCiv);
+            this.Controls.Add(this.dtpFechaNac);
+            this.Controls.Add(this.txtEstadoCivil);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.genero);
+            this.Controls.Add(this.txtGenero);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.edad);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.nombre);
+            this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.fech);
-            this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "DatosGenerales";
             this.Text = "DatosGenerales";
+            this.Load += new System.EventHandler(this.DatosGenerales_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DateTimePicker fech;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox nombre;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox edad;
+        private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox genero;
+        private System.Windows.Forms.TextBox txtGenero;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox EdoCiv;
-        private System.Windows.Forms.DateTimePicker naci;
+        private System.Windows.Forms.TextBox txtEstadoCivil;
+        private System.Windows.Forms.DateTimePicker dtpFechaNac;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox escol;
+        private System.Windows.Forms.TextBox txtEscolaridad;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox occ;
+        private System.Windows.Forms.TextBox txtOcupacion;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox tel;
-        private System.Windows.Forms.TextBox email;
-        private System.Windows.Forms.TextBox horarios;
-        private System.Windows.Forms.RichTextBox consul;
+        private System.Windows.Forms.TextBox txtTelefono;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.RichTextBox rtxtMotivos;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button personal;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
@@ -948,11 +770,6 @@
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Label label32;
@@ -960,31 +777,27 @@
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.TextBox diarr;
-        private System.Windows.Forms.TextBox vom;
-        private System.Windows.Forms.TextBox coli;
-        private System.Windows.Forms.TextBox ans;
-        private System.Windows.Forms.TextBox gast;
-        private System.Windows.Forms.TextBox naus;
-        private System.Windows.Forms.TextBox estr;
-        private System.Windows.Forms.TextBox disfa;
-        private System.Windows.Forms.TextBox agru;
-        private System.Windows.Forms.TextBox reflu;
-        private System.Windows.Forms.TextBox menosAp;
-        private System.Windows.Forms.TextBox cabe;
-        private System.Windows.Forms.TextBox masAp;
-        private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.TextBox abd;
-        private System.Windows.Forms.TextBox flat;
-        private System.Windows.Forms.RichTextBox enfermedad;
-        private System.Windows.Forms.RichTextBox medicina;
-        private System.Windows.Forms.RichTextBox sup;
-        private System.Windows.Forms.TextBox masti;
-        private System.Windows.Forms.RichTextBox diu;
-        private System.Windows.Forms.RichTextBox lax;
-        private System.Windows.Forms.RichTextBox ciru;
-        private System.Windows.Forms.Button pato;
+        private System.Windows.Forms.TextBox txtDiarrea;
+        private System.Windows.Forms.TextBox txtVomito;
+        private System.Windows.Forms.TextBox txtColitis;
+        private System.Windows.Forms.TextBox txtAnsiedad;
+        private System.Windows.Forms.TextBox txtGastritis;
+        private System.Windows.Forms.TextBox txtNauseas;
+        private System.Windows.Forms.TextBox txtEstrenimiento;
+        private System.Windows.Forms.TextBox txtDisfagia;
+        private System.Windows.Forms.TextBox txtDolorCabeza;
+        private System.Windows.Forms.TextBox txtFlatulencias;
+        private System.Windows.Forms.RichTextBox txtEnfermedad;
+        private System.Windows.Forms.RichTextBox txtMedicamentos;
+        private System.Windows.Forms.RichTextBox txtSuplementos;
+        private System.Windows.Forms.TextBox txtMasticacion;
+        private System.Windows.Forms.RichTextBox txtDiureticos;
+        private System.Windows.Forms.RichTextBox txtLaxantes;
+        private System.Windows.Forms.RichTextBox txtCirugia;
+        private System.Windows.Forms.Button btnAPAgregar;
         private System.Windows.Forms.Button next;
         private System.Windows.Forms.Panel panelDatosGenerales;
+        private System.Windows.Forms.Button btnDatosPersonalesMod;
+        private System.Windows.Forms.Button button2;
     }
 }

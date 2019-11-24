@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Configuration;
 using System.Data.Common;
 using System.Data.SqlClient;
+using CONTROLADOR;
 
 namespace Ingeneria_Software
 {
@@ -19,64 +20,223 @@ namespace Ingeneria_Software
         {
             InitializeComponent();
         }
-        private string connectionString = "server=DESKTOP-RKNO24A; database=DBPAS; integrated security=true";
-        private string provider;
-        //private string connectionString;
-        DbProviderFactory factory;
-        private DbConnection connection;
-        private string nombre;
-        private string energia;
-        private string hidratos;
-        private string grasa;
-        private string proteinas;
+        int id;
         private void Alimentos_Load(object sender, EventArgs e)
         {
-            using (SqlConnection conexion = new SqlConnection(connectionString))
+            var controladorAlimento = new ControladorAlimentos();
+            dataGridView1.DataSource = controladorAlimento.GetTable();
+        }
+
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            try
             {
-                try
+                var controladorAlimentos = new ControladorAlimentos();
+                controladorAlimentos.AgregarAlimento(txtNombre.Text, txtEnergia.Text, txtHidratos.Text, txtGrasa.Text, txtProteinas.Text);
+                if(controladorAlimentos.error != "")
                 {
-                    conexion.Open();
-                    Console.WriteLine("Conexion aceptada");
+                    MessageBox.Show(controladorAlimentos.error);
                 }
-                catch (Exception ex)
+                else
                 {
-                    Console.WriteLine(ex.ToString());
+                    txtGrasa.Text = "";
+                    txtEnergia.Text = "";
+                    txtHidratos.Text = "";
+                    txtNombre.Text = "";
+                    txtProteinas.Text = "";
+            
+                    dataGridView1.DataSource = controladorAlimentos.GetTable();
                 }
+                
+            }
+            catch(Exception ex)
+            {
+                throw new Exception(ex.Message);
             }
         }
 
-        private void btnAgregar_Click(object sender, EventArgs e)
-        {          
-            string query = "INSERT INTO ALIMENTO ([nombreAlimento], [energia], " +
-                "[hidratosCarbono], [grasa], [proteinas]) VALUES(@nombre,@energia," +
-                "@hidratos,@grasa,@proteinas)";
-            using (SqlConnection conexion = new SqlConnection(connectionString))
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            if(id > 0)
             {
-                try
+                DialogResult res = MessageBox.Show("Esta seguro que desea modificar este registro?", "Confirmar", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+                if(res == DialogResult.OK)
                 {
-                    conexion.Open();
-                    using (SqlCommand cmd = new SqlCommand(query, conexion))
+                    try
                     {
-                        cmd.Parameters.Add("@nombre", SqlDbType.VarChar).Value = txtNombre.Text;
-                        cmd.Parameters.Add("@energia", SqlDbType.Int).Value = Convert.ToInt32(txtEnergia.Text);
-                        cmd.Parameters.Add("@hidratos", SqlDbType.Int).Value = Convert.ToInt32(txtHidratos.Text);
-                        cmd.Parameters.Add("@grasa", SqlDbType.Int).Value = Convert.ToInt32(txtGrasa.Text);
-                        cmd.Parameters.Add("@proteinas", SqlDbType.Int).Value = Convert.ToInt32(txtProteinas.Text);
-                        int rowsAdded = cmd.ExecuteNonQuery();
-                        if(rowsAdded > 0)
+                        var controladorAlimentos = new ControladorAlimentos();
+                        controladorAlimentos.ModificarAlimento(txtNombreMod.Text, txtEnergiaMod.Text, txtHidratosMod.Text, txtGrasaMod.Text, txtProteinasMod.Text, id);
+                        if (controladorAlimentos.error != "")
                         {
-                            Console.WriteLine("Filas insertadas");
+                            MessageBox.Show(controladorAlimentos.error);
                         }
                         else
                         {
-                            Console.WriteLine("No se insertaron las filas");
+                            id = 0;
+                            txtEnergiaMod.Text = "";
+                            txtGrasaMod.Text = "";
+                            txtHidratosMod.Text = "";
+                            txtNombreMod.Text = "";
+                            txtProteinasMod.Text = "";
+
+                            dataGridView1.DataSource = controladorAlimentos.GetTable();
                         }
+
+                    }
+                    catch (Exception ex)
+                    {
+                        throw new Exception(ex.Message);
                     }
                 }
-                catch (Exception ex)
+            }
+            else
+            {
+                MessageBox.Show("Seleccione un registro a modificar");
+            }
+            
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            if(id > 0)
+            {
+                DialogResult res = MessageBox.Show("Esta seguro que quiere borrar el registro seleccionado?", "Confirmar", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+                if(res == DialogResult.OK)
                 {
-                    Console.WriteLine(ex.ToString());
+                    try
+                    {
+                        var controladorAlimentos = new ControladorAlimentos();
+                        controladorAlimentos.EliminarAlimento(id);
+                        if(controladorAlimentos.error != "")
+                        {
+                            MessageBox.Show(controladorAlimentos.error);
+                        }
+                        else
+                        {
+                            id = 0;
+                            txtEnergiaMod.Text = "";
+                            txtGrasaMod.Text = "";
+                            txtHidratosMod.Text = "";
+                            txtNombreMod.Text = "";
+                            txtProteinasMod.Text = "";
+                            dataGridView1.DataSource = controladorAlimentos.GetTable();
+                        }
+                    
+                    }
+                    catch (Exception ex)
+                    {
+                        throw new Exception(ex.Message);
+                    }
                 }
+            }
+            else
+            {
+                MessageBox.Show("Seleccione un registro a eliminar");
+            }
+        }
+
+        private void dataGridView1_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            try
+            {
+                string str = dataGridView1.Rows[dataGridView1.SelectedRows[0].Index].Cells[0].Value.ToString();
+                var controladorAlimento = new ControladorAlimentos();
+                id = controladorAlimento.ObtenerId(str);
+                txtNombreMod.Text = controladorAlimento.ObtenerNombre(id);
+                txtEnergiaMod.Text = controladorAlimento.ObtenerEnergia(id).ToString();
+                txtHidratosMod.Text = controladorAlimento.ObtenerHidratos(id).ToString();
+                txtGrasaMod.Text = controladorAlimento.ObtenerGrasa(id).ToString();
+                txtProteinasMod.Text = controladorAlimento.ObtenerProteinas(id).ToString();
+            }
+            catch(Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+        private void txtNombre_KeyDown(object sender, KeyEventArgs e)
+        {
+            
+        }
+
+        private void txtNombre_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsLetterOrDigit(e.KeyChar) && !char.IsControl(e.KeyChar) && !char.IsWhiteSpace(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtEnergia_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtHidratos_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtGrasa_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtProteinas_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtNombreMod_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsLetterOrDigit(e.KeyChar) && !char.IsControl(e.KeyChar) && !char.IsWhiteSpace(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtEnergiaMod_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtHidratosMod_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtGrasaMod_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtProteinasMod_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
             }
         }
     }

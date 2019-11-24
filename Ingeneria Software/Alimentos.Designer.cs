@@ -57,15 +57,24 @@
             this.Nuevo = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.btnEliminar = new System.Windows.Forms.Button();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // txtHidratos
             // 
-            this.txtHidratos.Location = new System.Drawing.Point(145, 181);
+            this.txtHidratos.Location = new System.Drawing.Point(128, 181);
             this.txtHidratos.Name = "txtHidratos";
             this.txtHidratos.Size = new System.Drawing.Size(115, 20);
             this.txtHidratos.TabIndex = 13;
+            this.txtHidratos.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtHidratos_KeyPress);
             // 
             // label3
             // 
@@ -103,24 +112,29 @@
             // 
             // txtEnergia
             // 
-            this.txtEnergia.Location = new System.Drawing.Point(145, 134);
+            this.txtEnergia.Location = new System.Drawing.Point(128, 134);
             this.txtEnergia.Name = "txtEnergia";
             this.txtEnergia.Size = new System.Drawing.Size(115, 20);
             this.txtEnergia.TabIndex = 9;
+            this.txtEnergia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtEnergia_KeyPress);
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(145, 94);
+            this.txtNombre.Location = new System.Drawing.Point(128, 94);
+            this.txtNombre.MaxLength = 50;
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(115, 20);
             this.txtNombre.TabIndex = 7;
+            this.txtNombre.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtNombre_KeyDown);
+            this.txtNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombre_KeyPress);
             // 
             // txtProteinas
             // 
-            this.txtProteinas.Location = new System.Drawing.Point(145, 264);
+            this.txtProteinas.Location = new System.Drawing.Point(128, 264);
             this.txtProteinas.Name = "txtProteinas";
             this.txtProteinas.Size = new System.Drawing.Size(115, 20);
             this.txtProteinas.TabIndex = 17;
+            this.txtProteinas.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtProteinas_KeyPress);
             // 
             // label4
             // 
@@ -135,10 +149,11 @@
             // 
             // txtGrasa
             // 
-            this.txtGrasa.Location = new System.Drawing.Point(145, 224);
+            this.txtGrasa.Location = new System.Drawing.Point(128, 224);
             this.txtGrasa.Name = "txtGrasa";
             this.txtGrasa.Size = new System.Drawing.Size(115, 20);
             this.txtGrasa.TabIndex = 14;
+            this.txtGrasa.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtGrasa_KeyPress);
             // 
             // label6
             // 
@@ -169,7 +184,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.DarkRed;
-            this.panel1.Location = new System.Drawing.Point(283, 12);
+            this.panel1.Location = new System.Drawing.Point(303, 12);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(10, 520);
             this.panel1.TabIndex = 20;
@@ -198,6 +213,7 @@
             this.btnModificar.TabIndex = 32;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = false;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // label8
             // 
@@ -216,6 +232,7 @@
             this.txtProteinasMod.Name = "txtProteinasMod";
             this.txtProteinasMod.Size = new System.Drawing.Size(115, 20);
             this.txtProteinasMod.TabIndex = 30;
+            this.txtProteinasMod.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtProteinasMod_KeyPress);
             // 
             // label9
             // 
@@ -245,6 +262,7 @@
             this.txtGrasaMod.Name = "txtGrasaMod";
             this.txtGrasaMod.Size = new System.Drawing.Size(115, 20);
             this.txtGrasaMod.TabIndex = 27;
+            this.txtGrasaMod.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtGrasaMod_KeyPress);
             // 
             // txtHidratosMod
             // 
@@ -252,6 +270,7 @@
             this.txtHidratosMod.Name = "txtHidratosMod";
             this.txtHidratosMod.Size = new System.Drawing.Size(115, 20);
             this.txtHidratosMod.TabIndex = 26;
+            this.txtHidratosMod.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtHidratosMod_KeyPress);
             // 
             // label11
             // 
@@ -293,13 +312,16 @@
             this.txtEnergiaMod.Name = "txtEnergiaMod";
             this.txtEnergiaMod.Size = new System.Drawing.Size(114, 20);
             this.txtEnergiaMod.TabIndex = 22;
+            this.txtEnergiaMod.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtEnergiaMod_KeyPress);
             // 
             // txtNombreMod
             // 
             this.txtNombreMod.Location = new System.Drawing.Point(451, 323);
+            this.txtNombreMod.MaxLength = 50;
             this.txtNombreMod.Name = "txtNombreMod";
             this.txtNombreMod.Size = new System.Drawing.Size(115, 20);
             this.txtNombreMod.TabIndex = 21;
+            this.txtNombreMod.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombreMod_KeyPress);
             // 
             // dataGridView1
             // 
@@ -308,6 +330,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(542, 210);
             this.dataGridView1.TabIndex = 33;
+            this.dataGridView1.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_RowHeaderMouseClick);
             // 
             // Nuevo
             // 
@@ -344,6 +367,103 @@
             this.btnEliminar.TabIndex = 36;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.Transparent;
+            this.label14.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.DarkRed;
+            this.label14.Location = new System.Drawing.Point(249, 138);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(31, 12);
+            this.label14.TabIndex = 37;
+            this.label14.Text = "(Cal)";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.BackColor = System.Drawing.Color.Transparent;
+            this.label15.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.DarkRed;
+            this.label15.Location = new System.Drawing.Point(249, 185);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(27, 12);
+            this.label15.TabIndex = 38;
+            this.label15.Text = "(Gr)";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.BackColor = System.Drawing.Color.Transparent;
+            this.label16.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.DarkRed;
+            this.label16.Location = new System.Drawing.Point(249, 228);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(27, 12);
+            this.label16.TabIndex = 39;
+            this.label16.Text = "(Gr)";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.BackColor = System.Drawing.Color.Transparent;
+            this.label17.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.DarkRed;
+            this.label17.Location = new System.Drawing.Point(249, 268);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(27, 12);
+            this.label17.TabIndex = 40;
+            this.label17.Text = "(Gr)";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.BackColor = System.Drawing.Color.Transparent;
+            this.label18.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.Color.DarkRed;
+            this.label18.Location = new System.Drawing.Point(571, 364);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(31, 12);
+            this.label18.TabIndex = 41;
+            this.label18.Text = "(Cal)";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.BackColor = System.Drawing.Color.Transparent;
+            this.label20.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.Color.DarkRed;
+            this.label20.Location = new System.Drawing.Point(571, 406);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(27, 12);
+            this.label20.TabIndex = 43;
+            this.label20.Text = "(Gr)";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.BackColor = System.Drawing.Color.Transparent;
+            this.label21.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.ForeColor = System.Drawing.Color.DarkRed;
+            this.label21.Location = new System.Drawing.Point(572, 453);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(27, 12);
+            this.label21.TabIndex = 44;
+            this.label21.Text = "(Gr)";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.BackColor = System.Drawing.Color.Transparent;
+            this.label19.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.ForeColor = System.Drawing.Color.DarkRed;
+            this.label19.Location = new System.Drawing.Point(572, 489);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(27, 12);
+            this.label19.TabIndex = 45;
+            this.label19.Text = "(Gr)";
             // 
             // Alimentos
             // 
@@ -351,6 +471,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(884, 544);
+            this.Controls.Add(this.label19);
+            this.Controls.Add(this.label21);
+            this.Controls.Add(this.label20);
+            this.Controls.Add(this.label18);
+            this.Controls.Add(this.label17);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.label14);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.Nuevo);
@@ -421,5 +549,13 @@
         private System.Windows.Forms.Label Nuevo;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label19;
     }
 }
