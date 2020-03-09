@@ -11,6 +11,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
+    /// <summary>
+    /// En esta pantalla se crea el plan alimenticio.
+    /// </summary>
     public partial class Plan : Form
     {
         public Plan()
@@ -30,7 +33,7 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MenuPpal mp = new MenuPpal();
+            MenuPpal mp = new MenuPpal(1);
             this.Close();
             mp.Show();
         }

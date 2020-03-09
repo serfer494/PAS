@@ -14,6 +14,9 @@ using CONTROLADOR;
 
 namespace Ingeneria_Software
 {
+    /// <summary>
+    /// En la pantalla Alimentos se encuentra la interfaz para agregar alimentos al sistema.
+    /// </summary>
     public partial class Alimentos : Form
     {
         public Alimentos()
@@ -40,13 +43,10 @@ namespace Ingeneria_Software
                 }
                 else
                 {
-                    txtGrasa.Text = "";
-                    txtEnergia.Text = "";
-                    txtHidratos.Text = "";
-                    txtNombre.Text = "";
-                    txtProteinas.Text = "";
-            
+                    
                     dataGridView1.DataSource = controladorAlimentos.GetTable();
+                    MessageBox.Show("Alimento agregado");
+                    Limpiar();
                 }
                 
             }
@@ -66,21 +66,19 @@ namespace Ingeneria_Software
                     try
                     {
                         var controladorAlimentos = new ControladorAlimentos();
-                        controladorAlimentos.ModificarAlimento(txtNombreMod.Text, txtEnergiaMod.Text, txtHidratosMod.Text, txtGrasaMod.Text, txtProteinasMod.Text, id);
+                        controladorAlimentos.ModificarAlimento(txtNombre.Text, txtEnergia.Text, txtHidratos.Text, txtGrasa.Text, txtProteinas.Text, id);
                         if (controladorAlimentos.error != "")
                         {
                             MessageBox.Show(controladorAlimentos.error);
                         }
                         else
                         {
-                            id = 0;
-                            txtEnergiaMod.Text = "";
-                            txtGrasaMod.Text = "";
-                            txtHidratosMod.Text = "";
-                            txtNombreMod.Text = "";
-                            txtProteinasMod.Text = "";
-
+                            
+                            btnEliminar.Visible = false;
+                            btnModificar.Visible = false;
                             dataGridView1.DataSource = controladorAlimentos.GetTable();
+                            MessageBox.Show("Alimento modificado exitosamente");
+                            Limpiar();
                         }
 
                     }
@@ -114,13 +112,12 @@ namespace Ingeneria_Software
                         }
                         else
                         {
-                            id = 0;
-                            txtEnergiaMod.Text = "";
-                            txtGrasaMod.Text = "";
-                            txtHidratosMod.Text = "";
-                            txtNombreMod.Text = "";
-                            txtProteinasMod.Text = "";
+                            
+                            btnEliminar.Visible = false;
+                            btnModificar.Visible = false;
                             dataGridView1.DataSource = controladorAlimentos.GetTable();
+                            MessageBox.Show("Alimento eliminado exitosamente");
+                            Limpiar();
                         }
                     
                     }
@@ -136,6 +133,7 @@ namespace Ingeneria_Software
             }
         }
 
+
         private void dataGridView1_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             try
@@ -143,11 +141,18 @@ namespace Ingeneria_Software
                 string str = dataGridView1.Rows[dataGridView1.SelectedRows[0].Index].Cells[0].Value.ToString();
                 var controladorAlimento = new ControladorAlimentos();
                 id = controladorAlimento.ObtenerId(str);
-                txtNombreMod.Text = controladorAlimento.ObtenerNombre(id);
-                txtEnergiaMod.Text = controladorAlimento.ObtenerEnergia(id).ToString();
-                txtHidratosMod.Text = controladorAlimento.ObtenerHidratos(id).ToString();
-                txtGrasaMod.Text = controladorAlimento.ObtenerGrasa(id).ToString();
-                txtProteinasMod.Text = controladorAlimento.ObtenerProteinas(id).ToString();
+                if(id > 0)
+                {
+                    Rellenar();
+                    btnEliminar.Visible = true;
+                    btnModificar.Visible = true;
+                }
+                else
+                {
+                    Limpiar();
+                    btnEliminar.Visible = false;
+                    btnModificar.Visible = false;
+                }
             }
             catch(Exception ex)
             {
@@ -160,14 +165,24 @@ namespace Ingeneria_Software
             
         }
 
+        /// <summary>
+        /// Este metodo solo permite que se introduzcan letras y espacios al textbox.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void txtNombre_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsLetterOrDigit(e.KeyChar) && !char.IsControl(e.KeyChar) && !char.IsWhiteSpace(e.KeyChar))
+            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar) && !char.IsWhiteSpace(e.KeyChar))
             {
                 e.Handled = true;
             }
         }
 
+        /// <summary>
+        /// Este metodo solo permite que se introduzcan digitos al textbox.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void txtEnergia_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
@@ -176,6 +191,11 @@ namespace Ingeneria_Software
             }
         }
 
+        /// <summary>
+        /// Este metodo solo permite que se introduzcan digitos al textbox.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void txtHidratos_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
@@ -184,6 +204,11 @@ namespace Ingeneria_Software
             }
         }
 
+        /// <summary>
+        /// Este metodo solo permite que se introduzcan digitos al textbox.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void txtGrasa_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
@@ -192,6 +217,11 @@ namespace Ingeneria_Software
             }
         }
 
+        /// <summary>
+        /// Este metodo solo permite que se introduzcan digitos al textbox.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void txtProteinas_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
@@ -200,6 +230,11 @@ namespace Ingeneria_Software
             }
         }
 
+        /// <summary>
+        /// Este metodo solo permite que se introduzcan letras o espacios al textbox.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void txtNombreMod_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsLetterOrDigit(e.KeyChar) && !char.IsControl(e.KeyChar) && !char.IsWhiteSpace(e.KeyChar))
@@ -208,6 +243,11 @@ namespace Ingeneria_Software
             }
         }
 
+        /// <summary>
+        /// Este metodo solo permite que se introduzcan digitos al textbox.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void txtEnergiaMod_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
@@ -216,6 +256,11 @@ namespace Ingeneria_Software
             }
         }
 
+        /// <summary>
+        /// Este metodo solo permite que se introduzcan digitos al textbox.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void txtHidratosMod_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
@@ -224,6 +269,11 @@ namespace Ingeneria_Software
             }
         }
 
+        /// <summary>
+        /// Este metodo solo permite que se introduzcan digitos al textbox.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void txtGrasaMod_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
@@ -232,12 +282,43 @@ namespace Ingeneria_Software
             }
         }
 
+        /// <summary>
+        /// Este metodo solo permite que se introduzcan digitos al textbox.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void txtProteinasMod_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
             {
                 e.Handled = true;
             }
+        }
+
+        /// <summary>
+        /// Este metodo limpia los campos.
+        /// </summary>
+        private void Limpiar()
+        {
+            id = 0;
+            txtEnergia.Text = "";
+            txtGrasa.Text = "";
+            txtHidratos.Text = "";
+            txtNombre.Text = "";
+            txtProteinas.Text = "";
+        }
+
+        /// <summary>
+        /// Rellena los campos con el item seleccionado.
+        /// </summary>
+        private void Rellenar()
+        {
+            var controladorCitas = new ControladorCitas();
+            txtNombre.Text = controladorCitas.Obtener(id, "nombreAlimento", "ALIMENTO", "idAlimento");
+            txtEnergia.Text = controladorCitas.Obtener(id, "energia", "ALIMENTO", "idAlimento");
+            txtGrasa.Text = controladorCitas.Obtener(id, "grasa", "ALIMENTO", "idAlimento");
+            txtHidratos.Text = controladorCitas.Obtener(id, "hidratosCarbono", "ALIMENTO", "idAlimento");
+            txtProteinas.Text = controladorCitas.Obtener(id, "proteinas", "ALIMENTO", "idAlimento");
         }
     }
 }

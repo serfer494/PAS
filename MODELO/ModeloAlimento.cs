@@ -8,15 +8,22 @@ using System.Threading.Tasks;
 
 namespace MODELO
 {
+    /// <summary>
+    /// El modelo "Alimento" se encarga de realizar el CRUD para los registros de la tabla
+    /// "Alimento" de la base de datos "BDPAS" destinada al sistema.
+    /// </summary>
     public class ModeloAlimento
     {
-        private string connectionString = "server=DESKTOP-RKNO24A; database=DBPAS; integrated security=true";
+        public string error = "";
+        //Proxy
+        
+        //facade
         public void AgregarAlimento(string nombre, string energia, string hidratos, string grasa, string proteinas)
         {
             string query = "INSERT INTO ALIMENTO ([nombreAlimento], [energia], " +
                 "[hidratosCarbono], [grasa], [proteinas]) VALUES(@nombre,@energia," +
                 "@hidratos,@grasa,@proteinas)";
-            using (SqlConnection conexion = new SqlConnection(connectionString))
+            using (SqlConnection conexion = new SqlConnection(Conexion.ObtenerConexion()))
             {
                 try
                 {
@@ -45,13 +52,13 @@ namespace MODELO
                 }
             }
         }
-
+        //Singleton
         public DataTable GetTable()
         {
             DataTable tabla = new DataTable();
             string query = "SELECT nombreAlimento AS 'Nombre', hidratosCarbono AS 'Hidratos de carbono', energia AS 'Energia', " +
                 "grasa AS 'Grasa', proteinas AS 'Proteinas' FROM ALIMENTO";
-            using (SqlConnection conexion = new SqlConnection(connectionString))
+            using (SqlConnection conexion = new SqlConnection(Conexion.ObtenerConexion()))
             {
                 try
                 {
@@ -69,13 +76,13 @@ namespace MODELO
             }
             return tabla;
         }
-
+        //facade
         public void ModificarAlimento(string nombre, string energia, string hidratos, string grasa, string proteinas, int id)
         {
             string query = "UPDATE ALIMENTO SET hidratosCarbono=@hidratos , energia=@energia , nombreAlimento=@nombre , " +
                 "grasa=@grasa , proteinas=@proteinas WHERE idAlimento=@id";
 
-            using (SqlConnection conexion = new SqlConnection(connectionString))
+            using (SqlConnection conexion = new SqlConnection(Conexion.ObtenerConexion()))
             {
                 try
                 {
@@ -97,12 +104,12 @@ namespace MODELO
                 }
             }
         }
-
+        //facade
         public void EliminarAlimento(int id)
         {
             string query = "DELETE FROM ALIMENTO WHERE idAlimento=@id";
 
-            using (SqlConnection conexion = new SqlConnection(connectionString))
+            using (SqlConnection conexion = new SqlConnection(Conexion.ObtenerConexion()))
             {
                 try
                 {
@@ -115,6 +122,8 @@ namespace MODELO
                 }
                 catch (Exception ex)
                 {
+                    error = "No se puede eliminar alimento porque esta siendo usando por alguna comida";
+                    return;
                     Console.WriteLine("Error: " + ex.ToString());
                 }
             }
@@ -123,7 +132,7 @@ namespace MODELO
         public int ObtenerId(string str)
         {
             string query = "SELECT idAlimento FROM ALIMENTO WHERE nombreAlimento=@nombre";
-            using (SqlConnection conexion = new SqlConnection(connectionString))
+            using (SqlConnection conexion = new SqlConnection(Conexion.ObtenerConexion()))
             {
                 try
                 {
@@ -145,7 +154,7 @@ namespace MODELO
         public string ObtenerNombre(int id)
         {
             string query = "SELECT nombreAlimento FROM ALIMENTO WHERE idAlimento=@id";
-            using (SqlConnection conexion = new SqlConnection(connectionString))
+            using (SqlConnection conexion = new SqlConnection(Conexion.ObtenerConexion()))
             {
                 try
                 {
@@ -167,7 +176,7 @@ namespace MODELO
         public int ObtenerEnergia(int id)
         {
             string query = "SELECT energia FROM ALIMENTO WHERE idAlimento=@id";
-            using (SqlConnection conexion = new SqlConnection(connectionString))
+            using (SqlConnection conexion = new SqlConnection(Conexion.ObtenerConexion()))
             {
                 try
                 {
@@ -189,7 +198,7 @@ namespace MODELO
         public int ObtenerHidratos(int id)
         {
             string query = "SELECT hidratosCarbono FROM ALIMENTO WHERE idAlimento=@id";
-            using (SqlConnection conexion = new SqlConnection(connectionString))
+            using (SqlConnection conexion = new SqlConnection(Conexion.ObtenerConexion()))
             {
                 try
                 {
@@ -211,7 +220,7 @@ namespace MODELO
         public int ObtenerGrasa(int id)
         {
             string query = "SELECT grasa FROM ALIMENTO WHERE idAlimento=@id";
-            using (SqlConnection conexion = new SqlConnection(connectionString))
+            using (SqlConnection conexion = new SqlConnection(Conexion.ObtenerConexion()))
             {
                 try
                 {
@@ -233,7 +242,7 @@ namespace MODELO
         public int ObtenerProteinas(int id)
         {
             string query = "SELECT proteinas FROM ALIMENTO WHERE idAlimento=@id";
-            using (SqlConnection conexion = new SqlConnection(connectionString))
+            using (SqlConnection conexion = new SqlConnection(Conexion.ObtenerConexion()))
             {
                 try
                 {

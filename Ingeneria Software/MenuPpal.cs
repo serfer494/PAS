@@ -9,19 +9,43 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WindowsFormsApp1;
+using MODELO;
 
 namespace Ingeneria_Software
 {
+    //Strategy
+    /// <summary>
+    /// En la pantalla MenuPpal esta la interfaz principal del sistema, de donde se podra acceder a los
+    ///  diferentes modulos del sistema.
+    /// </summary>
     public partial class MenuPpal : Form
     {
-        public MenuPpal()
+        public MenuPpal(int tipo)
         {
             
             InitializeComponent();
             panel1.Visible = false;
-
+            this.tipo = tipo;
+            if(tipo == 2)
+            {
+                alimentos.Visible = false;
+                Comidas.Visible = false;
+                label1.Visible = false;
+                cbxCliente.Visible = false;
+                btnEliminar.Visible = false;
+                btnSeleccionar.Visible = false;
+                button2.Visible = false;
+            }
         }
-        private string connectionString = "server=DESKTOP-RKNO24A; database=DBPAS; integrated security=true";
+
+        public MenuPpal()
+        {
+
+            InitializeComponent();
+            panel1.Visible = false;
+        }
+
+        int tipo;
         private int id;
 
         private void AbrirFormHija(object form)
@@ -111,7 +135,7 @@ namespace Ingeneria_Software
 
         private void MenuPpal_Load(object sender, EventArgs e)
         {
-            using (SqlConnection conexion = new SqlConnection(connectionString))
+            using (SqlConnection conexion = new SqlConnection(Conexion.ObtenerConexion()))
             {
                 try
                 {
@@ -138,7 +162,7 @@ namespace Ingeneria_Software
             cbxCliente.Text = "";
             cbxCliente.Items.Add("Nuevo cliente");
             string query = "SELECT nombrePaciente FROM PACIENTE";
-            using (SqlConnection conexion = new SqlConnection(connectionString))
+            using (SqlConnection conexion = new SqlConnection(Conexion.ObtenerConexion()))
             {
                 try
                 {
@@ -161,10 +185,11 @@ namespace Ingeneria_Software
 
         private void cbxCliente_SelectedIndexChanged(object sender, EventArgs e)
         {
+            panel1.Visible = false;
             string str = cbxCliente.SelectedItem.ToString();
             label2.Text = str;
             string query = "SELECT idPaciente FROM PACIENTE WHERE nombrePaciente=@nombre";
-            using (SqlConnection conexion = new SqlConnection(connectionString))
+            using (SqlConnection conexion = new SqlConnection(Conexion.ObtenerConexion()))
             {
                 try
                 {
@@ -195,115 +220,131 @@ namespace Ingeneria_Software
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            string query = "DELETE FROM DATOSCT WHERE idPaciente=@id";
-
-            using (SqlConnection conexion = new SqlConnection(connectionString))
+            if(cbxCliente.SelectedIndex > 0)
             {
-                try
+                DialogResult res = MessageBox.Show("Esta seguro que desea eliminar este cliente?", "Confirmar", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+                if (res == DialogResult.OK)
                 {
-                    conexion.Open();
-                    using (SqlCommand cmd = new SqlCommand(query, conexion))
-                    {
-                        cmd.Parameters.Add("@id", SqlDbType.Int).Value = id;
-                        cmd.ExecuteNonQuery();
-                    }
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine("Error: " + ex.ToString());
-                }
-            }
+                    string query = "DELETE FROM DATOSCT WHERE idPaciente=@id";
 
-            query = "DELETE FROM DATOSGNANTENOPATO WHERE idpaciente=@id";
-            using (SqlConnection conexion = new SqlConnection(connectionString))
-            {
-                try
-                {
-                    conexion.Open();
-                    using (SqlCommand cmd = new SqlCommand(query, conexion))
+                    using (SqlConnection conexion = new SqlConnection(Conexion.ObtenerConexion()))
                     {
-                        cmd.Parameters.Add("@id", SqlDbType.Int).Value = id;
-                        cmd.ExecuteNonQuery();
+                        try
+                        {
+                            conexion.Open();
+                            using (SqlCommand cmd = new SqlCommand(query, conexion))
+                            {
+                                cmd.Parameters.Add("@id", SqlDbType.Int).Value = id;
+                                cmd.ExecuteNonQuery();
+                            }
+                        }
+                        catch (Exception ex)
+                        {
+                            Console.WriteLine("Error: " + ex.ToString());
+                        }
                     }
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine("Error: " + ex.ToString());
-                }
-            }
 
-            query = "DELETE FROM DATOSGNANTEPATO WHERE idPaciente=@id";
-            using (SqlConnection conexion = new SqlConnection(connectionString))
-            {
-                try
-                {
-                    conexion.Open();
-                    using (SqlCommand cmd = new SqlCommand(query, conexion))
+                    query = "DELETE FROM DATOSGNANTENOPATO WHERE idpaciente=@id";
+                    using (SqlConnection conexion = new SqlConnection(Conexion.ObtenerConexion()))
                     {
-                        cmd.Parameters.Add("@id", SqlDbType.Int).Value = id;
-                        cmd.ExecuteNonQuery();
+                        try
+                        {
+                            conexion.Open();
+                            using (SqlCommand cmd = new SqlCommand(query, conexion))
+                            {
+                                cmd.Parameters.Add("@id", SqlDbType.Int).Value = id;
+                                cmd.ExecuteNonQuery();
+                            }
+                        }
+                        catch (Exception ex)
+                        {
+                            Console.WriteLine("Error: " + ex.ToString());
+                        }
                     }
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine("Error: " + ex.ToString());
-                }
-            }
 
-            query = "DELETE FROM DATOSGNINDBIO WHERE idPaciente=@id";
-            using (SqlConnection conexion = new SqlConnection(connectionString))
-            {
-                try
-                {
-                    conexion.Open();
-                    using (SqlCommand cmd = new SqlCommand(query, conexion))
+                    query = "DELETE FROM DATOSGNANTEPATO WHERE idPaciente=@id";
+                    using (SqlConnection conexion = new SqlConnection(Conexion.ObtenerConexion()))
                     {
-                        cmd.Parameters.Add("@id", SqlDbType.Int).Value = id;
-                        cmd.ExecuteNonQuery();
+                        try
+                        {
+                            conexion.Open();
+                            using (SqlCommand cmd = new SqlCommand(query, conexion))
+                            {
+                                cmd.Parameters.Add("@id", SqlDbType.Int).Value = id;
+                                cmd.ExecuteNonQuery();
+                            }
+                        }
+                        catch (Exception ex)
+                        {
+                            Console.WriteLine("Error: " + ex.ToString());
+                        }
                     }
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine("Error: " + ex.ToString());
-                }
-            }
 
-            query = "DELETE FROM DATOSGNINDDIE WHERE idPaciente=@id";
-            using (SqlConnection conexion = new SqlConnection(connectionString))
-            {
-                try
-                {
-                    conexion.Open();
-                    using (SqlCommand cmd = new SqlCommand(query, conexion))
+                    query = "DELETE FROM DATOSGNINDBIO WHERE idPaciente=@id";
+                    using (SqlConnection conexion = new SqlConnection(Conexion.ObtenerConexion()))
                     {
-                        cmd.Parameters.Add("@id", SqlDbType.Int).Value = id;
-                        cmd.ExecuteNonQuery();
+                        try
+                        {
+                            conexion.Open();
+                            using (SqlCommand cmd = new SqlCommand(query, conexion))
+                            {
+                                cmd.Parameters.Add("@id", SqlDbType.Int).Value = id;
+                                cmd.ExecuteNonQuery();
+                            }
+                        }
+                        catch (Exception ex)
+                        {
+                            Console.WriteLine("Error: " + ex.ToString());
+                        }
                     }
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine("Error: " + ex.ToString());
-                }
-            }
 
-            query = "DELETE FROM PACIENTE WHERE idPaciente=@id";
-            using (SqlConnection conexion = new SqlConnection(connectionString))
-            {
-                try
-                {
-                    conexion.Open();
-                    using (SqlCommand cmd = new SqlCommand(query, conexion))
+                    query = "DELETE FROM DATOSGNINDDIE WHERE idPaciente=@id";
+                    using (SqlConnection conexion = new SqlConnection(Conexion.ObtenerConexion()))
                     {
-                        cmd.Parameters.Add("@id", SqlDbType.Int).Value = id;
-                        cmd.ExecuteNonQuery();
+                        try
+                        {
+                            conexion.Open();
+                            using (SqlCommand cmd = new SqlCommand(query, conexion))
+                            {
+                                cmd.Parameters.Add("@id", SqlDbType.Int).Value = id;
+                                cmd.ExecuteNonQuery();
+                            }
+                        }
+                        catch (Exception ex)
+                        {
+                            Console.WriteLine("Error: " + ex.ToString());
+                        }
                     }
+
+                    query = "DELETE FROM PACIENTE WHERE idPaciente=@id";
+                    using (SqlConnection conexion = new SqlConnection(Conexion.ObtenerConexion()))
+                    {
+                        try
+                        {
+                            conexion.Open();
+                            using (SqlCommand cmd = new SqlCommand(query, conexion))
+                            {
+                                cmd.Parameters.Add("@id", SqlDbType.Int).Value = id;
+                                cmd.ExecuteNonQuery();
+                            }
+                        }
+                        catch (Exception ex)
+                        {
+                            Console.WriteLine("Error: " + ex.ToString());
+                        }
+                    }
+                    FillClients();
+                    cbxCliente.SelectedIndex = 0;
+                    MessageBox.Show("Cliente eliminado");
+                    AbrirFormHija(new Form1());
                 }
-                catch (Exception ex)
-                {
-                    Console.WriteLine("Error: " + ex.ToString());
-                }
+                    
             }
-            FillClients();
+            else
+            {
+                MessageBox.Show("Seleccione un cliente");
+                cbxCliente.SelectedIndex = 0;
+            }
         }
     }
 }

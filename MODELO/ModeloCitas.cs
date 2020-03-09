@@ -8,15 +8,19 @@ using System.Threading.Tasks;
 
 namespace MODELO
 {
+    /// <summary>
+    /// El modelo "Citas" se encarga de realizar el CRUD para los registros de la tabla
+    /// "Agenda" de la base de datos "BDPAS" destinada al sistema.
+    /// </summary>
     public class ModeloCitas
     {
-        private string connectionString = "server=DESKTOP-RKNO24A; database=DBPAS; integrated security=true";
+        //Proxy
         public DateTime[] GetDates()
         {
             List<DateTime> list = new List<DateTime>();
             DateTime[] VacationDates = { };
             string query = "SELECT fechaAgenda FROM AGENDA";
-            using (SqlConnection conexion = new SqlConnection(connectionString))
+            using (SqlConnection conexion = new SqlConnection(Conexion.ObtenerConexion()))
             {
                 try
                 {
@@ -44,13 +48,13 @@ namespace MODELO
                 }
             }
         }
-
+        //Singleton
         public DataTable GetTable(DateTime date)
         {
             DataTable tabla = new DataTable();
             string query = "SELECT nombre AS 'Nombre', apellido AS 'Apellido', telefono AS 'Telefono', " +
                 "hora AS 'Hora' FROM AGENDA WHERE fechaAgenda=@fecha";
-            using (SqlConnection conexion = new SqlConnection(connectionString))
+            using (SqlConnection conexion = new SqlConnection(Conexion.ObtenerConexion()))
             {
                 try
                 {
@@ -69,13 +73,13 @@ namespace MODELO
             }
             return tabla;
         }
-
+        //facade
         public void AgregarCita(DateTime fecha, string nombre, string apellido, string telefono, string hora)
         {
             string query = "INSERT INTO AGENDA ([fechaAgenda], [nombre], " +
                 "[apellido], [telefono], [hora]) VALUES(@fecha,@nombre," +
                 "@apellido,@telefono,@hora)";
-            using (SqlConnection conexion = new SqlConnection(connectionString))
+            using (SqlConnection conexion = new SqlConnection(Conexion.ObtenerConexion()))
             {
                 try
                 {
@@ -104,12 +108,12 @@ namespace MODELO
                 }
             }
         }
-
+        //facade
         public void ModificarCita(DateTime fecha, string nombre, string apellido, string telefono, string hora, int id)
         {
             string query = "UPDATE AGENDA SET nombre=@nombre , apellido=@apellido , telefono=@telefono , " +
                 "hora=@hora , fechaAgenda=@nuevaFecha WHERE idAgenda=@id";
-            using (SqlConnection conexion = new SqlConnection(connectionString))
+            using (SqlConnection conexion = new SqlConnection(Conexion.ObtenerConexion()))
             {
                 try
                 {
@@ -136,7 +140,7 @@ namespace MODELO
         {
             string query = "SELECT idAgenda FROM AGENDA WHERE hora=@hora";
             string hora = str;
-            using (SqlConnection conexion = new SqlConnection(connectionString))
+            using (SqlConnection conexion = new SqlConnection(Conexion.ObtenerConexion()))
             {
                 try
                 {
@@ -155,11 +159,13 @@ namespace MODELO
             }
         }
 
+        
+        //facade
         public void EliminarCita(int id)
         {
             string query = "DELETE FROM AGENDA WHERE idAgenda=@id";
 
-            using (SqlConnection conexion = new SqlConnection(connectionString))
+            using (SqlConnection conexion = new SqlConnection(Conexion.ObtenerConexion()))
             {
                 try
                 {

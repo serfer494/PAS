@@ -11,6 +11,10 @@ using CONTROLADOR;
 
 namespace Ingeneria_Software
 {
+    /// <summary>
+    /// En la pantalla DatosGenerales se pueden guardar los datos generales del pacientes y antecedentes
+    /// patologicos
+    /// </summary>
     public partial class DatosGenerales : Form
     {
         public DatosGenerales(int id)
@@ -76,12 +80,367 @@ namespace Ingeneria_Software
         {
             var controladorDatosGenerales = new ControladorDatosGenerales();
             controladorDatosGenerales.AgregarAntecedentesPatologicos(txtDiarrea.Text, txtFlatulencias.Text, txtVomito.Text, txtMasticacion.Text, txtColitis.Text, txtEstrenimiento.Text, txtAnsiedad.Text, txtDolorCabeza.Text, txtGastritis.Text, txtDisfagia.Text, txtNauseas.Text, txtEnfermedad.Text, txtMedicamentos.Text, txtSuplementos.Text, txtDiureticos.Text, txtLaxantes.Text, txtCirugia.Text, id);
+            if(controladorDatosGenerales.error != "")
+            {
+                MessageBox.Show(controladorDatosGenerales.error);
+            }
+            else
+            {
+                MessageBox.Show("Datos agregados exitosamente");
+            }
         }
 
         private void btnDatosPersonalesMod_Click(object sender, EventArgs e)
         {
             var controladorDatosGenerales = new ControladorDatosGenerales();
             controladorDatosGenerales.ModificarDatosGenerales(txtNombre.Text, txtGenero.Text, txtEstadoCivil.Text, dtpFechaNac.Value, txtEscolaridad.Text, txtOcupacion.Text, txtTelefono.Text, txtEmail.Text, rtxtMotivos.Text, id);
+            if(controladorDatosGenerales.error != "")
+            {
+                MessageBox.Show(controladorDatosGenerales.error);
+            }
+            else
+            {
+                MessageBox.Show("Usuario modificado exitosamente");
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            var controladorDatosGenerales = new ControladorDatosGenerales();
+            controladorDatosGenerales.ModificarAntecedentesPatologicos(txtDiarrea.Text, txtFlatulencias.Text, txtVomito.Text, txtMasticacion.Text, txtColitis.Text, txtEstrenimiento.Text, txtAnsiedad.Text, txtDolorCabeza.Text, txtGastritis.Text, txtDisfagia.Text, txtNauseas.Text, txtEnfermedad.Text, txtMedicamentos.Text, txtSuplementos.Text, txtDiureticos.Text, txtLaxantes.Text, txtCirugia.Text, id);
+            if (controladorDatosGenerales.error != "")
+            {
+                MessageBox.Show(controladorDatosGenerales.error);
+            }
+            else
+            {
+                MessageBox.Show("Datos modificados exitosamente");
+            }
+        }
+
+        /// <summary>
+        /// Permite que se introduzcan solo letras y espacios.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void txtNombre_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar) && !char.IsWhiteSpace(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        /// <summary>
+        /// Permite que se introduzcan solo letras.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void txtGenero_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar) )
+            {
+                e.Handled = true;
+            }
+        }
+
+        /// <summary>
+        /// Permite que se introduzcan solo letras y espacios.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void txtEstadoCivil_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar) && !char.IsWhiteSpace(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        /// <summary>
+        /// Permite que se introduzcan solo letras.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void txtEscolaridad_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        /// <summary>
+        /// Permite que se introduzcan solo letras y espacios.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void txtOcupacion_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar) && !char.IsWhiteSpace(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        /// <summary>
+        /// Permite que se introduzcan solo letras.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void txtTelefono_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        /// <summary>
+        /// Permite que se introduzcan solo letras y los caracteres @, -, _ y .
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void txtEmail_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar) && e.KeyChar != '@' && e.KeyChar != '-' && e.KeyChar != '_' && e.KeyChar != '.')
+            {
+                e.Handled = true;
+            }
+        }
+
+        /// <summary>
+        /// Permite que se introduzcan solo letras y espacios.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void txtDiarrea_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar) && !char.IsWhiteSpace(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        /// <summary>
+        /// Permite que se introduzcan solo letras y espacios.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void txtVomito_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar) && !char.IsWhiteSpace(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        /// <summary>
+        /// Permite que se introduzcan solo letras y espacios.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void txtColitis_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar) && !char.IsWhiteSpace(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        /// <summary>
+        /// Permite que se introduzcan solo letras y espacios.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void txtAnsiedad_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar) && !char.IsWhiteSpace(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        /// <summary>
+        /// Permite que se introduzcan solo letras y espacios.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void txtGastritis_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar) && !char.IsWhiteSpace(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        /// <summary>
+        /// Permite que se introduzcan solo letras y espacios.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void txtNauseas_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar) && !char.IsWhiteSpace(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        /// <summary>
+        /// Permite que se introduzcan solo letras y espacios.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void txtFlatulencias_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar) && !char.IsWhiteSpace(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        /// <summary>
+        /// Permite que se introduzcan solo letras y espacios.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void txtMasticacion_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar) && !char.IsWhiteSpace(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        /// <summary>
+        /// Permite que se introduzcan solo letras y espacios.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void txtEstrenimiento_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar) && !char.IsWhiteSpace(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        /// <summary>
+        /// Permite que se introduzcan solo letras y espacios.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void txtDolorCabeza_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar) && !char.IsWhiteSpace(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        /// <summary>
+        /// Permite que se introduzcan solo letras y espacios.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void txtDisfagia_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar) && !char.IsWhiteSpace(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        /// <summary>
+        /// Permite que se introduzcan solo letras y espacios.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void rtxtMotivos_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsLetterOrDigit(e.KeyChar) && !char.IsControl(e.KeyChar) && !char.IsWhiteSpace(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        /// <summary>
+        /// Permite que se introduzcan solo letras y espacios.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void txtEnfermedad_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsLetterOrDigit(e.KeyChar) && !char.IsControl(e.KeyChar) && !char.IsWhiteSpace(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        /// <summary>
+        /// Permite que se introduzcan solo letras y espacios.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void txtMedicamentos_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsLetterOrDigit(e.KeyChar) && !char.IsControl(e.KeyChar) && !char.IsWhiteSpace(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        /// <summary>
+        /// Permite que se introduzcan solo letras y espacios.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void txtSuplementos_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsLetterOrDigit(e.KeyChar) && !char.IsControl(e.KeyChar) && !char.IsWhiteSpace(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        /// <summary>
+        /// Permite que se introduzcan solo letras y espacios.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void txtDiureticos_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsLetterOrDigit(e.KeyChar) && !char.IsControl(e.KeyChar) && !char.IsWhiteSpace(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        /// <summary>
+        /// Permite que se introduzcan solo letras y espacios.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void txtLaxantes_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsLetterOrDigit(e.KeyChar) && !char.IsControl(e.KeyChar) && !char.IsWhiteSpace(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        /// <summary>
+        /// Permite que se introduzcan solo letras y espacios.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void txtCirugia_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsLetterOrDigit(e.KeyChar) && !char.IsControl(e.KeyChar) && !char.IsWhiteSpace(e.KeyChar))
+            {
+                e.Handled = true;
+            }
         }
     }
 }

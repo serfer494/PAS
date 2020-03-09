@@ -8,16 +8,22 @@ using MODELO;
 
 namespace CONTROLADOR
 {
+    /// <summary>
+    /// La clase controlador "Alimentos" valida que la informacion de los campos 
+    /// sean correctos para poder usar el CRUD del modelo correspondiente
+    /// en la tabla "Alimento" en la base de datos "DBPAS" destinada al sistema.
+    /// De acuerdo a las caracteristicas de la clase "Validacion".
+    /// </summary>
     public class ControladorAlimentos
     {
-        public string error = ""; 
+        public string error = "";
+        //Facade
         public void AgregarAlimento(string nombre, string energia, string hidratos, string grasa, string proteinas)
         {
-            if(nombre.Length > 0 && energia.Length > 0 && hidratos.Length > 0 
-                && grasa.Length > 0 && proteinas.Length > 0)
+            var validac = new Validacion();
+            if(validac.Longitud(nombre, 1, 50) && validac.Longitud(energia, 1, 6) && validac.Longitud(hidratos, 1, 5) && validac.Longitud(grasa, 1, 5) && validac.Longitud(proteinas, 1, 5))
             {
-                if (Convert.ToInt32(energia) > 0 && Convert.ToInt32(hidratos) > 0 && Convert.ToInt32(grasa) > 0 &&
-                    Convert.ToInt32(proteinas) > 0)
+                if (validac.MayorA(Convert.ToInt32(energia), 0) && validac.MayorA(Convert.ToInt32(hidratos), 0) && validac.MayorA(Convert.ToInt32(grasa), 0) && validac.MayorA(Convert.ToInt32(proteinas), 0))
                 {
                     try
                     {
@@ -31,19 +37,17 @@ namespace CONTROLADOR
                 }
                 else
                 {
-                    error = "Los campos despues de \"Nombre\" deben de" +
-                    " ser mayor a 0";
+                    error = "Los campos despues de nombre deben ser mayores a cero";
                     return;
                 }
             }
             else
             {
-                error = "Los campos no deben de estar vacios";
+                error = "Los campos con * son obligatorios";
                 return;
             }
             
         }
-
         public DataTable GetTable()
         {
             try
@@ -56,7 +60,7 @@ namespace CONTROLADOR
                 throw new Exception(ex.Message);
             }
         }
-
+        //Facade
         public void ModificarAlimento(string nombre, string energia, string hidratos, string grasa, string proteinas, int id)
         {
             
@@ -92,13 +96,18 @@ namespace CONTROLADOR
             
             
         }
-
+        //Facade
         public void EliminarAlimento(int id)
         {
             try
             {
                 var modeloAlimento = new ModeloAlimento();
                 modeloAlimento.EliminarAlimento(id);
+                if(modeloAlimento.error != "")
+                {
+                    error = modeloAlimento.error;
+                    return;
+                }
             }
             catch (Exception ex)
             {
@@ -106,7 +115,7 @@ namespace CONTROLADOR
             }
             
         }
-
+        //command
         public int ObtenerId(string str)
         {
             try
@@ -119,70 +128,19 @@ namespace CONTROLADOR
                 throw new Exception(ex.Message);
             }
         }
-
-        public string ObtenerNombre(int id)
+        //command
+        public string Obtener(int id, string campo, string tabla, string campoID)
         {
             try
             {
-                var modeloAlimento = new ModeloAlimento();
-                return modeloAlimento.ObtenerNombre(id);
+                var obtener = new Obtener();
+                return obtener.ObtenerTexto(id, campo, tabla, campoID);
             }
             catch (Exception ex)
             {
                 throw new Exception(ex.Message);
             }
         }
-
-        public int ObtenerEnergia(int id)
-        {
-            try
-            {
-                var modeloAlimento = new ModeloAlimento();
-                return modeloAlimento.ObtenerEnergia(id);
-            }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.Message);
-            }
-        }
-
-        public int ObtenerHidratos(int id)
-        {
-            try
-            {
-                var modeloAlimento = new ModeloAlimento();
-                return modeloAlimento.ObtenerHidratos(id);
-            }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.Message);
-            }
-        }
-
-        public int ObtenerGrasa(int id)
-        {
-            try
-            {
-                var modeloAlimento = new ModeloAlimento();
-                return modeloAlimento.ObtenerGrasa(id);
-            }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.Message);
-            }
-        }
-
-        public int ObtenerProteinas(int id)
-        {
-            try
-            {
-                var modeloAlimento = new ModeloAlimento();
-                return modeloAlimento.ObtenerProteinas(id);
-            }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.Message);
-            }
-        }
+        //command  
     }
 }

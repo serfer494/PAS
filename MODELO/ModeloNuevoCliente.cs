@@ -8,16 +8,21 @@ using System.Threading.Tasks;
 
 namespace MODELO
 {
+    /// <summary>
+    /// El modelo de "Nuevo Cliente" se encarga de ingresar registros a la tabla de 
+    /// "Paciente" de la base de datos "BDPAS" destinada al sisema.
+    /// </summary>
     public class ModeloNuevoCliente
     {
-        private string connectionString = "server=DESKTOP-RKNO24A; database=DBPAS; integrated security=true";
+        //Proxy
+        
         public void AgregarNuevoCliente(string nombre, string genero, string estadoCivil, DateTime fechaNacimiento, string escolaridad, string ocupacion, string telefono, string email, string motivos)
         {
             string query = "INSERT INTO PACIENTE ([nombrePaciente], [generoPaciente], " +
                 "[estadoCivilPaciente], [fechaNacimientoPaciente], [escolaridadPaciente], [ocupacionPaciente], " +
                 "[telefonoPaciente], [emailPaciente], [motivoConsulta]) VALUES(@nombre,@genero,@estadoCivil," +
                 "@fechaNacimiento,@escolaridad,@ocupacion,@telefono,@email,@motivos)";
-            using (SqlConnection conexion = new SqlConnection(connectionString))
+            using (SqlConnection conexion = new SqlConnection(Conexion.ObtenerConexion()))
             {
                 try
                 {

@@ -33,6 +33,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Bases = new System.Windows.Forms.Panel();
+            this.btnEliminar = new System.Windows.Forms.Button();
             this.btnSeleccionar = new System.Windows.Forms.Button();
             this.cbxCliente = new System.Windows.Forms.ComboBox();
             this.button2 = new System.Windows.Forms.Button();
@@ -46,7 +47,6 @@
             this.Comidas = new System.Windows.Forms.Button();
             this.agenda = new System.Windows.Forms.Button();
             this.cont = new System.Windows.Forms.Panel();
-            this.btnEliminar = new System.Windows.Forms.Button();
             this.Barra.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -56,7 +56,7 @@
             // 
             // Barra
             // 
-            this.Barra.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.Barra.BackColor = System.Drawing.Color.SteelBlue;
             this.Barra.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Barra.Controls.Add(this.pictureBox2);
             this.Barra.Controls.Add(this.pictureBox1);
@@ -90,7 +90,7 @@
             // 
             // Bases
             // 
-            this.Bases.BackColor = System.Drawing.Color.DarkRed;
+            this.Bases.BackColor = System.Drawing.Color.Teal;
             this.Bases.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Bases.Controls.Add(this.btnEliminar);
             this.Bases.Controls.Add(this.btnSeleccionar);
@@ -107,6 +107,16 @@
             this.Bases.Size = new System.Drawing.Size(200, 560);
             this.Bases.TabIndex = 1;
             this.Bases.Paint += new System.Windows.Forms.PaintEventHandler(this.Bases_Paint);
+            // 
+            // btnEliminar
+            // 
+            this.btnEliminar.Location = new System.Drawing.Point(118, 195);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(72, 23);
+            this.btnEliminar.TabIndex = 10;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnSeleccionar
             // 
@@ -132,7 +142,7 @@
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Firebrick;
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PaleTurquoise;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.Transparent;
@@ -195,7 +205,7 @@
             this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Firebrick;
+            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PaleTurquoise;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.Transparent;
@@ -212,7 +222,7 @@
             this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Firebrick;
+            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PaleTurquoise;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.Transparent;
@@ -229,7 +239,7 @@
             this.alimentos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.alimentos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.alimentos.FlatAppearance.BorderSize = 0;
-            this.alimentos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Firebrick;
+            this.alimentos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PaleTurquoise;
             this.alimentos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.alimentos.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.alimentos.ForeColor = System.Drawing.Color.Transparent;
@@ -246,7 +256,7 @@
             this.Comidas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.Comidas.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Comidas.FlatAppearance.BorderSize = 0;
-            this.Comidas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Firebrick;
+            this.Comidas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PaleTurquoise;
             this.Comidas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Comidas.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Comidas.ForeColor = System.Drawing.Color.Transparent;
@@ -263,7 +273,7 @@
             this.agenda.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.agenda.Cursor = System.Windows.Forms.Cursors.Hand;
             this.agenda.FlatAppearance.BorderSize = 0;
-            this.agenda.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Firebrick;
+            this.agenda.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PaleTurquoise;
             this.agenda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.agenda.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.agenda.ForeColor = System.Drawing.Color.Transparent;
@@ -282,16 +292,6 @@
             this.cont.Size = new System.Drawing.Size(884, 544);
             this.cont.TabIndex = 2;
             this.cont.Paint += new System.Windows.Forms.PaintEventHandler(this.cont_Paint);
-            // 
-            // btnEliminar
-            // 
-            this.btnEliminar.Location = new System.Drawing.Point(118, 195);
-            this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(72, 23);
-            this.btnEliminar.TabIndex = 10;
-            this.btnEliminar.Text = "Eliminar";
-            this.btnEliminar.UseVisualStyleBackColor = true;
-            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // MenuPpal
             // 

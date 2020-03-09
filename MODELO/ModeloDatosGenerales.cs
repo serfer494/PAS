@@ -8,13 +8,17 @@ using System.Threading.Tasks;
 
 namespace MODELO
 {
+    /// <summary>
+    /// El modelo de "Generales" se encarga de realizar el CRUD para los registros de la tabla de 
+    /// "Paciente y DatosGnAntePato" de la base de datos "BDPAS" destinada al sisema.
+    /// </summary>
     public class ModeloDatosGenerales
     {
-        private string connectionString = "server=DESKTOP-RKNO24A; database=DBPAS; integrated security=true";
+        //Proxy
         public string ObtenerNombre(int id)
         {
             string query = "SELECT nombrePaciente FROM PACIENTE WHERE idPaciente=@id";
-            using (SqlConnection conexion = new SqlConnection(connectionString))
+            using (SqlConnection conexion = new SqlConnection(Conexion.ObtenerConexion()))
             {
                 try
                 {
@@ -36,7 +40,7 @@ namespace MODELO
         public string ObtenerGenero(int id)
         {
             string query = "SELECT generoPaciente FROM PACIENTE WHERE idPaciente=@id";
-            using (SqlConnection conexion = new SqlConnection(connectionString))
+            using (SqlConnection conexion = new SqlConnection(Conexion.ObtenerConexion()))
             {
                 try
                 {
@@ -58,7 +62,7 @@ namespace MODELO
         public string ObtenerEstadoCivil(int id)
         {
             string query = "SELECT estadoCivilPaciente FROM PACIENTE WHERE idPaciente=@id";
-            using (SqlConnection conexion = new SqlConnection(connectionString))
+            using (SqlConnection conexion = new SqlConnection(Conexion.ObtenerConexion()))
             {
                 try
                 {
@@ -76,11 +80,10 @@ namespace MODELO
                 }
             }
         }
-
         public DateTime ObtenerFechaNacimiento(int id)
         {
             string query = "SELECT fechaNacimientoPaciente FROM PACIENTE WHERE idPaciente=@id";
-            using (SqlConnection conexion = new SqlConnection(connectionString))
+            using (SqlConnection conexion = new SqlConnection(Conexion.ObtenerConexion()))
             {
                 try
                 {
@@ -103,7 +106,7 @@ namespace MODELO
         public string ObtenerEscolaridad(int id)
         {
             string query = "SELECT escolaridadPaciente FROM PACIENTE WHERE idPaciente=@id";
-            using (SqlConnection conexion = new SqlConnection(connectionString))
+            using (SqlConnection conexion = new SqlConnection(Conexion.ObtenerConexion()))
             {
                 try
                 {
@@ -125,7 +128,7 @@ namespace MODELO
         public string ObtenerOcupacion(int id)
         {
             string query = "SELECT ocupacionPaciente FROM PACIENTE WHERE idPaciente=@id";
-            using (SqlConnection conexion = new SqlConnection(connectionString))
+            using (SqlConnection conexion = new SqlConnection(Conexion.ObtenerConexion()))
             {
                 try
                 {
@@ -147,7 +150,7 @@ namespace MODELO
         public string ObtenerTelefono(int id)
         {
             string query = "SELECT telefonoPaciente FROM PACIENTE WHERE idPaciente=@id";
-            using (SqlConnection conexion = new SqlConnection(connectionString))
+            using (SqlConnection conexion = new SqlConnection(Conexion.ObtenerConexion()))
             {
                 try
                 {
@@ -169,7 +172,7 @@ namespace MODELO
         public string ObtenerEmail(int id)
         {
             string query = "SELECT emailPaciente FROM PACIENTE WHERE idPaciente=@id";
-            using (SqlConnection conexion = new SqlConnection(connectionString))
+            using (SqlConnection conexion = new SqlConnection(Conexion.ObtenerConexion()))
             {
                 try
                 {
@@ -191,7 +194,7 @@ namespace MODELO
         public string ObtenerMotivos(int id)
         {
             string query = "SELECT motivoConsulta FROM PACIENTE WHERE idPaciente=@id";
-            using (SqlConnection conexion = new SqlConnection(connectionString))
+            using (SqlConnection conexion = new SqlConnection(Conexion.ObtenerConexion()))
             {
                 try
                 {
@@ -209,61 +212,125 @@ namespace MODELO
                 }
             }
         }
-
+        //facade
         public void AgregarAntecedentesPatologicos(string diarrea, string flatulencias, string vomito, string masticacion, string colitis, string estrenimiento, string ansiedad, string dolorCabeza, string gastritis, string disfagia, string nauseas, string enfermedad, string medicamentos, string suplementos, string diureticos, string laxantes, string cirugia, int idPaciente)
         {
-            string query = "INSERT INTO DATOSGNANTEPATO ([diarrea], [flatulencias], [vomito], [problemasMasticacion], " +
-                "[colitis], [estrenimiento], [ansiedad], [dolorCabeza], [gastritis], [disfagia], [nauseas], [enfermedad], " +
-                "[medicamentos], [suplementos], [diureticos], [laxantes], [cirugias], [idPaciente]) VALUES(@diarrea,@flatulencias," +
-                "@vomito,@masticacion,@colitis,@estrenimiento,@ansiedad,@dolorCabeza,@gastritis,@disfagia,@nauseas," +
-                "@enfermedad,@medicamentos,@suplementos,@diureticos,@laxantes,@cirugia,@idPaciente)";
-            using (SqlConnection conexion = new SqlConnection(connectionString))
+            string query = "SELECT idPaciente FROM DATOSGNANTEPATO WHERE idPaciente=@id";
+            int idforanea = 0;
+            using (SqlConnection conexion = new SqlConnection(Conexion.ObtenerConexion()))
             {
                 try
                 {
                     conexion.Open();
                     using (SqlCommand cmd = new SqlCommand(query, conexion))
                     {
-                        cmd.Parameters.Add("@diarrea", SqlDbType.VarChar).Value = diarrea;
-                        cmd.Parameters.Add("@flatulencias", SqlDbType.VarChar).Value = flatulencias;
-                        cmd.Parameters.Add("@vomito", SqlDbType.VarChar).Value = vomito;
-                        cmd.Parameters.Add("@masticacion", SqlDbType.VarChar).Value = masticacion;
-                        cmd.Parameters.Add("@colitis", SqlDbType.VarChar).Value = colitis;
-                        cmd.Parameters.Add("@estrenimiento", SqlDbType.VarChar).Value = estrenimiento;
-                        cmd.Parameters.Add("@ansiedad", SqlDbType.VarChar).Value = ansiedad;
-                        cmd.Parameters.Add("@dolorCabeza", SqlDbType.VarChar).Value = dolorCabeza;
-                        cmd.Parameters.Add("@gastritis", SqlDbType.VarChar).Value = gastritis;
-                        cmd.Parameters.Add("@disfagia", SqlDbType.VarChar).Value = disfagia;
-                        cmd.Parameters.Add("@nauseas", SqlDbType.VarChar).Value = nauseas;
-                        cmd.Parameters.Add("@enfermedad", SqlDbType.VarChar).Value = enfermedad;
-                        cmd.Parameters.Add("@medicamentos", SqlDbType.VarChar).Value = medicamentos;
-                        cmd.Parameters.Add("@suplementos", SqlDbType.VarChar).Value = suplementos;
-                        cmd.Parameters.Add("@diureticos", SqlDbType.VarChar).Value = diureticos;
-                        cmd.Parameters.Add("@laxantes", SqlDbType.VarChar).Value = laxantes;
-                        cmd.Parameters.Add("@cirugia", SqlDbType.VarChar).Value = cirugia;
-                        cmd.Parameters.Add("@idPaciente", SqlDbType.Int).Value = idPaciente;
-                        int rowsAdded = cmd.ExecuteNonQuery();
-                        if (rowsAdded > 0)
-                        {
-                            Console.WriteLine("Filas insertadas");
-                        }
-                        else
-                        {
-                            Console.WriteLine("No se insertaron las filas");
-                        }
+                        cmd.Parameters.Add("@id", SqlDbType.VarChar).Value = idPaciente;
+                        idforanea = Convert.ToInt32(cmd.ExecuteScalar());
                     }
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine(ex.ToString());
+                    Console.WriteLine("Error: " + ex.ToString());
+
                 }
             }
+
+            if (idforanea != idPaciente)
+            {
+                query = "INSERT INTO DATOSGNANTEPATO ([diarrea], [flatulencias], [vomito], [problemasMasticacion], " +
+                "[colitis], [estrenimiento], [ansiedad], [dolorCabeza], [gastritis], [disfagia], [nauseas], [enfermedad], " +
+                "[medicamentos], [suplementos], [diureticos], [laxantes], [cirugias], [idPaciente]) VALUES(@diarrea,@flatulencias," +
+                "@vomito,@masticacion,@colitis,@estrenimiento,@ansiedad,@dolorCabeza,@gastritis,@disfagia,@nauseas," +
+                "@enfermedad,@medicamentos,@suplementos,@diureticos,@laxantes,@cirugia,@idPaciente)";
+                using (SqlConnection conexion = new SqlConnection(Conexion.ObtenerConexion()))
+                {
+                    try
+                    {
+                        conexion.Open();
+                        using (SqlCommand cmd = new SqlCommand(query, conexion))
+                        {
+                            cmd.Parameters.Add("@diarrea", SqlDbType.VarChar).Value = diarrea;
+                            cmd.Parameters.Add("@flatulencias", SqlDbType.VarChar).Value = flatulencias;
+                            cmd.Parameters.Add("@vomito", SqlDbType.VarChar).Value = vomito;
+                            cmd.Parameters.Add("@masticacion", SqlDbType.VarChar).Value = masticacion;
+                            cmd.Parameters.Add("@colitis", SqlDbType.VarChar).Value = colitis;
+                            cmd.Parameters.Add("@estrenimiento", SqlDbType.VarChar).Value = estrenimiento;
+                            cmd.Parameters.Add("@ansiedad", SqlDbType.VarChar).Value = ansiedad;
+                            cmd.Parameters.Add("@dolorCabeza", SqlDbType.VarChar).Value = dolorCabeza;
+                            cmd.Parameters.Add("@gastritis", SqlDbType.VarChar).Value = gastritis;
+                            cmd.Parameters.Add("@disfagia", SqlDbType.VarChar).Value = disfagia;
+                            cmd.Parameters.Add("@nauseas", SqlDbType.VarChar).Value = nauseas;
+                            cmd.Parameters.Add("@enfermedad", SqlDbType.VarChar).Value = enfermedad;
+                            cmd.Parameters.Add("@medicamentos", SqlDbType.VarChar).Value = medicamentos;
+                            cmd.Parameters.Add("@suplementos", SqlDbType.VarChar).Value = suplementos;
+                            cmd.Parameters.Add("@diureticos", SqlDbType.VarChar).Value = diureticos;
+                            cmd.Parameters.Add("@laxantes", SqlDbType.VarChar).Value = laxantes;
+                            cmd.Parameters.Add("@cirugia", SqlDbType.VarChar).Value = cirugia;
+                            cmd.Parameters.Add("@idPaciente", SqlDbType.Int).Value = idPaciente;
+                            int rowsAdded = cmd.ExecuteNonQuery();
+                            if (rowsAdded > 0)
+                            {
+                                Console.WriteLine("Filas insertadas");
+                            }
+                            else
+                            {
+                                Console.WriteLine("No se insertaron las filas");
+                            }
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine(ex.ToString());
+                    }
+                }
+            }
+            else
+            {
+                query = "UPDATE DATOSGNANTEPATO SET diarrea=@diarrea , flatulencias=@flatulencias , " +
+                "vomito=@vomito , problemasMasticacion=@masticacion , colitis=@colitis , estrenimiento=@estrenimiento , " +
+                "ansiedad=@ansiedad , dolorCabeza=@dolorCabeza , gastritis=@gastritis , disfagia=@disfagia , nauseas=@nauseas , " +
+                "enfermedad=@enfermedad , medicamentos=@medicamentos , suplementos=@suplementos , diureticos=@diureticos , " +
+                "laxantes=@laxantes , cirugias=@cirugia WHERE idPaciente=@id";
+                using (SqlConnection conexion = new SqlConnection(Conexion.ObtenerConexion()))
+                {
+                    try
+                    {
+                        conexion.Open();
+                        using (SqlCommand cmd = new SqlCommand(query, conexion))
+                        {
+                            cmd.Parameters.Add("@diarrea", SqlDbType.VarChar).Value = diarrea;
+                            cmd.Parameters.Add("@flatulencias", SqlDbType.VarChar).Value = flatulencias;
+                            cmd.Parameters.Add("@vomito", SqlDbType.VarChar).Value = vomito;
+                            cmd.Parameters.Add("@masticacion", SqlDbType.VarChar).Value = masticacion;
+                            cmd.Parameters.Add("@colitis", SqlDbType.VarChar).Value = colitis;
+                            cmd.Parameters.Add("@estrenimiento", SqlDbType.VarChar).Value = estrenimiento;
+                            cmd.Parameters.Add("@ansiedad", SqlDbType.VarChar).Value = ansiedad;
+                            cmd.Parameters.Add("@dolorCabeza", SqlDbType.VarChar).Value = dolorCabeza;
+                            cmd.Parameters.Add("@gastritis", SqlDbType.VarChar).Value = gastritis;
+                            cmd.Parameters.Add("@disfagia", SqlDbType.VarChar).Value = disfagia;
+                            cmd.Parameters.Add("@nauseas", SqlDbType.VarChar).Value = nauseas;
+                            cmd.Parameters.Add("@enfermedad", SqlDbType.VarChar).Value = enfermedad;
+                            cmd.Parameters.Add("@medicamentos", SqlDbType.VarChar).Value = medicamentos;
+                            cmd.Parameters.Add("@suplementos", SqlDbType.VarChar).Value = suplementos;
+                            cmd.Parameters.Add("@diureticos", SqlDbType.VarChar).Value = diureticos;
+                            cmd.Parameters.Add("@laxantes", SqlDbType.VarChar).Value = laxantes;
+                            cmd.Parameters.Add("@cirugia", SqlDbType.VarChar).Value = cirugia;
+                            cmd.Parameters.Add("@id", SqlDbType.Int).Value = idPaciente;
+                            cmd.ExecuteNonQuery();
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine("Error: " + ex.ToString());
+                    }
+                }
+            }  
         }
 
         public string ObtenerDiarrea(int id)
         {
             string query = "SELECT diarrea FROM DATOSGNANTEPATO WHERE idPaciente=@id";
-            using (SqlConnection conexion = new SqlConnection(connectionString))
+            using (SqlConnection conexion = new SqlConnection(Conexion.ObtenerConexion()))
             {
                 try
                 {
@@ -285,7 +352,7 @@ namespace MODELO
         public string ObtenerFlatulencias(int id)
         {
             string query = "SELECT flatulencias FROM DATOSGNANTEPATO WHERE idPaciente=@id";
-            using (SqlConnection conexion = new SqlConnection(connectionString))
+            using (SqlConnection conexion = new SqlConnection(Conexion.ObtenerConexion()))
             {
                 try
                 {
@@ -307,7 +374,7 @@ namespace MODELO
         public string ObtenerVomito(int id)
         {
             string query = "SELECT vomito FROM DATOSGNANTEPATO WHERE idPaciente=@id";
-            using (SqlConnection conexion = new SqlConnection(connectionString))
+            using (SqlConnection conexion = new SqlConnection(Conexion.ObtenerConexion()))
             {
                 try
                 {
@@ -329,7 +396,7 @@ namespace MODELO
         public string ObtenerMasticacion(int id)
         {
             string query = "SELECT problemasMasticacion FROM DATOSGNANTEPATO WHERE idPaciente=@id";
-            using (SqlConnection conexion = new SqlConnection(connectionString))
+            using (SqlConnection conexion = new SqlConnection(Conexion.ObtenerConexion()))
             {
                 try
                 {
@@ -351,7 +418,7 @@ namespace MODELO
         public string ObtenerColitis(int id)
         {
             string query = "SELECT colitis FROM DATOSGNANTEPATO WHERE idPaciente=@id";
-            using (SqlConnection conexion = new SqlConnection(connectionString))
+            using (SqlConnection conexion = new SqlConnection(Conexion.ObtenerConexion()))
             {
                 try
                 {
@@ -373,7 +440,7 @@ namespace MODELO
         public string ObtenerEstrenimiento(int id)
         {
             string query = "SELECT estrenimiento FROM DATOSGNANTEPATO WHERE idPaciente=@id";
-            using (SqlConnection conexion = new SqlConnection(connectionString))
+            using (SqlConnection conexion = new SqlConnection(Conexion.ObtenerConexion()))
             {
                 try
                 {
@@ -395,7 +462,7 @@ namespace MODELO
         public string ObtenerAnsiedad(int id)
         {
             string query = "SELECT ansiedad FROM DATOSGNANTEPATO WHERE idPaciente=@id";
-            using (SqlConnection conexion = new SqlConnection(connectionString))
+            using (SqlConnection conexion = new SqlConnection(Conexion.ObtenerConexion()))
             {
                 try
                 {
@@ -417,7 +484,7 @@ namespace MODELO
         public string ObtenerDolorCabeza(int id)
         {
             string query = "SELECT dolorCabeza FROM DATOSGNANTEPATO WHERE idPaciente=@id";
-            using (SqlConnection conexion = new SqlConnection(connectionString))
+            using (SqlConnection conexion = new SqlConnection(Conexion.ObtenerConexion()))
             {
                 try
                 {
@@ -439,7 +506,7 @@ namespace MODELO
         public string ObtenerGastritis(int id)
         {
             string query = "SELECT gastritis FROM DATOSGNANTEPATO WHERE idPaciente=@id";
-            using (SqlConnection conexion = new SqlConnection(connectionString))
+            using (SqlConnection conexion = new SqlConnection(Conexion.ObtenerConexion()))
             {
                 try
                 {
@@ -461,7 +528,7 @@ namespace MODELO
         public string ObtenerDisfagia(int id)
         {
             string query = "SELECT disfagia FROM DATOSGNANTEPATO WHERE idPaciente=@id";
-            using (SqlConnection conexion = new SqlConnection(connectionString))
+            using (SqlConnection conexion = new SqlConnection(Conexion.ObtenerConexion()))
             {
                 try
                 {
@@ -483,7 +550,7 @@ namespace MODELO
         public string ObtenerNauseas(int id)
         {
             string query = "SELECT nauseas FROM DATOSGNANTEPATO WHERE idPaciente=@id";
-            using (SqlConnection conexion = new SqlConnection(connectionString))
+            using (SqlConnection conexion = new SqlConnection(Conexion.ObtenerConexion()))
             {
                 try
                 {
@@ -505,7 +572,7 @@ namespace MODELO
         public string ObtenerEnfermedad(int id)
         {
             string query = "SELECT enfermedad FROM DATOSGNANTEPATO WHERE idPaciente=@id";
-            using (SqlConnection conexion = new SqlConnection(connectionString))
+            using (SqlConnection conexion = new SqlConnection(Conexion.ObtenerConexion()))
             {
                 try
                 {
@@ -527,7 +594,7 @@ namespace MODELO
         public string ObtenerMedicamentos(int id)
         {
             string query = "SELECT medicamentos FROM DATOSGNANTEPATO WHERE idPaciente=@id";
-            using (SqlConnection conexion = new SqlConnection(connectionString))
+            using (SqlConnection conexion = new SqlConnection(Conexion.ObtenerConexion()))
             {
                 try
                 {
@@ -549,7 +616,7 @@ namespace MODELO
         public string ObtenerSuplementos(int id)
         {
             string query = "SELECT suplementos FROM DATOSGNANTEPATO WHERE idPaciente=@id";
-            using (SqlConnection conexion = new SqlConnection(connectionString))
+            using (SqlConnection conexion = new SqlConnection(Conexion.ObtenerConexion()))
             {
                 try
                 {
@@ -571,7 +638,7 @@ namespace MODELO
         public string ObtenerDiureticos(int id)
         {
             string query = "SELECT diureticos FROM DATOSGNANTEPATO WHERE idPaciente=@id";
-            using (SqlConnection conexion = new SqlConnection(connectionString))
+            using (SqlConnection conexion = new SqlConnection(Conexion.ObtenerConexion()))
             {
                 try
                 {
@@ -593,7 +660,7 @@ namespace MODELO
         public string ObtenerLaxantes(int id)
         {
             string query = "SELECT laxantes FROM DATOSGNANTEPATO WHERE idPaciente=@id";
-            using (SqlConnection conexion = new SqlConnection(connectionString))
+            using (SqlConnection conexion = new SqlConnection(Conexion.ObtenerConexion()))
             {
                 try
                 {
@@ -615,7 +682,7 @@ namespace MODELO
         public string ObtenerCirugia(int id)
         {
             string query = "SELECT cirugias FROM DATOSGNANTEPATO WHERE idPaciente=@id";
-            using (SqlConnection conexion = new SqlConnection(connectionString))
+            using (SqlConnection conexion = new SqlConnection(Conexion.ObtenerConexion()))
             {
                 try
                 {
@@ -633,7 +700,7 @@ namespace MODELO
                 }
             }
         }
-
+        //facade
         public void ModificarDatosGenerales(string nombre, string genero, string estadoCivil, DateTime fechaNacimiento, string escolaridad, string ocupacion, string telefono, string email, string motivos, int id)
         {
             string query = "UPDATE PACIENTE SET nombrePaciente=@nombre , generoPaciente=@genero , " +
@@ -641,7 +708,7 @@ namespace MODELO
                 "escolaridadPaciente=@escolaridad , ocupacionPaciente=@ocupacion , " +
                 "telefonoPaciente=@telefono , emailPaciente=@email , motivoConsulta=@motivos" +
                 " WHERE idPaciente=@id";
-            using (SqlConnection conexion = new SqlConnection(connectionString))
+            using (SqlConnection conexion = new SqlConnection(Conexion.ObtenerConexion()))
             {
                 try
                 {
@@ -667,5 +734,49 @@ namespace MODELO
                 }
             }
         }
+        //facade
+        public void ModificarAntecedentesPatologicos(string diarrea, string flatulencias, string vomito, string masticacion, string colitis, string estrenimiento, string ansiedad, string dolorCabeza, string gastritis, string disfagia, string nauseas, string enfermedad, string medicamentos, string suplementos, string diureticos, string laxantes, string cirugia, int idPaciente)
+        {
+            string query = "UPDATE DATOSGNANTEPATO SET diarrea=@diarrea , flatulencias=@flatulencias , " +
+                "vomito=@vomito , problemasMasticacion=@masticacion , colitis=@colitis , estrenimiento=@estrenimiento , " +
+                "ansiedad=@ansiedad , dolorCabeza=@dolorCabeza , gastritis=@gastritis , disfagia=@disfagia , nauseas=@nauseas , " +
+                "enfermedad=@enfermedad , medicamentos=@medicamentos , suplementos=@suplementos , diureticos=@diureticos , " +
+                "laxantes=@laxantes , cirugias=@cirugia WHERE idPaciente=@id";
+            using (SqlConnection conexion = new SqlConnection(Conexion.ObtenerConexion()))
+            {
+                try
+                {
+                    conexion.Open();
+                    using (SqlCommand cmd = new SqlCommand(query, conexion))
+                    {
+                        cmd.Parameters.Add("@diarrea", SqlDbType.VarChar).Value = diarrea;
+                        cmd.Parameters.Add("@flatulencias", SqlDbType.VarChar).Value = flatulencias;
+                        cmd.Parameters.Add("@vomito", SqlDbType.VarChar).Value = vomito;
+                        cmd.Parameters.Add("@masticacion", SqlDbType.VarChar).Value = masticacion;
+                        cmd.Parameters.Add("@colitis", SqlDbType.VarChar).Value = colitis;
+                        cmd.Parameters.Add("@estrenimiento", SqlDbType.VarChar).Value = estrenimiento;
+                        cmd.Parameters.Add("@ansiedad", SqlDbType.VarChar).Value = ansiedad;
+                        cmd.Parameters.Add("@dolorCabeza", SqlDbType.VarChar).Value = dolorCabeza;
+                        cmd.Parameters.Add("@gastritis", SqlDbType.VarChar).Value = gastritis;
+                        cmd.Parameters.Add("@disfagia", SqlDbType.VarChar).Value = disfagia;
+                        cmd.Parameters.Add("@nauseas", SqlDbType.VarChar).Value = nauseas;
+                        cmd.Parameters.Add("@enfermedad", SqlDbType.VarChar).Value = enfermedad;
+                        cmd.Parameters.Add("@medicamentos", SqlDbType.VarChar).Value = medicamentos;
+                        cmd.Parameters.Add("@suplementos", SqlDbType.VarChar).Value = suplementos;
+                        cmd.Parameters.Add("@diureticos", SqlDbType.VarChar).Value = diureticos;
+                        cmd.Parameters.Add("@laxantes", SqlDbType.VarChar).Value = laxantes;
+                        cmd.Parameters.Add("@cirugia", SqlDbType.VarChar).Value = cirugia;
+                        cmd.Parameters.Add("@id", SqlDbType.Int).Value = idPaciente;
+                        cmd.ExecuteNonQuery();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Error: " + ex.ToString());
+                }
+            }
+        }
+
+        
     }
 }

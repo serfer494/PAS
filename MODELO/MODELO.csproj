@@ -9,10 +9,12 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>MODELO</RootNamespace>
     <AssemblyName>MODELO</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
     <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -42,12 +44,40 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Conexion.cs" />
     <Compile Include="ModeloAlimento.cs" />
     <Compile Include="ModeloCitas.cs" />
+    <Compile Include="ModeloComida.cs" />
     <Compile Include="ModeloDatosGenerales.cs" />
+    <Compile Include="ModeloDatosxCita.cs" />
+    <Compile Include="ModeloGenerales2.cs" />
+    <Compile Include="ModeloGenerales3.cs" />
+    <Compile Include="ModeloInicio.cs" />
     <Compile Include="ModeloNuevoCliente.cs" />
+    <Compile Include="ModeloPedirPermisos.cs" />
+    <Compile Include="ModeloRegistrarUsuario.cs" />
+    <Compile Include="Obtener.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="api\index.md" />
+    <None Include="articles\intro.md" />
+    <None Include="articles\toc.md" />
+    <None Include="docfx.json" />
+    <None Include="index.md" />
+    <None Include="packages.config" />
+    <None Include="toc.yml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".gitignore" />
+    <Content Include="api\.gitignore" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\docfx.console.2.49.0\build\docfx.console.targets" Condition="Exists('..\packages\docfx.console.2.49.0\build\docfx.console.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\docfx.console.2.49.0\build\docfx.console.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\docfx.console.2.49.0\build\docfx.console.targets'))" />
+  </Target>
 </Project>
