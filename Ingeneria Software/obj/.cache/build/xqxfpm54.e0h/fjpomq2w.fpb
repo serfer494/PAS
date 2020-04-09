@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace Ingeneria_Software
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace Ingeneria_Software
+   ">
+    <meta name="generator" content="docfx 2.49.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Ingeneria_Software">
+  
+  <h1 id="Ingeneria_Software" data-uid="Ingeneria_Software" class="text-break">Namespace Ingeneria_Software
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+      <h4><a class="xref" href="Ingeneria_Software.Alimentos.html">Alimentos</a></h4>
+      <section><p sourcefile="obj/api/Ingeneria_Software.Alimentos.yml" sourcestartlinenumber="2" sourceendlinenumber="2">En la pantalla Alimentos se encuentra la interfaz para agregar alimentos al sistema.</p>
+</section>
+      <h4><a class="xref" href="Ingeneria_Software.Citas.html">Citas</a></h4>
+      <section><p sourcefile="obj/api/Ingeneria_Software.Citas.yml" sourcestartlinenumber="2" sourceendlinenumber="2">En la pantalla de citas se pueden agregar, modificar o eliminar citas.</p>
+</section>
+      <h4><a class="xref" href="Ingeneria_Software.Comida.html">Comida</a></h4>
+      <section><p sourcefile="obj/api/Ingeneria_Software.Comida.yml" sourcestartlinenumber="2" sourceendlinenumber="3">En la pantalla de comida se pueden agregar, modificar o eliminar los diferentes platillos que se
+encuentran en el sistema</p>
+</section>
+      <h4><a class="xref" href="Ingeneria_Software.DatosGenerales.html">DatosGenerales</a></h4>
+      <section><p sourcefile="obj/api/Ingeneria_Software.DatosGenerales.yml" sourcestartlinenumber="2" sourceendlinenumber="3">En la pantalla DatosGenerales se pueden guardar los datos generales del pacientes y antecedentes
+patologicos</p>
+</section>
+      <h4><a class="xref" href="Ingeneria_Software.DatosxCita.html">DatosxCita</a></h4>
+      <section><p sourcefile="obj/api/Ingeneria_Software.DatosxCita.yml" sourcestartlinenumber="2" sourceendlinenumber="2">En la pantalla DatosxCita se ingresan los datos del paciente cuando va a la cita.</p>
+</section>
+      <h4><a class="xref" href="Ingeneria_Software.Form1.html">Form1</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Ingeneria_Software.Generales2.html">Generales2</a></h4>
+      <section><p sourcefile="obj/api/Ingeneria_Software.Generales2.yml" sourcestartlinenumber="2" sourceendlinenumber="3">En esta pantalla se pueden ingresar la segunda parto de los datos generales del usuario, como los
+antecedentes generales, antecedentes patologicos y e indicadores bioquimicos.</p>
+</section>
+      <h4><a class="xref" href="Ingeneria_Software.Generales3.html">Generales3</a></h4>
+      <section><p sourcefile="obj/api/Ingeneria_Software.Generales3.yml" sourcestartlinenumber="2" sourceendlinenumber="2">En la pantalla Generales3 se pueden ingresar los indicadores dieteticos del usuario.</p>
+</section>
+      <h4><a class="xref" href="Ingeneria_Software.Inicio.html">Inicio</a></h4>
+      <section><p sourcefile="obj/api/Ingeneria_Software.Inicio.yml" sourcestartlinenumber="2" sourceendlinenumber="3">En la pantalla Inicio podemos ingresar al sistema usando un usuario ya registrado, o podemos crear
+uno seleccionando Registrar.</p>
+</section>
+      <h4><a class="xref" href="Ingeneria_Software.MenuPpal.html">MenuPpal</a></h4>
+      <section><p sourcefile="obj/api/Ingeneria_Software.MenuPpal.yml" sourcestartlinenumber="2" sourceendlinenumber="3">En la pantalla MenuPpal esta la interfaz principal del sistema, de donde se podra acceder a los
+diferentes modulos del sistema.</p>
+</section>
+      <h4><a class="xref" href="Ingeneria_Software.NuevoCliente.html">NuevoCliente</a></h4>
+      <section><p sourcefile="obj/api/Ingeneria_Software.NuevoCliente.yml" sourcestartlinenumber="2" sourceendlinenumber="2">En la pantalla NuevoCliente podemos crear un nuevo cliente en el sistema ingresando sus datos.</p>
+</section>
+      <h4><a class="xref" href="Ingeneria_Software.PedirPermisos.html">PedirPermisos</a></h4>
+      <section><p sourcefile="obj/api/Ingeneria_Software.PedirPermisos.yml" sourcestartlinenumber="2" sourceendlinenumber="2">En esta pantalla se solicitan las credenciales de un usuario autorizado para agregar otro usuario.</p>
+</section>
+      <h4><a class="xref" href="Ingeneria_Software.RegistrarUsuario.html">RegistrarUsuario</a></h4>
+      <section><p sourcefile="obj/api/Ingeneria_Software.RegistrarUsuario.yml" sourcestartlinenumber="2" sourceendlinenumber="2">En esta pantalla podemos registrar un nuevo usuario.</p>
+</section>
+      <h4><a class="xref" href="Ingeneria_Software.VerDatosGenerales.html">VerDatosGenerales</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Ingeneria_Software.VerDatosGenerales2.html">VerDatosGenerales2</a></h4>
+      <section></section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,590 @@
+### YamlMime:ManagedReference
+items:
+- uid: CONTROLADOR.ControladorGenerales3
+  commentId: T:CONTROLADOR.ControladorGenerales3
+  id: ControladorGenerales3
+  parent: CONTROLADOR
+  children:
+  - CONTROLADOR.ControladorGenerales3.AgregarIndicadoresDieteticos(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32)
+  - CONTROLADOR.ControladorGenerales3.error
+  - CONTROLADOR.ControladorGenerales3.ModificarIndicadoresDieteticos(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32)
+  - CONTROLADOR.ControladorGenerales3.Obtener(System.Int32,System.String,System.String,System.String)
+  - CONTROLADOR.ControladorGenerales3.ObtenerTexto(System.Int32,System.String)
+  langs:
+  - csharp
+  - vb
+  name: ControladorGenerales3
+  nameWithType: ControladorGenerales3
+  fullName: CONTROLADOR.ControladorGenerales3
+  type: Class
+  source:
+    remote:
+      path: CONTROLADOR/ControladorGenerales3.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ControladorGenerales3
+    path: ControladorGenerales3.cs
+    startLine: 14
+  assemblies:
+  - CONTROLADOR
+  namespace: CONTROLADOR
+  summary: "\nLa clase controlador &quot;Datos Generales 3&quot; valida que la informacion de los campos \nsean correctos para poder usar el CRUD de la tabla &quot;DatosGnIndDie&quot; en la base de datos &quot;DBPAS&quot; destinada al sistema.\nDe acuerdo a las caracteristicas de la clase &quot;Validacion&quot;.\n"
+  example: []
+  syntax:
+    content: public class ControladorGenerales3
+    content.vb: Public Class ControladorGenerales3
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: CONTROLADOR.ControladorGenerales3.error
+  commentId: F:CONTROLADOR.ControladorGenerales3.error
+  id: error
+  parent: CONTROLADOR.ControladorGenerales3
+  langs:
+  - csharp
+  - vb
+  name: error
+  nameWithType: ControladorGenerales3.error
+  fullName: CONTROLADOR.ControladorGenerales3.error
+  type: Field
+  source:
+    remote:
+      path: CONTROLADOR/ControladorGenerales3.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: error
+    path: ControladorGenerales3.cs
+    startLine: 16
+  assemblies:
+  - CONTROLADOR
+  namespace: CONTROLADOR
+  syntax:
+    content: public string error
+    return:
+      type: System.String
+    content.vb: Public error As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CONTROLADOR.ControladorGenerales3.AgregarIndicadoresDieteticos(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32)
+  commentId: M:CONTROLADOR.ControladorGenerales3.AgregarIndicadoresDieteticos(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32)
+  id: AgregarIndicadoresDieteticos(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32)
+  parent: CONTROLADOR.ControladorGenerales3
+  langs:
+  - csharp
+  - vb
+  name: AgregarIndicadoresDieteticos(String, String, String, String, String, String, String, String, Int32)
+  nameWithType: ControladorGenerales3.AgregarIndicadoresDieteticos(String, String, String, String, String, String, String, String, Int32)
+  fullName: CONTROLADOR.ControladorGenerales3.AgregarIndicadoresDieteticos(System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: CONTROLADOR/ControladorGenerales3.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: AgregarIndicadoresDieteticos
+    path: ControladorGenerales3.cs
+    startLine: 18
+  assemblies:
+  - CONTROLADOR
+  namespace: CONTROLADOR
+  syntax:
+    content: public void AgregarIndicadoresDieteticos(string comidasDia, string quienComida, string comeFuera, string AlimentosPref, string agua, string alergias, string notas, string recordatorio, int id)
+    parameters:
+    - id: comidasDia
+      type: System.String
+    - id: quienComida
+      type: System.String
+    - id: comeFuera
+      type: System.String
+    - id: AlimentosPref
+      type: System.String
+    - id: agua
+      type: System.String
+    - id: alergias
+      type: System.String
+    - id: notas
+      type: System.String
+    - id: recordatorio
+      type: System.String
+    - id: id
+      type: System.Int32
+    content.vb: Public Sub AgregarIndicadoresDieteticos(comidasDia As String, quienComida As String, comeFuera As String, AlimentosPref As String, agua As String, alergias As String, notas As String, recordatorio As String, id As Integer)
+  overload: CONTROLADOR.ControladorGenerales3.AgregarIndicadoresDieteticos*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CONTROLADOR.ControladorGenerales3.ModificarIndicadoresDieteticos(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32)
+  commentId: M:CONTROLADOR.ControladorGenerales3.ModificarIndicadoresDieteticos(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32)
+  id: ModificarIndicadoresDieteticos(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32)
+  parent: CONTROLADOR.ControladorGenerales3
+  langs:
+  - csharp
+  - vb
+  name: ModificarIndicadoresDieteticos(String, String, String, String, String, String, String, String, Int32)
+  nameWithType: ControladorGenerales3.ModificarIndicadoresDieteticos(String, String, String, String, String, String, String, String, Int32)
+  fullName: CONTROLADOR.ControladorGenerales3.ModificarIndicadoresDieteticos(System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: CONTROLADOR/ControladorGenerales3.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ModificarIndicadoresDieteticos
+    path: ControladorGenerales3.cs
+    startLine: 40
+  assemblies:
+  - CONTROLADOR
+  namespace: CONTROLADOR
+  syntax:
+    content: public void ModificarIndicadoresDieteticos(string comidasDia, string quienComida, string comeFuera, string AlimentosPref, string agua, string alergias, string notas, string recordatorio, int id)
+    parameters:
+    - id: comidasDia
+      type: System.String
+    - id: quienComida
+      type: System.String
+    - id: comeFuera
+      type: System.String
+    - id: AlimentosPref
+      type: System.String
+    - id: agua
+      type: System.String
+    - id: alergias
+      type: System.String
+    - id: notas
+      type: System.String
+    - id: recordatorio
+      type: System.String
+    - id: id
+      type: System.Int32
+    content.vb: Public Sub ModificarIndicadoresDieteticos(comidasDia As String, quienComida As String, comeFuera As String, AlimentosPref As String, agua As String, alergias As String, notas As String, recordatorio As String, id As Integer)
+  overload: CONTROLADOR.ControladorGenerales3.ModificarIndicadoresDieteticos*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CONTROLADOR.ControladorGenerales3.ObtenerTexto(System.Int32,System.String)
+  commentId: M:CONTROLADOR.ControladorGenerales3.ObtenerTexto(System.Int32,System.String)
+  id: ObtenerTexto(System.Int32,System.String)
+  parent: CONTROLADOR.ControladorGenerales3
+  langs:
+  - csharp
+  - vb
+  name: ObtenerTexto(Int32, String)
+  nameWithType: ControladorGenerales3.ObtenerTexto(Int32, String)
+  fullName: CONTROLADOR.ControladorGenerales3.ObtenerTexto(System.Int32, System.String)
+  type: Method
+  source:
+    remote:
+      path: CONTROLADOR/ControladorGenerales3.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ObtenerTexto
+    path: ControladorGenerales3.cs
+    startLine: 62
+  assemblies:
+  - CONTROLADOR
+  namespace: CONTROLADOR
+  syntax:
+    content: public string ObtenerTexto(int id, string campo)
+    parameters:
+    - id: id
+      type: System.Int32
+    - id: campo
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Function ObtenerTexto(id As Integer, campo As String) As String
+  overload: CONTROLADOR.ControladorGenerales3.ObtenerTexto*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CONTROLADOR.ControladorGenerales3.Obtener(System.Int32,System.String,System.String,System.String)
+  commentId: M:CONTROLADOR.ControladorGenerales3.Obtener(System.Int32,System.String,System.String,System.String)
+  id: Obtener(System.Int32,System.String,System.String,System.String)
+  parent: CONTROLADOR.ControladorGenerales3
+  langs:
+  - csharp
+  - vb
+  name: Obtener(Int32, String, String, String)
+  nameWithType: ControladorGenerales3.Obtener(Int32, String, String, String)
+  fullName: CONTROLADOR.ControladorGenerales3.Obtener(System.Int32, System.String, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: CONTROLADOR/ControladorGenerales3.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: Obtener
+    path: ControladorGenerales3.cs
+    startLine: 75
+  assemblies:
+  - CONTROLADOR
+  namespace: CONTROLADOR
+  syntax:
+    content: public string Obtener(int id, string campo, string tabla, string campoID)
+    parameters:
+    - id: id
+      type: System.Int32
+    - id: campo
+      type: System.String
+    - id: tabla
+      type: System.String
+    - id: campoID
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Function Obtener(id As Integer, campo As String, tabla As String, campoID As String) As String
+  overload: CONTROLADOR.ControladorGenerales3.Obtener*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: CONTROLADOR
+  commentId: N:CONTROLADOR
+  name: CONTROLADOR
+  nameWithType: CONTROLADOR
+  fullName: CONTROLADOR
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: CONTROLADOR.ControladorGenerales3.AgregarIndicadoresDieteticos*
+  commentId: Overload:CONTROLADOR.ControladorGenerales3.AgregarIndicadoresDieteticos
+  name: AgregarIndicadoresDieteticos
+  nameWithType: ControladorGenerales3.AgregarIndicadoresDieteticos
+  fullName: CONTROLADOR.ControladorGenerales3.AgregarIndicadoresDieteticos
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: CONTROLADOR.ControladorGenerales3.ModificarIndicadoresDieteticos*
+  commentId: Overload:CONTROLADOR.ControladorGenerales3.ModificarIndicadoresDieteticos
+  name: ModificarIndicadoresDieteticos
+  nameWithType: ControladorGenerales3.ModificarIndicadoresDieteticos
+  fullName: CONTROLADOR.ControladorGenerales3.ModificarIndicadoresDieteticos
+- uid: CONTROLADOR.ControladorGenerales3.ObtenerTexto*
+  commentId: Overload:CONTROLADOR.ControladorGenerales3.ObtenerTexto
+  name: ObtenerTexto
+  nameWithType: ControladorGenerales3.ObtenerTexto
+  fullName: CONTROLADOR.ControladorGenerales3.ObtenerTexto
+- uid: CONTROLADOR.ControladorGenerales3.Obtener*
+  commentId: Overload:CONTROLADOR.ControladorGenerales3.Obtener
+  name: Obtener
+  nameWithType: ControladorGenerales3.Obtener
+  fullName: CONTROLADOR.ControladorGenerales3.Obtener

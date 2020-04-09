@@ -12,7 +12,7 @@ namespace MODELO
     /// </summary>
     public class Conexion
     {
-        private static string connectionString = "server=DESKTOP-RKNO24A; database=DBPAS; integrated security=true";
+        private static string connectionString = "server=DESKTOP-J7FIT5H; database=DBPAS; integrated security=true";
 
         public static string ObtenerConexion()
         {

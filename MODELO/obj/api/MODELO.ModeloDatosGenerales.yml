@@ -1,0 +1,1634 @@
+### YamlMime:ManagedReference
+items:
+- uid: MODELO.ModeloDatosGenerales
+  commentId: T:MODELO.ModeloDatosGenerales
+  id: ModeloDatosGenerales
+  parent: MODELO
+  children:
+  - MODELO.ModeloDatosGenerales.AgregarAntecedentesPatologicos(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32)
+  - MODELO.ModeloDatosGenerales.ModificarAntecedentesPatologicos(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32)
+  - MODELO.ModeloDatosGenerales.ModificarDatosGenerales(System.String,System.String,System.String,System.DateTime,System.String,System.String,System.String,System.String,System.String,System.Int32)
+  - MODELO.ModeloDatosGenerales.ObtenerAnsiedad(System.Int32)
+  - MODELO.ModeloDatosGenerales.ObtenerCirugia(System.Int32)
+  - MODELO.ModeloDatosGenerales.ObtenerColitis(System.Int32)
+  - MODELO.ModeloDatosGenerales.ObtenerDiarrea(System.Int32)
+  - MODELO.ModeloDatosGenerales.ObtenerDisfagia(System.Int32)
+  - MODELO.ModeloDatosGenerales.ObtenerDiureticos(System.Int32)
+  - MODELO.ModeloDatosGenerales.ObtenerDolorCabeza(System.Int32)
+  - MODELO.ModeloDatosGenerales.ObtenerEmail(System.Int32)
+  - MODELO.ModeloDatosGenerales.ObtenerEnfermedad(System.Int32)
+  - MODELO.ModeloDatosGenerales.ObtenerEscolaridad(System.Int32)
+  - MODELO.ModeloDatosGenerales.ObtenerEstadoCivil(System.Int32)
+  - MODELO.ModeloDatosGenerales.ObtenerEstrenimiento(System.Int32)
+  - MODELO.ModeloDatosGenerales.ObtenerFechaNacimiento(System.Int32)
+  - MODELO.ModeloDatosGenerales.ObtenerFlatulencias(System.Int32)
+  - MODELO.ModeloDatosGenerales.ObtenerGastritis(System.Int32)
+  - MODELO.ModeloDatosGenerales.ObtenerGenero(System.Int32)
+  - MODELO.ModeloDatosGenerales.ObtenerLaxantes(System.Int32)
+  - MODELO.ModeloDatosGenerales.ObtenerMasticacion(System.Int32)
+  - MODELO.ModeloDatosGenerales.ObtenerMedicamentos(System.Int32)
+  - MODELO.ModeloDatosGenerales.ObtenerMotivos(System.Int32)
+  - MODELO.ModeloDatosGenerales.ObtenerNauseas(System.Int32)
+  - MODELO.ModeloDatosGenerales.ObtenerNombre(System.Int32)
+  - MODELO.ModeloDatosGenerales.ObtenerOcupacion(System.Int32)
+  - MODELO.ModeloDatosGenerales.ObtenerSuplementos(System.Int32)
+  - MODELO.ModeloDatosGenerales.ObtenerTelefono(System.Int32)
+  - MODELO.ModeloDatosGenerales.ObtenerVomito(System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: ModeloDatosGenerales
+  nameWithType: ModeloDatosGenerales
+  fullName: MODELO.ModeloDatosGenerales
+  type: Class
+  source:
+    remote:
+      path: MODELO/ModeloDatosGenerales.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ModeloDatosGenerales
+    path: ModeloDatosGenerales.cs
+    startLine: 14
+  assemblies:
+  - MODELO
+  namespace: MODELO
+  summary: "\nEl modelo de &quot;Generales&quot; se encarga de realizar el CRUD para los registros de la tabla de \n&quot;Paciente y DatosGnAntePato&quot; de la base de datos &quot;BDPAS&quot; destinada al sisema.\n"
+  example: []
+  syntax:
+    content: public class ModeloDatosGenerales
+    content.vb: Public Class ModeloDatosGenerales
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: MODELO.ModeloDatosGenerales.ObtenerNombre(System.Int32)
+  commentId: M:MODELO.ModeloDatosGenerales.ObtenerNombre(System.Int32)
+  id: ObtenerNombre(System.Int32)
+  parent: MODELO.ModeloDatosGenerales
+  langs:
+  - csharp
+  - vb
+  name: ObtenerNombre(Int32)
+  nameWithType: ModeloDatosGenerales.ObtenerNombre(Int32)
+  fullName: MODELO.ModeloDatosGenerales.ObtenerNombre(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: MODELO/ModeloDatosGenerales.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ObtenerNombre
+    path: ModeloDatosGenerales.cs
+    startLine: 17
+  assemblies:
+  - MODELO
+  namespace: MODELO
+  syntax:
+    content: public string ObtenerNombre(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: Public Function ObtenerNombre(id As Integer) As String
+  overload: MODELO.ModeloDatosGenerales.ObtenerNombre*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: MODELO.ModeloDatosGenerales.ObtenerGenero(System.Int32)
+  commentId: M:MODELO.ModeloDatosGenerales.ObtenerGenero(System.Int32)
+  id: ObtenerGenero(System.Int32)
+  parent: MODELO.ModeloDatosGenerales
+  langs:
+  - csharp
+  - vb
+  name: ObtenerGenero(Int32)
+  nameWithType: ModeloDatosGenerales.ObtenerGenero(Int32)
+  fullName: MODELO.ModeloDatosGenerales.ObtenerGenero(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: MODELO/ModeloDatosGenerales.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ObtenerGenero
+    path: ModeloDatosGenerales.cs
+    startLine: 39
+  assemblies:
+  - MODELO
+  namespace: MODELO
+  syntax:
+    content: public string ObtenerGenero(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: Public Function ObtenerGenero(id As Integer) As String
+  overload: MODELO.ModeloDatosGenerales.ObtenerGenero*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: MODELO.ModeloDatosGenerales.ObtenerEstadoCivil(System.Int32)
+  commentId: M:MODELO.ModeloDatosGenerales.ObtenerEstadoCivil(System.Int32)
+  id: ObtenerEstadoCivil(System.Int32)
+  parent: MODELO.ModeloDatosGenerales
+  langs:
+  - csharp
+  - vb
+  name: ObtenerEstadoCivil(Int32)
+  nameWithType: ModeloDatosGenerales.ObtenerEstadoCivil(Int32)
+  fullName: MODELO.ModeloDatosGenerales.ObtenerEstadoCivil(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: MODELO/ModeloDatosGenerales.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ObtenerEstadoCivil
+    path: ModeloDatosGenerales.cs
+    startLine: 61
+  assemblies:
+  - MODELO
+  namespace: MODELO
+  syntax:
+    content: public string ObtenerEstadoCivil(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: Public Function ObtenerEstadoCivil(id As Integer) As String
+  overload: MODELO.ModeloDatosGenerales.ObtenerEstadoCivil*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: MODELO.ModeloDatosGenerales.ObtenerFechaNacimiento(System.Int32)
+  commentId: M:MODELO.ModeloDatosGenerales.ObtenerFechaNacimiento(System.Int32)
+  id: ObtenerFechaNacimiento(System.Int32)
+  parent: MODELO.ModeloDatosGenerales
+  langs:
+  - csharp
+  - vb
+  name: ObtenerFechaNacimiento(Int32)
+  nameWithType: ModeloDatosGenerales.ObtenerFechaNacimiento(Int32)
+  fullName: MODELO.ModeloDatosGenerales.ObtenerFechaNacimiento(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: MODELO/ModeloDatosGenerales.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ObtenerFechaNacimiento
+    path: ModeloDatosGenerales.cs
+    startLine: 82
+  assemblies:
+  - MODELO
+  namespace: MODELO
+  syntax:
+    content: public DateTime ObtenerFechaNacimiento(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.DateTime
+    content.vb: Public Function ObtenerFechaNacimiento(id As Integer) As Date
+  overload: MODELO.ModeloDatosGenerales.ObtenerFechaNacimiento*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: MODELO.ModeloDatosGenerales.ObtenerEscolaridad(System.Int32)
+  commentId: M:MODELO.ModeloDatosGenerales.ObtenerEscolaridad(System.Int32)
+  id: ObtenerEscolaridad(System.Int32)
+  parent: MODELO.ModeloDatosGenerales
+  langs:
+  - csharp
+  - vb
+  name: ObtenerEscolaridad(Int32)
+  nameWithType: ModeloDatosGenerales.ObtenerEscolaridad(Int32)
+  fullName: MODELO.ModeloDatosGenerales.ObtenerEscolaridad(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: MODELO/ModeloDatosGenerales.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ObtenerEscolaridad
+    path: ModeloDatosGenerales.cs
+    startLine: 105
+  assemblies:
+  - MODELO
+  namespace: MODELO
+  syntax:
+    content: public string ObtenerEscolaridad(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: Public Function ObtenerEscolaridad(id As Integer) As String
+  overload: MODELO.ModeloDatosGenerales.ObtenerEscolaridad*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: MODELO.ModeloDatosGenerales.ObtenerOcupacion(System.Int32)
+  commentId: M:MODELO.ModeloDatosGenerales.ObtenerOcupacion(System.Int32)
+  id: ObtenerOcupacion(System.Int32)
+  parent: MODELO.ModeloDatosGenerales
+  langs:
+  - csharp
+  - vb
+  name: ObtenerOcupacion(Int32)
+  nameWithType: ModeloDatosGenerales.ObtenerOcupacion(Int32)
+  fullName: MODELO.ModeloDatosGenerales.ObtenerOcupacion(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: MODELO/ModeloDatosGenerales.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ObtenerOcupacion
+    path: ModeloDatosGenerales.cs
+    startLine: 127
+  assemblies:
+  - MODELO
+  namespace: MODELO
+  syntax:
+    content: public string ObtenerOcupacion(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: Public Function ObtenerOcupacion(id As Integer) As String
+  overload: MODELO.ModeloDatosGenerales.ObtenerOcupacion*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: MODELO.ModeloDatosGenerales.ObtenerTelefono(System.Int32)
+  commentId: M:MODELO.ModeloDatosGenerales.ObtenerTelefono(System.Int32)
+  id: ObtenerTelefono(System.Int32)
+  parent: MODELO.ModeloDatosGenerales
+  langs:
+  - csharp
+  - vb
+  name: ObtenerTelefono(Int32)
+  nameWithType: ModeloDatosGenerales.ObtenerTelefono(Int32)
+  fullName: MODELO.ModeloDatosGenerales.ObtenerTelefono(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: MODELO/ModeloDatosGenerales.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ObtenerTelefono
+    path: ModeloDatosGenerales.cs
+    startLine: 149
+  assemblies:
+  - MODELO
+  namespace: MODELO
+  syntax:
+    content: public string ObtenerTelefono(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: Public Function ObtenerTelefono(id As Integer) As String
+  overload: MODELO.ModeloDatosGenerales.ObtenerTelefono*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: MODELO.ModeloDatosGenerales.ObtenerEmail(System.Int32)
+  commentId: M:MODELO.ModeloDatosGenerales.ObtenerEmail(System.Int32)
+  id: ObtenerEmail(System.Int32)
+  parent: MODELO.ModeloDatosGenerales
+  langs:
+  - csharp
+  - vb
+  name: ObtenerEmail(Int32)
+  nameWithType: ModeloDatosGenerales.ObtenerEmail(Int32)
+  fullName: MODELO.ModeloDatosGenerales.ObtenerEmail(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: MODELO/ModeloDatosGenerales.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ObtenerEmail
+    path: ModeloDatosGenerales.cs
+    startLine: 171
+  assemblies:
+  - MODELO
+  namespace: MODELO
+  syntax:
+    content: public string ObtenerEmail(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: Public Function ObtenerEmail(id As Integer) As String
+  overload: MODELO.ModeloDatosGenerales.ObtenerEmail*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: MODELO.ModeloDatosGenerales.ObtenerMotivos(System.Int32)
+  commentId: M:MODELO.ModeloDatosGenerales.ObtenerMotivos(System.Int32)
+  id: ObtenerMotivos(System.Int32)
+  parent: MODELO.ModeloDatosGenerales
+  langs:
+  - csharp
+  - vb
+  name: ObtenerMotivos(Int32)
+  nameWithType: ModeloDatosGenerales.ObtenerMotivos(Int32)
+  fullName: MODELO.ModeloDatosGenerales.ObtenerMotivos(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: MODELO/ModeloDatosGenerales.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ObtenerMotivos
+    path: ModeloDatosGenerales.cs
+    startLine: 193
+  assemblies:
+  - MODELO
+  namespace: MODELO
+  syntax:
+    content: public string ObtenerMotivos(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: Public Function ObtenerMotivos(id As Integer) As String
+  overload: MODELO.ModeloDatosGenerales.ObtenerMotivos*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: MODELO.ModeloDatosGenerales.AgregarAntecedentesPatologicos(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32)
+  commentId: M:MODELO.ModeloDatosGenerales.AgregarAntecedentesPatologicos(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32)
+  id: AgregarAntecedentesPatologicos(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32)
+  parent: MODELO.ModeloDatosGenerales
+  langs:
+  - csharp
+  - vb
+  name: AgregarAntecedentesPatologicos(String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, Int32)
+  nameWithType: ModeloDatosGenerales.AgregarAntecedentesPatologicos(String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, Int32)
+  fullName: MODELO.ModeloDatosGenerales.AgregarAntecedentesPatologicos(System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: MODELO/ModeloDatosGenerales.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: AgregarAntecedentesPatologicos
+    path: ModeloDatosGenerales.cs
+    startLine: 215
+  assemblies:
+  - MODELO
+  namespace: MODELO
+  syntax:
+    content: public void AgregarAntecedentesPatologicos(string diarrea, string flatulencias, string vomito, string masticacion, string colitis, string estrenimiento, string ansiedad, string dolorCabeza, string gastritis, string disfagia, string nauseas, string enfermedad, string medicamentos, string suplementos, string diureticos, string laxantes, string cirugia, int idPaciente)
+    parameters:
+    - id: diarrea
+      type: System.String
+    - id: flatulencias
+      type: System.String
+    - id: vomito
+      type: System.String
+    - id: masticacion
+      type: System.String
+    - id: colitis
+      type: System.String
+    - id: estrenimiento
+      type: System.String
+    - id: ansiedad
+      type: System.String
+    - id: dolorCabeza
+      type: System.String
+    - id: gastritis
+      type: System.String
+    - id: disfagia
+      type: System.String
+    - id: nauseas
+      type: System.String
+    - id: enfermedad
+      type: System.String
+    - id: medicamentos
+      type: System.String
+    - id: suplementos
+      type: System.String
+    - id: diureticos
+      type: System.String
+    - id: laxantes
+      type: System.String
+    - id: cirugia
+      type: System.String
+    - id: idPaciente
+      type: System.Int32
+    content.vb: Public Sub AgregarAntecedentesPatologicos(diarrea As String, flatulencias As String, vomito As String, masticacion As String, colitis As String, estrenimiento As String, ansiedad As String, dolorCabeza As String, gastritis As String, disfagia As String, nauseas As String, enfermedad As String, medicamentos As String, suplementos As String, diureticos As String, laxantes As String, cirugia As String, idPaciente As Integer)
+  overload: MODELO.ModeloDatosGenerales.AgregarAntecedentesPatologicos*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: MODELO.ModeloDatosGenerales.ObtenerDiarrea(System.Int32)
+  commentId: M:MODELO.ModeloDatosGenerales.ObtenerDiarrea(System.Int32)
+  id: ObtenerDiarrea(System.Int32)
+  parent: MODELO.ModeloDatosGenerales
+  langs:
+  - csharp
+  - vb
+  name: ObtenerDiarrea(Int32)
+  nameWithType: ModeloDatosGenerales.ObtenerDiarrea(Int32)
+  fullName: MODELO.ModeloDatosGenerales.ObtenerDiarrea(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: MODELO/ModeloDatosGenerales.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ObtenerDiarrea
+    path: ModeloDatosGenerales.cs
+    startLine: 329
+  assemblies:
+  - MODELO
+  namespace: MODELO
+  syntax:
+    content: public string ObtenerDiarrea(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: Public Function ObtenerDiarrea(id As Integer) As String
+  overload: MODELO.ModeloDatosGenerales.ObtenerDiarrea*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: MODELO.ModeloDatosGenerales.ObtenerFlatulencias(System.Int32)
+  commentId: M:MODELO.ModeloDatosGenerales.ObtenerFlatulencias(System.Int32)
+  id: ObtenerFlatulencias(System.Int32)
+  parent: MODELO.ModeloDatosGenerales
+  langs:
+  - csharp
+  - vb
+  name: ObtenerFlatulencias(Int32)
+  nameWithType: ModeloDatosGenerales.ObtenerFlatulencias(Int32)
+  fullName: MODELO.ModeloDatosGenerales.ObtenerFlatulencias(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: MODELO/ModeloDatosGenerales.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ObtenerFlatulencias
+    path: ModeloDatosGenerales.cs
+    startLine: 351
+  assemblies:
+  - MODELO
+  namespace: MODELO
+  syntax:
+    content: public string ObtenerFlatulencias(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: Public Function ObtenerFlatulencias(id As Integer) As String
+  overload: MODELO.ModeloDatosGenerales.ObtenerFlatulencias*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: MODELO.ModeloDatosGenerales.ObtenerVomito(System.Int32)
+  commentId: M:MODELO.ModeloDatosGenerales.ObtenerVomito(System.Int32)
+  id: ObtenerVomito(System.Int32)
+  parent: MODELO.ModeloDatosGenerales
+  langs:
+  - csharp
+  - vb
+  name: ObtenerVomito(Int32)
+  nameWithType: ModeloDatosGenerales.ObtenerVomito(Int32)
+  fullName: MODELO.ModeloDatosGenerales.ObtenerVomito(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: MODELO/ModeloDatosGenerales.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ObtenerVomito
+    path: ModeloDatosGenerales.cs
+    startLine: 373
+  assemblies:
+  - MODELO
+  namespace: MODELO
+  syntax:
+    content: public string ObtenerVomito(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: Public Function ObtenerVomito(id As Integer) As String
+  overload: MODELO.ModeloDatosGenerales.ObtenerVomito*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: MODELO.ModeloDatosGenerales.ObtenerMasticacion(System.Int32)
+  commentId: M:MODELO.ModeloDatosGenerales.ObtenerMasticacion(System.Int32)
+  id: ObtenerMasticacion(System.Int32)
+  parent: MODELO.ModeloDatosGenerales
+  langs:
+  - csharp
+  - vb
+  name: ObtenerMasticacion(Int32)
+  nameWithType: ModeloDatosGenerales.ObtenerMasticacion(Int32)
+  fullName: MODELO.ModeloDatosGenerales.ObtenerMasticacion(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: MODELO/ModeloDatosGenerales.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ObtenerMasticacion
+    path: ModeloDatosGenerales.cs
+    startLine: 395
+  assemblies:
+  - MODELO
+  namespace: MODELO
+  syntax:
+    content: public string ObtenerMasticacion(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: Public Function ObtenerMasticacion(id As Integer) As String
+  overload: MODELO.ModeloDatosGenerales.ObtenerMasticacion*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: MODELO.ModeloDatosGenerales.ObtenerColitis(System.Int32)
+  commentId: M:MODELO.ModeloDatosGenerales.ObtenerColitis(System.Int32)
+  id: ObtenerColitis(System.Int32)
+  parent: MODELO.ModeloDatosGenerales
+  langs:
+  - csharp
+  - vb
+  name: ObtenerColitis(Int32)
+  nameWithType: ModeloDatosGenerales.ObtenerColitis(Int32)
+  fullName: MODELO.ModeloDatosGenerales.ObtenerColitis(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: MODELO/ModeloDatosGenerales.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ObtenerColitis
+    path: ModeloDatosGenerales.cs
+    startLine: 417
+  assemblies:
+  - MODELO
+  namespace: MODELO
+  syntax:
+    content: public string ObtenerColitis(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: Public Function ObtenerColitis(id As Integer) As String
+  overload: MODELO.ModeloDatosGenerales.ObtenerColitis*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: MODELO.ModeloDatosGenerales.ObtenerEstrenimiento(System.Int32)
+  commentId: M:MODELO.ModeloDatosGenerales.ObtenerEstrenimiento(System.Int32)
+  id: ObtenerEstrenimiento(System.Int32)
+  parent: MODELO.ModeloDatosGenerales
+  langs:
+  - csharp
+  - vb
+  name: ObtenerEstrenimiento(Int32)
+  nameWithType: ModeloDatosGenerales.ObtenerEstrenimiento(Int32)
+  fullName: MODELO.ModeloDatosGenerales.ObtenerEstrenimiento(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: MODELO/ModeloDatosGenerales.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ObtenerEstrenimiento
+    path: ModeloDatosGenerales.cs
+    startLine: 439
+  assemblies:
+  - MODELO
+  namespace: MODELO
+  syntax:
+    content: public string ObtenerEstrenimiento(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: Public Function ObtenerEstrenimiento(id As Integer) As String
+  overload: MODELO.ModeloDatosGenerales.ObtenerEstrenimiento*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: MODELO.ModeloDatosGenerales.ObtenerAnsiedad(System.Int32)
+  commentId: M:MODELO.ModeloDatosGenerales.ObtenerAnsiedad(System.Int32)
+  id: ObtenerAnsiedad(System.Int32)
+  parent: MODELO.ModeloDatosGenerales
+  langs:
+  - csharp
+  - vb
+  name: ObtenerAnsiedad(Int32)
+  nameWithType: ModeloDatosGenerales.ObtenerAnsiedad(Int32)
+  fullName: MODELO.ModeloDatosGenerales.ObtenerAnsiedad(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: MODELO/ModeloDatosGenerales.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ObtenerAnsiedad
+    path: ModeloDatosGenerales.cs
+    startLine: 461
+  assemblies:
+  - MODELO
+  namespace: MODELO
+  syntax:
+    content: public string ObtenerAnsiedad(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: Public Function ObtenerAnsiedad(id As Integer) As String
+  overload: MODELO.ModeloDatosGenerales.ObtenerAnsiedad*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: MODELO.ModeloDatosGenerales.ObtenerDolorCabeza(System.Int32)
+  commentId: M:MODELO.ModeloDatosGenerales.ObtenerDolorCabeza(System.Int32)
+  id: ObtenerDolorCabeza(System.Int32)
+  parent: MODELO.ModeloDatosGenerales
+  langs:
+  - csharp
+  - vb
+  name: ObtenerDolorCabeza(Int32)
+  nameWithType: ModeloDatosGenerales.ObtenerDolorCabeza(Int32)
+  fullName: MODELO.ModeloDatosGenerales.ObtenerDolorCabeza(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: MODELO/ModeloDatosGenerales.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ObtenerDolorCabeza
+    path: ModeloDatosGenerales.cs
+    startLine: 483
+  assemblies:
+  - MODELO
+  namespace: MODELO
+  syntax:
+    content: public string ObtenerDolorCabeza(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: Public Function ObtenerDolorCabeza(id As Integer) As String
+  overload: MODELO.ModeloDatosGenerales.ObtenerDolorCabeza*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: MODELO.ModeloDatosGenerales.ObtenerGastritis(System.Int32)
+  commentId: M:MODELO.ModeloDatosGenerales.ObtenerGastritis(System.Int32)
+  id: ObtenerGastritis(System.Int32)
+  parent: MODELO.ModeloDatosGenerales
+  langs:
+  - csharp
+  - vb
+  name: ObtenerGastritis(Int32)
+  nameWithType: ModeloDatosGenerales.ObtenerGastritis(Int32)
+  fullName: MODELO.ModeloDatosGenerales.ObtenerGastritis(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: MODELO/ModeloDatosGenerales.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ObtenerGastritis
+    path: ModeloDatosGenerales.cs
+    startLine: 505
+  assemblies:
+  - MODELO
+  namespace: MODELO
+  syntax:
+    content: public string ObtenerGastritis(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: Public Function ObtenerGastritis(id As Integer) As String
+  overload: MODELO.ModeloDatosGenerales.ObtenerGastritis*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: MODELO.ModeloDatosGenerales.ObtenerDisfagia(System.Int32)
+  commentId: M:MODELO.ModeloDatosGenerales.ObtenerDisfagia(System.Int32)
+  id: ObtenerDisfagia(System.Int32)
+  parent: MODELO.ModeloDatosGenerales
+  langs:
+  - csharp
+  - vb
+  name: ObtenerDisfagia(Int32)
+  nameWithType: ModeloDatosGenerales.ObtenerDisfagia(Int32)
+  fullName: MODELO.ModeloDatosGenerales.ObtenerDisfagia(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: MODELO/ModeloDatosGenerales.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ObtenerDisfagia
+    path: ModeloDatosGenerales.cs
+    startLine: 527
+  assemblies:
+  - MODELO
+  namespace: MODELO
+  syntax:
+    content: public string ObtenerDisfagia(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: Public Function ObtenerDisfagia(id As Integer) As String
+  overload: MODELO.ModeloDatosGenerales.ObtenerDisfagia*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: MODELO.ModeloDatosGenerales.ObtenerNauseas(System.Int32)
+  commentId: M:MODELO.ModeloDatosGenerales.ObtenerNauseas(System.Int32)
+  id: ObtenerNauseas(System.Int32)
+  parent: MODELO.ModeloDatosGenerales
+  langs:
+  - csharp
+  - vb
+  name: ObtenerNauseas(Int32)
+  nameWithType: ModeloDatosGenerales.ObtenerNauseas(Int32)
+  fullName: MODELO.ModeloDatosGenerales.ObtenerNauseas(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: MODELO/ModeloDatosGenerales.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ObtenerNauseas
+    path: ModeloDatosGenerales.cs
+    startLine: 549
+  assemblies:
+  - MODELO
+  namespace: MODELO
+  syntax:
+    content: public string ObtenerNauseas(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: Public Function ObtenerNauseas(id As Integer) As String
+  overload: MODELO.ModeloDatosGenerales.ObtenerNauseas*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: MODELO.ModeloDatosGenerales.ObtenerEnfermedad(System.Int32)
+  commentId: M:MODELO.ModeloDatosGenerales.ObtenerEnfermedad(System.Int32)
+  id: ObtenerEnfermedad(System.Int32)
+  parent: MODELO.ModeloDatosGenerales
+  langs:
+  - csharp
+  - vb
+  name: ObtenerEnfermedad(Int32)
+  nameWithType: ModeloDatosGenerales.ObtenerEnfermedad(Int32)
+  fullName: MODELO.ModeloDatosGenerales.ObtenerEnfermedad(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: MODELO/ModeloDatosGenerales.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ObtenerEnfermedad
+    path: ModeloDatosGenerales.cs
+    startLine: 571
+  assemblies:
+  - MODELO
+  namespace: MODELO
+  syntax:
+    content: public string ObtenerEnfermedad(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: Public Function ObtenerEnfermedad(id As Integer) As String
+  overload: MODELO.ModeloDatosGenerales.ObtenerEnfermedad*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: MODELO.ModeloDatosGenerales.ObtenerMedicamentos(System.Int32)
+  commentId: M:MODELO.ModeloDatosGenerales.ObtenerMedicamentos(System.Int32)
+  id: ObtenerMedicamentos(System.Int32)
+  parent: MODELO.ModeloDatosGenerales
+  langs:
+  - csharp
+  - vb
+  name: ObtenerMedicamentos(Int32)
+  nameWithType: ModeloDatosGenerales.ObtenerMedicamentos(Int32)
+  fullName: MODELO.ModeloDatosGenerales.ObtenerMedicamentos(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: MODELO/ModeloDatosGenerales.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ObtenerMedicamentos
+    path: ModeloDatosGenerales.cs
+    startLine: 593
+  assemblies:
+  - MODELO
+  namespace: MODELO
+  syntax:
+    content: public string ObtenerMedicamentos(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: Public Function ObtenerMedicamentos(id As Integer) As String
+  overload: MODELO.ModeloDatosGenerales.ObtenerMedicamentos*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: MODELO.ModeloDatosGenerales.ObtenerSuplementos(System.Int32)
+  commentId: M:MODELO.ModeloDatosGenerales.ObtenerSuplementos(System.Int32)
+  id: ObtenerSuplementos(System.Int32)
+  parent: MODELO.ModeloDatosGenerales
+  langs:
+  - csharp
+  - vb
+  name: ObtenerSuplementos(Int32)
+  nameWithType: ModeloDatosGenerales.ObtenerSuplementos(Int32)
+  fullName: MODELO.ModeloDatosGenerales.ObtenerSuplementos(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: MODELO/ModeloDatosGenerales.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ObtenerSuplementos
+    path: ModeloDatosGenerales.cs
+    startLine: 615
+  assemblies:
+  - MODELO
+  namespace: MODELO
+  syntax:
+    content: public string ObtenerSuplementos(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: Public Function ObtenerSuplementos(id As Integer) As String
+  overload: MODELO.ModeloDatosGenerales.ObtenerSuplementos*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: MODELO.ModeloDatosGenerales.ObtenerDiureticos(System.Int32)
+  commentId: M:MODELO.ModeloDatosGenerales.ObtenerDiureticos(System.Int32)
+  id: ObtenerDiureticos(System.Int32)
+  parent: MODELO.ModeloDatosGenerales
+  langs:
+  - csharp
+  - vb
+  name: ObtenerDiureticos(Int32)
+  nameWithType: ModeloDatosGenerales.ObtenerDiureticos(Int32)
+  fullName: MODELO.ModeloDatosGenerales.ObtenerDiureticos(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: MODELO/ModeloDatosGenerales.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ObtenerDiureticos
+    path: ModeloDatosGenerales.cs
+    startLine: 637
+  assemblies:
+  - MODELO
+  namespace: MODELO
+  syntax:
+    content: public string ObtenerDiureticos(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: Public Function ObtenerDiureticos(id As Integer) As String
+  overload: MODELO.ModeloDatosGenerales.ObtenerDiureticos*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: MODELO.ModeloDatosGenerales.ObtenerLaxantes(System.Int32)
+  commentId: M:MODELO.ModeloDatosGenerales.ObtenerLaxantes(System.Int32)
+  id: ObtenerLaxantes(System.Int32)
+  parent: MODELO.ModeloDatosGenerales
+  langs:
+  - csharp
+  - vb
+  name: ObtenerLaxantes(Int32)
+  nameWithType: ModeloDatosGenerales.ObtenerLaxantes(Int32)
+  fullName: MODELO.ModeloDatosGenerales.ObtenerLaxantes(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: MODELO/ModeloDatosGenerales.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ObtenerLaxantes
+    path: ModeloDatosGenerales.cs
+    startLine: 659
+  assemblies:
+  - MODELO
+  namespace: MODELO
+  syntax:
+    content: public string ObtenerLaxantes(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: Public Function ObtenerLaxantes(id As Integer) As String
+  overload: MODELO.ModeloDatosGenerales.ObtenerLaxantes*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: MODELO.ModeloDatosGenerales.ObtenerCirugia(System.Int32)
+  commentId: M:MODELO.ModeloDatosGenerales.ObtenerCirugia(System.Int32)
+  id: ObtenerCirugia(System.Int32)
+  parent: MODELO.ModeloDatosGenerales
+  langs:
+  - csharp
+  - vb
+  name: ObtenerCirugia(Int32)
+  nameWithType: ModeloDatosGenerales.ObtenerCirugia(Int32)
+  fullName: MODELO.ModeloDatosGenerales.ObtenerCirugia(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: MODELO/ModeloDatosGenerales.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ObtenerCirugia
+    path: ModeloDatosGenerales.cs
+    startLine: 681
+  assemblies:
+  - MODELO
+  namespace: MODELO
+  syntax:
+    content: public string ObtenerCirugia(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: Public Function ObtenerCirugia(id As Integer) As String
+  overload: MODELO.ModeloDatosGenerales.ObtenerCirugia*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: MODELO.ModeloDatosGenerales.ModificarDatosGenerales(System.String,System.String,System.String,System.DateTime,System.String,System.String,System.String,System.String,System.String,System.Int32)
+  commentId: M:MODELO.ModeloDatosGenerales.ModificarDatosGenerales(System.String,System.String,System.String,System.DateTime,System.String,System.String,System.String,System.String,System.String,System.Int32)
+  id: ModificarDatosGenerales(System.String,System.String,System.String,System.DateTime,System.String,System.String,System.String,System.String,System.String,System.Int32)
+  parent: MODELO.ModeloDatosGenerales
+  langs:
+  - csharp
+  - vb
+  name: ModificarDatosGenerales(String, String, String, DateTime, String, String, String, String, String, Int32)
+  nameWithType: ModeloDatosGenerales.ModificarDatosGenerales(String, String, String, DateTime, String, String, String, String, String, Int32)
+  fullName: MODELO.ModeloDatosGenerales.ModificarDatosGenerales(System.String, System.String, System.String, System.DateTime, System.String, System.String, System.String, System.String, System.String, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: MODELO/ModeloDatosGenerales.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ModificarDatosGenerales
+    path: ModeloDatosGenerales.cs
+    startLine: 703
+  assemblies:
+  - MODELO
+  namespace: MODELO
+  syntax:
+    content: public void ModificarDatosGenerales(string nombre, string genero, string estadoCivil, DateTime fechaNacimiento, string escolaridad, string ocupacion, string telefono, string email, string motivos, int id)
+    parameters:
+    - id: nombre
+      type: System.String
+    - id: genero
+      type: System.String
+    - id: estadoCivil
+      type: System.String
+    - id: fechaNacimiento
+      type: System.DateTime
+    - id: escolaridad
+      type: System.String
+    - id: ocupacion
+      type: System.String
+    - id: telefono
+      type: System.String
+    - id: email
+      type: System.String
+    - id: motivos
+      type: System.String
+    - id: id
+      type: System.Int32
+    content.vb: Public Sub ModificarDatosGenerales(nombre As String, genero As String, estadoCivil As String, fechaNacimiento As Date, escolaridad As String, ocupacion As String, telefono As String, email As String, motivos As String, id As Integer)
+  overload: MODELO.ModeloDatosGenerales.ModificarDatosGenerales*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: MODELO.ModeloDatosGenerales.ModificarAntecedentesPatologicos(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32)
+  commentId: M:MODELO.ModeloDatosGenerales.ModificarAntecedentesPatologicos(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32)
+  id: ModificarAntecedentesPatologicos(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32)
+  parent: MODELO.ModeloDatosGenerales
+  langs:
+  - csharp
+  - vb
+  name: ModificarAntecedentesPatologicos(String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, Int32)
+  nameWithType: ModeloDatosGenerales.ModificarAntecedentesPatologicos(String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, Int32)
+  fullName: MODELO.ModeloDatosGenerales.ModificarAntecedentesPatologicos(System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: MODELO/ModeloDatosGenerales.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ModificarAntecedentesPatologicos
+    path: ModeloDatosGenerales.cs
+    startLine: 737
+  assemblies:
+  - MODELO
+  namespace: MODELO
+  syntax:
+    content: public void ModificarAntecedentesPatologicos(string diarrea, string flatulencias, string vomito, string masticacion, string colitis, string estrenimiento, string ansiedad, string dolorCabeza, string gastritis, string disfagia, string nauseas, string enfermedad, string medicamentos, string suplementos, string diureticos, string laxantes, string cirugia, int idPaciente)
+    parameters:
+    - id: diarrea
+      type: System.String
+    - id: flatulencias
+      type: System.String
+    - id: vomito
+      type: System.String
+    - id: masticacion
+      type: System.String
+    - id: colitis
+      type: System.String
+    - id: estrenimiento
+      type: System.String
+    - id: ansiedad
+      type: System.String
+    - id: dolorCabeza
+      type: System.String
+    - id: gastritis
+      type: System.String
+    - id: disfagia
+      type: System.String
+    - id: nauseas
+      type: System.String
+    - id: enfermedad
+      type: System.String
+    - id: medicamentos
+      type: System.String
+    - id: suplementos
+      type: System.String
+    - id: diureticos
+      type: System.String
+    - id: laxantes
+      type: System.String
+    - id: cirugia
+      type: System.String
+    - id: idPaciente
+      type: System.Int32
+    content.vb: Public Sub ModificarAntecedentesPatologicos(diarrea As String, flatulencias As String, vomito As String, masticacion As String, colitis As String, estrenimiento As String, ansiedad As String, dolorCabeza As String, gastritis As String, disfagia As String, nauseas As String, enfermedad As String, medicamentos As String, suplementos As String, diureticos As String, laxantes As String, cirugia As String, idPaciente As Integer)
+  overload: MODELO.ModeloDatosGenerales.ModificarAntecedentesPatologicos*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: MODELO
+  commentId: N:MODELO
+  name: MODELO
+  nameWithType: MODELO
+  fullName: MODELO
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MODELO.ModeloDatosGenerales.ObtenerNombre*
+  commentId: Overload:MODELO.ModeloDatosGenerales.ObtenerNombre
+  name: ObtenerNombre
+  nameWithType: ModeloDatosGenerales.ObtenerNombre
+  fullName: MODELO.ModeloDatosGenerales.ObtenerNombre
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: MODELO.ModeloDatosGenerales.ObtenerGenero*
+  commentId: Overload:MODELO.ModeloDatosGenerales.ObtenerGenero
+  name: ObtenerGenero
+  nameWithType: ModeloDatosGenerales.ObtenerGenero
+  fullName: MODELO.ModeloDatosGenerales.ObtenerGenero
+- uid: MODELO.ModeloDatosGenerales.ObtenerEstadoCivil*
+  commentId: Overload:MODELO.ModeloDatosGenerales.ObtenerEstadoCivil
+  name: ObtenerEstadoCivil
+  nameWithType: ModeloDatosGenerales.ObtenerEstadoCivil
+  fullName: MODELO.ModeloDatosGenerales.ObtenerEstadoCivil
+- uid: MODELO.ModeloDatosGenerales.ObtenerFechaNacimiento*
+  commentId: Overload:MODELO.ModeloDatosGenerales.ObtenerFechaNacimiento
+  name: ObtenerFechaNacimiento
+  nameWithType: ModeloDatosGenerales.ObtenerFechaNacimiento
+  fullName: MODELO.ModeloDatosGenerales.ObtenerFechaNacimiento
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+- uid: MODELO.ModeloDatosGenerales.ObtenerEscolaridad*
+  commentId: Overload:MODELO.ModeloDatosGenerales.ObtenerEscolaridad
+  name: ObtenerEscolaridad
+  nameWithType: ModeloDatosGenerales.ObtenerEscolaridad
+  fullName: MODELO.ModeloDatosGenerales.ObtenerEscolaridad
+- uid: MODELO.ModeloDatosGenerales.ObtenerOcupacion*
+  commentId: Overload:MODELO.ModeloDatosGenerales.ObtenerOcupacion
+  name: ObtenerOcupacion
+  nameWithType: ModeloDatosGenerales.ObtenerOcupacion
+  fullName: MODELO.ModeloDatosGenerales.ObtenerOcupacion
+- uid: MODELO.ModeloDatosGenerales.ObtenerTelefono*
+  commentId: Overload:MODELO.ModeloDatosGenerales.ObtenerTelefono
+  name: ObtenerTelefono
+  nameWithType: ModeloDatosGenerales.ObtenerTelefono
+  fullName: MODELO.ModeloDatosGenerales.ObtenerTelefono
+- uid: MODELO.ModeloDatosGenerales.ObtenerEmail*
+  commentId: Overload:MODELO.ModeloDatosGenerales.ObtenerEmail
+  name: ObtenerEmail
+  nameWithType: ModeloDatosGenerales.ObtenerEmail
+  fullName: MODELO.ModeloDatosGenerales.ObtenerEmail
+- uid: MODELO.ModeloDatosGenerales.ObtenerMotivos*
+  commentId: Overload:MODELO.ModeloDatosGenerales.ObtenerMotivos
+  name: ObtenerMotivos
+  nameWithType: ModeloDatosGenerales.ObtenerMotivos
+  fullName: MODELO.ModeloDatosGenerales.ObtenerMotivos
+- uid: MODELO.ModeloDatosGenerales.AgregarAntecedentesPatologicos*
+  commentId: Overload:MODELO.ModeloDatosGenerales.AgregarAntecedentesPatologicos
+  name: AgregarAntecedentesPatologicos
+  nameWithType: ModeloDatosGenerales.AgregarAntecedentesPatologicos
+  fullName: MODELO.ModeloDatosGenerales.AgregarAntecedentesPatologicos
+- uid: MODELO.ModeloDatosGenerales.ObtenerDiarrea*
+  commentId: Overload:MODELO.ModeloDatosGenerales.ObtenerDiarrea
+  name: ObtenerDiarrea
+  nameWithType: ModeloDatosGenerales.ObtenerDiarrea
+  fullName: MODELO.ModeloDatosGenerales.ObtenerDiarrea
+- uid: MODELO.ModeloDatosGenerales.ObtenerFlatulencias*
+  commentId: Overload:MODELO.ModeloDatosGenerales.ObtenerFlatulencias
+  name: ObtenerFlatulencias
+  nameWithType: ModeloDatosGenerales.ObtenerFlatulencias
+  fullName: MODELO.ModeloDatosGenerales.ObtenerFlatulencias
+- uid: MODELO.ModeloDatosGenerales.ObtenerVomito*
+  commentId: Overload:MODELO.ModeloDatosGenerales.ObtenerVomito
+  name: ObtenerVomito
+  nameWithType: ModeloDatosGenerales.ObtenerVomito
+  fullName: MODELO.ModeloDatosGenerales.ObtenerVomito
+- uid: MODELO.ModeloDatosGenerales.ObtenerMasticacion*
+  commentId: Overload:MODELO.ModeloDatosGenerales.ObtenerMasticacion
+  name: ObtenerMasticacion
+  nameWithType: ModeloDatosGenerales.ObtenerMasticacion
+  fullName: MODELO.ModeloDatosGenerales.ObtenerMasticacion
+- uid: MODELO.ModeloDatosGenerales.ObtenerColitis*
+  commentId: Overload:MODELO.ModeloDatosGenerales.ObtenerColitis
+  name: ObtenerColitis
+  nameWithType: ModeloDatosGenerales.ObtenerColitis
+  fullName: MODELO.ModeloDatosGenerales.ObtenerColitis
+- uid: MODELO.ModeloDatosGenerales.ObtenerEstrenimiento*
+  commentId: Overload:MODELO.ModeloDatosGenerales.ObtenerEstrenimiento
+  name: ObtenerEstrenimiento
+  nameWithType: ModeloDatosGenerales.ObtenerEstrenimiento
+  fullName: MODELO.ModeloDatosGenerales.ObtenerEstrenimiento
+- uid: MODELO.ModeloDatosGenerales.ObtenerAnsiedad*
+  commentId: Overload:MODELO.ModeloDatosGenerales.ObtenerAnsiedad
+  name: ObtenerAnsiedad
+  nameWithType: ModeloDatosGenerales.ObtenerAnsiedad
+  fullName: MODELO.ModeloDatosGenerales.ObtenerAnsiedad
+- uid: MODELO.ModeloDatosGenerales.ObtenerDolorCabeza*
+  commentId: Overload:MODELO.ModeloDatosGenerales.ObtenerDolorCabeza
+  name: ObtenerDolorCabeza
+  nameWithType: ModeloDatosGenerales.ObtenerDolorCabeza
+  fullName: MODELO.ModeloDatosGenerales.ObtenerDolorCabeza
+- uid: MODELO.ModeloDatosGenerales.ObtenerGastritis*
+  commentId: Overload:MODELO.ModeloDatosGenerales.ObtenerGastritis
+  name: ObtenerGastritis
+  nameWithType: ModeloDatosGenerales.ObtenerGastritis
+  fullName: MODELO.ModeloDatosGenerales.ObtenerGastritis
+- uid: MODELO.ModeloDatosGenerales.ObtenerDisfagia*
+  commentId: Overload:MODELO.ModeloDatosGenerales.ObtenerDisfagia
+  name: ObtenerDisfagia
+  nameWithType: ModeloDatosGenerales.ObtenerDisfagia
+  fullName: MODELO.ModeloDatosGenerales.ObtenerDisfagia
+- uid: MODELO.ModeloDatosGenerales.ObtenerNauseas*
+  commentId: Overload:MODELO.ModeloDatosGenerales.ObtenerNauseas
+  name: ObtenerNauseas
+  nameWithType: ModeloDatosGenerales.ObtenerNauseas
+  fullName: MODELO.ModeloDatosGenerales.ObtenerNauseas
+- uid: MODELO.ModeloDatosGenerales.ObtenerEnfermedad*
+  commentId: Overload:MODELO.ModeloDatosGenerales.ObtenerEnfermedad
+  name: ObtenerEnfermedad
+  nameWithType: ModeloDatosGenerales.ObtenerEnfermedad
+  fullName: MODELO.ModeloDatosGenerales.ObtenerEnfermedad
+- uid: MODELO.ModeloDatosGenerales.ObtenerMedicamentos*
+  commentId: Overload:MODELO.ModeloDatosGenerales.ObtenerMedicamentos
+  name: ObtenerMedicamentos
+  nameWithType: ModeloDatosGenerales.ObtenerMedicamentos
+  fullName: MODELO.ModeloDatosGenerales.ObtenerMedicamentos
+- uid: MODELO.ModeloDatosGenerales.ObtenerSuplementos*
+  commentId: Overload:MODELO.ModeloDatosGenerales.ObtenerSuplementos
+  name: ObtenerSuplementos
+  nameWithType: ModeloDatosGenerales.ObtenerSuplementos
+  fullName: MODELO.ModeloDatosGenerales.ObtenerSuplementos
+- uid: MODELO.ModeloDatosGenerales.ObtenerDiureticos*
+  commentId: Overload:MODELO.ModeloDatosGenerales.ObtenerDiureticos
+  name: ObtenerDiureticos
+  nameWithType: ModeloDatosGenerales.ObtenerDiureticos
+  fullName: MODELO.ModeloDatosGenerales.ObtenerDiureticos
+- uid: MODELO.ModeloDatosGenerales.ObtenerLaxantes*
+  commentId: Overload:MODELO.ModeloDatosGenerales.ObtenerLaxantes
+  name: ObtenerLaxantes
+  nameWithType: ModeloDatosGenerales.ObtenerLaxantes
+  fullName: MODELO.ModeloDatosGenerales.ObtenerLaxantes
+- uid: MODELO.ModeloDatosGenerales.ObtenerCirugia*
+  commentId: Overload:MODELO.ModeloDatosGenerales.ObtenerCirugia
+  name: ObtenerCirugia
+  nameWithType: ModeloDatosGenerales.ObtenerCirugia
+  fullName: MODELO.ModeloDatosGenerales.ObtenerCirugia
+- uid: MODELO.ModeloDatosGenerales.ModificarDatosGenerales*
+  commentId: Overload:MODELO.ModeloDatosGenerales.ModificarDatosGenerales
+  name: ModificarDatosGenerales
+  nameWithType: ModeloDatosGenerales.ModificarDatosGenerales
+  fullName: MODELO.ModeloDatosGenerales.ModificarDatosGenerales
+- uid: MODELO.ModeloDatosGenerales.ModificarAntecedentesPatologicos*
+  commentId: Overload:MODELO.ModeloDatosGenerales.ModificarAntecedentesPatologicos
+  name: ModificarAntecedentesPatologicos
+  nameWithType: ModeloDatosGenerales.ModificarAntecedentesPatologicos
+  fullName: MODELO.ModeloDatosGenerales.ModificarAntecedentesPatologicos

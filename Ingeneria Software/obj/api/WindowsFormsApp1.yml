@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: WindowsFormsApp1
+  commentId: N:WindowsFormsApp1
+  id: WindowsFormsApp1
+  children:
+  - WindowsFormsApp1.Plan
+  langs:
+  - csharp
+  - vb
+  name: WindowsFormsApp1
+  nameWithType: WindowsFormsApp1
+  fullName: WindowsFormsApp1
+  type: Namespace
+  assemblies:
+  - Ingeneria Software
+references:
+- uid: WindowsFormsApp1.Plan
+  commentId: T:WindowsFormsApp1.Plan
+  name: Plan
+  nameWithType: Plan
+  fullName: WindowsFormsApp1.Plan

@@ -1,0 +1,1714 @@
+### YamlMime:ManagedReference
+items:
+- uid: CONTROLADOR.ControladorDatosGenerales
+  commentId: T:CONTROLADOR.ControladorDatosGenerales
+  id: ControladorDatosGenerales
+  parent: CONTROLADOR
+  children:
+  - CONTROLADOR.ControladorDatosGenerales.AgregarAntecedentesPatologicos(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32)
+  - CONTROLADOR.ControladorDatosGenerales.error
+  - CONTROLADOR.ControladorDatosGenerales.IsValidEmail(System.String)
+  - CONTROLADOR.ControladorDatosGenerales.ModificarAntecedentesPatologicos(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32)
+  - CONTROLADOR.ControladorDatosGenerales.ModificarDatosGenerales(System.String,System.String,System.String,System.DateTime,System.String,System.String,System.String,System.String,System.String,System.Int32)
+  - CONTROLADOR.ControladorDatosGenerales.ObtenerAnsiedad(System.Int32)
+  - CONTROLADOR.ControladorDatosGenerales.ObtenerCirugia(System.Int32)
+  - CONTROLADOR.ControladorDatosGenerales.ObtenerColitis(System.Int32)
+  - CONTROLADOR.ControladorDatosGenerales.ObtenerDiarrea(System.Int32)
+  - CONTROLADOR.ControladorDatosGenerales.ObtenerDisfagia(System.Int32)
+  - CONTROLADOR.ControladorDatosGenerales.ObtenerDiureticos(System.Int32)
+  - CONTROLADOR.ControladorDatosGenerales.ObtenerDolorCabeza(System.Int32)
+  - CONTROLADOR.ControladorDatosGenerales.ObtenerEmail(System.Int32)
+  - CONTROLADOR.ControladorDatosGenerales.ObtenerEnfermedad(System.Int32)
+  - CONTROLADOR.ControladorDatosGenerales.ObtenerEscolaridad(System.Int32)
+  - CONTROLADOR.ControladorDatosGenerales.ObtenerEstadoCivil(System.Int32)
+  - CONTROLADOR.ControladorDatosGenerales.ObtenerEstrenimiento(System.Int32)
+  - CONTROLADOR.ControladorDatosGenerales.ObtenerFechaNacimiento(System.Int32)
+  - CONTROLADOR.ControladorDatosGenerales.ObtenerFlatulencias(System.Int32)
+  - CONTROLADOR.ControladorDatosGenerales.ObtenerGastritis(System.Int32)
+  - CONTROLADOR.ControladorDatosGenerales.ObtenerGenero(System.Int32)
+  - CONTROLADOR.ControladorDatosGenerales.ObtenerLaxantes(System.Int32)
+  - CONTROLADOR.ControladorDatosGenerales.ObtenerMasticacion(System.Int32)
+  - CONTROLADOR.ControladorDatosGenerales.ObtenerMedicamentos(System.Int32)
+  - CONTROLADOR.ControladorDatosGenerales.ObtenerMotivos(System.Int32)
+  - CONTROLADOR.ControladorDatosGenerales.ObtenerNauseas(System.Int32)
+  - CONTROLADOR.ControladorDatosGenerales.ObtenerNombre(System.Int32)
+  - CONTROLADOR.ControladorDatosGenerales.ObtenerOcupacion(System.Int32)
+  - CONTROLADOR.ControladorDatosGenerales.ObtenerSuplementos(System.Int32)
+  - CONTROLADOR.ControladorDatosGenerales.ObtenerTelefono(System.Int32)
+  - CONTROLADOR.ControladorDatosGenerales.ObtenerVomito(System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: ControladorDatosGenerales
+  nameWithType: ControladorDatosGenerales
+  fullName: CONTROLADOR.ControladorDatosGenerales
+  type: Class
+  source:
+    remote:
+      path: CONTROLADOR/ControladorDatosGenerales.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ControladorDatosGenerales
+    path: ControladorDatosGenerales.cs
+    startLine: 15
+  assemblies:
+  - CONTROLADOR
+  namespace: CONTROLADOR
+  summary: "\nLa clase controlador &quot;Datos Generales&quot; valida que la informacion de los campos \nsean correctos para poder usar el CRUD del modelo correspondiente\nen la tabla &quot;Paciente y DatosGnAntePato&quot; en la base de datos &quot;DBPAS&quot; destinada al sistema.\nDe acuerdo a las caracteristicas de la clase &quot;Validacion&quot;.\n"
+  example: []
+  syntax:
+    content: public class ControladorDatosGenerales
+    content.vb: Public Class ControladorDatosGenerales
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: CONTROLADOR.ControladorDatosGenerales.error
+  commentId: F:CONTROLADOR.ControladorDatosGenerales.error
+  id: error
+  parent: CONTROLADOR.ControladorDatosGenerales
+  langs:
+  - csharp
+  - vb
+  name: error
+  nameWithType: ControladorDatosGenerales.error
+  fullName: CONTROLADOR.ControladorDatosGenerales.error
+  type: Field
+  source:
+    remote:
+      path: CONTROLADOR/ControladorDatosGenerales.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: error
+    path: ControladorDatosGenerales.cs
+    startLine: 17
+  assemblies:
+  - CONTROLADOR
+  namespace: CONTROLADOR
+  syntax:
+    content: public string error
+    return:
+      type: System.String
+    content.vb: Public error As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CONTROLADOR.ControladorDatosGenerales.ObtenerNombre(System.Int32)
+  commentId: M:CONTROLADOR.ControladorDatosGenerales.ObtenerNombre(System.Int32)
+  id: ObtenerNombre(System.Int32)
+  parent: CONTROLADOR.ControladorDatosGenerales
+  langs:
+  - csharp
+  - vb
+  name: ObtenerNombre(Int32)
+  nameWithType: ControladorDatosGenerales.ObtenerNombre(Int32)
+  fullName: CONTROLADOR.ControladorDatosGenerales.ObtenerNombre(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: CONTROLADOR/ControladorDatosGenerales.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ObtenerNombre
+    path: ControladorDatosGenerales.cs
+    startLine: 20
+  assemblies:
+  - CONTROLADOR
+  namespace: CONTROLADOR
+  syntax:
+    content: public string ObtenerNombre(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: Public Function ObtenerNombre(id As Integer) As String
+  overload: CONTROLADOR.ControladorDatosGenerales.ObtenerNombre*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CONTROLADOR.ControladorDatosGenerales.ObtenerGenero(System.Int32)
+  commentId: M:CONTROLADOR.ControladorDatosGenerales.ObtenerGenero(System.Int32)
+  id: ObtenerGenero(System.Int32)
+  parent: CONTROLADOR.ControladorDatosGenerales
+  langs:
+  - csharp
+  - vb
+  name: ObtenerGenero(Int32)
+  nameWithType: ControladorDatosGenerales.ObtenerGenero(Int32)
+  fullName: CONTROLADOR.ControladorDatosGenerales.ObtenerGenero(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: CONTROLADOR/ControladorDatosGenerales.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ObtenerGenero
+    path: ControladorDatosGenerales.cs
+    startLine: 34
+  assemblies:
+  - CONTROLADOR
+  namespace: CONTROLADOR
+  syntax:
+    content: public string ObtenerGenero(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: Public Function ObtenerGenero(id As Integer) As String
+  overload: CONTROLADOR.ControladorDatosGenerales.ObtenerGenero*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CONTROLADOR.ControladorDatosGenerales.ObtenerEstadoCivil(System.Int32)
+  commentId: M:CONTROLADOR.ControladorDatosGenerales.ObtenerEstadoCivil(System.Int32)
+  id: ObtenerEstadoCivil(System.Int32)
+  parent: CONTROLADOR.ControladorDatosGenerales
+  langs:
+  - csharp
+  - vb
+  name: ObtenerEstadoCivil(Int32)
+  nameWithType: ControladorDatosGenerales.ObtenerEstadoCivil(Int32)
+  fullName: CONTROLADOR.ControladorDatosGenerales.ObtenerEstadoCivil(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: CONTROLADOR/ControladorDatosGenerales.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ObtenerEstadoCivil
+    path: ControladorDatosGenerales.cs
+    startLine: 48
+  assemblies:
+  - CONTROLADOR
+  namespace: CONTROLADOR
+  syntax:
+    content: public string ObtenerEstadoCivil(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: Public Function ObtenerEstadoCivil(id As Integer) As String
+  overload: CONTROLADOR.ControladorDatosGenerales.ObtenerEstadoCivil*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CONTROLADOR.ControladorDatosGenerales.ObtenerFechaNacimiento(System.Int32)
+  commentId: M:CONTROLADOR.ControladorDatosGenerales.ObtenerFechaNacimiento(System.Int32)
+  id: ObtenerFechaNacimiento(System.Int32)
+  parent: CONTROLADOR.ControladorDatosGenerales
+  langs:
+  - csharp
+  - vb
+  name: ObtenerFechaNacimiento(Int32)
+  nameWithType: ControladorDatosGenerales.ObtenerFechaNacimiento(Int32)
+  fullName: CONTROLADOR.ControladorDatosGenerales.ObtenerFechaNacimiento(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: CONTROLADOR/ControladorDatosGenerales.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ObtenerFechaNacimiento
+    path: ControladorDatosGenerales.cs
+    startLine: 61
+  assemblies:
+  - CONTROLADOR
+  namespace: CONTROLADOR
+  syntax:
+    content: public DateTime ObtenerFechaNacimiento(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.DateTime
+    content.vb: Public Function ObtenerFechaNacimiento(id As Integer) As Date
+  overload: CONTROLADOR.ControladorDatosGenerales.ObtenerFechaNacimiento*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CONTROLADOR.ControladorDatosGenerales.ObtenerEscolaridad(System.Int32)
+  commentId: M:CONTROLADOR.ControladorDatosGenerales.ObtenerEscolaridad(System.Int32)
+  id: ObtenerEscolaridad(System.Int32)
+  parent: CONTROLADOR.ControladorDatosGenerales
+  langs:
+  - csharp
+  - vb
+  name: ObtenerEscolaridad(Int32)
+  nameWithType: ControladorDatosGenerales.ObtenerEscolaridad(Int32)
+  fullName: CONTROLADOR.ControladorDatosGenerales.ObtenerEscolaridad(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: CONTROLADOR/ControladorDatosGenerales.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ObtenerEscolaridad
+    path: ControladorDatosGenerales.cs
+    startLine: 75
+  assemblies:
+  - CONTROLADOR
+  namespace: CONTROLADOR
+  syntax:
+    content: public string ObtenerEscolaridad(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: Public Function ObtenerEscolaridad(id As Integer) As String
+  overload: CONTROLADOR.ControladorDatosGenerales.ObtenerEscolaridad*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CONTROLADOR.ControladorDatosGenerales.ObtenerOcupacion(System.Int32)
+  commentId: M:CONTROLADOR.ControladorDatosGenerales.ObtenerOcupacion(System.Int32)
+  id: ObtenerOcupacion(System.Int32)
+  parent: CONTROLADOR.ControladorDatosGenerales
+  langs:
+  - csharp
+  - vb
+  name: ObtenerOcupacion(Int32)
+  nameWithType: ControladorDatosGenerales.ObtenerOcupacion(Int32)
+  fullName: CONTROLADOR.ControladorDatosGenerales.ObtenerOcupacion(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: CONTROLADOR/ControladorDatosGenerales.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ObtenerOcupacion
+    path: ControladorDatosGenerales.cs
+    startLine: 89
+  assemblies:
+  - CONTROLADOR
+  namespace: CONTROLADOR
+  syntax:
+    content: public string ObtenerOcupacion(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: Public Function ObtenerOcupacion(id As Integer) As String
+  overload: CONTROLADOR.ControladorDatosGenerales.ObtenerOcupacion*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CONTROLADOR.ControladorDatosGenerales.ObtenerTelefono(System.Int32)
+  commentId: M:CONTROLADOR.ControladorDatosGenerales.ObtenerTelefono(System.Int32)
+  id: ObtenerTelefono(System.Int32)
+  parent: CONTROLADOR.ControladorDatosGenerales
+  langs:
+  - csharp
+  - vb
+  name: ObtenerTelefono(Int32)
+  nameWithType: ControladorDatosGenerales.ObtenerTelefono(Int32)
+  fullName: CONTROLADOR.ControladorDatosGenerales.ObtenerTelefono(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: CONTROLADOR/ControladorDatosGenerales.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ObtenerTelefono
+    path: ControladorDatosGenerales.cs
+    startLine: 103
+  assemblies:
+  - CONTROLADOR
+  namespace: CONTROLADOR
+  syntax:
+    content: public string ObtenerTelefono(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: Public Function ObtenerTelefono(id As Integer) As String
+  overload: CONTROLADOR.ControladorDatosGenerales.ObtenerTelefono*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CONTROLADOR.ControladorDatosGenerales.ObtenerEmail(System.Int32)
+  commentId: M:CONTROLADOR.ControladorDatosGenerales.ObtenerEmail(System.Int32)
+  id: ObtenerEmail(System.Int32)
+  parent: CONTROLADOR.ControladorDatosGenerales
+  langs:
+  - csharp
+  - vb
+  name: ObtenerEmail(Int32)
+  nameWithType: ControladorDatosGenerales.ObtenerEmail(Int32)
+  fullName: CONTROLADOR.ControladorDatosGenerales.ObtenerEmail(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: CONTROLADOR/ControladorDatosGenerales.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ObtenerEmail
+    path: ControladorDatosGenerales.cs
+    startLine: 116
+  assemblies:
+  - CONTROLADOR
+  namespace: CONTROLADOR
+  syntax:
+    content: public string ObtenerEmail(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: Public Function ObtenerEmail(id As Integer) As String
+  overload: CONTROLADOR.ControladorDatosGenerales.ObtenerEmail*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CONTROLADOR.ControladorDatosGenerales.ObtenerMotivos(System.Int32)
+  commentId: M:CONTROLADOR.ControladorDatosGenerales.ObtenerMotivos(System.Int32)
+  id: ObtenerMotivos(System.Int32)
+  parent: CONTROLADOR.ControladorDatosGenerales
+  langs:
+  - csharp
+  - vb
+  name: ObtenerMotivos(Int32)
+  nameWithType: ControladorDatosGenerales.ObtenerMotivos(Int32)
+  fullName: CONTROLADOR.ControladorDatosGenerales.ObtenerMotivos(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: CONTROLADOR/ControladorDatosGenerales.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ObtenerMotivos
+    path: ControladorDatosGenerales.cs
+    startLine: 129
+  assemblies:
+  - CONTROLADOR
+  namespace: CONTROLADOR
+  syntax:
+    content: public string ObtenerMotivos(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: Public Function ObtenerMotivos(id As Integer) As String
+  overload: CONTROLADOR.ControladorDatosGenerales.ObtenerMotivos*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CONTROLADOR.ControladorDatosGenerales.AgregarAntecedentesPatologicos(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32)
+  commentId: M:CONTROLADOR.ControladorDatosGenerales.AgregarAntecedentesPatologicos(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32)
+  id: AgregarAntecedentesPatologicos(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32)
+  parent: CONTROLADOR.ControladorDatosGenerales
+  langs:
+  - csharp
+  - vb
+  name: AgregarAntecedentesPatologicos(String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, Int32)
+  nameWithType: ControladorDatosGenerales.AgregarAntecedentesPatologicos(String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, Int32)
+  fullName: CONTROLADOR.ControladorDatosGenerales.AgregarAntecedentesPatologicos(System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: CONTROLADOR/ControladorDatosGenerales.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: AgregarAntecedentesPatologicos
+    path: ControladorDatosGenerales.cs
+    startLine: 142
+  assemblies:
+  - CONTROLADOR
+  namespace: CONTROLADOR
+  syntax:
+    content: public void AgregarAntecedentesPatologicos(string diarrea, string flatulencias, string vomito, string masticacion, string colitis, string estrenimiento, string ansiedad, string dolorCabeza, string gastritis, string disfagia, string nauseas, string enfermedad, string medicamentos, string suplementos, string diureticos, string laxantes, string cirugia, int idPaciente)
+    parameters:
+    - id: diarrea
+      type: System.String
+    - id: flatulencias
+      type: System.String
+    - id: vomito
+      type: System.String
+    - id: masticacion
+      type: System.String
+    - id: colitis
+      type: System.String
+    - id: estrenimiento
+      type: System.String
+    - id: ansiedad
+      type: System.String
+    - id: dolorCabeza
+      type: System.String
+    - id: gastritis
+      type: System.String
+    - id: disfagia
+      type: System.String
+    - id: nauseas
+      type: System.String
+    - id: enfermedad
+      type: System.String
+    - id: medicamentos
+      type: System.String
+    - id: suplementos
+      type: System.String
+    - id: diureticos
+      type: System.String
+    - id: laxantes
+      type: System.String
+    - id: cirugia
+      type: System.String
+    - id: idPaciente
+      type: System.Int32
+    content.vb: Public Sub AgregarAntecedentesPatologicos(diarrea As String, flatulencias As String, vomito As String, masticacion As String, colitis As String, estrenimiento As String, ansiedad As String, dolorCabeza As String, gastritis As String, disfagia As String, nauseas As String, enfermedad As String, medicamentos As String, suplementos As String, diureticos As String, laxantes As String, cirugia As String, idPaciente As Integer)
+  overload: CONTROLADOR.ControladorDatosGenerales.AgregarAntecedentesPatologicos*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CONTROLADOR.ControladorDatosGenerales.ObtenerDiarrea(System.Int32)
+  commentId: M:CONTROLADOR.ControladorDatosGenerales.ObtenerDiarrea(System.Int32)
+  id: ObtenerDiarrea(System.Int32)
+  parent: CONTROLADOR.ControladorDatosGenerales
+  langs:
+  - csharp
+  - vb
+  name: ObtenerDiarrea(Int32)
+  nameWithType: ControladorDatosGenerales.ObtenerDiarrea(Int32)
+  fullName: CONTROLADOR.ControladorDatosGenerales.ObtenerDiarrea(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: CONTROLADOR/ControladorDatosGenerales.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ObtenerDiarrea
+    path: ControladorDatosGenerales.cs
+    startLine: 163
+  assemblies:
+  - CONTROLADOR
+  namespace: CONTROLADOR
+  syntax:
+    content: public string ObtenerDiarrea(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: Public Function ObtenerDiarrea(id As Integer) As String
+  overload: CONTROLADOR.ControladorDatosGenerales.ObtenerDiarrea*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CONTROLADOR.ControladorDatosGenerales.ObtenerFlatulencias(System.Int32)
+  commentId: M:CONTROLADOR.ControladorDatosGenerales.ObtenerFlatulencias(System.Int32)
+  id: ObtenerFlatulencias(System.Int32)
+  parent: CONTROLADOR.ControladorDatosGenerales
+  langs:
+  - csharp
+  - vb
+  name: ObtenerFlatulencias(Int32)
+  nameWithType: ControladorDatosGenerales.ObtenerFlatulencias(Int32)
+  fullName: CONTROLADOR.ControladorDatosGenerales.ObtenerFlatulencias(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: CONTROLADOR/ControladorDatosGenerales.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ObtenerFlatulencias
+    path: ControladorDatosGenerales.cs
+    startLine: 176
+  assemblies:
+  - CONTROLADOR
+  namespace: CONTROLADOR
+  syntax:
+    content: public string ObtenerFlatulencias(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: Public Function ObtenerFlatulencias(id As Integer) As String
+  overload: CONTROLADOR.ControladorDatosGenerales.ObtenerFlatulencias*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CONTROLADOR.ControladorDatosGenerales.ObtenerVomito(System.Int32)
+  commentId: M:CONTROLADOR.ControladorDatosGenerales.ObtenerVomito(System.Int32)
+  id: ObtenerVomito(System.Int32)
+  parent: CONTROLADOR.ControladorDatosGenerales
+  langs:
+  - csharp
+  - vb
+  name: ObtenerVomito(Int32)
+  nameWithType: ControladorDatosGenerales.ObtenerVomito(Int32)
+  fullName: CONTROLADOR.ControladorDatosGenerales.ObtenerVomito(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: CONTROLADOR/ControladorDatosGenerales.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ObtenerVomito
+    path: ControladorDatosGenerales.cs
+    startLine: 189
+  assemblies:
+  - CONTROLADOR
+  namespace: CONTROLADOR
+  syntax:
+    content: public string ObtenerVomito(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: Public Function ObtenerVomito(id As Integer) As String
+  overload: CONTROLADOR.ControladorDatosGenerales.ObtenerVomito*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CONTROLADOR.ControladorDatosGenerales.ObtenerMasticacion(System.Int32)
+  commentId: M:CONTROLADOR.ControladorDatosGenerales.ObtenerMasticacion(System.Int32)
+  id: ObtenerMasticacion(System.Int32)
+  parent: CONTROLADOR.ControladorDatosGenerales
+  langs:
+  - csharp
+  - vb
+  name: ObtenerMasticacion(Int32)
+  nameWithType: ControladorDatosGenerales.ObtenerMasticacion(Int32)
+  fullName: CONTROLADOR.ControladorDatosGenerales.ObtenerMasticacion(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: CONTROLADOR/ControladorDatosGenerales.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ObtenerMasticacion
+    path: ControladorDatosGenerales.cs
+    startLine: 202
+  assemblies:
+  - CONTROLADOR
+  namespace: CONTROLADOR
+  syntax:
+    content: public string ObtenerMasticacion(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: Public Function ObtenerMasticacion(id As Integer) As String
+  overload: CONTROLADOR.ControladorDatosGenerales.ObtenerMasticacion*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CONTROLADOR.ControladorDatosGenerales.ObtenerColitis(System.Int32)
+  commentId: M:CONTROLADOR.ControladorDatosGenerales.ObtenerColitis(System.Int32)
+  id: ObtenerColitis(System.Int32)
+  parent: CONTROLADOR.ControladorDatosGenerales
+  langs:
+  - csharp
+  - vb
+  name: ObtenerColitis(Int32)
+  nameWithType: ControladorDatosGenerales.ObtenerColitis(Int32)
+  fullName: CONTROLADOR.ControladorDatosGenerales.ObtenerColitis(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: CONTROLADOR/ControladorDatosGenerales.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ObtenerColitis
+    path: ControladorDatosGenerales.cs
+    startLine: 215
+  assemblies:
+  - CONTROLADOR
+  namespace: CONTROLADOR
+  syntax:
+    content: public string ObtenerColitis(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: Public Function ObtenerColitis(id As Integer) As String
+  overload: CONTROLADOR.ControladorDatosGenerales.ObtenerColitis*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CONTROLADOR.ControladorDatosGenerales.ObtenerEstrenimiento(System.Int32)
+  commentId: M:CONTROLADOR.ControladorDatosGenerales.ObtenerEstrenimiento(System.Int32)
+  id: ObtenerEstrenimiento(System.Int32)
+  parent: CONTROLADOR.ControladorDatosGenerales
+  langs:
+  - csharp
+  - vb
+  name: ObtenerEstrenimiento(Int32)
+  nameWithType: ControladorDatosGenerales.ObtenerEstrenimiento(Int32)
+  fullName: CONTROLADOR.ControladorDatosGenerales.ObtenerEstrenimiento(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: CONTROLADOR/ControladorDatosGenerales.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ObtenerEstrenimiento
+    path: ControladorDatosGenerales.cs
+    startLine: 228
+  assemblies:
+  - CONTROLADOR
+  namespace: CONTROLADOR
+  syntax:
+    content: public string ObtenerEstrenimiento(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: Public Function ObtenerEstrenimiento(id As Integer) As String
+  overload: CONTROLADOR.ControladorDatosGenerales.ObtenerEstrenimiento*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CONTROLADOR.ControladorDatosGenerales.ObtenerAnsiedad(System.Int32)
+  commentId: M:CONTROLADOR.ControladorDatosGenerales.ObtenerAnsiedad(System.Int32)
+  id: ObtenerAnsiedad(System.Int32)
+  parent: CONTROLADOR.ControladorDatosGenerales
+  langs:
+  - csharp
+  - vb
+  name: ObtenerAnsiedad(Int32)
+  nameWithType: ControladorDatosGenerales.ObtenerAnsiedad(Int32)
+  fullName: CONTROLADOR.ControladorDatosGenerales.ObtenerAnsiedad(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: CONTROLADOR/ControladorDatosGenerales.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ObtenerAnsiedad
+    path: ControladorDatosGenerales.cs
+    startLine: 241
+  assemblies:
+  - CONTROLADOR
+  namespace: CONTROLADOR
+  syntax:
+    content: public string ObtenerAnsiedad(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: Public Function ObtenerAnsiedad(id As Integer) As String
+  overload: CONTROLADOR.ControladorDatosGenerales.ObtenerAnsiedad*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CONTROLADOR.ControladorDatosGenerales.ObtenerDolorCabeza(System.Int32)
+  commentId: M:CONTROLADOR.ControladorDatosGenerales.ObtenerDolorCabeza(System.Int32)
+  id: ObtenerDolorCabeza(System.Int32)
+  parent: CONTROLADOR.ControladorDatosGenerales
+  langs:
+  - csharp
+  - vb
+  name: ObtenerDolorCabeza(Int32)
+  nameWithType: ControladorDatosGenerales.ObtenerDolorCabeza(Int32)
+  fullName: CONTROLADOR.ControladorDatosGenerales.ObtenerDolorCabeza(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: CONTROLADOR/ControladorDatosGenerales.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ObtenerDolorCabeza
+    path: ControladorDatosGenerales.cs
+    startLine: 254
+  assemblies:
+  - CONTROLADOR
+  namespace: CONTROLADOR
+  syntax:
+    content: public string ObtenerDolorCabeza(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: Public Function ObtenerDolorCabeza(id As Integer) As String
+  overload: CONTROLADOR.ControladorDatosGenerales.ObtenerDolorCabeza*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CONTROLADOR.ControladorDatosGenerales.ObtenerGastritis(System.Int32)
+  commentId: M:CONTROLADOR.ControladorDatosGenerales.ObtenerGastritis(System.Int32)
+  id: ObtenerGastritis(System.Int32)
+  parent: CONTROLADOR.ControladorDatosGenerales
+  langs:
+  - csharp
+  - vb
+  name: ObtenerGastritis(Int32)
+  nameWithType: ControladorDatosGenerales.ObtenerGastritis(Int32)
+  fullName: CONTROLADOR.ControladorDatosGenerales.ObtenerGastritis(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: CONTROLADOR/ControladorDatosGenerales.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ObtenerGastritis
+    path: ControladorDatosGenerales.cs
+    startLine: 267
+  assemblies:
+  - CONTROLADOR
+  namespace: CONTROLADOR
+  syntax:
+    content: public string ObtenerGastritis(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: Public Function ObtenerGastritis(id As Integer) As String
+  overload: CONTROLADOR.ControladorDatosGenerales.ObtenerGastritis*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CONTROLADOR.ControladorDatosGenerales.ObtenerDisfagia(System.Int32)
+  commentId: M:CONTROLADOR.ControladorDatosGenerales.ObtenerDisfagia(System.Int32)
+  id: ObtenerDisfagia(System.Int32)
+  parent: CONTROLADOR.ControladorDatosGenerales
+  langs:
+  - csharp
+  - vb
+  name: ObtenerDisfagia(Int32)
+  nameWithType: ControladorDatosGenerales.ObtenerDisfagia(Int32)
+  fullName: CONTROLADOR.ControladorDatosGenerales.ObtenerDisfagia(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: CONTROLADOR/ControladorDatosGenerales.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ObtenerDisfagia
+    path: ControladorDatosGenerales.cs
+    startLine: 280
+  assemblies:
+  - CONTROLADOR
+  namespace: CONTROLADOR
+  syntax:
+    content: public string ObtenerDisfagia(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: Public Function ObtenerDisfagia(id As Integer) As String
+  overload: CONTROLADOR.ControladorDatosGenerales.ObtenerDisfagia*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CONTROLADOR.ControladorDatosGenerales.ObtenerNauseas(System.Int32)
+  commentId: M:CONTROLADOR.ControladorDatosGenerales.ObtenerNauseas(System.Int32)
+  id: ObtenerNauseas(System.Int32)
+  parent: CONTROLADOR.ControladorDatosGenerales
+  langs:
+  - csharp
+  - vb
+  name: ObtenerNauseas(Int32)
+  nameWithType: ControladorDatosGenerales.ObtenerNauseas(Int32)
+  fullName: CONTROLADOR.ControladorDatosGenerales.ObtenerNauseas(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: CONTROLADOR/ControladorDatosGenerales.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ObtenerNauseas
+    path: ControladorDatosGenerales.cs
+    startLine: 293
+  assemblies:
+  - CONTROLADOR
+  namespace: CONTROLADOR
+  syntax:
+    content: public string ObtenerNauseas(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: Public Function ObtenerNauseas(id As Integer) As String
+  overload: CONTROLADOR.ControladorDatosGenerales.ObtenerNauseas*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CONTROLADOR.ControladorDatosGenerales.ObtenerEnfermedad(System.Int32)
+  commentId: M:CONTROLADOR.ControladorDatosGenerales.ObtenerEnfermedad(System.Int32)
+  id: ObtenerEnfermedad(System.Int32)
+  parent: CONTROLADOR.ControladorDatosGenerales
+  langs:
+  - csharp
+  - vb
+  name: ObtenerEnfermedad(Int32)
+  nameWithType: ControladorDatosGenerales.ObtenerEnfermedad(Int32)
+  fullName: CONTROLADOR.ControladorDatosGenerales.ObtenerEnfermedad(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: CONTROLADOR/ControladorDatosGenerales.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ObtenerEnfermedad
+    path: ControladorDatosGenerales.cs
+    startLine: 306
+  assemblies:
+  - CONTROLADOR
+  namespace: CONTROLADOR
+  syntax:
+    content: public string ObtenerEnfermedad(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: Public Function ObtenerEnfermedad(id As Integer) As String
+  overload: CONTROLADOR.ControladorDatosGenerales.ObtenerEnfermedad*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CONTROLADOR.ControladorDatosGenerales.ObtenerMedicamentos(System.Int32)
+  commentId: M:CONTROLADOR.ControladorDatosGenerales.ObtenerMedicamentos(System.Int32)
+  id: ObtenerMedicamentos(System.Int32)
+  parent: CONTROLADOR.ControladorDatosGenerales
+  langs:
+  - csharp
+  - vb
+  name: ObtenerMedicamentos(Int32)
+  nameWithType: ControladorDatosGenerales.ObtenerMedicamentos(Int32)
+  fullName: CONTROLADOR.ControladorDatosGenerales.ObtenerMedicamentos(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: CONTROLADOR/ControladorDatosGenerales.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ObtenerMedicamentos
+    path: ControladorDatosGenerales.cs
+    startLine: 319
+  assemblies:
+  - CONTROLADOR
+  namespace: CONTROLADOR
+  syntax:
+    content: public string ObtenerMedicamentos(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: Public Function ObtenerMedicamentos(id As Integer) As String
+  overload: CONTROLADOR.ControladorDatosGenerales.ObtenerMedicamentos*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CONTROLADOR.ControladorDatosGenerales.ObtenerSuplementos(System.Int32)
+  commentId: M:CONTROLADOR.ControladorDatosGenerales.ObtenerSuplementos(System.Int32)
+  id: ObtenerSuplementos(System.Int32)
+  parent: CONTROLADOR.ControladorDatosGenerales
+  langs:
+  - csharp
+  - vb
+  name: ObtenerSuplementos(Int32)
+  nameWithType: ControladorDatosGenerales.ObtenerSuplementos(Int32)
+  fullName: CONTROLADOR.ControladorDatosGenerales.ObtenerSuplementos(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: CONTROLADOR/ControladorDatosGenerales.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ObtenerSuplementos
+    path: ControladorDatosGenerales.cs
+    startLine: 332
+  assemblies:
+  - CONTROLADOR
+  namespace: CONTROLADOR
+  syntax:
+    content: public string ObtenerSuplementos(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: Public Function ObtenerSuplementos(id As Integer) As String
+  overload: CONTROLADOR.ControladorDatosGenerales.ObtenerSuplementos*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CONTROLADOR.ControladorDatosGenerales.ObtenerDiureticos(System.Int32)
+  commentId: M:CONTROLADOR.ControladorDatosGenerales.ObtenerDiureticos(System.Int32)
+  id: ObtenerDiureticos(System.Int32)
+  parent: CONTROLADOR.ControladorDatosGenerales
+  langs:
+  - csharp
+  - vb
+  name: ObtenerDiureticos(Int32)
+  nameWithType: ControladorDatosGenerales.ObtenerDiureticos(Int32)
+  fullName: CONTROLADOR.ControladorDatosGenerales.ObtenerDiureticos(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: CONTROLADOR/ControladorDatosGenerales.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ObtenerDiureticos
+    path: ControladorDatosGenerales.cs
+    startLine: 345
+  assemblies:
+  - CONTROLADOR
+  namespace: CONTROLADOR
+  syntax:
+    content: public string ObtenerDiureticos(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: Public Function ObtenerDiureticos(id As Integer) As String
+  overload: CONTROLADOR.ControladorDatosGenerales.ObtenerDiureticos*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CONTROLADOR.ControladorDatosGenerales.ObtenerLaxantes(System.Int32)
+  commentId: M:CONTROLADOR.ControladorDatosGenerales.ObtenerLaxantes(System.Int32)
+  id: ObtenerLaxantes(System.Int32)
+  parent: CONTROLADOR.ControladorDatosGenerales
+  langs:
+  - csharp
+  - vb
+  name: ObtenerLaxantes(Int32)
+  nameWithType: ControladorDatosGenerales.ObtenerLaxantes(Int32)
+  fullName: CONTROLADOR.ControladorDatosGenerales.ObtenerLaxantes(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: CONTROLADOR/ControladorDatosGenerales.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ObtenerLaxantes
+    path: ControladorDatosGenerales.cs
+    startLine: 358
+  assemblies:
+  - CONTROLADOR
+  namespace: CONTROLADOR
+  syntax:
+    content: public string ObtenerLaxantes(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: Public Function ObtenerLaxantes(id As Integer) As String
+  overload: CONTROLADOR.ControladorDatosGenerales.ObtenerLaxantes*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CONTROLADOR.ControladorDatosGenerales.ObtenerCirugia(System.Int32)
+  commentId: M:CONTROLADOR.ControladorDatosGenerales.ObtenerCirugia(System.Int32)
+  id: ObtenerCirugia(System.Int32)
+  parent: CONTROLADOR.ControladorDatosGenerales
+  langs:
+  - csharp
+  - vb
+  name: ObtenerCirugia(Int32)
+  nameWithType: ControladorDatosGenerales.ObtenerCirugia(Int32)
+  fullName: CONTROLADOR.ControladorDatosGenerales.ObtenerCirugia(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: CONTROLADOR/ControladorDatosGenerales.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ObtenerCirugia
+    path: ControladorDatosGenerales.cs
+    startLine: 371
+  assemblies:
+  - CONTROLADOR
+  namespace: CONTROLADOR
+  syntax:
+    content: public string ObtenerCirugia(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: Public Function ObtenerCirugia(id As Integer) As String
+  overload: CONTROLADOR.ControladorDatosGenerales.ObtenerCirugia*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CONTROLADOR.ControladorDatosGenerales.ModificarDatosGenerales(System.String,System.String,System.String,System.DateTime,System.String,System.String,System.String,System.String,System.String,System.Int32)
+  commentId: M:CONTROLADOR.ControladorDatosGenerales.ModificarDatosGenerales(System.String,System.String,System.String,System.DateTime,System.String,System.String,System.String,System.String,System.String,System.Int32)
+  id: ModificarDatosGenerales(System.String,System.String,System.String,System.DateTime,System.String,System.String,System.String,System.String,System.String,System.Int32)
+  parent: CONTROLADOR.ControladorDatosGenerales
+  langs:
+  - csharp
+  - vb
+  name: ModificarDatosGenerales(String, String, String, DateTime, String, String, String, String, String, Int32)
+  nameWithType: ControladorDatosGenerales.ModificarDatosGenerales(String, String, String, DateTime, String, String, String, String, String, Int32)
+  fullName: CONTROLADOR.ControladorDatosGenerales.ModificarDatosGenerales(System.String, System.String, System.String, System.DateTime, System.String, System.String, System.String, System.String, System.String, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: CONTROLADOR/ControladorDatosGenerales.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ModificarDatosGenerales
+    path: ControladorDatosGenerales.cs
+    startLine: 384
+  assemblies:
+  - CONTROLADOR
+  namespace: CONTROLADOR
+  syntax:
+    content: public void ModificarDatosGenerales(string nombre, string genero, string estadoCivil, DateTime fechaNacimiento, string escolaridad, string ocupacion, string telefono, string email, string motivos, int id)
+    parameters:
+    - id: nombre
+      type: System.String
+    - id: genero
+      type: System.String
+    - id: estadoCivil
+      type: System.String
+    - id: fechaNacimiento
+      type: System.DateTime
+    - id: escolaridad
+      type: System.String
+    - id: ocupacion
+      type: System.String
+    - id: telefono
+      type: System.String
+    - id: email
+      type: System.String
+    - id: motivos
+      type: System.String
+    - id: id
+      type: System.Int32
+    content.vb: Public Sub ModificarDatosGenerales(nombre As String, genero As String, estadoCivil As String, fechaNacimiento As Date, escolaridad As String, ocupacion As String, telefono As String, email As String, motivos As String, id As Integer)
+  overload: CONTROLADOR.ControladorDatosGenerales.ModificarDatosGenerales*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CONTROLADOR.ControladorDatosGenerales.ModificarAntecedentesPatologicos(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32)
+  commentId: M:CONTROLADOR.ControladorDatosGenerales.ModificarAntecedentesPatologicos(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32)
+  id: ModificarAntecedentesPatologicos(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32)
+  parent: CONTROLADOR.ControladorDatosGenerales
+  langs:
+  - csharp
+  - vb
+  name: ModificarAntecedentesPatologicos(String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, Int32)
+  nameWithType: ControladorDatosGenerales.ModificarAntecedentesPatologicos(String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, String, Int32)
+  fullName: CONTROLADOR.ControladorDatosGenerales.ModificarAntecedentesPatologicos(System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: CONTROLADOR/ControladorDatosGenerales.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ModificarAntecedentesPatologicos
+    path: ControladorDatosGenerales.cs
+    startLine: 506
+  assemblies:
+  - CONTROLADOR
+  namespace: CONTROLADOR
+  syntax:
+    content: public void ModificarAntecedentesPatologicos(string diarrea, string flatulencias, string vomito, string masticacion, string colitis, string estrenimiento, string ansiedad, string dolorCabeza, string gastritis, string disfagia, string nauseas, string enfermedad, string medicamentos, string suplementos, string diureticos, string laxantes, string cirugia, int idPaciente)
+    parameters:
+    - id: diarrea
+      type: System.String
+    - id: flatulencias
+      type: System.String
+    - id: vomito
+      type: System.String
+    - id: masticacion
+      type: System.String
+    - id: colitis
+      type: System.String
+    - id: estrenimiento
+      type: System.String
+    - id: ansiedad
+      type: System.String
+    - id: dolorCabeza
+      type: System.String
+    - id: gastritis
+      type: System.String
+    - id: disfagia
+      type: System.String
+    - id: nauseas
+      type: System.String
+    - id: enfermedad
+      type: System.String
+    - id: medicamentos
+      type: System.String
+    - id: suplementos
+      type: System.String
+    - id: diureticos
+      type: System.String
+    - id: laxantes
+      type: System.String
+    - id: cirugia
+      type: System.String
+    - id: idPaciente
+      type: System.Int32
+    content.vb: Public Sub ModificarAntecedentesPatologicos(diarrea As String, flatulencias As String, vomito As String, masticacion As String, colitis As String, estrenimiento As String, ansiedad As String, dolorCabeza As String, gastritis As String, disfagia As String, nauseas As String, enfermedad As String, medicamentos As String, suplementos As String, diureticos As String, laxantes As String, cirugia As String, idPaciente As Integer)
+  overload: CONTROLADOR.ControladorDatosGenerales.ModificarAntecedentesPatologicos*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CONTROLADOR.ControladorDatosGenerales.IsValidEmail(System.String)
+  commentId: M:CONTROLADOR.ControladorDatosGenerales.IsValidEmail(System.String)
+  id: IsValidEmail(System.String)
+  parent: CONTROLADOR.ControladorDatosGenerales
+  langs:
+  - csharp
+  - vb
+  name: IsValidEmail(String)
+  nameWithType: ControladorDatosGenerales.IsValidEmail(String)
+  fullName: CONTROLADOR.ControladorDatosGenerales.IsValidEmail(System.String)
+  type: Method
+  source:
+    remote:
+      path: CONTROLADOR/ControladorDatosGenerales.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: IsValidEmail
+    path: ControladorDatosGenerales.cs
+    startLine: 527
+  assemblies:
+  - CONTROLADOR
+  namespace: CONTROLADOR
+  syntax:
+    content: public bool IsValidEmail(string email)
+    parameters:
+    - id: email
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsValidEmail(email As String) As Boolean
+  overload: CONTROLADOR.ControladorDatosGenerales.IsValidEmail*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: CONTROLADOR
+  commentId: N:CONTROLADOR
+  name: CONTROLADOR
+  nameWithType: CONTROLADOR
+  fullName: CONTROLADOR
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: CONTROLADOR.ControladorDatosGenerales.ObtenerNombre*
+  commentId: Overload:CONTROLADOR.ControladorDatosGenerales.ObtenerNombre
+  name: ObtenerNombre
+  nameWithType: ControladorDatosGenerales.ObtenerNombre
+  fullName: CONTROLADOR.ControladorDatosGenerales.ObtenerNombre
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: CONTROLADOR.ControladorDatosGenerales.ObtenerGenero*
+  commentId: Overload:CONTROLADOR.ControladorDatosGenerales.ObtenerGenero
+  name: ObtenerGenero
+  nameWithType: ControladorDatosGenerales.ObtenerGenero
+  fullName: CONTROLADOR.ControladorDatosGenerales.ObtenerGenero
+- uid: CONTROLADOR.ControladorDatosGenerales.ObtenerEstadoCivil*
+  commentId: Overload:CONTROLADOR.ControladorDatosGenerales.ObtenerEstadoCivil
+  name: ObtenerEstadoCivil
+  nameWithType: ControladorDatosGenerales.ObtenerEstadoCivil
+  fullName: CONTROLADOR.ControladorDatosGenerales.ObtenerEstadoCivil
+- uid: CONTROLADOR.ControladorDatosGenerales.ObtenerFechaNacimiento*
+  commentId: Overload:CONTROLADOR.ControladorDatosGenerales.ObtenerFechaNacimiento
+  name: ObtenerFechaNacimiento
+  nameWithType: ControladorDatosGenerales.ObtenerFechaNacimiento
+  fullName: CONTROLADOR.ControladorDatosGenerales.ObtenerFechaNacimiento
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+- uid: CONTROLADOR.ControladorDatosGenerales.ObtenerEscolaridad*
+  commentId: Overload:CONTROLADOR.ControladorDatosGenerales.ObtenerEscolaridad
+  name: ObtenerEscolaridad
+  nameWithType: ControladorDatosGenerales.ObtenerEscolaridad
+  fullName: CONTROLADOR.ControladorDatosGenerales.ObtenerEscolaridad
+- uid: CONTROLADOR.ControladorDatosGenerales.ObtenerOcupacion*
+  commentId: Overload:CONTROLADOR.ControladorDatosGenerales.ObtenerOcupacion
+  name: ObtenerOcupacion
+  nameWithType: ControladorDatosGenerales.ObtenerOcupacion
+  fullName: CONTROLADOR.ControladorDatosGenerales.ObtenerOcupacion
+- uid: CONTROLADOR.ControladorDatosGenerales.ObtenerTelefono*
+  commentId: Overload:CONTROLADOR.ControladorDatosGenerales.ObtenerTelefono
+  name: ObtenerTelefono
+  nameWithType: ControladorDatosGenerales.ObtenerTelefono
+  fullName: CONTROLADOR.ControladorDatosGenerales.ObtenerTelefono
+- uid: CONTROLADOR.ControladorDatosGenerales.ObtenerEmail*
+  commentId: Overload:CONTROLADOR.ControladorDatosGenerales.ObtenerEmail
+  name: ObtenerEmail
+  nameWithType: ControladorDatosGenerales.ObtenerEmail
+  fullName: CONTROLADOR.ControladorDatosGenerales.ObtenerEmail
+- uid: CONTROLADOR.ControladorDatosGenerales.ObtenerMotivos*
+  commentId: Overload:CONTROLADOR.ControladorDatosGenerales.ObtenerMotivos
+  name: ObtenerMotivos
+  nameWithType: ControladorDatosGenerales.ObtenerMotivos
+  fullName: CONTROLADOR.ControladorDatosGenerales.ObtenerMotivos
+- uid: CONTROLADOR.ControladorDatosGenerales.AgregarAntecedentesPatologicos*
+  commentId: Overload:CONTROLADOR.ControladorDatosGenerales.AgregarAntecedentesPatologicos
+  name: AgregarAntecedentesPatologicos
+  nameWithType: ControladorDatosGenerales.AgregarAntecedentesPatologicos
+  fullName: CONTROLADOR.ControladorDatosGenerales.AgregarAntecedentesPatologicos
+- uid: CONTROLADOR.ControladorDatosGenerales.ObtenerDiarrea*
+  commentId: Overload:CONTROLADOR.ControladorDatosGenerales.ObtenerDiarrea
+  name: ObtenerDiarrea
+  nameWithType: ControladorDatosGenerales.ObtenerDiarrea
+  fullName: CONTROLADOR.ControladorDatosGenerales.ObtenerDiarrea
+- uid: CONTROLADOR.ControladorDatosGenerales.ObtenerFlatulencias*
+  commentId: Overload:CONTROLADOR.ControladorDatosGenerales.ObtenerFlatulencias
+  name: ObtenerFlatulencias
+  nameWithType: ControladorDatosGenerales.ObtenerFlatulencias
+  fullName: CONTROLADOR.ControladorDatosGenerales.ObtenerFlatulencias
+- uid: CONTROLADOR.ControladorDatosGenerales.ObtenerVomito*
+  commentId: Overload:CONTROLADOR.ControladorDatosGenerales.ObtenerVomito
+  name: ObtenerVomito
+  nameWithType: ControladorDatosGenerales.ObtenerVomito
+  fullName: CONTROLADOR.ControladorDatosGenerales.ObtenerVomito
+- uid: CONTROLADOR.ControladorDatosGenerales.ObtenerMasticacion*
+  commentId: Overload:CONTROLADOR.ControladorDatosGenerales.ObtenerMasticacion
+  name: ObtenerMasticacion
+  nameWithType: ControladorDatosGenerales.ObtenerMasticacion
+  fullName: CONTROLADOR.ControladorDatosGenerales.ObtenerMasticacion
+- uid: CONTROLADOR.ControladorDatosGenerales.ObtenerColitis*
+  commentId: Overload:CONTROLADOR.ControladorDatosGenerales.ObtenerColitis
+  name: ObtenerColitis
+  nameWithType: ControladorDatosGenerales.ObtenerColitis
+  fullName: CONTROLADOR.ControladorDatosGenerales.ObtenerColitis
+- uid: CONTROLADOR.ControladorDatosGenerales.ObtenerEstrenimiento*
+  commentId: Overload:CONTROLADOR.ControladorDatosGenerales.ObtenerEstrenimiento
+  name: ObtenerEstrenimiento
+  nameWithType: ControladorDatosGenerales.ObtenerEstrenimiento
+  fullName: CONTROLADOR.ControladorDatosGenerales.ObtenerEstrenimiento
+- uid: CONTROLADOR.ControladorDatosGenerales.ObtenerAnsiedad*
+  commentId: Overload:CONTROLADOR.ControladorDatosGenerales.ObtenerAnsiedad
+  name: ObtenerAnsiedad
+  nameWithType: ControladorDatosGenerales.ObtenerAnsiedad
+  fullName: CONTROLADOR.ControladorDatosGenerales.ObtenerAnsiedad
+- uid: CONTROLADOR.ControladorDatosGenerales.ObtenerDolorCabeza*
+  commentId: Overload:CONTROLADOR.ControladorDatosGenerales.ObtenerDolorCabeza
+  name: ObtenerDolorCabeza
+  nameWithType: ControladorDatosGenerales.ObtenerDolorCabeza
+  fullName: CONTROLADOR.ControladorDatosGenerales.ObtenerDolorCabeza
+- uid: CONTROLADOR.ControladorDatosGenerales.ObtenerGastritis*
+  commentId: Overload:CONTROLADOR.ControladorDatosGenerales.ObtenerGastritis
+  name: ObtenerGastritis
+  nameWithType: ControladorDatosGenerales.ObtenerGastritis
+  fullName: CONTROLADOR.ControladorDatosGenerales.ObtenerGastritis
+- uid: CONTROLADOR.ControladorDatosGenerales.ObtenerDisfagia*
+  commentId: Overload:CONTROLADOR.ControladorDatosGenerales.ObtenerDisfagia
+  name: ObtenerDisfagia
+  nameWithType: ControladorDatosGenerales.ObtenerDisfagia
+  fullName: CONTROLADOR.ControladorDatosGenerales.ObtenerDisfagia
+- uid: CONTROLADOR.ControladorDatosGenerales.ObtenerNauseas*
+  commentId: Overload:CONTROLADOR.ControladorDatosGenerales.ObtenerNauseas
+  name: ObtenerNauseas
+  nameWithType: ControladorDatosGenerales.ObtenerNauseas
+  fullName: CONTROLADOR.ControladorDatosGenerales.ObtenerNauseas
+- uid: CONTROLADOR.ControladorDatosGenerales.ObtenerEnfermedad*
+  commentId: Overload:CONTROLADOR.ControladorDatosGenerales.ObtenerEnfermedad
+  name: ObtenerEnfermedad
+  nameWithType: ControladorDatosGenerales.ObtenerEnfermedad
+  fullName: CONTROLADOR.ControladorDatosGenerales.ObtenerEnfermedad
+- uid: CONTROLADOR.ControladorDatosGenerales.ObtenerMedicamentos*
+  commentId: Overload:CONTROLADOR.ControladorDatosGenerales.ObtenerMedicamentos
+  name: ObtenerMedicamentos
+  nameWithType: ControladorDatosGenerales.ObtenerMedicamentos
+  fullName: CONTROLADOR.ControladorDatosGenerales.ObtenerMedicamentos
+- uid: CONTROLADOR.ControladorDatosGenerales.ObtenerSuplementos*
+  commentId: Overload:CONTROLADOR.ControladorDatosGenerales.ObtenerSuplementos
+  name: ObtenerSuplementos
+  nameWithType: ControladorDatosGenerales.ObtenerSuplementos
+  fullName: CONTROLADOR.ControladorDatosGenerales.ObtenerSuplementos
+- uid: CONTROLADOR.ControladorDatosGenerales.ObtenerDiureticos*
+  commentId: Overload:CONTROLADOR.ControladorDatosGenerales.ObtenerDiureticos
+  name: ObtenerDiureticos
+  nameWithType: ControladorDatosGenerales.ObtenerDiureticos
+  fullName: CONTROLADOR.ControladorDatosGenerales.ObtenerDiureticos
+- uid: CONTROLADOR.ControladorDatosGenerales.ObtenerLaxantes*
+  commentId: Overload:CONTROLADOR.ControladorDatosGenerales.ObtenerLaxantes
+  name: ObtenerLaxantes
+  nameWithType: ControladorDatosGenerales.ObtenerLaxantes
+  fullName: CONTROLADOR.ControladorDatosGenerales.ObtenerLaxantes
+- uid: CONTROLADOR.ControladorDatosGenerales.ObtenerCirugia*
+  commentId: Overload:CONTROLADOR.ControladorDatosGenerales.ObtenerCirugia
+  name: ObtenerCirugia
+  nameWithType: ControladorDatosGenerales.ObtenerCirugia
+  fullName: CONTROLADOR.ControladorDatosGenerales.ObtenerCirugia
+- uid: CONTROLADOR.ControladorDatosGenerales.ModificarDatosGenerales*
+  commentId: Overload:CONTROLADOR.ControladorDatosGenerales.ModificarDatosGenerales
+  name: ModificarDatosGenerales
+  nameWithType: ControladorDatosGenerales.ModificarDatosGenerales
+  fullName: CONTROLADOR.ControladorDatosGenerales.ModificarDatosGenerales
+- uid: CONTROLADOR.ControladorDatosGenerales.ModificarAntecedentesPatologicos*
+  commentId: Overload:CONTROLADOR.ControladorDatosGenerales.ModificarAntecedentesPatologicos
+  name: ModificarAntecedentesPatologicos
+  nameWithType: ControladorDatosGenerales.ModificarAntecedentesPatologicos
+  fullName: CONTROLADOR.ControladorDatosGenerales.ModificarAntecedentesPatologicos
+- uid: CONTROLADOR.ControladorDatosGenerales.IsValidEmail*
+  commentId: Overload:CONTROLADOR.ControladorDatosGenerales.IsValidEmail
+  name: IsValidEmail
+  nameWithType: ControladorDatosGenerales.IsValidEmail
+  fullName: CONTROLADOR.ControladorDatosGenerales.IsValidEmail
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean

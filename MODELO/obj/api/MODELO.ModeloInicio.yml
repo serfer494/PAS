@@ -1,0 +1,474 @@
+### YamlMime:ManagedReference
+items:
+- uid: MODELO.ModeloInicio
+  commentId: T:MODELO.ModeloInicio
+  id: ModeloInicio
+  parent: MODELO
+  children:
+  - MODELO.ModeloInicio.contador
+  - MODELO.ModeloInicio.Login(System.String,System.String)
+  - MODELO.ModeloInicio.ObtenerTipo(System.String)
+  langs:
+  - csharp
+  - vb
+  name: ModeloInicio
+  nameWithType: ModeloInicio
+  fullName: MODELO.ModeloInicio
+  type: Class
+  source:
+    remote:
+      path: MODELO/ModeloInicio.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ModeloInicio
+    path: ModeloInicio.cs
+    startLine: 15
+  assemblies:
+  - MODELO
+  namespace: MODELO
+  summary: "\nEl modelo de &quot;Inicio&quot; se encarga de comprobar el tipo y los usuarios que intenten entrar al sistema \nusando los registros a la tabla de \n&quot;Usuarios&quot; de la base de datos &quot;BDPAS&quot; destinada al sisema.\n"
+  example: []
+  syntax:
+    content: public class ModeloInicio
+    content.vb: Public Class ModeloInicio
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: MODELO.ModeloInicio.contador
+  commentId: F:MODELO.ModeloInicio.contador
+  id: contador
+  parent: MODELO.ModeloInicio
+  langs:
+  - csharp
+  - vb
+  name: contador
+  nameWithType: ModeloInicio.contador
+  fullName: MODELO.ModeloInicio.contador
+  type: Field
+  source:
+    remote:
+      path: MODELO/ModeloInicio.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: contador
+    path: ModeloInicio.cs
+    startLine: 17
+  assemblies:
+  - MODELO
+  namespace: MODELO
+  syntax:
+    content: public int contador
+    return:
+      type: System.Int32
+    content.vb: Public contador As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: MODELO.ModeloInicio.Login(System.String,System.String)
+  commentId: M:MODELO.ModeloInicio.Login(System.String,System.String)
+  id: Login(System.String,System.String)
+  parent: MODELO.ModeloInicio
+  langs:
+  - csharp
+  - vb
+  name: Login(String, String)
+  nameWithType: ModeloInicio.Login(String, String)
+  fullName: MODELO.ModeloInicio.Login(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: MODELO/ModeloInicio.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: Login
+    path: ModeloInicio.cs
+    startLine: 18
+  assemblies:
+  - MODELO
+  namespace: MODELO
+  syntax:
+    content: public string Login(string usuario, string password)
+    parameters:
+    - id: usuario
+      type: System.String
+    - id: password
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Function Login(usuario As String, password As String) As String
+  overload: MODELO.ModeloInicio.Login*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: MODELO.ModeloInicio.ObtenerTipo(System.String)
+  commentId: M:MODELO.ModeloInicio.ObtenerTipo(System.String)
+  id: ObtenerTipo(System.String)
+  parent: MODELO.ModeloInicio
+  langs:
+  - csharp
+  - vb
+  name: ObtenerTipo(String)
+  nameWithType: ModeloInicio.ObtenerTipo(String)
+  fullName: MODELO.ModeloInicio.ObtenerTipo(System.String)
+  type: Method
+  source:
+    remote:
+      path: MODELO/ModeloInicio.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ObtenerTipo
+    path: ModeloInicio.cs
+    startLine: 50
+  assemblies:
+  - MODELO
+  namespace: MODELO
+  syntax:
+    content: public int ObtenerTipo(string usuario)
+    parameters:
+    - id: usuario
+      type: System.String
+    return:
+      type: System.Int32
+    content.vb: Public Function ObtenerTipo(usuario As String) As Integer
+  overload: MODELO.ModeloInicio.ObtenerTipo*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: MODELO
+  commentId: N:MODELO
+  name: MODELO
+  nameWithType: MODELO
+  fullName: MODELO
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: MODELO.ModeloInicio.Login*
+  commentId: Overload:MODELO.ModeloInicio.Login
+  name: Login
+  nameWithType: ModeloInicio.Login
+  fullName: MODELO.ModeloInicio.Login
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: MODELO.ModeloInicio.ObtenerTipo*
+  commentId: Overload:MODELO.ModeloInicio.ObtenerTipo
+  name: ObtenerTipo
+  nameWithType: ModeloInicio.ObtenerTipo
+  fullName: MODELO.ModeloInicio.ObtenerTipo

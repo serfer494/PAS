@@ -1,0 +1,822 @@
+### YamlMime:ManagedReference
+items:
+- uid: MODELO.ModeloAlimento
+  commentId: T:MODELO.ModeloAlimento
+  id: ModeloAlimento
+  parent: MODELO
+  children:
+  - MODELO.ModeloAlimento.AgregarAlimento(System.String,System.String,System.String,System.String,System.String)
+  - MODELO.ModeloAlimento.EliminarAlimento(System.Int32)
+  - MODELO.ModeloAlimento.error
+  - MODELO.ModeloAlimento.GetTable
+  - MODELO.ModeloAlimento.ModificarAlimento(System.String,System.String,System.String,System.String,System.String,System.Int32)
+  - MODELO.ModeloAlimento.ObtenerEnergia(System.Int32)
+  - MODELO.ModeloAlimento.ObtenerGrasa(System.Int32)
+  - MODELO.ModeloAlimento.ObtenerHidratos(System.Int32)
+  - MODELO.ModeloAlimento.ObtenerId(System.String)
+  - MODELO.ModeloAlimento.ObtenerNombre(System.Int32)
+  - MODELO.ModeloAlimento.ObtenerProteinas(System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: ModeloAlimento
+  nameWithType: ModeloAlimento
+  fullName: MODELO.ModeloAlimento
+  type: Class
+  source:
+    remote:
+      path: MODELO/ModeloAlimento.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ModeloAlimento
+    path: ModeloAlimento.cs
+    startLine: 14
+  assemblies:
+  - MODELO
+  namespace: MODELO
+  summary: "\nEl modelo &quot;Alimento&quot; se encarga de realizar el CRUD para los registros de la tabla\n&quot;Alimento&quot; de la base de datos &quot;BDPAS&quot; destinada al sistema.\n"
+  example: []
+  syntax:
+    content: public class ModeloAlimento
+    content.vb: Public Class ModeloAlimento
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: MODELO.ModeloAlimento.error
+  commentId: F:MODELO.ModeloAlimento.error
+  id: error
+  parent: MODELO.ModeloAlimento
+  langs:
+  - csharp
+  - vb
+  name: error
+  nameWithType: ModeloAlimento.error
+  fullName: MODELO.ModeloAlimento.error
+  type: Field
+  source:
+    remote:
+      path: MODELO/ModeloAlimento.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: error
+    path: ModeloAlimento.cs
+    startLine: 16
+  assemblies:
+  - MODELO
+  namespace: MODELO
+  syntax:
+    content: public string error
+    return:
+      type: System.String
+    content.vb: Public error As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: MODELO.ModeloAlimento.AgregarAlimento(System.String,System.String,System.String,System.String,System.String)
+  commentId: M:MODELO.ModeloAlimento.AgregarAlimento(System.String,System.String,System.String,System.String,System.String)
+  id: AgregarAlimento(System.String,System.String,System.String,System.String,System.String)
+  parent: MODELO.ModeloAlimento
+  langs:
+  - csharp
+  - vb
+  name: AgregarAlimento(String, String, String, String, String)
+  nameWithType: ModeloAlimento.AgregarAlimento(String, String, String, String, String)
+  fullName: MODELO.ModeloAlimento.AgregarAlimento(System.String, System.String, System.String, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: MODELO/ModeloAlimento.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: AgregarAlimento
+    path: ModeloAlimento.cs
+    startLine: 20
+  assemblies:
+  - MODELO
+  namespace: MODELO
+  syntax:
+    content: public void AgregarAlimento(string nombre, string energia, string hidratos, string grasa, string proteinas)
+    parameters:
+    - id: nombre
+      type: System.String
+    - id: energia
+      type: System.String
+    - id: hidratos
+      type: System.String
+    - id: grasa
+      type: System.String
+    - id: proteinas
+      type: System.String
+    content.vb: Public Sub AgregarAlimento(nombre As String, energia As String, hidratos As String, grasa As String, proteinas As String)
+  overload: MODELO.ModeloAlimento.AgregarAlimento*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: MODELO.ModeloAlimento.GetTable
+  commentId: M:MODELO.ModeloAlimento.GetTable
+  id: GetTable
+  parent: MODELO.ModeloAlimento
+  langs:
+  - csharp
+  - vb
+  name: GetTable()
+  nameWithType: ModeloAlimento.GetTable()
+  fullName: MODELO.ModeloAlimento.GetTable()
+  type: Method
+  source:
+    remote:
+      path: MODELO/ModeloAlimento.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: GetTable
+    path: ModeloAlimento.cs
+    startLine: 55
+  assemblies:
+  - MODELO
+  namespace: MODELO
+  syntax:
+    content: public DataTable GetTable()
+    return:
+      type: System.Data.DataTable
+    content.vb: Public Function GetTable As DataTable
+  overload: MODELO.ModeloAlimento.GetTable*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: MODELO.ModeloAlimento.ModificarAlimento(System.String,System.String,System.String,System.String,System.String,System.Int32)
+  commentId: M:MODELO.ModeloAlimento.ModificarAlimento(System.String,System.String,System.String,System.String,System.String,System.Int32)
+  id: ModificarAlimento(System.String,System.String,System.String,System.String,System.String,System.Int32)
+  parent: MODELO.ModeloAlimento
+  langs:
+  - csharp
+  - vb
+  name: ModificarAlimento(String, String, String, String, String, Int32)
+  nameWithType: ModeloAlimento.ModificarAlimento(String, String, String, String, String, Int32)
+  fullName: MODELO.ModeloAlimento.ModificarAlimento(System.String, System.String, System.String, System.String, System.String, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: MODELO/ModeloAlimento.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ModificarAlimento
+    path: ModeloAlimento.cs
+    startLine: 79
+  assemblies:
+  - MODELO
+  namespace: MODELO
+  syntax:
+    content: public void ModificarAlimento(string nombre, string energia, string hidratos, string grasa, string proteinas, int id)
+    parameters:
+    - id: nombre
+      type: System.String
+    - id: energia
+      type: System.String
+    - id: hidratos
+      type: System.String
+    - id: grasa
+      type: System.String
+    - id: proteinas
+      type: System.String
+    - id: id
+      type: System.Int32
+    content.vb: Public Sub ModificarAlimento(nombre As String, energia As String, hidratos As String, grasa As String, proteinas As String, id As Integer)
+  overload: MODELO.ModeloAlimento.ModificarAlimento*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: MODELO.ModeloAlimento.EliminarAlimento(System.Int32)
+  commentId: M:MODELO.ModeloAlimento.EliminarAlimento(System.Int32)
+  id: EliminarAlimento(System.Int32)
+  parent: MODELO.ModeloAlimento
+  langs:
+  - csharp
+  - vb
+  name: EliminarAlimento(Int32)
+  nameWithType: ModeloAlimento.EliminarAlimento(Int32)
+  fullName: MODELO.ModeloAlimento.EliminarAlimento(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: MODELO/ModeloAlimento.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: EliminarAlimento
+    path: ModeloAlimento.cs
+    startLine: 107
+  assemblies:
+  - MODELO
+  namespace: MODELO
+  syntax:
+    content: public void EliminarAlimento(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    content.vb: Public Sub EliminarAlimento(id As Integer)
+  overload: MODELO.ModeloAlimento.EliminarAlimento*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: MODELO.ModeloAlimento.ObtenerId(System.String)
+  commentId: M:MODELO.ModeloAlimento.ObtenerId(System.String)
+  id: ObtenerId(System.String)
+  parent: MODELO.ModeloAlimento
+  langs:
+  - csharp
+  - vb
+  name: ObtenerId(String)
+  nameWithType: ModeloAlimento.ObtenerId(String)
+  fullName: MODELO.ModeloAlimento.ObtenerId(System.String)
+  type: Method
+  source:
+    remote:
+      path: MODELO/ModeloAlimento.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ObtenerId
+    path: ModeloAlimento.cs
+    startLine: 131
+  assemblies:
+  - MODELO
+  namespace: MODELO
+  syntax:
+    content: public int ObtenerId(string str)
+    parameters:
+    - id: str
+      type: System.String
+    return:
+      type: System.Int32
+    content.vb: Public Function ObtenerId(str As String) As Integer
+  overload: MODELO.ModeloAlimento.ObtenerId*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: MODELO.ModeloAlimento.ObtenerNombre(System.Int32)
+  commentId: M:MODELO.ModeloAlimento.ObtenerNombre(System.Int32)
+  id: ObtenerNombre(System.Int32)
+  parent: MODELO.ModeloAlimento
+  langs:
+  - csharp
+  - vb
+  name: ObtenerNombre(Int32)
+  nameWithType: ModeloAlimento.ObtenerNombre(Int32)
+  fullName: MODELO.ModeloAlimento.ObtenerNombre(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: MODELO/ModeloAlimento.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ObtenerNombre
+    path: ModeloAlimento.cs
+    startLine: 153
+  assemblies:
+  - MODELO
+  namespace: MODELO
+  syntax:
+    content: public string ObtenerNombre(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: Public Function ObtenerNombre(id As Integer) As String
+  overload: MODELO.ModeloAlimento.ObtenerNombre*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: MODELO.ModeloAlimento.ObtenerEnergia(System.Int32)
+  commentId: M:MODELO.ModeloAlimento.ObtenerEnergia(System.Int32)
+  id: ObtenerEnergia(System.Int32)
+  parent: MODELO.ModeloAlimento
+  langs:
+  - csharp
+  - vb
+  name: ObtenerEnergia(Int32)
+  nameWithType: ModeloAlimento.ObtenerEnergia(Int32)
+  fullName: MODELO.ModeloAlimento.ObtenerEnergia(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: MODELO/ModeloAlimento.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ObtenerEnergia
+    path: ModeloAlimento.cs
+    startLine: 175
+  assemblies:
+  - MODELO
+  namespace: MODELO
+  syntax:
+    content: public int ObtenerEnergia(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Function ObtenerEnergia(id As Integer) As Integer
+  overload: MODELO.ModeloAlimento.ObtenerEnergia*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: MODELO.ModeloAlimento.ObtenerHidratos(System.Int32)
+  commentId: M:MODELO.ModeloAlimento.ObtenerHidratos(System.Int32)
+  id: ObtenerHidratos(System.Int32)
+  parent: MODELO.ModeloAlimento
+  langs:
+  - csharp
+  - vb
+  name: ObtenerHidratos(Int32)
+  nameWithType: ModeloAlimento.ObtenerHidratos(Int32)
+  fullName: MODELO.ModeloAlimento.ObtenerHidratos(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: MODELO/ModeloAlimento.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ObtenerHidratos
+    path: ModeloAlimento.cs
+    startLine: 197
+  assemblies:
+  - MODELO
+  namespace: MODELO
+  syntax:
+    content: public int ObtenerHidratos(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Function ObtenerHidratos(id As Integer) As Integer
+  overload: MODELO.ModeloAlimento.ObtenerHidratos*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: MODELO.ModeloAlimento.ObtenerGrasa(System.Int32)
+  commentId: M:MODELO.ModeloAlimento.ObtenerGrasa(System.Int32)
+  id: ObtenerGrasa(System.Int32)
+  parent: MODELO.ModeloAlimento
+  langs:
+  - csharp
+  - vb
+  name: ObtenerGrasa(Int32)
+  nameWithType: ModeloAlimento.ObtenerGrasa(Int32)
+  fullName: MODELO.ModeloAlimento.ObtenerGrasa(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: MODELO/ModeloAlimento.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ObtenerGrasa
+    path: ModeloAlimento.cs
+    startLine: 219
+  assemblies:
+  - MODELO
+  namespace: MODELO
+  syntax:
+    content: public int ObtenerGrasa(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Function ObtenerGrasa(id As Integer) As Integer
+  overload: MODELO.ModeloAlimento.ObtenerGrasa*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: MODELO.ModeloAlimento.ObtenerProteinas(System.Int32)
+  commentId: M:MODELO.ModeloAlimento.ObtenerProteinas(System.Int32)
+  id: ObtenerProteinas(System.Int32)
+  parent: MODELO.ModeloAlimento
+  langs:
+  - csharp
+  - vb
+  name: ObtenerProteinas(Int32)
+  nameWithType: ModeloAlimento.ObtenerProteinas(Int32)
+  fullName: MODELO.ModeloAlimento.ObtenerProteinas(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: MODELO/ModeloAlimento.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ObtenerProteinas
+    path: ModeloAlimento.cs
+    startLine: 241
+  assemblies:
+  - MODELO
+  namespace: MODELO
+  syntax:
+    content: public int ObtenerProteinas(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Function ObtenerProteinas(id As Integer) As Integer
+  overload: MODELO.ModeloAlimento.ObtenerProteinas*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: MODELO
+  commentId: N:MODELO
+  name: MODELO
+  nameWithType: MODELO
+  fullName: MODELO
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: MODELO.ModeloAlimento.AgregarAlimento*
+  commentId: Overload:MODELO.ModeloAlimento.AgregarAlimento
+  name: AgregarAlimento
+  nameWithType: ModeloAlimento.AgregarAlimento
+  fullName: MODELO.ModeloAlimento.AgregarAlimento
+- uid: MODELO.ModeloAlimento.GetTable*
+  commentId: Overload:MODELO.ModeloAlimento.GetTable
+  name: GetTable
+  nameWithType: ModeloAlimento.GetTable
+  fullName: MODELO.ModeloAlimento.GetTable
+- uid: System.Data.DataTable
+  commentId: T:System.Data.DataTable
+  parent: System.Data
+  isExternal: true
+  name: DataTable
+  nameWithType: DataTable
+  fullName: System.Data.DataTable
+- uid: System.Data
+  commentId: N:System.Data
+  isExternal: true
+  name: System.Data
+  nameWithType: System.Data
+  fullName: System.Data
+- uid: MODELO.ModeloAlimento.ModificarAlimento*
+  commentId: Overload:MODELO.ModeloAlimento.ModificarAlimento
+  name: ModificarAlimento
+  nameWithType: ModeloAlimento.ModificarAlimento
+  fullName: MODELO.ModeloAlimento.ModificarAlimento
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: MODELO.ModeloAlimento.EliminarAlimento*
+  commentId: Overload:MODELO.ModeloAlimento.EliminarAlimento
+  name: EliminarAlimento
+  nameWithType: ModeloAlimento.EliminarAlimento
+  fullName: MODELO.ModeloAlimento.EliminarAlimento
+- uid: MODELO.ModeloAlimento.ObtenerId*
+  commentId: Overload:MODELO.ModeloAlimento.ObtenerId
+  name: ObtenerId
+  nameWithType: ModeloAlimento.ObtenerId
+  fullName: MODELO.ModeloAlimento.ObtenerId
+- uid: MODELO.ModeloAlimento.ObtenerNombre*
+  commentId: Overload:MODELO.ModeloAlimento.ObtenerNombre
+  name: ObtenerNombre
+  nameWithType: ModeloAlimento.ObtenerNombre
+  fullName: MODELO.ModeloAlimento.ObtenerNombre
+- uid: MODELO.ModeloAlimento.ObtenerEnergia*
+  commentId: Overload:MODELO.ModeloAlimento.ObtenerEnergia
+  name: ObtenerEnergia
+  nameWithType: ModeloAlimento.ObtenerEnergia
+  fullName: MODELO.ModeloAlimento.ObtenerEnergia
+- uid: MODELO.ModeloAlimento.ObtenerHidratos*
+  commentId: Overload:MODELO.ModeloAlimento.ObtenerHidratos
+  name: ObtenerHidratos
+  nameWithType: ModeloAlimento.ObtenerHidratos
+  fullName: MODELO.ModeloAlimento.ObtenerHidratos
+- uid: MODELO.ModeloAlimento.ObtenerGrasa*
+  commentId: Overload:MODELO.ModeloAlimento.ObtenerGrasa
+  name: ObtenerGrasa
+  nameWithType: ModeloAlimento.ObtenerGrasa
+  fullName: MODELO.ModeloAlimento.ObtenerGrasa
+- uid: MODELO.ModeloAlimento.ObtenerProteinas*
+  commentId: Overload:MODELO.ModeloAlimento.ObtenerProteinas
+  name: ObtenerProteinas
+  nameWithType: ModeloAlimento.ObtenerProteinas
+  fullName: MODELO.ModeloAlimento.ObtenerProteinas

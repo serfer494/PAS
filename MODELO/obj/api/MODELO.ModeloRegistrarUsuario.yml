@@ -1,0 +1,451 @@
+### YamlMime:ManagedReference
+items:
+- uid: MODELO.ModeloRegistrarUsuario
+  commentId: T:MODELO.ModeloRegistrarUsuario
+  id: ModeloRegistrarUsuario
+  parent: MODELO
+  children:
+  - MODELO.ModeloRegistrarUsuario.AgregarUsuario(System.String,System.String,System.Int32)
+  - MODELO.ModeloRegistrarUsuario.RevisarSiYaExiste(System.String)
+  langs:
+  - csharp
+  - vb
+  name: ModeloRegistrarUsuario
+  nameWithType: ModeloRegistrarUsuario
+  fullName: MODELO.ModeloRegistrarUsuario
+  type: Class
+  source:
+    remote:
+      path: MODELO/ModeloRegistrarUsuario.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ModeloRegistrarUsuario
+    path: ModeloRegistrarUsuario.cs
+    startLine: 14
+  assemblies:
+  - MODELO
+  namespace: MODELO
+  summary: "\nEl modelo de &quot;Registrar Usuario&quot; se encarga de ingresar registros y revisar si ya hay algun usuario con los mismos datos\na la tabla de &quot;Usuarios&quot; de la base de datos &quot;BDPAS&quot; destinada al sisema.\n"
+  example: []
+  syntax:
+    content: public class ModeloRegistrarUsuario
+    content.vb: Public Class ModeloRegistrarUsuario
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: MODELO.ModeloRegistrarUsuario.AgregarUsuario(System.String,System.String,System.Int32)
+  commentId: M:MODELO.ModeloRegistrarUsuario.AgregarUsuario(System.String,System.String,System.Int32)
+  id: AgregarUsuario(System.String,System.String,System.Int32)
+  parent: MODELO.ModeloRegistrarUsuario
+  langs:
+  - csharp
+  - vb
+  name: AgregarUsuario(String, String, Int32)
+  nameWithType: ModeloRegistrarUsuario.AgregarUsuario(String, String, Int32)
+  fullName: MODELO.ModeloRegistrarUsuario.AgregarUsuario(System.String, System.String, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: MODELO/ModeloRegistrarUsuario.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: AgregarUsuario
+    path: ModeloRegistrarUsuario.cs
+    startLine: 16
+  assemblies:
+  - MODELO
+  namespace: MODELO
+  syntax:
+    content: public string AgregarUsuario(string usuario, string contrasena, int tipo)
+    parameters:
+    - id: usuario
+      type: System.String
+    - id: contrasena
+      type: System.String
+    - id: tipo
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: Public Function AgregarUsuario(usuario As String, contrasena As String, tipo As Integer) As String
+  overload: MODELO.ModeloRegistrarUsuario.AgregarUsuario*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: MODELO.ModeloRegistrarUsuario.RevisarSiYaExiste(System.String)
+  commentId: M:MODELO.ModeloRegistrarUsuario.RevisarSiYaExiste(System.String)
+  id: RevisarSiYaExiste(System.String)
+  parent: MODELO.ModeloRegistrarUsuario
+  langs:
+  - csharp
+  - vb
+  name: RevisarSiYaExiste(String)
+  nameWithType: ModeloRegistrarUsuario.RevisarSiYaExiste(String)
+  fullName: MODELO.ModeloRegistrarUsuario.RevisarSiYaExiste(System.String)
+  type: Method
+  source:
+    remote:
+      path: MODELO/ModeloRegistrarUsuario.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: RevisarSiYaExiste
+    path: ModeloRegistrarUsuario.cs
+    startLine: 49
+  assemblies:
+  - MODELO
+  namespace: MODELO
+  syntax:
+    content: public bool RevisarSiYaExiste(string usuario)
+    parameters:
+    - id: usuario
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Function RevisarSiYaExiste(usuario As String) As Boolean
+  overload: MODELO.ModeloRegistrarUsuario.RevisarSiYaExiste*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: MODELO
+  commentId: N:MODELO
+  name: MODELO
+  nameWithType: MODELO
+  fullName: MODELO
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MODELO.ModeloRegistrarUsuario.AgregarUsuario*
+  commentId: Overload:MODELO.ModeloRegistrarUsuario.AgregarUsuario
+  name: AgregarUsuario
+  nameWithType: ModeloRegistrarUsuario.AgregarUsuario
+  fullName: MODELO.ModeloRegistrarUsuario.AgregarUsuario
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: MODELO.ModeloRegistrarUsuario.RevisarSiYaExiste*
+  commentId: Overload:MODELO.ModeloRegistrarUsuario.RevisarSiYaExiste
+  name: RevisarSiYaExiste
+  nameWithType: ModeloRegistrarUsuario.RevisarSiYaExiste
+  fullName: MODELO.ModeloRegistrarUsuario.RevisarSiYaExiste
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean

@@ -1,0 +1,713 @@
+### YamlMime:ManagedReference
+items:
+- uid: MODELO.ModeloGenerales2
+  commentId: T:MODELO.ModeloGenerales2
+  id: ModeloGenerales2
+  parent: MODELO
+  children:
+  - MODELO.ModeloGenerales2.AgregarAntecedentesFamiliares(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32)
+  - MODELO.ModeloGenerales2.AgregarAntecedentesNoPatologicos(System.String,System.String,System.String,System.String,System.String,System.String,System.Int32)
+  - MODELO.ModeloGenerales2.AgregarIndicadoresBioquimicos(System.String,System.String,System.String,System.String,System.String,System.String,System.Int32)
+  - MODELO.ModeloGenerales2.ModificarAntecedentesFamiliares(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32)
+  - MODELO.ModeloGenerales2.ModificarAntecedentesNoPatologicos(System.String,System.String,System.String,System.String,System.String,System.String,System.Int32)
+  - MODELO.ModeloGenerales2.ModificarIndicadoresBioquimicos(System.String,System.String,System.String,System.String,System.String,System.String,System.Int32)
+  - MODELO.ModeloGenerales2.ObtenerTexto(System.Int32,System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: ModeloGenerales2
+  nameWithType: ModeloGenerales2
+  fullName: MODELO.ModeloGenerales2
+  type: Class
+  source:
+    remote:
+      path: MODELO/ModeloGenerales2.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ModeloGenerales2
+    path: ModeloGenerales2.cs
+    startLine: 14
+  assemblies:
+  - MODELO
+  namespace: MODELO
+  summary: "\nEl modelo de &quot;Generales 2&quot; se encarga de realizar el CRUD para los registros de la tabla de \n&quot;DatosGnAntePato, DatosGnAnteNoPato y DatosGnIndBio&quot; de la base de datos &quot;BDPAS&quot; destinada al sisema.\n"
+  example: []
+  syntax:
+    content: public class ModeloGenerales2
+    content.vb: Public Class ModeloGenerales2
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: MODELO.ModeloGenerales2.AgregarAntecedentesFamiliares(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32)
+  commentId: M:MODELO.ModeloGenerales2.AgregarAntecedentesFamiliares(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32)
+  id: AgregarAntecedentesFamiliares(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32)
+  parent: MODELO.ModeloGenerales2
+  langs:
+  - csharp
+  - vb
+  name: AgregarAntecedentesFamiliares(String, String, String, String, String, String, String, Int32)
+  nameWithType: ModeloGenerales2.AgregarAntecedentesFamiliares(String, String, String, String, String, String, String, Int32)
+  fullName: MODELO.ModeloGenerales2.AgregarAntecedentesFamiliares(System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: MODELO/ModeloGenerales2.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: AgregarAntecedentesFamiliares
+    path: ModeloGenerales2.cs
+    startLine: 18
+  assemblies:
+  - MODELO
+  namespace: MODELO
+  syntax:
+    content: public void AgregarAntecedentesFamiliares(string diabetes, string cancer, string obesidad, string hipertension, string enfTir, string hiperlipidemias, string otra, int idPaciente)
+    parameters:
+    - id: diabetes
+      type: System.String
+    - id: cancer
+      type: System.String
+    - id: obesidad
+      type: System.String
+    - id: hipertension
+      type: System.String
+    - id: enfTir
+      type: System.String
+    - id: hiperlipidemias
+      type: System.String
+    - id: otra
+      type: System.String
+    - id: idPaciente
+      type: System.Int32
+    content.vb: Public Sub AgregarAntecedentesFamiliares(diabetes As String, cancer As String, obesidad As String, hipertension As String, enfTir As String, hiperlipidemias As String, otra As String, idPaciente As Integer)
+  overload: MODELO.ModeloGenerales2.AgregarAntecedentesFamiliares*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: MODELO.ModeloGenerales2.ModificarAntecedentesFamiliares(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32)
+  commentId: M:MODELO.ModeloGenerales2.ModificarAntecedentesFamiliares(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32)
+  id: ModificarAntecedentesFamiliares(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32)
+  parent: MODELO.ModeloGenerales2
+  langs:
+  - csharp
+  - vb
+  name: ModificarAntecedentesFamiliares(String, String, String, String, String, String, String, Int32)
+  nameWithType: ModeloGenerales2.ModificarAntecedentesFamiliares(String, String, String, String, String, String, String, Int32)
+  fullName: MODELO.ModeloGenerales2.ModificarAntecedentesFamiliares(System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: MODELO/ModeloGenerales2.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ModificarAntecedentesFamiliares
+    path: ModeloGenerales2.cs
+    startLine: 110
+  assemblies:
+  - MODELO
+  namespace: MODELO
+  syntax:
+    content: public void ModificarAntecedentesFamiliares(string diabetes, string cancer, string obesidad, string hipertension, string enfTir, string hiperlipidemias, string otra, int idPaciente)
+    parameters:
+    - id: diabetes
+      type: System.String
+    - id: cancer
+      type: System.String
+    - id: obesidad
+      type: System.String
+    - id: hipertension
+      type: System.String
+    - id: enfTir
+      type: System.String
+    - id: hiperlipidemias
+      type: System.String
+    - id: otra
+      type: System.String
+    - id: idPaciente
+      type: System.Int32
+    content.vb: Public Sub ModificarAntecedentesFamiliares(diabetes As String, cancer As String, obesidad As String, hipertension As String, enfTir As String, hiperlipidemias As String, otra As String, idPaciente As Integer)
+  overload: MODELO.ModeloGenerales2.ModificarAntecedentesFamiliares*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: MODELO.ModeloGenerales2.AgregarAntecedentesNoPatologicos(System.String,System.String,System.String,System.String,System.String,System.String,System.Int32)
+  commentId: M:MODELO.ModeloGenerales2.AgregarAntecedentesNoPatologicos(System.String,System.String,System.String,System.String,System.String,System.String,System.Int32)
+  id: AgregarAntecedentesNoPatologicos(System.String,System.String,System.String,System.String,System.String,System.String,System.Int32)
+  parent: MODELO.ModeloGenerales2
+  langs:
+  - csharp
+  - vb
+  name: AgregarAntecedentesNoPatologicos(String, String, String, String, String, String, Int32)
+  nameWithType: ModeloGenerales2.AgregarAntecedentesNoPatologicos(String, String, String, String, String, String, Int32)
+  fullName: MODELO.ModeloGenerales2.AgregarAntecedentesNoPatologicos(System.String, System.String, System.String, System.String, System.String, System.String, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: MODELO/ModeloGenerales2.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: AgregarAntecedentesNoPatologicos
+    path: ModeloGenerales2.cs
+    startLine: 142
+  assemblies:
+  - MODELO
+  namespace: MODELO
+  syntax:
+    content: public void AgregarAntecedentesNoPatologicos(string ejercicio, string duracion, string frecuencia, string alcohol, string tabaco, string toxicomanias, int id)
+    parameters:
+    - id: ejercicio
+      type: System.String
+    - id: duracion
+      type: System.String
+    - id: frecuencia
+      type: System.String
+    - id: alcohol
+      type: System.String
+    - id: tabaco
+      type: System.String
+    - id: toxicomanias
+      type: System.String
+    - id: id
+      type: System.Int32
+    content.vb: Public Sub AgregarAntecedentesNoPatologicos(ejercicio As String, duracion As String, frecuencia As String, alcohol As String, tabaco As String, toxicomanias As String, id As Integer)
+  overload: MODELO.ModeloGenerales2.AgregarAntecedentesNoPatologicos*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: MODELO.ModeloGenerales2.ModificarAntecedentesNoPatologicos(System.String,System.String,System.String,System.String,System.String,System.String,System.Int32)
+  commentId: M:MODELO.ModeloGenerales2.ModificarAntecedentesNoPatologicos(System.String,System.String,System.String,System.String,System.String,System.String,System.Int32)
+  id: ModificarAntecedentesNoPatologicos(System.String,System.String,System.String,System.String,System.String,System.String,System.Int32)
+  parent: MODELO.ModeloGenerales2
+  langs:
+  - csharp
+  - vb
+  name: ModificarAntecedentesNoPatologicos(String, String, String, String, String, String, Int32)
+  nameWithType: ModeloGenerales2.ModificarAntecedentesNoPatologicos(String, String, String, String, String, String, Int32)
+  fullName: MODELO.ModeloGenerales2.ModificarAntecedentesNoPatologicos(System.String, System.String, System.String, System.String, System.String, System.String, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: MODELO/ModeloGenerales2.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ModificarAntecedentesNoPatologicos
+    path: ModeloGenerales2.cs
+    startLine: 230
+  assemblies:
+  - MODELO
+  namespace: MODELO
+  syntax:
+    content: public void ModificarAntecedentesNoPatologicos(string ejercicio, string duracion, string frecuencia, string alcohol, string tabaco, string toxicomanias, int id)
+    parameters:
+    - id: ejercicio
+      type: System.String
+    - id: duracion
+      type: System.String
+    - id: frecuencia
+      type: System.String
+    - id: alcohol
+      type: System.String
+    - id: tabaco
+      type: System.String
+    - id: toxicomanias
+      type: System.String
+    - id: id
+      type: System.Int32
+    content.vb: Public Sub ModificarAntecedentesNoPatologicos(ejercicio As String, duracion As String, frecuencia As String, alcohol As String, tabaco As String, toxicomanias As String, id As Integer)
+  overload: MODELO.ModeloGenerales2.ModificarAntecedentesNoPatologicos*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: MODELO.ModeloGenerales2.AgregarIndicadoresBioquimicos(System.String,System.String,System.String,System.String,System.String,System.String,System.Int32)
+  commentId: M:MODELO.ModeloGenerales2.AgregarIndicadoresBioquimicos(System.String,System.String,System.String,System.String,System.String,System.String,System.Int32)
+  id: AgregarIndicadoresBioquimicos(System.String,System.String,System.String,System.String,System.String,System.String,System.Int32)
+  parent: MODELO.ModeloGenerales2
+  langs:
+  - csharp
+  - vb
+  name: AgregarIndicadoresBioquimicos(String, String, String, String, String, String, Int32)
+  nameWithType: ModeloGenerales2.AgregarIndicadoresBioquimicos(String, String, String, String, String, String, Int32)
+  fullName: MODELO.ModeloGenerales2.AgregarIndicadoresBioquimicos(System.String, System.String, System.String, System.String, System.String, System.String, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: MODELO/ModeloGenerales2.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: AgregarIndicadoresBioquimicos
+    path: ModeloGenerales2.cs
+    startLine: 260
+  assemblies:
+  - MODELO
+  namespace: MODELO
+  syntax:
+    content: public void AgregarIndicadoresBioquimicos(string trigliceridos, string hemoglobina, string colesterol, string glucosa, string creatinina, string nitUreico, int id)
+    parameters:
+    - id: trigliceridos
+      type: System.String
+    - id: hemoglobina
+      type: System.String
+    - id: colesterol
+      type: System.String
+    - id: glucosa
+      type: System.String
+    - id: creatinina
+      type: System.String
+    - id: nitUreico
+      type: System.String
+    - id: id
+      type: System.Int32
+    content.vb: Public Sub AgregarIndicadoresBioquimicos(trigliceridos As String, hemoglobina As String, colesterol As String, glucosa As String, creatinina As String, nitUreico As String, id As Integer)
+  overload: MODELO.ModeloGenerales2.AgregarIndicadoresBioquimicos*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: MODELO.ModeloGenerales2.ModificarIndicadoresBioquimicos(System.String,System.String,System.String,System.String,System.String,System.String,System.Int32)
+  commentId: M:MODELO.ModeloGenerales2.ModificarIndicadoresBioquimicos(System.String,System.String,System.String,System.String,System.String,System.String,System.Int32)
+  id: ModificarIndicadoresBioquimicos(System.String,System.String,System.String,System.String,System.String,System.String,System.Int32)
+  parent: MODELO.ModeloGenerales2
+  langs:
+  - csharp
+  - vb
+  name: ModificarIndicadoresBioquimicos(String, String, String, String, String, String, Int32)
+  nameWithType: ModeloGenerales2.ModificarIndicadoresBioquimicos(String, String, String, String, String, String, Int32)
+  fullName: MODELO.ModeloGenerales2.ModificarIndicadoresBioquimicos(System.String, System.String, System.String, System.String, System.String, System.String, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: MODELO/ModeloGenerales2.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ModificarIndicadoresBioquimicos
+    path: ModeloGenerales2.cs
+    startLine: 348
+  assemblies:
+  - MODELO
+  namespace: MODELO
+  syntax:
+    content: public void ModificarIndicadoresBioquimicos(string trigliceridos, string hemoglobina, string colesterol, string glucosa, string creatinina, string nitUreico, int id)
+    parameters:
+    - id: trigliceridos
+      type: System.String
+    - id: hemoglobina
+      type: System.String
+    - id: colesterol
+      type: System.String
+    - id: glucosa
+      type: System.String
+    - id: creatinina
+      type: System.String
+    - id: nitUreico
+      type: System.String
+    - id: id
+      type: System.Int32
+    content.vb: Public Sub ModificarIndicadoresBioquimicos(trigliceridos As String, hemoglobina As String, colesterol As String, glucosa As String, creatinina As String, nitUreico As String, id As Integer)
+  overload: MODELO.ModeloGenerales2.ModificarIndicadoresBioquimicos*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: MODELO.ModeloGenerales2.ObtenerTexto(System.Int32,System.String,System.String)
+  commentId: M:MODELO.ModeloGenerales2.ObtenerTexto(System.Int32,System.String,System.String)
+  id: ObtenerTexto(System.Int32,System.String,System.String)
+  parent: MODELO.ModeloGenerales2
+  langs:
+  - csharp
+  - vb
+  name: ObtenerTexto(Int32, String, String)
+  nameWithType: ModeloGenerales2.ObtenerTexto(Int32, String, String)
+  fullName: MODELO.ModeloGenerales2.ObtenerTexto(System.Int32, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: MODELO/ModeloGenerales2.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ObtenerTexto
+    path: ModeloGenerales2.cs
+    startLine: 378
+  assemblies:
+  - MODELO
+  namespace: MODELO
+  syntax:
+    content: public string ObtenerTexto(int id, string campo, string basedeDatos)
+    parameters:
+    - id: id
+      type: System.Int32
+    - id: campo
+      type: System.String
+    - id: basedeDatos
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Function ObtenerTexto(id As Integer, campo As String, basedeDatos As String) As String
+  overload: MODELO.ModeloGenerales2.ObtenerTexto*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: MODELO
+  commentId: N:MODELO
+  name: MODELO
+  nameWithType: MODELO
+  fullName: MODELO
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MODELO.ModeloGenerales2.AgregarAntecedentesFamiliares*
+  commentId: Overload:MODELO.ModeloGenerales2.AgregarAntecedentesFamiliares
+  name: AgregarAntecedentesFamiliares
+  nameWithType: ModeloGenerales2.AgregarAntecedentesFamiliares
+  fullName: MODELO.ModeloGenerales2.AgregarAntecedentesFamiliares
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: MODELO.ModeloGenerales2.ModificarAntecedentesFamiliares*
+  commentId: Overload:MODELO.ModeloGenerales2.ModificarAntecedentesFamiliares
+  name: ModificarAntecedentesFamiliares
+  nameWithType: ModeloGenerales2.ModificarAntecedentesFamiliares
+  fullName: MODELO.ModeloGenerales2.ModificarAntecedentesFamiliares
+- uid: MODELO.ModeloGenerales2.AgregarAntecedentesNoPatologicos*
+  commentId: Overload:MODELO.ModeloGenerales2.AgregarAntecedentesNoPatologicos
+  name: AgregarAntecedentesNoPatologicos
+  nameWithType: ModeloGenerales2.AgregarAntecedentesNoPatologicos
+  fullName: MODELO.ModeloGenerales2.AgregarAntecedentesNoPatologicos
+- uid: MODELO.ModeloGenerales2.ModificarAntecedentesNoPatologicos*
+  commentId: Overload:MODELO.ModeloGenerales2.ModificarAntecedentesNoPatologicos
+  name: ModificarAntecedentesNoPatologicos
+  nameWithType: ModeloGenerales2.ModificarAntecedentesNoPatologicos
+  fullName: MODELO.ModeloGenerales2.ModificarAntecedentesNoPatologicos
+- uid: MODELO.ModeloGenerales2.AgregarIndicadoresBioquimicos*
+  commentId: Overload:MODELO.ModeloGenerales2.AgregarIndicadoresBioquimicos
+  name: AgregarIndicadoresBioquimicos
+  nameWithType: ModeloGenerales2.AgregarIndicadoresBioquimicos
+  fullName: MODELO.ModeloGenerales2.AgregarIndicadoresBioquimicos
+- uid: MODELO.ModeloGenerales2.ModificarIndicadoresBioquimicos*
+  commentId: Overload:MODELO.ModeloGenerales2.ModificarIndicadoresBioquimicos
+  name: ModificarIndicadoresBioquimicos
+  nameWithType: ModeloGenerales2.ModificarIndicadoresBioquimicos
+  fullName: MODELO.ModeloGenerales2.ModificarIndicadoresBioquimicos
+- uid: MODELO.ModeloGenerales2.ObtenerTexto*
+  commentId: Overload:MODELO.ModeloGenerales2.ObtenerTexto
+  name: ObtenerTexto
+  nameWithType: ModeloGenerales2.ObtenerTexto
+  fullName: MODELO.ModeloGenerales2.ObtenerTexto

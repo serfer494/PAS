@@ -1,0 +1,885 @@
+### YamlMime:ManagedReference
+items:
+- uid: CONTROLADOR.ControladorComida
+  commentId: T:CONTROLADOR.ControladorComida
+  id: ControladorComida
+  parent: CONTROLADOR
+  children:
+  - CONTROLADOR.ControladorComida.AgregarComida(System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.String)
+  - CONTROLADOR.ControladorComida.EliminarComida(System.Int32)
+  - CONTROLADOR.ControladorComida.error
+  - CONTROLADOR.ControladorComida.GetTable
+  - CONTROLADOR.ControladorComida.ModificarComida(System.String,System.Int32,System.Int32,System.String,System.Int32)
+  - CONTROLADOR.ControladorComida.Obtener(System.Int32,System.String,System.String,System.String)
+  - CONTROLADOR.ControladorComida.ObtenerAlimentos
+  - CONTROLADOR.ControladorComida.ObtenerIdAlimento(System.String)
+  - CONTROLADOR.ControladorComida.ObtenerIdComida(System.String)
+  - CONTROLADOR.ControladorComida.ObtenerIdComidaIngrediente(System.Int32,System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: ControladorComida
+  nameWithType: ControladorComida
+  fullName: CONTROLADOR.ControladorComida
+  type: Class
+  source:
+    remote:
+      path: CONTROLADOR/ControladorComida.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ControladorComida
+    path: ControladorComida.cs
+    startLine: 16
+  assemblies:
+  - CONTROLADOR
+  namespace: CONTROLADOR
+  summary: "\nLa clase controlador &quot;Comida&quot; valida que la informacion de los campos \nsean correctos para poder usar el CRUD del modelo correspondiente\nen la tabla &quot;Comida_ingredientes y Comida&quot; en la base de datos &quot;DBPAS&quot; destinada al sistema.\nDe acuerdo a las caracteristicas de la clase &quot;Validacion&quot;.\n"
+  example: []
+  syntax:
+    content: public class ControladorComida
+    content.vb: Public Class ControladorComida
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: CONTROLADOR.ControladorComida.error
+  commentId: F:CONTROLADOR.ControladorComida.error
+  id: error
+  parent: CONTROLADOR.ControladorComida
+  langs:
+  - csharp
+  - vb
+  name: error
+  nameWithType: ControladorComida.error
+  fullName: CONTROLADOR.ControladorComida.error
+  type: Field
+  source:
+    remote:
+      path: CONTROLADOR/ControladorComida.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: error
+    path: ControladorComida.cs
+    startLine: 18
+  assemblies:
+  - CONTROLADOR
+  namespace: CONTROLADOR
+  syntax:
+    content: public string error
+    return:
+      type: System.String
+    content.vb: Public error As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CONTROLADOR.ControladorComida.ObtenerAlimentos
+  commentId: M:CONTROLADOR.ControladorComida.ObtenerAlimentos
+  id: ObtenerAlimentos
+  parent: CONTROLADOR.ControladorComida
+  langs:
+  - csharp
+  - vb
+  name: ObtenerAlimentos()
+  nameWithType: ControladorComida.ObtenerAlimentos()
+  fullName: CONTROLADOR.ControladorComida.ObtenerAlimentos()
+  type: Method
+  source:
+    remote:
+      path: CONTROLADOR/ControladorComida.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ObtenerAlimentos
+    path: ControladorComida.cs
+    startLine: 20
+  assemblies:
+  - CONTROLADOR
+  namespace: CONTROLADOR
+  syntax:
+    content: public List<string> ObtenerAlimentos()
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: Public Function ObtenerAlimentos As List(Of String)
+  overload: CONTROLADOR.ControladorComida.ObtenerAlimentos*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CONTROLADOR.ControladorComida.ObtenerIdAlimento(System.String)
+  commentId: M:CONTROLADOR.ControladorComida.ObtenerIdAlimento(System.String)
+  id: ObtenerIdAlimento(System.String)
+  parent: CONTROLADOR.ControladorComida
+  langs:
+  - csharp
+  - vb
+  name: ObtenerIdAlimento(String)
+  nameWithType: ControladorComida.ObtenerIdAlimento(String)
+  fullName: CONTROLADOR.ControladorComida.ObtenerIdAlimento(System.String)
+  type: Method
+  source:
+    remote:
+      path: CONTROLADOR/ControladorComida.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ObtenerIdAlimento
+    path: ControladorComida.cs
+    startLine: 33
+  assemblies:
+  - CONTROLADOR
+  namespace: CONTROLADOR
+  syntax:
+    content: public int ObtenerIdAlimento(string str)
+    parameters:
+    - id: str
+      type: System.String
+    return:
+      type: System.Int32
+    content.vb: Public Function ObtenerIdAlimento(str As String) As Integer
+  overload: CONTROLADOR.ControladorComida.ObtenerIdAlimento*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CONTROLADOR.ControladorComida.AgregarComida(System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.String)
+  commentId: M:CONTROLADOR.ControladorComida.AgregarComida(System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.String)
+  id: AgregarComida(System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.String)
+  parent: CONTROLADOR.ControladorComida
+  langs:
+  - csharp
+  - vb
+  name: AgregarComida(String, Int32, Int32, Int32, Int32, Int32, String, String, String, String, String)
+  nameWithType: ControladorComida.AgregarComida(String, Int32, Int32, Int32, Int32, Int32, String, String, String, String, String)
+  fullName: CONTROLADOR.ControladorComida.AgregarComida(System.String, System.Int32, System.Int32, System.Int32, System.Int32, System.Int32, System.String, System.String, System.String, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: CONTROLADOR/ControladorComida.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: AgregarComida
+    path: ControladorComida.cs
+    startLine: 46
+  assemblies:
+  - CONTROLADOR
+  namespace: CONTROLADOR
+  syntax:
+    content: public void AgregarComida(string nombre, int id1, int id2, int id3, int id4, int id5, string cant1, string cant2, string cant3, string cant4, string cant5)
+    parameters:
+    - id: nombre
+      type: System.String
+    - id: id1
+      type: System.Int32
+    - id: id2
+      type: System.Int32
+    - id: id3
+      type: System.Int32
+    - id: id4
+      type: System.Int32
+    - id: id5
+      type: System.Int32
+    - id: cant1
+      type: System.String
+    - id: cant2
+      type: System.String
+    - id: cant3
+      type: System.String
+    - id: cant4
+      type: System.String
+    - id: cant5
+      type: System.String
+    content.vb: Public Sub AgregarComida(nombre As String, id1 As Integer, id2 As Integer, id3 As Integer, id4 As Integer, id5 As Integer, cant1 As String, cant2 As String, cant3 As String, cant4 As String, cant5 As String)
+  overload: CONTROLADOR.ControladorComida.AgregarComida*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CONTROLADOR.ControladorComida.GetTable
+  commentId: M:CONTROLADOR.ControladorComida.GetTable
+  id: GetTable
+  parent: CONTROLADOR.ControladorComida
+  langs:
+  - csharp
+  - vb
+  name: GetTable()
+  nameWithType: ControladorComida.GetTable()
+  fullName: CONTROLADOR.ControladorComida.GetTable()
+  type: Method
+  source:
+    remote:
+      path: CONTROLADOR/ControladorComida.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: GetTable
+    path: ControladorComida.cs
+    startLine: 113
+  assemblies:
+  - CONTROLADOR
+  namespace: CONTROLADOR
+  syntax:
+    content: public DataTable GetTable()
+    return:
+      type: System.Data.DataTable
+    content.vb: Public Function GetTable As DataTable
+  overload: CONTROLADOR.ControladorComida.GetTable*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CONTROLADOR.ControladorComida.ObtenerIdComida(System.String)
+  commentId: M:CONTROLADOR.ControladorComida.ObtenerIdComida(System.String)
+  id: ObtenerIdComida(System.String)
+  parent: CONTROLADOR.ControladorComida
+  langs:
+  - csharp
+  - vb
+  name: ObtenerIdComida(String)
+  nameWithType: ControladorComida.ObtenerIdComida(String)
+  fullName: CONTROLADOR.ControladorComida.ObtenerIdComida(System.String)
+  type: Method
+  source:
+    remote:
+      path: CONTROLADOR/ControladorComida.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ObtenerIdComida
+    path: ControladorComida.cs
+    startLine: 126
+  assemblies:
+  - CONTROLADOR
+  namespace: CONTROLADOR
+  syntax:
+    content: public int ObtenerIdComida(string str)
+    parameters:
+    - id: str
+      type: System.String
+    return:
+      type: System.Int32
+    content.vb: Public Function ObtenerIdComida(str As String) As Integer
+  overload: CONTROLADOR.ControladorComida.ObtenerIdComida*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CONTROLADOR.ControladorComida.Obtener(System.Int32,System.String,System.String,System.String)
+  commentId: M:CONTROLADOR.ControladorComida.Obtener(System.Int32,System.String,System.String,System.String)
+  id: Obtener(System.Int32,System.String,System.String,System.String)
+  parent: CONTROLADOR.ControladorComida
+  langs:
+  - csharp
+  - vb
+  name: Obtener(Int32, String, String, String)
+  nameWithType: ControladorComida.Obtener(Int32, String, String, String)
+  fullName: CONTROLADOR.ControladorComida.Obtener(System.Int32, System.String, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: CONTROLADOR/ControladorComida.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: Obtener
+    path: ControladorComida.cs
+    startLine: 139
+  assemblies:
+  - CONTROLADOR
+  namespace: CONTROLADOR
+  syntax:
+    content: public string Obtener(int id, string campo, string tabla, string campoID)
+    parameters:
+    - id: id
+      type: System.Int32
+    - id: campo
+      type: System.String
+    - id: tabla
+      type: System.String
+    - id: campoID
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Function Obtener(id As Integer, campo As String, tabla As String, campoID As String) As String
+  overload: CONTROLADOR.ControladorComida.Obtener*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CONTROLADOR.ControladorComida.ObtenerIdComidaIngrediente(System.Int32,System.Int32)
+  commentId: M:CONTROLADOR.ControladorComida.ObtenerIdComidaIngrediente(System.Int32,System.Int32)
+  id: ObtenerIdComidaIngrediente(System.Int32,System.Int32)
+  parent: CONTROLADOR.ControladorComida
+  langs:
+  - csharp
+  - vb
+  name: ObtenerIdComidaIngrediente(Int32, Int32)
+  nameWithType: ControladorComida.ObtenerIdComidaIngrediente(Int32, Int32)
+  fullName: CONTROLADOR.ControladorComida.ObtenerIdComidaIngrediente(System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: CONTROLADOR/ControladorComida.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ObtenerIdComidaIngrediente
+    path: ControladorComida.cs
+    startLine: 152
+  assemblies:
+  - CONTROLADOR
+  namespace: CONTROLADOR
+  syntax:
+    content: public int ObtenerIdComidaIngrediente(int idAlimento, int idComida)
+    parameters:
+    - id: idAlimento
+      type: System.Int32
+    - id: idComida
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Function ObtenerIdComidaIngrediente(idAlimento As Integer, idComida As Integer) As Integer
+  overload: CONTROLADOR.ControladorComida.ObtenerIdComidaIngrediente*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CONTROLADOR.ControladorComida.ModificarComida(System.String,System.Int32,System.Int32,System.String,System.Int32)
+  commentId: M:CONTROLADOR.ControladorComida.ModificarComida(System.String,System.Int32,System.Int32,System.String,System.Int32)
+  id: ModificarComida(System.String,System.Int32,System.Int32,System.String,System.Int32)
+  parent: CONTROLADOR.ControladorComida
+  langs:
+  - csharp
+  - vb
+  name: ModificarComida(String, Int32, Int32, String, Int32)
+  nameWithType: ControladorComida.ModificarComida(String, Int32, Int32, String, Int32)
+  fullName: CONTROLADOR.ControladorComida.ModificarComida(System.String, System.Int32, System.Int32, System.String, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: CONTROLADOR/ControladorComida.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ModificarComida
+    path: ControladorComida.cs
+    startLine: 165
+  assemblies:
+  - CONTROLADOR
+  namespace: CONTROLADOR
+  syntax:
+    content: public void ModificarComida(string nombre, int idAlimento, int idComida, string cant, int idComidaAlimento)
+    parameters:
+    - id: nombre
+      type: System.String
+    - id: idAlimento
+      type: System.Int32
+    - id: idComida
+      type: System.Int32
+    - id: cant
+      type: System.String
+    - id: idComidaAlimento
+      type: System.Int32
+    content.vb: Public Sub ModificarComida(nombre As String, idAlimento As Integer, idComida As Integer, cant As String, idComidaAlimento As Integer)
+  overload: CONTROLADOR.ControladorComida.ModificarComida*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CONTROLADOR.ControladorComida.EliminarComida(System.Int32)
+  commentId: M:CONTROLADOR.ControladorComida.EliminarComida(System.Int32)
+  id: EliminarComida(System.Int32)
+  parent: CONTROLADOR.ControladorComida
+  langs:
+  - csharp
+  - vb
+  name: EliminarComida(Int32)
+  nameWithType: ControladorComida.EliminarComida(Int32)
+  fullName: CONTROLADOR.ControladorComida.EliminarComida(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: CONTROLADOR/ControladorComida.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: EliminarComida
+    path: ControladorComida.cs
+    startLine: 210
+  assemblies:
+  - CONTROLADOR
+  namespace: CONTROLADOR
+  syntax:
+    content: public void EliminarComida(int idComida)
+    parameters:
+    - id: idComida
+      type: System.Int32
+    content.vb: Public Sub EliminarComida(idComida As Integer)
+  overload: CONTROLADOR.ControladorComida.EliminarComida*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: CONTROLADOR
+  commentId: N:CONTROLADOR
+  name: CONTROLADOR
+  nameWithType: CONTROLADOR
+  fullName: CONTROLADOR
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: CONTROLADOR.ControladorComida.ObtenerAlimentos*
+  commentId: Overload:CONTROLADOR.ControladorComida.ObtenerAlimentos
+  name: ObtenerAlimentos
+  nameWithType: ControladorComida.ObtenerAlimentos
+  fullName: CONTROLADOR.ControladorComida.ObtenerAlimentos
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<String>
+  nameWithType: List<String>
+  fullName: System.Collections.Generic.List<System.String>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of System.String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: CONTROLADOR.ControladorComida.ObtenerIdAlimento*
+  commentId: Overload:CONTROLADOR.ControladorComida.ObtenerIdAlimento
+  name: ObtenerIdAlimento
+  nameWithType: ControladorComida.ObtenerIdAlimento
+  fullName: CONTROLADOR.ControladorComida.ObtenerIdAlimento
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: CONTROLADOR.ControladorComida.AgregarComida*
+  commentId: Overload:CONTROLADOR.ControladorComida.AgregarComida
+  name: AgregarComida
+  nameWithType: ControladorComida.AgregarComida
+  fullName: CONTROLADOR.ControladorComida.AgregarComida
+- uid: CONTROLADOR.ControladorComida.GetTable*
+  commentId: Overload:CONTROLADOR.ControladorComida.GetTable
+  name: GetTable
+  nameWithType: ControladorComida.GetTable
+  fullName: CONTROLADOR.ControladorComida.GetTable
+- uid: System.Data.DataTable
+  commentId: T:System.Data.DataTable
+  parent: System.Data
+  isExternal: true
+  name: DataTable
+  nameWithType: DataTable
+  fullName: System.Data.DataTable
+- uid: System.Data
+  commentId: N:System.Data
+  isExternal: true
+  name: System.Data
+  nameWithType: System.Data
+  fullName: System.Data
+- uid: CONTROLADOR.ControladorComida.ObtenerIdComida*
+  commentId: Overload:CONTROLADOR.ControladorComida.ObtenerIdComida
+  name: ObtenerIdComida
+  nameWithType: ControladorComida.ObtenerIdComida
+  fullName: CONTROLADOR.ControladorComida.ObtenerIdComida
+- uid: CONTROLADOR.ControladorComida.Obtener*
+  commentId: Overload:CONTROLADOR.ControladorComida.Obtener
+  name: Obtener
+  nameWithType: ControladorComida.Obtener
+  fullName: CONTROLADOR.ControladorComida.Obtener
+- uid: CONTROLADOR.ControladorComida.ObtenerIdComidaIngrediente*
+  commentId: Overload:CONTROLADOR.ControladorComida.ObtenerIdComidaIngrediente
+  name: ObtenerIdComidaIngrediente
+  nameWithType: ControladorComida.ObtenerIdComidaIngrediente
+  fullName: CONTROLADOR.ControladorComida.ObtenerIdComidaIngrediente
+- uid: CONTROLADOR.ControladorComida.ModificarComida*
+  commentId: Overload:CONTROLADOR.ControladorComida.ModificarComida
+  name: ModificarComida
+  nameWithType: ControladorComida.ModificarComida
+  fullName: CONTROLADOR.ControladorComida.ModificarComida
+- uid: CONTROLADOR.ControladorComida.EliminarComida*
+  commentId: Overload:CONTROLADOR.ControladorComida.EliminarComida
+  name: EliminarComida
+  nameWithType: ControladorComida.EliminarComida
+  fullName: CONTROLADOR.ControladorComida.EliminarComida

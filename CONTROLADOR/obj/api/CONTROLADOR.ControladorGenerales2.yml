@@ -1,0 +1,745 @@
+### YamlMime:ManagedReference
+items:
+- uid: CONTROLADOR.ControladorGenerales2
+  commentId: T:CONTROLADOR.ControladorGenerales2
+  id: ControladorGenerales2
+  parent: CONTROLADOR
+  children:
+  - CONTROLADOR.ControladorGenerales2.AgregarAntecedentesFamiliares(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32)
+  - CONTROLADOR.ControladorGenerales2.AgregarAntecedentesNoPatologicos(System.String,System.String,System.String,System.String,System.String,System.String,System.Int32)
+  - CONTROLADOR.ControladorGenerales2.AgregarIndicadoresBioquimicos(System.String,System.String,System.String,System.String,System.String,System.String,System.Int32)
+  - CONTROLADOR.ControladorGenerales2.error
+  - CONTROLADOR.ControladorGenerales2.ModificarAntecedentesFamiliares(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32)
+  - CONTROLADOR.ControladorGenerales2.ModificarAntecedentesNoPatologicos(System.String,System.String,System.String,System.String,System.String,System.String,System.Int32)
+  - CONTROLADOR.ControladorGenerales2.ModificarIndicadoresBioquimicos(System.String,System.String,System.String,System.String,System.String,System.String,System.Int32)
+  - CONTROLADOR.ControladorGenerales2.ObtenerTexto(System.Int32,System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: ControladorGenerales2
+  nameWithType: ControladorGenerales2
+  fullName: CONTROLADOR.ControladorGenerales2
+  type: Class
+  source:
+    remote:
+      path: CONTROLADOR/ControladorGenerales2.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ControladorGenerales2
+    path: ControladorGenerales2.cs
+    startLine: 14
+  assemblies:
+  - CONTROLADOR
+  namespace: CONTROLADOR
+  summary: "\nLa clase controlador &quot;Datos Generales 2&quot; valida que la informacion de los campos \nsean correctos para poder usar el CRUD de la tabla &quot;DatosGnAntePato, DatosGnAnteNoPato y DatosGnIndBio&quot; en la base de datos &quot;DBPAS&quot; destinada al sistema.\nDe acuerdo a las caracteristicas de la clase &quot;Validacion&quot;.\n"
+  example: []
+  syntax:
+    content: public class ControladorGenerales2
+    content.vb: Public Class ControladorGenerales2
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: CONTROLADOR.ControladorGenerales2.error
+  commentId: F:CONTROLADOR.ControladorGenerales2.error
+  id: error
+  parent: CONTROLADOR.ControladorGenerales2
+  langs:
+  - csharp
+  - vb
+  name: error
+  nameWithType: ControladorGenerales2.error
+  fullName: CONTROLADOR.ControladorGenerales2.error
+  type: Field
+  source:
+    remote:
+      path: CONTROLADOR/ControladorGenerales2.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: error
+    path: ControladorGenerales2.cs
+    startLine: 16
+  assemblies:
+  - CONTROLADOR
+  namespace: CONTROLADOR
+  syntax:
+    content: public string error
+    return:
+      type: System.String
+    content.vb: Public error As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CONTROLADOR.ControladorGenerales2.AgregarAntecedentesFamiliares(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32)
+  commentId: M:CONTROLADOR.ControladorGenerales2.AgregarAntecedentesFamiliares(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32)
+  id: AgregarAntecedentesFamiliares(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32)
+  parent: CONTROLADOR.ControladorGenerales2
+  langs:
+  - csharp
+  - vb
+  name: AgregarAntecedentesFamiliares(String, String, String, String, String, String, String, Int32)
+  nameWithType: ControladorGenerales2.AgregarAntecedentesFamiliares(String, String, String, String, String, String, String, Int32)
+  fullName: CONTROLADOR.ControladorGenerales2.AgregarAntecedentesFamiliares(System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: CONTROLADOR/ControladorGenerales2.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: AgregarAntecedentesFamiliares
+    path: ControladorGenerales2.cs
+    startLine: 18
+  assemblies:
+  - CONTROLADOR
+  namespace: CONTROLADOR
+  syntax:
+    content: public void AgregarAntecedentesFamiliares(string diabetes, string cancer, string obesidad, string hipertension, string enfTir, string hiperlipidemias, string otra, int idPaciente)
+    parameters:
+    - id: diabetes
+      type: System.String
+    - id: cancer
+      type: System.String
+    - id: obesidad
+      type: System.String
+    - id: hipertension
+      type: System.String
+    - id: enfTir
+      type: System.String
+    - id: hiperlipidemias
+      type: System.String
+    - id: otra
+      type: System.String
+    - id: idPaciente
+      type: System.Int32
+    content.vb: Public Sub AgregarAntecedentesFamiliares(diabetes As String, cancer As String, obesidad As String, hipertension As String, enfTir As String, hiperlipidemias As String, otra As String, idPaciente As Integer)
+  overload: CONTROLADOR.ControladorGenerales2.AgregarAntecedentesFamiliares*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CONTROLADOR.ControladorGenerales2.ModificarAntecedentesFamiliares(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32)
+  commentId: M:CONTROLADOR.ControladorGenerales2.ModificarAntecedentesFamiliares(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32)
+  id: ModificarAntecedentesFamiliares(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32)
+  parent: CONTROLADOR.ControladorGenerales2
+  langs:
+  - csharp
+  - vb
+  name: ModificarAntecedentesFamiliares(String, String, String, String, String, String, String, Int32)
+  nameWithType: ControladorGenerales2.ModificarAntecedentesFamiliares(String, String, String, String, String, String, String, Int32)
+  fullName: CONTROLADOR.ControladorGenerales2.ModificarAntecedentesFamiliares(System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: CONTROLADOR/ControladorGenerales2.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ModificarAntecedentesFamiliares
+    path: ControladorGenerales2.cs
+    startLine: 39
+  assemblies:
+  - CONTROLADOR
+  namespace: CONTROLADOR
+  syntax:
+    content: public void ModificarAntecedentesFamiliares(string diabetes, string cancer, string obesidad, string hipertension, string enfTir, string hiperlipidemias, string otra, int idPaciente)
+    parameters:
+    - id: diabetes
+      type: System.String
+    - id: cancer
+      type: System.String
+    - id: obesidad
+      type: System.String
+    - id: hipertension
+      type: System.String
+    - id: enfTir
+      type: System.String
+    - id: hiperlipidemias
+      type: System.String
+    - id: otra
+      type: System.String
+    - id: idPaciente
+      type: System.Int32
+    content.vb: Public Sub ModificarAntecedentesFamiliares(diabetes As String, cancer As String, obesidad As String, hipertension As String, enfTir As String, hiperlipidemias As String, otra As String, idPaciente As Integer)
+  overload: CONTROLADOR.ControladorGenerales2.ModificarAntecedentesFamiliares*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CONTROLADOR.ControladorGenerales2.AgregarAntecedentesNoPatologicos(System.String,System.String,System.String,System.String,System.String,System.String,System.Int32)
+  commentId: M:CONTROLADOR.ControladorGenerales2.AgregarAntecedentesNoPatologicos(System.String,System.String,System.String,System.String,System.String,System.String,System.Int32)
+  id: AgregarAntecedentesNoPatologicos(System.String,System.String,System.String,System.String,System.String,System.String,System.Int32)
+  parent: CONTROLADOR.ControladorGenerales2
+  langs:
+  - csharp
+  - vb
+  name: AgregarAntecedentesNoPatologicos(String, String, String, String, String, String, Int32)
+  nameWithType: ControladorGenerales2.AgregarAntecedentesNoPatologicos(String, String, String, String, String, String, Int32)
+  fullName: CONTROLADOR.ControladorGenerales2.AgregarAntecedentesNoPatologicos(System.String, System.String, System.String, System.String, System.String, System.String, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: CONTROLADOR/ControladorGenerales2.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: AgregarAntecedentesNoPatologicos
+    path: ControladorGenerales2.cs
+    startLine: 60
+  assemblies:
+  - CONTROLADOR
+  namespace: CONTROLADOR
+  syntax:
+    content: public void AgregarAntecedentesNoPatologicos(string ejercicio, string duracion, string frecuencia, string alcohol, string tabaco, string toxicomanias, int id)
+    parameters:
+    - id: ejercicio
+      type: System.String
+    - id: duracion
+      type: System.String
+    - id: frecuencia
+      type: System.String
+    - id: alcohol
+      type: System.String
+    - id: tabaco
+      type: System.String
+    - id: toxicomanias
+      type: System.String
+    - id: id
+      type: System.Int32
+    content.vb: Public Sub AgregarAntecedentesNoPatologicos(ejercicio As String, duracion As String, frecuencia As String, alcohol As String, tabaco As String, toxicomanias As String, id As Integer)
+  overload: CONTROLADOR.ControladorGenerales2.AgregarAntecedentesNoPatologicos*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CONTROLADOR.ControladorGenerales2.ModificarAntecedentesNoPatologicos(System.String,System.String,System.String,System.String,System.String,System.String,System.Int32)
+  commentId: M:CONTROLADOR.ControladorGenerales2.ModificarAntecedentesNoPatologicos(System.String,System.String,System.String,System.String,System.String,System.String,System.Int32)
+  id: ModificarAntecedentesNoPatologicos(System.String,System.String,System.String,System.String,System.String,System.String,System.Int32)
+  parent: CONTROLADOR.ControladorGenerales2
+  langs:
+  - csharp
+  - vb
+  name: ModificarAntecedentesNoPatologicos(String, String, String, String, String, String, Int32)
+  nameWithType: ControladorGenerales2.ModificarAntecedentesNoPatologicos(String, String, String, String, String, String, Int32)
+  fullName: CONTROLADOR.ControladorGenerales2.ModificarAntecedentesNoPatologicos(System.String, System.String, System.String, System.String, System.String, System.String, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: CONTROLADOR/ControladorGenerales2.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ModificarAntecedentesNoPatologicos
+    path: ControladorGenerales2.cs
+    startLine: 81
+  assemblies:
+  - CONTROLADOR
+  namespace: CONTROLADOR
+  syntax:
+    content: public void ModificarAntecedentesNoPatologicos(string ejercicio, string duracion, string frecuencia, string alcohol, string tabaco, string toxicomanias, int id)
+    parameters:
+    - id: ejercicio
+      type: System.String
+    - id: duracion
+      type: System.String
+    - id: frecuencia
+      type: System.String
+    - id: alcohol
+      type: System.String
+    - id: tabaco
+      type: System.String
+    - id: toxicomanias
+      type: System.String
+    - id: id
+      type: System.Int32
+    content.vb: Public Sub ModificarAntecedentesNoPatologicos(ejercicio As String, duracion As String, frecuencia As String, alcohol As String, tabaco As String, toxicomanias As String, id As Integer)
+  overload: CONTROLADOR.ControladorGenerales2.ModificarAntecedentesNoPatologicos*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CONTROLADOR.ControladorGenerales2.AgregarIndicadoresBioquimicos(System.String,System.String,System.String,System.String,System.String,System.String,System.Int32)
+  commentId: M:CONTROLADOR.ControladorGenerales2.AgregarIndicadoresBioquimicos(System.String,System.String,System.String,System.String,System.String,System.String,System.Int32)
+  id: AgregarIndicadoresBioquimicos(System.String,System.String,System.String,System.String,System.String,System.String,System.Int32)
+  parent: CONTROLADOR.ControladorGenerales2
+  langs:
+  - csharp
+  - vb
+  name: AgregarIndicadoresBioquimicos(String, String, String, String, String, String, Int32)
+  nameWithType: ControladorGenerales2.AgregarIndicadoresBioquimicos(String, String, String, String, String, String, Int32)
+  fullName: CONTROLADOR.ControladorGenerales2.AgregarIndicadoresBioquimicos(System.String, System.String, System.String, System.String, System.String, System.String, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: CONTROLADOR/ControladorGenerales2.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: AgregarIndicadoresBioquimicos
+    path: ControladorGenerales2.cs
+    startLine: 102
+  assemblies:
+  - CONTROLADOR
+  namespace: CONTROLADOR
+  syntax:
+    content: public void AgregarIndicadoresBioquimicos(string trigliceridos, string hemoglobina, string colesterol, string glucosa, string creatinina, string nitUreico, int id)
+    parameters:
+    - id: trigliceridos
+      type: System.String
+    - id: hemoglobina
+      type: System.String
+    - id: colesterol
+      type: System.String
+    - id: glucosa
+      type: System.String
+    - id: creatinina
+      type: System.String
+    - id: nitUreico
+      type: System.String
+    - id: id
+      type: System.Int32
+    content.vb: Public Sub AgregarIndicadoresBioquimicos(trigliceridos As String, hemoglobina As String, colesterol As String, glucosa As String, creatinina As String, nitUreico As String, id As Integer)
+  overload: CONTROLADOR.ControladorGenerales2.AgregarIndicadoresBioquimicos*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CONTROLADOR.ControladorGenerales2.ModificarIndicadoresBioquimicos(System.String,System.String,System.String,System.String,System.String,System.String,System.Int32)
+  commentId: M:CONTROLADOR.ControladorGenerales2.ModificarIndicadoresBioquimicos(System.String,System.String,System.String,System.String,System.String,System.String,System.Int32)
+  id: ModificarIndicadoresBioquimicos(System.String,System.String,System.String,System.String,System.String,System.String,System.Int32)
+  parent: CONTROLADOR.ControladorGenerales2
+  langs:
+  - csharp
+  - vb
+  name: ModificarIndicadoresBioquimicos(String, String, String, String, String, String, Int32)
+  nameWithType: ControladorGenerales2.ModificarIndicadoresBioquimicos(String, String, String, String, String, String, Int32)
+  fullName: CONTROLADOR.ControladorGenerales2.ModificarIndicadoresBioquimicos(System.String, System.String, System.String, System.String, System.String, System.String, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: CONTROLADOR/ControladorGenerales2.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ModificarIndicadoresBioquimicos
+    path: ControladorGenerales2.cs
+    startLine: 123
+  assemblies:
+  - CONTROLADOR
+  namespace: CONTROLADOR
+  syntax:
+    content: public void ModificarIndicadoresBioquimicos(string trigliceridos, string hemoglobina, string colesterol, string glucosa, string creatinina, string nitUreico, int id)
+    parameters:
+    - id: trigliceridos
+      type: System.String
+    - id: hemoglobina
+      type: System.String
+    - id: colesterol
+      type: System.String
+    - id: glucosa
+      type: System.String
+    - id: creatinina
+      type: System.String
+    - id: nitUreico
+      type: System.String
+    - id: id
+      type: System.Int32
+    content.vb: Public Sub ModificarIndicadoresBioquimicos(trigliceridos As String, hemoglobina As String, colesterol As String, glucosa As String, creatinina As String, nitUreico As String, id As Integer)
+  overload: CONTROLADOR.ControladorGenerales2.ModificarIndicadoresBioquimicos*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CONTROLADOR.ControladorGenerales2.ObtenerTexto(System.Int32,System.String,System.String)
+  commentId: M:CONTROLADOR.ControladorGenerales2.ObtenerTexto(System.Int32,System.String,System.String)
+  id: ObtenerTexto(System.Int32,System.String,System.String)
+  parent: CONTROLADOR.ControladorGenerales2
+  langs:
+  - csharp
+  - vb
+  name: ObtenerTexto(Int32, String, String)
+  nameWithType: ControladorGenerales2.ObtenerTexto(Int32, String, String)
+  fullName: CONTROLADOR.ControladorGenerales2.ObtenerTexto(System.Int32, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: CONTROLADOR/ControladorGenerales2.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ObtenerTexto
+    path: ControladorGenerales2.cs
+    startLine: 152
+  assemblies:
+  - CONTROLADOR
+  namespace: CONTROLADOR
+  syntax:
+    content: public string ObtenerTexto(int id, string campo, string basedeDatos)
+    parameters:
+    - id: id
+      type: System.Int32
+    - id: campo
+      type: System.String
+    - id: basedeDatos
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Function ObtenerTexto(id As Integer, campo As String, basedeDatos As String) As String
+  overload: CONTROLADOR.ControladorGenerales2.ObtenerTexto*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: CONTROLADOR
+  commentId: N:CONTROLADOR
+  name: CONTROLADOR
+  nameWithType: CONTROLADOR
+  fullName: CONTROLADOR
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: CONTROLADOR.ControladorGenerales2.AgregarAntecedentesFamiliares*
+  commentId: Overload:CONTROLADOR.ControladorGenerales2.AgregarAntecedentesFamiliares
+  name: AgregarAntecedentesFamiliares
+  nameWithType: ControladorGenerales2.AgregarAntecedentesFamiliares
+  fullName: CONTROLADOR.ControladorGenerales2.AgregarAntecedentesFamiliares
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: CONTROLADOR.ControladorGenerales2.ModificarAntecedentesFamiliares*
+  commentId: Overload:CONTROLADOR.ControladorGenerales2.ModificarAntecedentesFamiliares
+  name: ModificarAntecedentesFamiliares
+  nameWithType: ControladorGenerales2.ModificarAntecedentesFamiliares
+  fullName: CONTROLADOR.ControladorGenerales2.ModificarAntecedentesFamiliares
+- uid: CONTROLADOR.ControladorGenerales2.AgregarAntecedentesNoPatologicos*
+  commentId: Overload:CONTROLADOR.ControladorGenerales2.AgregarAntecedentesNoPatologicos
+  name: AgregarAntecedentesNoPatologicos
+  nameWithType: ControladorGenerales2.AgregarAntecedentesNoPatologicos
+  fullName: CONTROLADOR.ControladorGenerales2.AgregarAntecedentesNoPatologicos
+- uid: CONTROLADOR.ControladorGenerales2.ModificarAntecedentesNoPatologicos*
+  commentId: Overload:CONTROLADOR.ControladorGenerales2.ModificarAntecedentesNoPatologicos
+  name: ModificarAntecedentesNoPatologicos
+  nameWithType: ControladorGenerales2.ModificarAntecedentesNoPatologicos
+  fullName: CONTROLADOR.ControladorGenerales2.ModificarAntecedentesNoPatologicos
+- uid: CONTROLADOR.ControladorGenerales2.AgregarIndicadoresBioquimicos*
+  commentId: Overload:CONTROLADOR.ControladorGenerales2.AgregarIndicadoresBioquimicos
+  name: AgregarIndicadoresBioquimicos
+  nameWithType: ControladorGenerales2.AgregarIndicadoresBioquimicos
+  fullName: CONTROLADOR.ControladorGenerales2.AgregarIndicadoresBioquimicos
+- uid: CONTROLADOR.ControladorGenerales2.ModificarIndicadoresBioquimicos*
+  commentId: Overload:CONTROLADOR.ControladorGenerales2.ModificarIndicadoresBioquimicos
+  name: ModificarIndicadoresBioquimicos
+  nameWithType: ControladorGenerales2.ModificarIndicadoresBioquimicos
+  fullName: CONTROLADOR.ControladorGenerales2.ModificarIndicadoresBioquimicos
+- uid: CONTROLADOR.ControladorGenerales2.ObtenerTexto*
+  commentId: Overload:CONTROLADOR.ControladorGenerales2.ObtenerTexto
+  name: ObtenerTexto
+  nameWithType: ControladorGenerales2.ObtenerTexto
+  fullName: CONTROLADOR.ControladorGenerales2.ObtenerTexto

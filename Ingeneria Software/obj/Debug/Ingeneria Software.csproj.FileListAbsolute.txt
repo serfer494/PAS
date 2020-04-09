@@ -1,0 +1,102 @@
+c:\users\cruel\documents\visual studio 2015\Projects\Ingeneria Software\Ingeneria Software\bin\Debug\Ingeneria Software.exe.config
+c:\users\cruel\documents\visual studio 2015\Projects\Ingeneria Software\Ingeneria Software\bin\Debug\Ingeneria Software.exe
+c:\users\cruel\documents\visual studio 2015\Projects\Ingeneria Software\Ingeneria Software\bin\Debug\Ingeneria Software.pdb
+c:\users\cruel\documents\visual studio 2015\Projects\Ingeneria Software\Ingeneria Software\obj\Debug\Ingeneria Software.csprojResolveAssemblyReference.cache
+c:\users\cruel\documents\visual studio 2015\Projects\Ingeneria Software\Ingeneria Software\obj\Debug\Ingeneria_Software.Form1.resources
+c:\users\cruel\documents\visual studio 2015\Projects\Ingeneria Software\Ingeneria Software\obj\Debug\Ingeneria_Software.Form2.resources
+c:\users\cruel\documents\visual studio 2015\Projects\Ingeneria Software\Ingeneria Software\obj\Debug\Ingeneria_Software.Form3.resources
+c:\users\cruel\documents\visual studio 2015\Projects\Ingeneria Software\Ingeneria Software\obj\Debug\Ingeneria_Software.Form4.resources
+c:\users\cruel\documents\visual studio 2015\Projects\Ingeneria Software\Ingeneria Software\obj\Debug\Ingeneria_Software.Form5.resources
+c:\users\cruel\documents\visual studio 2015\Projects\Ingeneria Software\Ingeneria Software\obj\Debug\Ingeneria_Software.Properties.Resources.resources
+c:\users\cruel\documents\visual studio 2015\Projects\Ingeneria Software\Ingeneria Software\obj\Debug\Ingeneria Software.csproj.GenerateResource.Cache
+c:\users\cruel\documents\visual studio 2015\Projects\Ingeneria Software\Ingeneria Software\obj\Debug\Ingeneria Software.exe
+c:\users\cruel\documents\visual studio 2015\Projects\Ingeneria Software\Ingeneria Software\obj\Debug\Ingeneria Software.pdb
+C:\Users\1045428\Desktop\Ingeneria Software\Ingeneria Software\bin\Debug\Ingeneria Software.exe.config
+C:\Users\1045428\Desktop\Ingeneria Software\Ingeneria Software\bin\Debug\Ingeneria Software.exe
+C:\Users\1045428\Desktop\Ingeneria Software\Ingeneria Software\bin\Debug\Ingeneria Software.pdb
+C:\Users\1045428\Desktop\Ingeneria Software\Ingeneria Software\obj\Debug\Ingeneria Software.csprojAssemblyReference.cache
+C:\Users\1045428\Desktop\Ingeneria Software\Ingeneria Software\obj\Debug\Ingeneria_Software.Citas.resources
+C:\Users\1045428\Desktop\Ingeneria Software\Ingeneria Software\obj\Debug\Ingeneria_Software.DatosxCita.resources
+C:\Users\1045428\Desktop\Ingeneria Software\Ingeneria Software\obj\Debug\Ingeneria_Software.Alimentos.resources
+C:\Users\1045428\Desktop\Ingeneria Software\Ingeneria Software\obj\Debug\Ingeneria_Software.Comida.resources
+C:\Users\1045428\Desktop\Ingeneria Software\Ingeneria Software\obj\Debug\Ingeneria_Software.DatosGenerales.resources
+C:\Users\1045428\Desktop\Ingeneria Software\Ingeneria Software\obj\Debug\Ingeneria_Software.VerAlimento.resources
+C:\Users\1045428\Desktop\Ingeneria Software\Ingeneria Software\obj\Debug\Ingeneria_Software.VerCita.resources
+C:\Users\1045428\Desktop\Ingeneria Software\Ingeneria Software\obj\Debug\Ingeneria_Software.Properties.Resources.resources
+C:\Users\1045428\Desktop\Ingeneria Software\Ingeneria Software\obj\Debug\Ingeneria_Software.VerComida.resources
+C:\Users\1045428\Desktop\Ingeneria Software\Ingeneria Software\obj\Debug\Ingeneria_Software.VerDatosGenerales.resources
+C:\Users\1045428\Desktop\Ingeneria Software\Ingeneria Software\obj\Debug\Ingeneria Software.csproj.GenerateResource.cache
+C:\Users\1045428\Desktop\Ingeneria Software\Ingeneria Software\obj\Debug\Ingeneria Software.csproj.CoreCompileInputs.cache
+C:\Users\1045428\Desktop\Ingeneria Software\Ingeneria Software\obj\Debug\Ingeneria Software.exe
+C:\Users\1045428\Desktop\Ingeneria Software\Ingeneria Software\obj\Debug\Ingeneria Software.pdb
+C:\Users\Cruel\Desktop\Ingeneria Software\Ingeneria Software\bin\Debug\Ingeneria Software.exe.config
+C:\Users\Cruel\Desktop\Ingeneria Software\Ingeneria Software\obj\Debug\Ingeneria Software.exe
+C:\Users\Cruel\Desktop\Ingeneria Software\Ingeneria Software\obj\Debug\Ingeneria Software.pdb
+C:\Users\Cruel\Desktop\Ingeneria Software\Ingeneria Software\bin\Debug\Ingeneria Software.exe
+C:\Users\Cruel\Desktop\Ingeneria Software\Ingeneria Software\bin\Debug\Ingeneria Software.pdb
+C:\Users\Cruel\Desktop\Ingeneria Software\Ingeneria Software\obj\Debug\Ingeneria Software.csprojResolveAssemblyReference.cache
+C:\Users\Cruel\Desktop\Ingeneria Software\Ingeneria Software\obj\Debug\Ingeneria_Software.Citas.resources
+C:\Users\Cruel\Desktop\Ingeneria Software\Ingeneria Software\obj\Debug\Ingeneria_Software.DatosxCita.resources
+C:\Users\Cruel\Desktop\Ingeneria Software\Ingeneria Software\obj\Debug\Ingeneria_Software.Alimentos.resources
+C:\Users\Cruel\Desktop\Ingeneria Software\Ingeneria Software\obj\Debug\Ingeneria_Software.Comida.resources
+C:\Users\Cruel\Desktop\Ingeneria Software\Ingeneria Software\obj\Debug\Ingeneria_Software.DatosGenerales.resources
+C:\Users\Cruel\Desktop\Ingeneria Software\Ingeneria Software\obj\Debug\Ingeneria_Software.MenuPpal.resources
+C:\Users\Cruel\Desktop\Ingeneria Software\Ingeneria Software\obj\Debug\Ingeneria_Software.VerAlimento.resources
+C:\Users\Cruel\Desktop\Ingeneria Software\Ingeneria Software\obj\Debug\Ingeneria_Software.VerCita.resources
+C:\Users\Cruel\Desktop\Ingeneria Software\Ingeneria Software\obj\Debug\Ingeneria_Software.Properties.Resources.resources
+C:\Users\Cruel\Desktop\Ingeneria Software\Ingeneria Software\obj\Debug\Ingeneria_Software.VerComida.resources
+C:\Users\Cruel\Desktop\Ingeneria Software\Ingeneria Software\obj\Debug\Ingeneria_Software.VerDatosCita.resources
+C:\Users\Cruel\Desktop\Ingeneria Software\Ingeneria Software\obj\Debug\Ingeneria_Software.VerDatosGenerales.resources
+C:\Users\Cruel\Desktop\Ingeneria Software\Ingeneria Software\obj\Debug\Ingeneria Software.csproj.GenerateResource.Cache
+C:\Users\Cruel\Desktop\Ingeneria Software\Ingeneria Software\obj\Debug\WindowsFormsApp1.Plan.resources
+C:\Users\Cruel\Desktop\Ingeneria Software\Ingeneria Software\obj\Debug\Ingeneria_Software.VerDatosGenerales2.resources
+C:\Users\Cruel\Documents\Cosas del semestre 6\Ingeneria Software\Ingeneria Software\bin\Debug\Ingeneria Software.exe.config
+C:\Users\Cruel\Documents\Cosas del semestre 6\Ingeneria Software\Ingeneria Software\obj\Debug\Ingeneria Software.exe
+C:\Users\Cruel\Documents\Cosas del semestre 6\Ingeneria Software\Ingeneria Software\obj\Debug\Ingeneria Software.pdb
+C:\Users\1045428\Desktop\Ingeneria Software\Ingeneria Software\obj\Debug\Ingeneria_Software.Inicio.resources
+C:\Users\1045428\Desktop\Ingeneria Software\Ingeneria Software\obj\Debug\WindowsFormsApp1.Plan.resources
+C:\Users\1045428\Desktop\Ingeneria Software\Ingeneria Software\obj\Debug\Ingeneria_Software.MenuPpal.resources
+C:\Users\1045428\Desktop\Ingeneria Software\Ingeneria Software\obj\Debug\Ingeneria_Software.VerDatosCita.resources
+C:\Users\1045428\Desktop\Ingeneria Software\Ingeneria Software\obj\Debug\Ingeneria_Software.VerDatosGenerales2.resources
+C:\Users\1045428\Desktop\Basura\Ingeneria Software\Ingeneria Software\bin\Debug\Ingeneria Software.exe.config
+C:\Users\1045428\Desktop\Basura\Ingeneria Software\Ingeneria Software\bin\Debug\Ingeneria Software.exe
+C:\Users\1045428\Desktop\Basura\Ingeneria Software\Ingeneria Software\bin\Debug\Ingeneria Software.pdb
+C:\Users\1045428\Desktop\Basura\Ingeneria Software\Ingeneria Software\obj\Debug\Ingeneria Software.csprojAssemblyReference.cache
+C:\Users\1045428\Desktop\Basura\Ingeneria Software\Ingeneria Software\obj\Debug\Ingeneria_Software.Citas.resources
+C:\Users\1045428\Desktop\Basura\Ingeneria Software\Ingeneria Software\obj\Debug\Ingeneria_Software.DatosxCita.resources
+C:\Users\1045428\Desktop\Basura\Ingeneria Software\Ingeneria Software\obj\Debug\Ingeneria_Software.Alimentos.resources
+C:\Users\1045428\Desktop\Basura\Ingeneria Software\Ingeneria Software\obj\Debug\Ingeneria_Software.Comida.resources
+C:\Users\1045428\Desktop\Basura\Ingeneria Software\Ingeneria Software\obj\Debug\Ingeneria_Software.DatosGenerales.resources
+C:\Users\1045428\Desktop\Basura\Ingeneria Software\Ingeneria Software\obj\Debug\Ingeneria_Software.Inicio.resources
+C:\Users\1045428\Desktop\Basura\Ingeneria Software\Ingeneria Software\obj\Debug\WindowsFormsApp1.Plan.resources
+C:\Users\1045428\Desktop\Basura\Ingeneria Software\Ingeneria Software\obj\Debug\Ingeneria_Software.MenuPpal.resources
+C:\Users\1045428\Desktop\Basura\Ingeneria Software\Ingeneria Software\obj\Debug\Ingeneria_Software.Properties.Resources.resources
+C:\Users\1045428\Desktop\Basura\Ingeneria Software\Ingeneria Software\obj\Debug\Ingeneria_Software.VerDatosGenerales.resources
+C:\Users\1045428\Desktop\Basura\Ingeneria Software\Ingeneria Software\obj\Debug\Ingeneria_Software.VerDatosGenerales2.resources
+C:\Users\1045428\Desktop\Basura\Ingeneria Software\Ingeneria Software\obj\Debug\Ingeneria Software.csproj.GenerateResource.cache
+C:\Users\1045428\Desktop\Basura\Ingeneria Software\Ingeneria Software\obj\Debug\Ingeneria Software.csproj.CoreCompileInputs.cache
+C:\Users\1045428\Desktop\Basura\Ingeneria Software\Ingeneria Software\obj\Debug\Ingeneria Software.exe
+C:\Users\1045428\Desktop\Basura\Ingeneria Software\Ingeneria Software\obj\Debug\Ingeneria Software.pdb
+C:\Users\1045428\Desktop\Basura\Ingeneria Software\Ingeneria Software\obj\Debug\Ingeneria_Software.Generales2.resources
+C:\Users\1045428\Desktop\Basura\Ingeneria Software\Ingeneria Software\obj\Debug\Ingeneria_Software.Generales3.resources
+C:\Users\DELL\source\repos\Ingeneria Software\Ingeneria Software\bin\Debug\Ingeneria Software.exe.config
+C:\Users\DELL\source\repos\Ingeneria Software\Ingeneria Software\bin\Debug\Ingeneria Software.exe
+C:\Users\DELL\source\repos\Ingeneria Software\Ingeneria Software\bin\Debug\Ingeneria Software.pdb
+C:\Users\DELL\source\repos\Ingeneria Software\Ingeneria Software\obj\Debug\Ingeneria Software.csprojAssemblyReference.cache
+C:\Users\DELL\source\repos\Ingeneria Software\Ingeneria Software\obj\Debug\Ingeneria_Software.Citas.resources
+C:\Users\DELL\source\repos\Ingeneria Software\Ingeneria Software\obj\Debug\Ingeneria_Software.DatosGenerales.resources
+C:\Users\DELL\source\repos\Ingeneria Software\Ingeneria Software\obj\Debug\Ingeneria_Software.DatosxCita.resources
+C:\Users\DELL\source\repos\Ingeneria Software\Ingeneria Software\obj\Debug\Ingeneria_Software.Alimentos.resources
+C:\Users\DELL\source\repos\Ingeneria Software\Ingeneria Software\obj\Debug\Ingeneria_Software.Comida.resources
+C:\Users\DELL\source\repos\Ingeneria Software\Ingeneria Software\obj\Debug\Ingeneria_Software.Generales2.resources
+C:\Users\DELL\source\repos\Ingeneria Software\Ingeneria Software\obj\Debug\Ingeneria_Software.Generales3.resources
+C:\Users\DELL\source\repos\Ingeneria Software\Ingeneria Software\obj\Debug\Ingeneria_Software.Inicio.resources
+C:\Users\DELL\source\repos\Ingeneria Software\Ingeneria Software\obj\Debug\WindowsFormsApp1.Plan.resources
+C:\Users\DELL\source\repos\Ingeneria Software\Ingeneria Software\obj\Debug\Ingeneria_Software.MenuPpal.resources
+C:\Users\DELL\source\repos\Ingeneria Software\Ingeneria Software\obj\Debug\Ingeneria_Software.Properties.Resources.resources
+C:\Users\DELL\source\repos\Ingeneria Software\Ingeneria Software\obj\Debug\Ingeneria_Software.VerDatosGenerales.resources
+C:\Users\DELL\source\repos\Ingeneria Software\Ingeneria Software\obj\Debug\Ingeneria_Software.VerDatosGenerales2.resources
+C:\Users\DELL\source\repos\Ingeneria Software\Ingeneria Software\obj\Debug\Ingeneria Software.csproj.GenerateResource.cache
+C:\Users\DELL\source\repos\Ingeneria Software\Ingeneria Software\obj\Debug\Ingeneria Software.csproj.CoreCompileInputs.cache
+C:\Users\DELL\source\repos\Ingeneria Software\Ingeneria Software\obj\Debug\Ingeneria Software.exe
+C:\Users\DELL\source\repos\Ingeneria Software\Ingeneria Software\obj\Debug\Ingeneria Software.pdb

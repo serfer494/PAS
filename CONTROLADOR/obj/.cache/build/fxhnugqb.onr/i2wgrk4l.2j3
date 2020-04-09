@@ -1,0 +1,65 @@
+﻿
+<div id="sidetoggle">
+  <div>
+    <div class="sidefilter">
+      <form class="toc-filter">
+        <span class="glyphicon glyphicon-filter filter-icon"></span>
+        <span class="glyphicon glyphicon-remove clear-icon" id="toc_filter_clear"></span>
+        <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+      </form>
+    </div>
+    <div class="sidetoc">
+      <div class="toc" id="toc">
+          
+          <ul class="nav level1">
+                <li>
+                    <span class="expand-stub"></span>
+                    <a href="CONTROLADOR.html" name="" title="CONTROLADOR">CONTROLADOR</a>
+                    
+                    <ul class="nav level2">
+                          <li>
+                              <a href="CONTROLADOR.Class1.html" name="" title="Class1">Class1</a>
+                          </li>
+                          <li>
+                              <a href="CONTROLADOR.ControladorAlimentos.html" name="" title="ControladorAlimentos">ControladorAlimentos</a>
+                          </li>
+                          <li>
+                              <a href="CONTROLADOR.ControladorCitas.html" name="" title="ControladorCitas">ControladorCitas</a>
+                          </li>
+                          <li>
+                              <a href="CONTROLADOR.ControladorComida.html" name="" title="ControladorComida">ControladorComida</a>
+                          </li>
+                          <li>
+                              <a href="CONTROLADOR.ControladorDatosGenerales.html" name="" title="ControladorDatosGenerales">ControladorDatosGenerales</a>
+                          </li>
+                          <li>
+                              <a href="CONTROLADOR.ControladorDatosxCita.html" name="" title="ControladorDatosxCita">ControladorDatosxCita</a>
+                          </li>
+                          <li>
+                              <a href="CONTROLADOR.ControladorGenerales2.html" name="" title="ControladorGenerales2">ControladorGenerales2</a>
+                          </li>
+                          <li>
+                              <a href="CONTROLADOR.ControladorGenerales3.html" name="" title="ControladorGenerales3">ControladorGenerales3</a>
+                          </li>
+                          <li>
+                              <a href="CONTROLADOR.ControladorInicio.html" name="" title="ControladorInicio">ControladorInicio</a>
+                          </li>
+                          <li>
+                              <a href="CONTROLADOR.ControladorNuevoCliente.html" name="" title="ControladorNuevoCliente">ControladorNuevoCliente</a>
+                          </li>
+                          <li>
+                              <a href="CONTROLADOR.ControladorPedirPermisos.html" name="" title="ControladorPedirPermisos">ControladorPedirPermisos</a>
+                          </li>
+                          <li>
+                              <a href="CONTROLADOR.ControladorRegistrarUsuario.html" name="" title="ControladorRegistrarUsuario">ControladorRegistrarUsuario</a>
+                          </li>
+                          <li>
+                              <a href="CONTROLADOR.Validacion.html" name="" title="Validacion">Validacion</a>
+                          </li>
+                    </ul>
+                </li>
+          </ul>
+      </div>
+    </div>
+  </div>
+</div>

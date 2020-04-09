@@ -1,0 +1,493 @@
+### YamlMime:ManagedReference
+items:
+- uid: CONTROLADOR.ControladorNuevoCliente
+  commentId: T:CONTROLADOR.ControladorNuevoCliente
+  id: ControladorNuevoCliente
+  parent: CONTROLADOR
+  children:
+  - CONTROLADOR.ControladorNuevoCliente.AgregarNuevoCliente(System.String,System.String,System.String,System.DateTime,System.String,System.String,System.String,System.String,System.String)
+  - CONTROLADOR.ControladorNuevoCliente.error
+  - CONTROLADOR.ControladorNuevoCliente.IsValidEmail(System.String)
+  langs:
+  - csharp
+  - vb
+  name: ControladorNuevoCliente
+  nameWithType: ControladorNuevoCliente
+  fullName: CONTROLADOR.ControladorNuevoCliente
+  type: Class
+  source:
+    remote:
+      path: CONTROLADOR/ControladorNuevoCliente.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ControladorNuevoCliente
+    path: ControladorNuevoCliente.cs
+    startLine: 15
+  assemblies:
+  - CONTROLADOR
+  namespace: CONTROLADOR
+  summary: "\nLa clase controlador &quot;Nuevo Cliente&quot; valida que la informacion de los campos \nsean correctos para poder ingresar un registro\nen la tabla &quot;Paciente&quot; en la base de datos &quot;DBPAS&quot; destinada al sistema.\nDe acuerdo a las caracteristicas de la clase &quot;Validacion&quot;.\n"
+  example: []
+  syntax:
+    content: public class ControladorNuevoCliente
+    content.vb: Public Class ControladorNuevoCliente
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: CONTROLADOR.ControladorNuevoCliente.error
+  commentId: F:CONTROLADOR.ControladorNuevoCliente.error
+  id: error
+  parent: CONTROLADOR.ControladorNuevoCliente
+  langs:
+  - csharp
+  - vb
+  name: error
+  nameWithType: ControladorNuevoCliente.error
+  fullName: CONTROLADOR.ControladorNuevoCliente.error
+  type: Field
+  source:
+    remote:
+      path: CONTROLADOR/ControladorNuevoCliente.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: error
+    path: ControladorNuevoCliente.cs
+    startLine: 17
+  assemblies:
+  - CONTROLADOR
+  namespace: CONTROLADOR
+  syntax:
+    content: public string error
+    return:
+      type: System.String
+    content.vb: Public error As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CONTROLADOR.ControladorNuevoCliente.AgregarNuevoCliente(System.String,System.String,System.String,System.DateTime,System.String,System.String,System.String,System.String,System.String)
+  commentId: M:CONTROLADOR.ControladorNuevoCliente.AgregarNuevoCliente(System.String,System.String,System.String,System.DateTime,System.String,System.String,System.String,System.String,System.String)
+  id: AgregarNuevoCliente(System.String,System.String,System.String,System.DateTime,System.String,System.String,System.String,System.String,System.String)
+  parent: CONTROLADOR.ControladorNuevoCliente
+  langs:
+  - csharp
+  - vb
+  name: AgregarNuevoCliente(String, String, String, DateTime, String, String, String, String, String)
+  nameWithType: ControladorNuevoCliente.AgregarNuevoCliente(String, String, String, DateTime, String, String, String, String, String)
+  fullName: CONTROLADOR.ControladorNuevoCliente.AgregarNuevoCliente(System.String, System.String, System.String, System.DateTime, System.String, System.String, System.String, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: CONTROLADOR/ControladorNuevoCliente.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: AgregarNuevoCliente
+    path: ControladorNuevoCliente.cs
+    startLine: 19
+  assemblies:
+  - CONTROLADOR
+  namespace: CONTROLADOR
+  syntax:
+    content: public void AgregarNuevoCliente(string nombre, string genero, string estadoCivil, DateTime fechaNacimiento, string escolaridad, string ocupacion, string telefono, string email, string motivos)
+    parameters:
+    - id: nombre
+      type: System.String
+    - id: genero
+      type: System.String
+    - id: estadoCivil
+      type: System.String
+    - id: fechaNacimiento
+      type: System.DateTime
+    - id: escolaridad
+      type: System.String
+    - id: ocupacion
+      type: System.String
+    - id: telefono
+      type: System.String
+    - id: email
+      type: System.String
+    - id: motivos
+      type: System.String
+    content.vb: Public Sub AgregarNuevoCliente(nombre As String, genero As String, estadoCivil As String, fechaNacimiento As Date, escolaridad As String, ocupacion As String, telefono As String, email As String, motivos As String)
+  overload: CONTROLADOR.ControladorNuevoCliente.AgregarNuevoCliente*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CONTROLADOR.ControladorNuevoCliente.IsValidEmail(System.String)
+  commentId: M:CONTROLADOR.ControladorNuevoCliente.IsValidEmail(System.String)
+  id: IsValidEmail(System.String)
+  parent: CONTROLADOR.ControladorNuevoCliente
+  langs:
+  - csharp
+  - vb
+  name: IsValidEmail(String)
+  nameWithType: ControladorNuevoCliente.IsValidEmail(String)
+  fullName: CONTROLADOR.ControladorNuevoCliente.IsValidEmail(System.String)
+  type: Method
+  source:
+    remote:
+      path: CONTROLADOR/ControladorNuevoCliente.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: IsValidEmail
+    path: ControladorNuevoCliente.cs
+    startLine: 143
+  assemblies:
+  - CONTROLADOR
+  namespace: CONTROLADOR
+  syntax:
+    content: public bool IsValidEmail(string email)
+    parameters:
+    - id: email
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsValidEmail(email As String) As Boolean
+  overload: CONTROLADOR.ControladorNuevoCliente.IsValidEmail*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: CONTROLADOR
+  commentId: N:CONTROLADOR
+  name: CONTROLADOR
+  nameWithType: CONTROLADOR
+  fullName: CONTROLADOR
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: CONTROLADOR.ControladorNuevoCliente.AgregarNuevoCliente*
+  commentId: Overload:CONTROLADOR.ControladorNuevoCliente.AgregarNuevoCliente
+  name: AgregarNuevoCliente
+  nameWithType: ControladorNuevoCliente.AgregarNuevoCliente
+  fullName: CONTROLADOR.ControladorNuevoCliente.AgregarNuevoCliente
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+- uid: CONTROLADOR.ControladorNuevoCliente.IsValidEmail*
+  commentId: Overload:CONTROLADOR.ControladorNuevoCliente.IsValidEmail
+  name: IsValidEmail
+  nameWithType: ControladorNuevoCliente.IsValidEmail
+  fullName: CONTROLADOR.ControladorNuevoCliente.IsValidEmail
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean

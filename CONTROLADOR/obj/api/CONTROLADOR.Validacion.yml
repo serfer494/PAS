@@ -1,0 +1,846 @@
+### YamlMime:ManagedReference
+items:
+- uid: CONTROLADOR.Validacion
+  commentId: T:CONTROLADOR.Validacion
+  id: Validacion
+  parent: CONTROLADOR
+  children:
+  - CONTROLADOR.Validacion.ContieneMayusculas(System.String)
+  - CONTROLADOR.Validacion.ContieneMinusculas(System.String)
+  - CONTROLADOR.Validacion.ContieneNumeros(System.String)
+  - CONTROLADOR.Validacion.FechaMayorA(System.DateTime,System.DateTime)
+  - CONTROLADOR.Validacion.FechaMayorIgualA(System.DateTime,System.DateTime)
+  - CONTROLADOR.Validacion.FechaMenorA(System.DateTime,System.DateTime)
+  - CONTROLADOR.Validacion.FechaMenorIgualA(System.DateTime,System.DateTime)
+  - CONTROLADOR.Validacion.Longitud(System.String,System.Int32,System.Int32)
+  - CONTROLADOR.Validacion.MayorA(System.Int32,System.Int32)
+  - CONTROLADOR.Validacion.MenorA(System.Int32,System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: Validacion
+  nameWithType: Validacion
+  fullName: CONTROLADOR.Validacion
+  type: Class
+  source:
+    remote:
+      path: CONTROLADOR/Validacion.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: Validacion
+    path: Validacion.cs
+    startLine: 12
+  assemblies:
+  - CONTROLADOR
+  namespace: CONTROLADOR
+  summary: "\nLa clase de Validacion tiene Longitudes minimas, maximas, caracteres que debe o no debe contener\ny fechas validas para los campos que hay que ingresar en el sistema.\n"
+  example: []
+  syntax:
+    content: public class Validacion
+    content.vb: Public Class Validacion
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: CONTROLADOR.Validacion.Longitud(System.String,System.Int32,System.Int32)
+  commentId: M:CONTROLADOR.Validacion.Longitud(System.String,System.Int32,System.Int32)
+  id: Longitud(System.String,System.Int32,System.Int32)
+  parent: CONTROLADOR.Validacion
+  langs:
+  - csharp
+  - vb
+  name: Longitud(String, Int32, Int32)
+  nameWithType: Validacion.Longitud(String, Int32, Int32)
+  fullName: CONTROLADOR.Validacion.Longitud(System.String, System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: CONTROLADOR/Validacion.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: Longitud
+    path: Validacion.cs
+    startLine: 21
+  assemblies:
+  - CONTROLADOR
+  namespace: CONTROLADOR
+  summary: "\nEl metodo Longitud mide la longitud de una cadena de texto.\n"
+  example: []
+  syntax:
+    content: public bool Longitud(string texto, int longitudMin, int longitudMax)
+    parameters:
+    - id: texto
+      type: System.String
+      description: Es la cadena de texto a evaluar.
+    - id: longitudMin
+      type: System.Int32
+      description: Es la longitud minima que debe tener la cadena.
+    - id: longitudMax
+      type: System.Int32
+      description: Es la longitud maxima que debe tener la cadena.
+    return:
+      type: System.Boolean
+      description: Un verdadero si la cadena cumple con los limites. Un falso de lo contrario.
+    content.vb: Public Function Longitud(texto As String, longitudMin As Integer, longitudMax As Integer) As Boolean
+  overload: CONTROLADOR.Validacion.Longitud*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CONTROLADOR.Validacion.MayorA(System.Int32,System.Int32)
+  commentId: M:CONTROLADOR.Validacion.MayorA(System.Int32,System.Int32)
+  id: MayorA(System.Int32,System.Int32)
+  parent: CONTROLADOR.Validacion
+  langs:
+  - csharp
+  - vb
+  name: MayorA(Int32, Int32)
+  nameWithType: Validacion.MayorA(Int32, Int32)
+  fullName: CONTROLADOR.Validacion.MayorA(System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: CONTROLADOR/Validacion.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: MayorA
+    path: Validacion.cs
+    startLine: 39
+  assemblies:
+  - CONTROLADOR
+  namespace: CONTROLADOR
+  summary: "\nEl metodo MayorA toma una cantidad y verifica si es mayor a un limite establecido.\n"
+  example: []
+  syntax:
+    content: public bool MayorA(int cantidad, int limite)
+    parameters:
+    - id: cantidad
+      type: System.Int32
+      description: Es la cantidad a evaluar.
+    - id: limite
+      type: System.Int32
+      description: Numero al que &quot;cantidad&quot; debe ser mayor a.
+    return:
+      type: System.Boolean
+      description: Un verdadero si &quot;cantidad&quot; es mayor a &quot;limite&quot;. Un falso en caso contrario.
+    content.vb: Public Function MayorA(cantidad As Integer, limite As Integer) As Boolean
+  overload: CONTROLADOR.Validacion.MayorA*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CONTROLADOR.Validacion.MenorA(System.Int32,System.Int32)
+  commentId: M:CONTROLADOR.Validacion.MenorA(System.Int32,System.Int32)
+  id: MenorA(System.Int32,System.Int32)
+  parent: CONTROLADOR.Validacion
+  langs:
+  - csharp
+  - vb
+  name: MenorA(Int32, Int32)
+  nameWithType: Validacion.MenorA(Int32, Int32)
+  fullName: CONTROLADOR.Validacion.MenorA(System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: CONTROLADOR/Validacion.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: MenorA
+    path: Validacion.cs
+    startLine: 57
+  assemblies:
+  - CONTROLADOR
+  namespace: CONTROLADOR
+  summary: "\nEl metodo MenorA toma una cantidad y verifica si es menor a un limite establecido.\n"
+  example: []
+  syntax:
+    content: public bool MenorA(int cantidad, int limite)
+    parameters:
+    - id: cantidad
+      type: System.Int32
+      description: Es la cantidad a evaluar.
+    - id: limite
+      type: System.Int32
+      description: Numero al que &quot;cantidad&quot; debe ser menor a.
+    return:
+      type: System.Boolean
+      description: Un verdadero si &quot;cantidad&quot; es menor a &quot;limite&quot;. Un falso en caso contrario.
+    content.vb: Public Function MenorA(cantidad As Integer, limite As Integer) As Boolean
+  overload: CONTROLADOR.Validacion.MenorA*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CONTROLADOR.Validacion.ContieneMayusculas(System.String)
+  commentId: M:CONTROLADOR.Validacion.ContieneMayusculas(System.String)
+  id: ContieneMayusculas(System.String)
+  parent: CONTROLADOR.Validacion
+  langs:
+  - csharp
+  - vb
+  name: ContieneMayusculas(String)
+  nameWithType: Validacion.ContieneMayusculas(String)
+  fullName: CONTROLADOR.Validacion.ContieneMayusculas(System.String)
+  type: Method
+  source:
+    remote:
+      path: CONTROLADOR/Validacion.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ContieneMayusculas
+    path: Validacion.cs
+    startLine: 74
+  assemblies:
+  - CONTROLADOR
+  namespace: CONTROLADOR
+  summary: "\nEl metodo ContieneMayusculas verifica si una cadena contiene letras mayusculas.\n"
+  example: []
+  syntax:
+    content: public bool ContieneMayusculas(string texto)
+    parameters:
+    - id: texto
+      type: System.String
+      description: La cadena a evaluar.
+    return:
+      type: System.Boolean
+      description: Un verdadero si la cadena contiene al menos una letra mayuscula. Un falso de lo contrario.
+    content.vb: Public Function ContieneMayusculas(texto As String) As Boolean
+  overload: CONTROLADOR.Validacion.ContieneMayusculas*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CONTROLADOR.Validacion.ContieneMinusculas(System.String)
+  commentId: M:CONTROLADOR.Validacion.ContieneMinusculas(System.String)
+  id: ContieneMinusculas(System.String)
+  parent: CONTROLADOR.Validacion
+  langs:
+  - csharp
+  - vb
+  name: ContieneMinusculas(String)
+  nameWithType: Validacion.ContieneMinusculas(String)
+  fullName: CONTROLADOR.Validacion.ContieneMinusculas(System.String)
+  type: Method
+  source:
+    remote:
+      path: CONTROLADOR/Validacion.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ContieneMinusculas
+    path: Validacion.cs
+    startLine: 91
+  assemblies:
+  - CONTROLADOR
+  namespace: CONTROLADOR
+  summary: "\nEl metodo ContieneMinusculas verifica si una cadena contiene letras minusculas.\n"
+  example: []
+  syntax:
+    content: public bool ContieneMinusculas(string texto)
+    parameters:
+    - id: texto
+      type: System.String
+      description: La cadena a evaluar.
+    return:
+      type: System.Boolean
+      description: Un verdadero si la cadena contiene al menos una letra minuscula. Un falso de lo contrario.
+    content.vb: Public Function ContieneMinusculas(texto As String) As Boolean
+  overload: CONTROLADOR.Validacion.ContieneMinusculas*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CONTROLADOR.Validacion.ContieneNumeros(System.String)
+  commentId: M:CONTROLADOR.Validacion.ContieneNumeros(System.String)
+  id: ContieneNumeros(System.String)
+  parent: CONTROLADOR.Validacion
+  langs:
+  - csharp
+  - vb
+  name: ContieneNumeros(String)
+  nameWithType: Validacion.ContieneNumeros(String)
+  fullName: CONTROLADOR.Validacion.ContieneNumeros(System.String)
+  type: Method
+  source:
+    remote:
+      path: CONTROLADOR/Validacion.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ContieneNumeros
+    path: Validacion.cs
+    startLine: 108
+  assemblies:
+  - CONTROLADOR
+  namespace: CONTROLADOR
+  summary: "\nEl metodo ContieneNumeros verifica si una cadena contiene numeros.\n"
+  example: []
+  syntax:
+    content: public bool ContieneNumeros(string texto)
+    parameters:
+    - id: texto
+      type: System.String
+      description: La cadena a evaluar.
+    return:
+      type: System.Boolean
+      description: Un verdadero si la cadena contiene al menos un numero. Un falso de lo contrario.
+    content.vb: Public Function ContieneNumeros(texto As String) As Boolean
+  overload: CONTROLADOR.Validacion.ContieneNumeros*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CONTROLADOR.Validacion.FechaMayorA(System.DateTime,System.DateTime)
+  commentId: M:CONTROLADOR.Validacion.FechaMayorA(System.DateTime,System.DateTime)
+  id: FechaMayorA(System.DateTime,System.DateTime)
+  parent: CONTROLADOR.Validacion
+  langs:
+  - csharp
+  - vb
+  name: FechaMayorA(DateTime, DateTime)
+  nameWithType: Validacion.FechaMayorA(DateTime, DateTime)
+  fullName: CONTROLADOR.Validacion.FechaMayorA(System.DateTime, System.DateTime)
+  type: Method
+  source:
+    remote:
+      path: CONTROLADOR/Validacion.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: FechaMayorA
+    path: Validacion.cs
+    startLine: 126
+  assemblies:
+  - CONTROLADOR
+  namespace: CONTROLADOR
+  summary: "\nEl metodo FechaMayorA toma una fecha y verifica que sea mayor a una fecha establecida.\n"
+  example: []
+  syntax:
+    content: public bool FechaMayorA(DateTime fecha, DateTime fechaLimite)
+    parameters:
+    - id: fecha
+      type: System.DateTime
+      description: La fecha a evaluar.
+    - id: fechaLimite
+      type: System.DateTime
+      description: El parametro &quot;fecha&quot; debe ser mayor a este valor.
+    return:
+      type: System.Boolean
+      description: Un verdadero si la fecha es mayor al valor limite. Un falso de lo contrario.
+    content.vb: Public Function FechaMayorA(fecha As Date, fechaLimite As Date) As Boolean
+  overload: CONTROLADOR.Validacion.FechaMayorA*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CONTROLADOR.Validacion.FechaMenorA(System.DateTime,System.DateTime)
+  commentId: M:CONTROLADOR.Validacion.FechaMenorA(System.DateTime,System.DateTime)
+  id: FechaMenorA(System.DateTime,System.DateTime)
+  parent: CONTROLADOR.Validacion
+  langs:
+  - csharp
+  - vb
+  name: FechaMenorA(DateTime, DateTime)
+  nameWithType: Validacion.FechaMenorA(DateTime, DateTime)
+  fullName: CONTROLADOR.Validacion.FechaMenorA(System.DateTime, System.DateTime)
+  type: Method
+  source:
+    remote:
+      path: CONTROLADOR/Validacion.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: FechaMenorA
+    path: Validacion.cs
+    startLine: 144
+  assemblies:
+  - CONTROLADOR
+  namespace: CONTROLADOR
+  summary: "\nEl metodo FechaMenorA toma una fecha y verifica que sea menor a una fecha establecida.\n"
+  example: []
+  syntax:
+    content: public bool FechaMenorA(DateTime fecha, DateTime fechaLimite)
+    parameters:
+    - id: fecha
+      type: System.DateTime
+      description: La fecha a evaluar.
+    - id: fechaLimite
+      type: System.DateTime
+      description: El parametro &quot;fecha&quot; debe ser menor a este valor.
+    return:
+      type: System.Boolean
+      description: Un verdadero si la fecha es menor al valor limite. Un falso de lo contrario.
+    content.vb: Public Function FechaMenorA(fecha As Date, fechaLimite As Date) As Boolean
+  overload: CONTROLADOR.Validacion.FechaMenorA*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CONTROLADOR.Validacion.FechaMayorIgualA(System.DateTime,System.DateTime)
+  commentId: M:CONTROLADOR.Validacion.FechaMayorIgualA(System.DateTime,System.DateTime)
+  id: FechaMayorIgualA(System.DateTime,System.DateTime)
+  parent: CONTROLADOR.Validacion
+  langs:
+  - csharp
+  - vb
+  name: FechaMayorIgualA(DateTime, DateTime)
+  nameWithType: Validacion.FechaMayorIgualA(DateTime, DateTime)
+  fullName: CONTROLADOR.Validacion.FechaMayorIgualA(System.DateTime, System.DateTime)
+  type: Method
+  source:
+    remote:
+      path: CONTROLADOR/Validacion.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: FechaMayorIgualA
+    path: Validacion.cs
+    startLine: 162
+  assemblies:
+  - CONTROLADOR
+  namespace: CONTROLADOR
+  summary: "\nEl metodo FechaMayorIgualA toma una fecha y verifica que sea mayor o igual a una fecha establecida.\n"
+  example: []
+  syntax:
+    content: public bool FechaMayorIgualA(DateTime fecha, DateTime fechaLimite)
+    parameters:
+    - id: fecha
+      type: System.DateTime
+      description: La fecha a evaluar.
+    - id: fechaLimite
+      type: System.DateTime
+      description: El parametro &quot;fecha&quot; debe ser mayor o igual a este valor.
+    return:
+      type: System.Boolean
+      description: Un verdadero si la fecha es mayor o igual al valor limite. Un falso de lo contrario.
+    content.vb: Public Function FechaMayorIgualA(fecha As Date, fechaLimite As Date) As Boolean
+  overload: CONTROLADOR.Validacion.FechaMayorIgualA*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CONTROLADOR.Validacion.FechaMenorIgualA(System.DateTime,System.DateTime)
+  commentId: M:CONTROLADOR.Validacion.FechaMenorIgualA(System.DateTime,System.DateTime)
+  id: FechaMenorIgualA(System.DateTime,System.DateTime)
+  parent: CONTROLADOR.Validacion
+  langs:
+  - csharp
+  - vb
+  name: FechaMenorIgualA(DateTime, DateTime)
+  nameWithType: Validacion.FechaMenorIgualA(DateTime, DateTime)
+  fullName: CONTROLADOR.Validacion.FechaMenorIgualA(System.DateTime, System.DateTime)
+  type: Method
+  source:
+    remote:
+      path: CONTROLADOR/Validacion.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: FechaMenorIgualA
+    path: Validacion.cs
+    startLine: 180
+  assemblies:
+  - CONTROLADOR
+  namespace: CONTROLADOR
+  summary: "\nEl metodo FechaMenorIgualA toma una fecha y verifica que sea menor o igual a una fecha establecida.\n"
+  example: []
+  syntax:
+    content: public bool FechaMenorIgualA(DateTime fecha, DateTime fechaLimite)
+    parameters:
+    - id: fecha
+      type: System.DateTime
+      description: La fecha a evaluar.
+    - id: fechaLimite
+      type: System.DateTime
+      description: El parametro &quot;fecha&quot; debe ser menor o igual a este valor.
+    return:
+      type: System.Boolean
+      description: Un verdadero si la fecha es menor o igual al valor limite. Un falso de lo contrario.
+    content.vb: Public Function FechaMenorIgualA(fecha As Date, fechaLimite As Date) As Boolean
+  overload: CONTROLADOR.Validacion.FechaMenorIgualA*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: CONTROLADOR
+  commentId: N:CONTROLADOR
+  name: CONTROLADOR
+  nameWithType: CONTROLADOR
+  fullName: CONTROLADOR
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CONTROLADOR.Validacion.Longitud*
+  commentId: Overload:CONTROLADOR.Validacion.Longitud
+  name: Longitud
+  nameWithType: Validacion.Longitud
+  fullName: CONTROLADOR.Validacion.Longitud
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: CONTROLADOR.Validacion.MayorA*
+  commentId: Overload:CONTROLADOR.Validacion.MayorA
+  name: MayorA
+  nameWithType: Validacion.MayorA
+  fullName: CONTROLADOR.Validacion.MayorA
+- uid: CONTROLADOR.Validacion.MenorA*
+  commentId: Overload:CONTROLADOR.Validacion.MenorA
+  name: MenorA
+  nameWithType: Validacion.MenorA
+  fullName: CONTROLADOR.Validacion.MenorA
+- uid: CONTROLADOR.Validacion.ContieneMayusculas*
+  commentId: Overload:CONTROLADOR.Validacion.ContieneMayusculas
+  name: ContieneMayusculas
+  nameWithType: Validacion.ContieneMayusculas
+  fullName: CONTROLADOR.Validacion.ContieneMayusculas
+- uid: CONTROLADOR.Validacion.ContieneMinusculas*
+  commentId: Overload:CONTROLADOR.Validacion.ContieneMinusculas
+  name: ContieneMinusculas
+  nameWithType: Validacion.ContieneMinusculas
+  fullName: CONTROLADOR.Validacion.ContieneMinusculas
+- uid: CONTROLADOR.Validacion.ContieneNumeros*
+  commentId: Overload:CONTROLADOR.Validacion.ContieneNumeros
+  name: ContieneNumeros
+  nameWithType: Validacion.ContieneNumeros
+  fullName: CONTROLADOR.Validacion.ContieneNumeros
+- uid: CONTROLADOR.Validacion.FechaMayorA*
+  commentId: Overload:CONTROLADOR.Validacion.FechaMayorA
+  name: FechaMayorA
+  nameWithType: Validacion.FechaMayorA
+  fullName: CONTROLADOR.Validacion.FechaMayorA
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+- uid: CONTROLADOR.Validacion.FechaMenorA*
+  commentId: Overload:CONTROLADOR.Validacion.FechaMenorA
+  name: FechaMenorA
+  nameWithType: Validacion.FechaMenorA
+  fullName: CONTROLADOR.Validacion.FechaMenorA
+- uid: CONTROLADOR.Validacion.FechaMayorIgualA*
+  commentId: Overload:CONTROLADOR.Validacion.FechaMayorIgualA
+  name: FechaMayorIgualA
+  nameWithType: Validacion.FechaMayorIgualA
+  fullName: CONTROLADOR.Validacion.FechaMayorIgualA
+- uid: CONTROLADOR.Validacion.FechaMenorIgualA*
+  commentId: Overload:CONTROLADOR.Validacion.FechaMenorIgualA
+  name: FechaMenorIgualA
+  nameWithType: Validacion.FechaMenorIgualA
+  fullName: CONTROLADOR.Validacion.FechaMenorIgualA

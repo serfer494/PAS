@@ -1,0 +1,623 @@
+### YamlMime:ManagedReference
+items:
+- uid: MODELO.ModeloDatosxCita
+  commentId: T:MODELO.ModeloDatosxCita
+  id: ModeloDatosxCita
+  parent: MODELO
+  children:
+  - MODELO.ModeloDatosxCita.AgregarDatosCita(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.DateTime,System.Int32)
+  - MODELO.ModeloDatosxCita.EliminarDatosCita(System.Int32,System.Int32)
+  - MODELO.ModeloDatosxCita.GetTable(System.Int32)
+  - MODELO.ModeloDatosxCita.ModificarDatosCita(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.DateTime,System.Int32,System.Int32)
+  - MODELO.ModeloDatosxCita.ObtenerId(System.Int32,System.DateTime)
+  langs:
+  - csharp
+  - vb
+  name: ModeloDatosxCita
+  nameWithType: ModeloDatosxCita
+  fullName: MODELO.ModeloDatosxCita
+  type: Class
+  source:
+    remote:
+      path: MODELO/ModeloDatosxCita.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ModeloDatosxCita
+    path: ModeloDatosxCita.cs
+    startLine: 14
+  assemblies:
+  - MODELO
+  namespace: MODELO
+  summary: "\nEl modelo &quot;Datos por cita&quot; se encarga de realizar el CRUD para los registros de la tabla\n&quot;DatosCt&quot; de la base de datos &quot;BDPAS&quot; destinada al sistema.\n"
+  example: []
+  syntax:
+    content: public class ModeloDatosxCita
+    content.vb: Public Class ModeloDatosxCita
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: MODELO.ModeloDatosxCita.AgregarDatosCita(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.DateTime,System.Int32)
+  commentId: M:MODELO.ModeloDatosxCita.AgregarDatosCita(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.DateTime,System.Int32)
+  id: AgregarDatosCita(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.DateTime,System.Int32)
+  parent: MODELO.ModeloDatosxCita
+  langs:
+  - csharp
+  - vb
+  name: AgregarDatosCita(String, String, String, String, String, String, String, String, String, DateTime, Int32)
+  nameWithType: ModeloDatosxCita.AgregarDatosCita(String, String, String, String, String, String, String, String, String, DateTime, Int32)
+  fullName: MODELO.ModeloDatosxCita.AgregarDatosCita(System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.DateTime, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: MODELO/ModeloDatosxCita.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: AgregarDatosCita
+    path: ModeloDatosxCita.cs
+    startLine: 16
+  assemblies:
+  - MODELO
+  namespace: MODELO
+  syntax:
+    content: public void AgregarDatosCita(string grasaVis, string CMB, string cirCad, string bodyAge, string cirCin, string musculoPorc, string grasaPorc, string IMC, string peso, DateTime fecha, int id)
+    parameters:
+    - id: grasaVis
+      type: System.String
+    - id: CMB
+      type: System.String
+    - id: cirCad
+      type: System.String
+    - id: bodyAge
+      type: System.String
+    - id: cirCin
+      type: System.String
+    - id: musculoPorc
+      type: System.String
+    - id: grasaPorc
+      type: System.String
+    - id: IMC
+      type: System.String
+    - id: peso
+      type: System.String
+    - id: fecha
+      type: System.DateTime
+    - id: id
+      type: System.Int32
+    content.vb: Public Sub AgregarDatosCita(grasaVis As String, CMB As String, cirCad As String, bodyAge As String, cirCin As String, musculoPorc As String, grasaPorc As String, IMC As String, peso As String, fecha As Date, id As Integer)
+  overload: MODELO.ModeloDatosxCita.AgregarDatosCita*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: MODELO.ModeloDatosxCita.ModificarDatosCita(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.DateTime,System.Int32,System.Int32)
+  commentId: M:MODELO.ModeloDatosxCita.ModificarDatosCita(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.DateTime,System.Int32,System.Int32)
+  id: ModificarDatosCita(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.DateTime,System.Int32,System.Int32)
+  parent: MODELO.ModeloDatosxCita
+  langs:
+  - csharp
+  - vb
+  name: ModificarDatosCita(String, String, String, String, String, String, String, String, String, DateTime, Int32, Int32)
+  nameWithType: ModeloDatosxCita.ModificarDatosCita(String, String, String, String, String, String, String, String, String, DateTime, Int32, Int32)
+  fullName: MODELO.ModeloDatosxCita.ModificarDatosCita(System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.DateTime, System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: MODELO/ModeloDatosxCita.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ModificarDatosCita
+    path: ModeloDatosxCita.cs
+    startLine: 58
+  assemblies:
+  - MODELO
+  namespace: MODELO
+  syntax:
+    content: public void ModificarDatosCita(string grasaVis, string CMB, string cirCad, string bodyAge, string cirCin, string musculoPorc, string grasaPorc, string IMC, string peso, DateTime fecha, int id, int idCita)
+    parameters:
+    - id: grasaVis
+      type: System.String
+    - id: CMB
+      type: System.String
+    - id: cirCad
+      type: System.String
+    - id: bodyAge
+      type: System.String
+    - id: cirCin
+      type: System.String
+    - id: musculoPorc
+      type: System.String
+    - id: grasaPorc
+      type: System.String
+    - id: IMC
+      type: System.String
+    - id: peso
+      type: System.String
+    - id: fecha
+      type: System.DateTime
+    - id: id
+      type: System.Int32
+    - id: idCita
+      type: System.Int32
+    content.vb: Public Sub ModificarDatosCita(grasaVis As String, CMB As String, cirCad As String, bodyAge As String, cirCin As String, musculoPorc As String, grasaPorc As String, IMC As String, peso As String, fecha As Date, id As Integer, idCita As Integer)
+  overload: MODELO.ModeloDatosxCita.ModificarDatosCita*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: MODELO.ModeloDatosxCita.EliminarDatosCita(System.Int32,System.Int32)
+  commentId: M:MODELO.ModeloDatosxCita.EliminarDatosCita(System.Int32,System.Int32)
+  id: EliminarDatosCita(System.Int32,System.Int32)
+  parent: MODELO.ModeloDatosxCita
+  langs:
+  - csharp
+  - vb
+  name: EliminarDatosCita(Int32, Int32)
+  nameWithType: ModeloDatosxCita.EliminarDatosCita(Int32, Int32)
+  fullName: MODELO.ModeloDatosxCita.EliminarDatosCita(System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: MODELO/ModeloDatosxCita.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: EliminarDatosCita
+    path: ModeloDatosxCita.cs
+    startLine: 93
+  assemblies:
+  - MODELO
+  namespace: MODELO
+  syntax:
+    content: public void EliminarDatosCita(int id, int idCita)
+    parameters:
+    - id: id
+      type: System.Int32
+    - id: idCita
+      type: System.Int32
+    content.vb: Public Sub EliminarDatosCita(id As Integer, idCita As Integer)
+  overload: MODELO.ModeloDatosxCita.EliminarDatosCita*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: MODELO.ModeloDatosxCita.GetTable(System.Int32)
+  commentId: M:MODELO.ModeloDatosxCita.GetTable(System.Int32)
+  id: GetTable(System.Int32)
+  parent: MODELO.ModeloDatosxCita
+  langs:
+  - csharp
+  - vb
+  name: GetTable(Int32)
+  nameWithType: ModeloDatosxCita.GetTable(Int32)
+  fullName: MODELO.ModeloDatosxCita.GetTable(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: MODELO/ModeloDatosxCita.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: GetTable
+    path: ModeloDatosxCita.cs
+    startLine: 116
+  assemblies:
+  - MODELO
+  namespace: MODELO
+  syntax:
+    content: public DataTable GetTable(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.Data.DataTable
+    content.vb: Public Function GetTable(id As Integer) As DataTable
+  overload: MODELO.ModeloDatosxCita.GetTable*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: MODELO.ModeloDatosxCita.ObtenerId(System.Int32,System.DateTime)
+  commentId: M:MODELO.ModeloDatosxCita.ObtenerId(System.Int32,System.DateTime)
+  id: ObtenerId(System.Int32,System.DateTime)
+  parent: MODELO.ModeloDatosxCita
+  langs:
+  - csharp
+  - vb
+  name: ObtenerId(Int32, DateTime)
+  nameWithType: ModeloDatosxCita.ObtenerId(Int32, DateTime)
+  fullName: MODELO.ModeloDatosxCita.ObtenerId(System.Int32, System.DateTime)
+  type: Method
+  source:
+    remote:
+      path: MODELO/ModeloDatosxCita.cs
+      branch: CuartoEntregable
+      repo: https://github.com/serfer494/PAS.git
+    id: ObtenerId
+    path: ModeloDatosxCita.cs
+    startLine: 143
+  assemblies:
+  - MODELO
+  namespace: MODELO
+  syntax:
+    content: public int ObtenerId(int id, DateTime date)
+    parameters:
+    - id: id
+      type: System.Int32
+    - id: date
+      type: System.DateTime
+    return:
+      type: System.Int32
+    content.vb: Public Function ObtenerId(id As Integer, date As Date) As Integer
+  overload: MODELO.ModeloDatosxCita.ObtenerId*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: MODELO
+  commentId: N:MODELO
+  name: MODELO
+  nameWithType: MODELO
+  fullName: MODELO
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MODELO.ModeloDatosxCita.AgregarDatosCita*
+  commentId: Overload:MODELO.ModeloDatosxCita.AgregarDatosCita
+  name: AgregarDatosCita
+  nameWithType: ModeloDatosxCita.AgregarDatosCita
+  fullName: MODELO.ModeloDatosxCita.AgregarDatosCita
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: MODELO.ModeloDatosxCita.ModificarDatosCita*
+  commentId: Overload:MODELO.ModeloDatosxCita.ModificarDatosCita
+  name: ModificarDatosCita
+  nameWithType: ModeloDatosxCita.ModificarDatosCita
+  fullName: MODELO.ModeloDatosxCita.ModificarDatosCita
+- uid: MODELO.ModeloDatosxCita.EliminarDatosCita*
+  commentId: Overload:MODELO.ModeloDatosxCita.EliminarDatosCita
+  name: EliminarDatosCita
+  nameWithType: ModeloDatosxCita.EliminarDatosCita
+  fullName: MODELO.ModeloDatosxCita.EliminarDatosCita
+- uid: MODELO.ModeloDatosxCita.GetTable*
+  commentId: Overload:MODELO.ModeloDatosxCita.GetTable
+  name: GetTable
+  nameWithType: ModeloDatosxCita.GetTable
+  fullName: MODELO.ModeloDatosxCita.GetTable
+- uid: System.Data.DataTable
+  commentId: T:System.Data.DataTable
+  parent: System.Data
+  isExternal: true
+  name: DataTable
+  nameWithType: DataTable
+  fullName: System.Data.DataTable
+- uid: System.Data
+  commentId: N:System.Data
+  isExternal: true
+  name: System.Data
+  nameWithType: System.Data
+  fullName: System.Data
+- uid: MODELO.ModeloDatosxCita.ObtenerId*
+  commentId: Overload:MODELO.ModeloDatosxCita.ObtenerId
+  name: ObtenerId
+  nameWithType: ModeloDatosxCita.ObtenerId
+  fullName: MODELO.ModeloDatosxCita.ObtenerId

@@ -1,0 +1,44 @@
+C:\Users\DELL\source\repos\Ingeneria Software\CONTROLADOR\bin\Debug\CONTROLADOR.dll
+C:\Users\DELL\source\repos\Ingeneria Software\CONTROLADOR\bin\Debug\CONTROLADOR.pdb
+C:\Users\DELL\source\repos\Ingeneria Software\CONTROLADOR\bin\Debug\MODELO.dll
+C:\Users\DELL\source\repos\Ingeneria Software\CONTROLADOR\bin\Debug\MODELO.pdb
+C:\Users\DELL\source\repos\Ingeneria Software\CONTROLADOR\obj\Debug\CONTROLADOR.csprojAssemblyReference.cache
+C:\Users\DELL\source\repos\Ingeneria Software\CONTROLADOR\obj\Debug\CONTROLADOR.csproj.CoreCompileInputs.cache
+C:\Users\DELL\source\repos\Ingeneria Software\CONTROLADOR\obj\Debug\CONTROLADOR.csproj.CopyComplete
+C:\Users\DELL\source\repos\Ingeneria Software\CONTROLADOR\obj\Debug\CONTROLADOR.dll
+C:\Users\DELL\source\repos\Ingeneria Software\CONTROLADOR\obj\Debug\CONTROLADOR.pdb
+C:\Users\1045428\Desktop\Ingeneria Software e3\CONTROLADOR\bin\Debug\CONTROLADOR.dll
+C:\Users\1045428\Desktop\Ingeneria Software e3\CONTROLADOR\bin\Debug\CONTROLADOR.pdb
+C:\Users\1045428\Desktop\Ingeneria Software e3\CONTROLADOR\bin\Debug\MODELO.dll
+C:\Users\1045428\Desktop\Ingeneria Software e3\CONTROLADOR\bin\Debug\MODELO.pdb
+C:\Users\1045428\Desktop\Ingeneria Software e3\CONTROLADOR\obj\Debug\CONTROLADOR.csprojAssemblyReference.cache
+C:\Users\1045428\Desktop\Ingeneria Software e3\CONTROLADOR\obj\Debug\CONTROLADOR.csproj.CoreCompileInputs.cache
+C:\Users\1045428\Desktop\Ingeneria Software e3\CONTROLADOR\obj\Debug\CONTROLADOR.csproj.CopyComplete
+C:\Users\1045428\Desktop\Ingeneria Software e3\CONTROLADOR\obj\Debug\CONTROLADOR.dll
+C:\Users\1045428\Desktop\Ingeneria Software e3\CONTROLADOR\obj\Debug\CONTROLADOR.pdb
+C:\Users\DELL\Desktop\Ingeneria Software e3\CONTROLADOR\bin\Debug\CONTROLADOR.dll
+C:\Users\DELL\Desktop\Ingeneria Software e3\CONTROLADOR\bin\Debug\CONTROLADOR.pdb
+C:\Users\DELL\Desktop\Ingeneria Software e3\CONTROLADOR\bin\Debug\MODELO.dll
+C:\Users\DELL\Desktop\Ingeneria Software e3\CONTROLADOR\bin\Debug\MODELO.pdb
+C:\Users\DELL\Desktop\Ingeneria Software e3\CONTROLADOR\obj\Debug\CONTROLADOR.csprojAssemblyReference.cache
+C:\Users\DELL\Desktop\Ingeneria Software e3\CONTROLADOR\obj\Debug\CONTROLADOR.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\Ingeneria Software e3\CONTROLADOR\obj\Debug\CONTROLADOR.csproj.CopyComplete
+C:\Users\DELL\Desktop\Ingeneria Software e3\CONTROLADOR\obj\Debug\CONTROLADOR.dll
+C:\Users\DELL\Desktop\Ingeneria Software e3\CONTROLADOR\obj\Debug\CONTROLADOR.pdb
+C:\Users\LAB_Sistemas_ITH\Desktop\Ingeneria Software e3\CONTROLADOR\bin\Debug\CONTROLADOR.dll
+C:\Users\LAB_Sistemas_ITH\Desktop\Ingeneria Software e3\CONTROLADOR\bin\Debug\CONTROLADOR.pdb
+C:\Users\LAB_Sistemas_ITH\Desktop\Ingeneria Software e3\CONTROLADOR\bin\Debug\MODELO.dll
+C:\Users\LAB_Sistemas_ITH\Desktop\Ingeneria Software e3\CONTROLADOR\bin\Debug\MODELO.pdb
+C:\Users\LAB_Sistemas_ITH\Desktop\Ingeneria Software e3\CONTROLADOR\obj\Debug\CONTROLADOR.csprojAssemblyReference.cache
+C:\Users\LAB_Sistemas_ITH\Desktop\Ingeneria Software e3\CONTROLADOR\obj\Debug\CONTROLADOR.csproj.CoreCompileInputs.cache
+C:\Users\LAB_Sistemas_ITH\Desktop\Ingeneria Software e3\CONTROLADOR\obj\Debug\CONTROLADOR.csproj.CopyComplete
+C:\Users\LAB_Sistemas_ITH\Desktop\Ingeneria Software e3\CONTROLADOR\obj\Debug\CONTROLADOR.dll
+C:\Users\LAB_Sistemas_ITH\Desktop\Ingeneria Software e3\CONTROLADOR\obj\Debug\CONTROLADOR.pdb
+C:\Users\Sergio\Desktop\Ingeneria Software e3\CONTROLADOR\bin\Debug\CONTROLADOR.dll
+C:\Users\Sergio\Desktop\Ingeneria Software e3\CONTROLADOR\bin\Debug\CONTROLADOR.pdb
+C:\Users\Sergio\Desktop\Ingeneria Software e3\CONTROLADOR\bin\Debug\MODELO.dll
+C:\Users\Sergio\Desktop\Ingeneria Software e3\CONTROLADOR\bin\Debug\MODELO.pdb
+C:\Users\Sergio\Desktop\Ingeneria Software e3\CONTROLADOR\obj\Debug\CONTROLADOR.csprojAssemblyReference.cache
+C:\Users\Sergio\Desktop\Ingeneria Software e3\CONTROLADOR\obj\Debug\CONTROLADOR.csproj.CopyComplete
+C:\Users\Sergio\Desktop\Ingeneria Software e3\CONTROLADOR\obj\Debug\CONTROLADOR.dll
+C:\Users\Sergio\Desktop\Ingeneria Software e3\CONTROLADOR\obj\Debug\CONTROLADOR.pdb

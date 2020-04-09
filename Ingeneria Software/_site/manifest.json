@@ -1,0 +1,342 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/Users/LAB_Sistemas_ITH/Desktop/Ingeneria Software e3/Ingeneria Software",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "ow/AhOLrTeKKCgENpf/Z2w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html",
+          "hash": "h1j4onA81y/W0FkJfki+1A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "gB8AESyvNru97tzIZofEEg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "y5O73t9xbHgRrPqyAI711A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Ingeneria_Software.Alimentos.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ingeneria_Software.Alimentos.html",
+          "hash": "5poUYIjlikQF61w2012awA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Ingeneria_Software.Citas.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ingeneria_Software.Citas.html",
+          "hash": "vfh1ljHmRqWcOUs0RgtPFg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Ingeneria_Software.Comida.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ingeneria_Software.Comida.html",
+          "hash": "1+sMco2pLtCwoeSEGjKUdw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Ingeneria_Software.DatosGenerales.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ingeneria_Software.DatosGenerales.html",
+          "hash": "6S+3KJl4UtVNWqMRPWVkYg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Ingeneria_Software.DatosxCita.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ingeneria_Software.DatosxCita.html",
+          "hash": "6Q5ScuC67RMxRgq8Y1XEqg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Ingeneria_Software.Form1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ingeneria_Software.Form1.html",
+          "hash": "/FFJJKKxdV7VELN6MMWX7A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Ingeneria_Software.Generales2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ingeneria_Software.Generales2.html",
+          "hash": "miPfzc4bZGzDNeH/V8KciQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Ingeneria_Software.Generales3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ingeneria_Software.Generales3.html",
+          "hash": "XYMp3eGL8AkiA8zc/XNUUQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Ingeneria_Software.Inicio.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ingeneria_Software.Inicio.html",
+          "hash": "9u9SjHF5TZIpdpEcLqAMOg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Ingeneria_Software.MenuPpal.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ingeneria_Software.MenuPpal.html",
+          "hash": "IszQ37wWLt7bTZ0za8mkEw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Ingeneria_Software.NuevoCliente.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ingeneria_Software.NuevoCliente.html",
+          "hash": "Q3rL5qJPZwFVF5ayYJOi2A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Ingeneria_Software.PedirPermisos.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ingeneria_Software.PedirPermisos.html",
+          "hash": "z1Ma+ddl5C5JNZOBhnoShg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Ingeneria_Software.RegistrarUsuario.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ingeneria_Software.RegistrarUsuario.html",
+          "hash": "tsmGYW+E6Fx8mDXKjLc34Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Ingeneria_Software.VerDatosGenerales.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ingeneria_Software.VerDatosGenerales.html",
+          "hash": "yP+9koNfYkGhTDG+8zQCOw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Ingeneria_Software.VerDatosGenerales2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ingeneria_Software.VerDatosGenerales2.html",
+          "hash": "fHCwEhYyEhvQNTbgCEyjcA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Ingeneria_Software.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ingeneria_Software.html",
+          "hash": "WGA/jwPJlvCo++mCTVWUPw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/WindowsFormsApp1.Plan.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WindowsFormsApp1.Plan.html",
+          "hash": "9X5ylOFFpz6RyalmALEZCg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/WindowsFormsApp1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WindowsFormsApp1.html",
+          "hash": "D11J03Ksw92ipsIFNcwjZw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "obj/api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "lKZQ8hk87zj1jRXxEv7t3A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "G2AoE5T/2VarbHvzLEo4TQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 3,
+          "skipped_file_count": 3
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 18,
+          "skipped_file_count": 18
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
