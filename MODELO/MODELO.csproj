@@ -55,6 +55,7 @@
     <Compile Include="ModeloInicio.cs" />
     <Compile Include="ModeloNuevoCliente.cs" />
     <Compile Include="ModeloPedirPermisos.cs" />
+    <Compile Include="ModeloPlan.cs" />
     <Compile Include="ModeloRegistrarUsuario.cs" />
     <Compile Include="Obtener.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

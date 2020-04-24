@@ -146,3 +146,34 @@ C:\Users\Sergio\Desktop\Ingeneria Software e3\Ingeneria Software\obj\Debug\VISTA
 C:\Users\Sergio\Desktop\Ingeneria Software e3\Ingeneria Software\obj\Debug\VISTA.csproj.CopyComplete
 C:\Users\Sergio\Desktop\Ingeneria Software e3\Ingeneria Software\obj\Debug\Ingeneria Software.exe
 C:\Users\Sergio\Desktop\Ingeneria Software e3\Ingeneria Software\obj\Debug\Ingeneria Software.pdb
+C:\Users\Sergio\Desktop\Ingeneria Software e3\Ingeneria Software\bin\Debug\IronPdf.Assets.Rendering.Windows.dll
+C:\Users\Sergio\Desktop\Ingeneria Software e3\Ingeneria Software\bin\Debug\IronPdf.dll
+C:\Users\Sergio\Desktop\Ingeneria Software e3\Ingeneria Software\bin\Debug\IronPdf.xml
+C:\Users\Sergio\Desktop\Ingeneria Software e3\Ingeneria Software\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Sergio\Desktop\Ingeneria Software e3\Ingeneria Software\bin\Debug\Common.Logging.Core.dll
+C:\Users\Sergio\Desktop\Ingeneria Software e3\Ingeneria Software\bin\Debug\Common.Logging.dll
+C:\Users\Sergio\Desktop\Ingeneria Software e3\Ingeneria Software\bin\Debug\itext.barcodes.dll
+C:\Users\Sergio\Desktop\Ingeneria Software e3\Ingeneria Software\bin\Debug\itext.forms.dll
+C:\Users\Sergio\Desktop\Ingeneria Software e3\Ingeneria Software\bin\Debug\itext.html2pdf.dll
+C:\Users\Sergio\Desktop\Ingeneria Software e3\Ingeneria Software\bin\Debug\itext.io.dll
+C:\Users\Sergio\Desktop\Ingeneria Software e3\Ingeneria Software\bin\Debug\itext.kernel.dll
+C:\Users\Sergio\Desktop\Ingeneria Software e3\Ingeneria Software\bin\Debug\itext.layout.dll
+C:\Users\Sergio\Desktop\Ingeneria Software e3\Ingeneria Software\bin\Debug\itext.pdfa.dll
+C:\Users\Sergio\Desktop\Ingeneria Software e3\Ingeneria Software\bin\Debug\itext.sign.dll
+C:\Users\Sergio\Desktop\Ingeneria Software e3\Ingeneria Software\bin\Debug\itext.styledxmlparser.dll
+C:\Users\Sergio\Desktop\Ingeneria Software e3\Ingeneria Software\bin\Debug\itext.svg.dll
+C:\Users\Sergio\Desktop\Ingeneria Software e3\Ingeneria Software\bin\Debug\BouncyCastle.Crypto.xml
+C:\Users\Sergio\Desktop\Ingeneria Software e3\Ingeneria Software\bin\Debug\Common.Logging.pdb
+C:\Users\Sergio\Desktop\Ingeneria Software e3\Ingeneria Software\bin\Debug\Common.Logging.xml
+C:\Users\Sergio\Desktop\Ingeneria Software e3\Ingeneria Software\bin\Debug\Common.Logging.Core.pdb
+C:\Users\Sergio\Desktop\Ingeneria Software e3\Ingeneria Software\bin\Debug\Common.Logging.Core.xml
+C:\Users\Sergio\Desktop\Ingeneria Software e3\Ingeneria Software\bin\Debug\itext.barcodes.xml
+C:\Users\Sergio\Desktop\Ingeneria Software e3\Ingeneria Software\bin\Debug\itext.forms.xml
+C:\Users\Sergio\Desktop\Ingeneria Software e3\Ingeneria Software\bin\Debug\itext.html2pdf.xml
+C:\Users\Sergio\Desktop\Ingeneria Software e3\Ingeneria Software\bin\Debug\itext.io.xml
+C:\Users\Sergio\Desktop\Ingeneria Software e3\Ingeneria Software\bin\Debug\itext.kernel.xml
+C:\Users\Sergio\Desktop\Ingeneria Software e3\Ingeneria Software\bin\Debug\itext.layout.xml
+C:\Users\Sergio\Desktop\Ingeneria Software e3\Ingeneria Software\bin\Debug\itext.pdfa.xml
+C:\Users\Sergio\Desktop\Ingeneria Software e3\Ingeneria Software\bin\Debug\itext.sign.xml
+C:\Users\Sergio\Desktop\Ingeneria Software e3\Ingeneria Software\bin\Debug\itext.styledxmlparser.xml
+C:\Users\Sergio\Desktop\Ingeneria Software e3\Ingeneria Software\bin\Debug\itext.svg.xml
