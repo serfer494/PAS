@@ -157,7 +157,7 @@
             this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.panel1);
             this.Name = "RegistrarUsuario";
-            this.Text = "RegistrarUsuario";
+            this.Text = "Nuevo Usuario";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,10 +14,14 @@ namespace MODELO
     public class Conexion
     {
         private static string connectionString = "server=DESKTOP-J7FIT5H; database=DBPAS; integrated security=true";
-
+       
         public static string ObtenerConexion()
         {
             return connectionString;
         }
+
+
+
     }
+    
 }

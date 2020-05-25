@@ -18,37 +18,15 @@ namespace CONTROLADOR
 
         public string AgregarUsuario(string usuario, string contrasena, int tipo)
         {
-            var validac = new Validacion();
-            if(validac.Longitud(usuario, 4, 15) == true)
+            try
             {
-                if(validac.Longitud(contrasena, 8, 25) == true)
-                {
-                    if(validac.ContieneMinusculas(contrasena) == true && validac.ContieneMayusculas(contrasena) == true && validac.ContieneNumeros(contrasena) == true)
-                    {
-                        try
-                        {
-                            var mru = new ModeloRegistrarUsuario();
-                            mensaje = mru.AgregarUsuario(usuario, contrasena, tipo);
-                            return mensaje;
-                        }
-                        catch (Exception ex)
-                        {
-                            return ex.ToString();
-                        }
-                    }
-                    else
-                    {
-                        return "La contraseña debe de tener caracteres en mayusculas, caracteres en minusculas y numeros";
-                    }
-                }
-                else
-                {
-                    return "la contraseña debe de tener al menos 8 caracteres";
-                }
+                var mru = new ModeloRegistrarUsuario();
+                mensaje = mru.AgregarUsuario(usuario, contrasena, tipo);
+                return mensaje;
             }
-            else
+            catch (Exception ex)
             {
-                return "El usuario debe de tener al menos 4 caracteres";
+                return ex.ToString();
             }
         }
 
@@ -64,5 +42,32 @@ namespace CONTROLADOR
                 return true;
             }
        }
+
+        public string Validar(string usuario, string contrasena)
+        {
+            var validac = new Validacion();
+            if (validac.Longitud(usuario, 4, 15) == true)
+            {
+                if (validac.Longitud(contrasena, 8, 25) == true)
+                {
+                    if (validac.ContieneMinusculas(contrasena) == true && validac.ContieneMayusculas(contrasena) == true && validac.ContieneNumeros(contrasena) == true)
+                    {
+                        return "";
+                    }
+                    else
+                    {
+                        return "La contraseña debe de tener caracteres en mayusculas, caracteres en minusculas y numeros";
+                    }
+                }
+                else
+                {
+                    return "la contraseña debe de tener entre 8 y 25 caracteres.";
+                }
+            }
+            else
+            {
+                return "El usuario debe de tener entre 4 y 15 caracteres.";
+            }
+        }
     }
 }

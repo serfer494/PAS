@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="Conexion.cs" />
     <Compile Include="ModeloAlimento.cs" />
+    <Compile Include="ModeloBDRespaldo.cs" />
     <Compile Include="ModeloCitas.cs" />
     <Compile Include="ModeloComida.cs" />
     <Compile Include="ModeloDatosGenerales.cs" />

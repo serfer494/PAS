@@ -62,10 +62,12 @@ namespace WindowsFormsApp1
         Stack pilaDomingoComida = new Stack();
         Stack pilaDomingoColacion2 = new Stack();
         Stack pilaDomingoCena = new Stack();
-
-        public Plan()
+        string nombrePaciente;
+        public Plan(string cadena)
         {
             InitializeComponent();
+            if (cadena == "Nuevo cliente") nombrePaciente = "";
+            else nombrePaciente = cadena;
         }
 
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
@@ -204,133 +206,190 @@ namespace WindowsFormsApp1
 
         }
 
-        private void btnGuardar_Click(object sender, EventArgs e)
+        private bool ChecarComidasCmb()
         {
-            if(dtpFecha.Value.DayOfWeek.ToString() == "Monday")
+            if(rtxtLunesDesayuno.Text != "" && rtxtLunesColacion.Text != "" && rtxtLunesComida.Text != "" &&
+               rtxtLunesColacion2.Text != "" && rtxtLunesCena.Text != "" && rtxtMartesDesayuno.Text != "" &&
+               rtxtMartesColacion.Text != "" && rtxtMartesComida.Text != "" && rtxtMartesColacion2.Text != "" &&
+               rtxtMartesCena.Text != "" && rtxtMiercolesDesayuno.Text != "" && rtxtMiercolesColacion.Text != "" &&
+               rtxtMiercolesComida.Text != "" && rtxtMiercolesColacion2.Text != "" && rtxtMiercolesCena.Text != "" && 
+               rtxtJuevesDesayuno.Text != "" && rtxtJuevesColacion.Text != "" && rtxtJuevesComida.Text != "" &&
+               rtxtJuevesColacion2.Text != "" && rtxtJuevesCena.Text != "" && rtxtViernesDesayuno.Text != "" &&
+               rtxtViernesColacion.Text != "" && rtxtViernesComida.Text != "" && rtxtViernesColacion2.Text != "" &&
+               rtxtViernesCena.Text != "" && rtxtSabadoDesayuno.Text != "" && rtxtSabadoColacion.Text != "" &&
+               rtxtSabadoComida.Text != "" && rtxtSabadoColacion2.Text != "" && rtxtSabadoCena.Text != "" && 
+               rtxtDomingoDesayuno.Text != "" && rtxtDomingoColacion.Text != "" && rtxtDomingoComida.Text != "" &&
+               rtxtDomingoColacion2.Text != "" && rtxtDomingoCena.Text != "")
             {
-                string diaSemana = dtpFecha.Value.DayOfWeek.ToString();
-                string dia = dtpFecha.Value.Day.ToString();
-                int mes = dtpFecha.Value.Month;
-                int anno = dtpFecha.Value.Year;
-                string diaDomingo = dtpFecha.Value.AddDays(6).Day.ToString();
-                int diaDomingoMes = dtpFecha.Value.AddDays(6).Month;
-                string fecha = "Del lunes " + dia + " de " + Mes(mes) + " al domingo " + diaDomingo + " de " + Mes(diaDomingoMes);
-                string fileName = @"C:\Users\Sergio\Desktop\prueba.html";
-                using (StreamWriter sw = File.CreateText(fileName))
-                {
-                    sw.WriteLine("<!DOCTYPE html>\n<html>\n\t<head>\n\t\t<meta charset=\"utf-8\">\n\t\t<title>" +
-                        "Prueba de archivo</title>\n\t</head>");
-                    sw.WriteLine("\t<body>\n\t\t" +
-                        "<p style=\"text-align: right\">" + fecha + "</p>" +
-                        "<h1>Lunes</h1>\n\t\t" +
-                        "<h4>Desayuno</h4>" +
-                        rtxtLunesDesayuno.Text.Replace("\n", "<br>") +
-                        "<h4>Colacion</h4>" +
-                        rtxtLunesColacion.Text.Replace("\n", "<br>") +
-                        "<h4>Comida</h4>" +
-                        rtxtLunesComida.Text.Replace("\n", "<br>") +
-                        "<h4>Colacion</h4>" +
-                        rtxtLunesColacion2.Text.Replace("\n", "<br>") +
-                        "<h4>Cena</h4>" +
-                        rtxtLunesCena.Text.Replace("\n", "<br>") +
-                        "<div style=\"page-break-after: always;\"></div>\n\t\t" +
-                        "<h1>Martes</h1>\n\t\t" +
-                        "<h4>Desayuno</h4>" +
-                        rtxtMartesDesayuno.Text.Replace("\n", "<br>") +
-                        "<h4>Colacion</h4>" +
-                        rtxtMartesColacion.Text.Replace("\n", "<br>") +
-                        "<h4>Comida</h4>" +
-                        rtxtMartesComida.Text.Replace("\n", "<br>") +
-                        "<h4>Colacion</h4>" +
-                        rtxtMartesColacion2.Text.Replace("\n", "<br>") +
-                        "<h4>Cena</h4>" +
-                        rtxtMartesCena.Text.Replace("\n", "<br>") +
-                        "<div style=\"page-break-after: always;\"></div>\n\t\t" +
-                        "<h1>Miercoles</h1>\n\t\t" +
-                        "<h4>Desayuno</h4>" +
-                        rtxtMiercolesDesayuno.Text.Replace("\n", "<br>") +
-                        "<h4>Colacion</h4>" +
-                        rtxtMiercolesColacion.Text.Replace("\n", "<br>") +
-                        "<h4>Comida</h4>" +
-                        rtxtMiercolesComida.Text.Replace("\n", "<br>") +
-                        "<h4>Colacion</h4>" +
-                        rtxtMiercolesColacion2.Text.Replace("\n", "<br>") +
-                        "<h4>Cena</h4>" +
-                        rtxtMiercolesCena.Text.Replace("\n", "<br>") +
-                        "<div style=\"page-break-after: always;\"></div>\n\t\t" +
-                        "<h1>Jueves</h1>\n\t\t" +
-                        "<h4>Desayuno</h4>" +
-                        rtxtJuevesDesayuno.Text.Replace("\n", "<br>") +
-                        "<h4>Colacion</h4>" +
-                        rtxtJuevesColacion.Text.Replace("\n", "<br>") +
-                        "<h4>Comida</h4>" +
-                        rtxtJuevesComida.Text.Replace("\n", "<br>") +
-                        "<h4>Colacion</h4>" +
-                        rtxtJuevesColacion2.Text.Replace("\n", "<br>") +
-                        "<h4>Cena</h4>" +
-                        rtxtJuevesCena.Text.Replace("\n", "<br>") +
-                        "<div style=\"page-break-after: always;\"></div>\n\t\t" +
-                        "<h1>Viernes</h1>\n\t\t" +
-                        "<h4>Desayuno</h4>" +
-                        rtxtViernesDesayuno.Text.Replace("\n", "<br>") +
-                        "<h4>Colacion</h4>" +
-                        rtxtViernesColacion.Text.Replace("\n", "<br>") +
-                        "<h4>Comida</h4>" +
-                        rtxtViernesComida.Text.Replace("\n", "<br>") +
-                        "<h4>Colacion</h4>" +
-                        rtxtViernesColacion2.Text.Replace("\n", "<br>") +
-                        "<h4>Cena</h4>" +
-                        rtxtViernesCena.Text.Replace("\n", "<br>") +
-                        "<div style=\"page-break-after: always;\"></div>\n\t\t" +
-                        "<h1>Sabado</h1>\n\t\t" +
-                        "<h4>Desayuno</h4>" +
-                        rtxtSabadoDesayuno.Text.Replace("\n", "<br>") +
-                        "<h4>Colacion</h4>" +
-                        rtxtSabadoColacion.Text.Replace("\n", "<br>") +
-                        "<h4>Comida</h4>" +
-                        rtxtSabadoComida.Text.Replace("\n", "<br>") +
-                        "<h4>Colacion</h4>" +
-                        rtxtSabadoColacion2.Text.Replace("\n", "<br>") +
-                        "<h4>Cena</h4>" +
-                        rtxtSabadoCena.Text.Replace("\n", "<br>") +
-                        "<div style=\"page-break-after: always;\"></div>\n\t\t" +
-                        "<h1>Domingo</h1>\n\t\t" +
-                        "<h4>Desayuno</h4>" +
-                        rtxtDomingoDesayuno.Text.Replace("\n", "<br>") +
-                        "<h4>Colacion</h4>" +
-                        rtxtDomingoColacion.Text.Replace("\n", "<br>") +
-                        "<h4>Comida</h4>" +
-                        rtxtDomingoComida.Text.Replace("\n", "<br>") +
-                        "<h4>Colacion</h4>" +
-                        rtxtDomingoColacion2.Text.Replace("\n", "<br>") +
-                        "<h4>Cena</h4>" +
-                        rtxtDomingoCena.Text.Replace("\n", "<br>") +
-                        "<div style=\"page-break-after: always;\"></div>\n\t\t" +
-                        "<h2>Recomendaciones</h2>" +
-                        rtxtRecordatorio.Text.Replace("\n", "<br>") +
-                        "</body>\n</html>");
-                }
-                /*
-                // Render any HTML fragment or document to HTML
-                var Renderer = new IronPdf.HtmlToPdf();
-                var PDF = Renderer.RenderHTMLFileAsPdf(fileName);
-                var OutputPath = @"C:\Users\Sergio\Desktop\prueba.pdf";
-                PDF.SaveAs(OutputPath);
-                // This neat trick opens our PDF file so we can see the result in our deault PDF viewer
-                System.Diagnostics.Process.Start(OutputPath);
-                */
-                var outputPath = @"C:\Users\Sergio\Desktop\" + DateTime.Now.Day.ToString() + DateTime.Now.Month.ToString() + DateTime.Now.Year.ToString() + DateTime.Now.Hour.ToString() + DateTime.Now.Minute.ToString() + DateTime.Now.Second.ToString() + ".pdf";
-                using (FileStream htmlSource = File.Open(fileName, FileMode.Open))
-                using (FileStream pdfDest = File.Open(outputPath, FileMode.OpenOrCreate))
-                {
-                    ConverterProperties converterProperties = new ConverterProperties();
-                    HtmlConverter.ConvertToPdf(htmlSource, pdfDest, converterProperties);
-                }
-                MessageBox.Show("Plan alimenticio creado");
+                return true;
             }
             else
             {
-                MessageBox.Show("Eliga el dia lunes en el que se empezara el plan alimenticio");
+                return false;
+            }
+        }
+
+        private bool ChecarRecomendaciones()
+        {
+            if(rtxtRecordatorio.Text != "")
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            if (ChecarComidasCmb())
+            {
+                if (dtpFecha.Value.DayOfWeek.ToString() == "Monday")
+                {
+                    string diaSemana = dtpFecha.Value.DayOfWeek.ToString();
+                    string dia = dtpFecha.Value.Day.ToString();
+                    int mes = dtpFecha.Value.Month;
+                    int anno = dtpFecha.Value.Year;
+                    string diaDomingo = dtpFecha.Value.AddDays(6).Day.ToString();
+                    int diaDomingoMes = dtpFecha.Value.AddDays(6).Month;
+                    string fecha = "Del lunes " + dia + " de " + Mes(mes) + " al domingo " + diaDomingo + " de " + Mes(diaDomingoMes);
+                    string archivo = DateTime.Now.Day.ToString() + DateTime.Now.Month.ToString() + DateTime.Now.Year.ToString() + DateTime.Now.Hour.ToString() + DateTime.Now.Minute.ToString() + DateTime.Now.Second.ToString();
+                    string fileName = @"./Planes/" + nombrePaciente + "/" + archivo + ".html";
+                    string directorio = @"./Planes/" + nombrePaciente;
+                    if (Directory.Exists(directorio))
+                    {
+                        CrearPlan(fileName, fecha, archivo);
+                        MessageBox.Show("Plan alimenticio creado");
+                    }
+                    else
+                    {
+                        Directory.CreateDirectory(directorio);
+                        CrearPlan(fileName, fecha, archivo);
+                        MessageBox.Show("Plan alimenticio creado");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Eliga el dia lunes en el que se empezara el plan alimenticio");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Rellene todos los campos de comida");
+            }
+        }
+
+        private void CrearPlan(string fileName, string fecha, string archivo)
+        {
+            using (StreamWriter sw = File.CreateText(fileName))
+            {
+                sw.WriteLine("<!DOCTYPE html>\n<html>\n\t<head>\n\t\t<meta charset=\"utf-8\">\n\t\t<title>" +
+                    "Prueba de archivo</title>\n\t</head>");
+                sw.WriteLine("\t<body>\n\t\t" +
+                    "<p style=\"text-align: right\">" + fecha + "</p>" +
+                    "<h1>Lunes</h1>\n\t\t" +
+                    "<h4>Desayuno</h4>" +
+                    rtxtLunesDesayuno.Text.Replace("\n", "<br>") +
+                    "<h4>Colacion</h4>" +
+                    rtxtLunesColacion.Text.Replace("\n", "<br>") +
+                    "<h4>Comida</h4>" +
+                    rtxtLunesComida.Text.Replace("\n", "<br>") +
+                    "<h4>Colacion</h4>" +
+                    rtxtLunesColacion2.Text.Replace("\n", "<br>") +
+                    "<h4>Cena</h4>" +
+                    rtxtLunesCena.Text.Replace("\n", "<br>") +
+                    "<div style=\"page-break-after: always;\"></div>\n\t\t" +
+                    "<h1>Martes</h1>\n\t\t" +
+                    "<h4>Desayuno</h4>" +
+                    rtxtMartesDesayuno.Text.Replace("\n", "<br>") +
+                    "<h4>Colacion</h4>" +
+                    rtxtMartesColacion.Text.Replace("\n", "<br>") +
+                    "<h4>Comida</h4>" +
+                    rtxtMartesComida.Text.Replace("\n", "<br>") +
+                    "<h4>Colacion</h4>" +
+                    rtxtMartesColacion2.Text.Replace("\n", "<br>") +
+                    "<h4>Cena</h4>" +
+                    rtxtMartesCena.Text.Replace("\n", "<br>") +
+                    "<div style=\"page-break-after: always;\"></div>\n\t\t" +
+                    "<h1>Miercoles</h1>\n\t\t" +
+                    "<h4>Desayuno</h4>" +
+                    rtxtMiercolesDesayuno.Text.Replace("\n", "<br>") +
+                    "<h4>Colacion</h4>" +
+                    rtxtMiercolesColacion.Text.Replace("\n", "<br>") +
+                    "<h4>Comida</h4>" +
+                    rtxtMiercolesComida.Text.Replace("\n", "<br>") +
+                    "<h4>Colacion</h4>" +
+                    rtxtMiercolesColacion2.Text.Replace("\n", "<br>") +
+                    "<h4>Cena</h4>" +
+                    rtxtMiercolesCena.Text.Replace("\n", "<br>") +
+                    "<div style=\"page-break-after: always;\"></div>\n\t\t" +
+                    "<h1>Jueves</h1>\n\t\t" +
+                    "<h4>Desayuno</h4>" +
+                    rtxtJuevesDesayuno.Text.Replace("\n", "<br>") +
+                    "<h4>Colacion</h4>" +
+                    rtxtJuevesColacion.Text.Replace("\n", "<br>") +
+                    "<h4>Comida</h4>" +
+                    rtxtJuevesComida.Text.Replace("\n", "<br>") +
+                    "<h4>Colacion</h4>" +
+                    rtxtJuevesColacion2.Text.Replace("\n", "<br>") +
+                    "<h4>Cena</h4>" +
+                    rtxtJuevesCena.Text.Replace("\n", "<br>") +
+                    "<div style=\"page-break-after: always;\"></div>\n\t\t" +
+                    "<h1>Viernes</h1>\n\t\t" +
+                    "<h4>Desayuno</h4>" +
+                    rtxtViernesDesayuno.Text.Replace("\n", "<br>") +
+                    "<h4>Colacion</h4>" +
+                    rtxtViernesColacion.Text.Replace("\n", "<br>") +
+                    "<h4>Comida</h4>" +
+                    rtxtViernesComida.Text.Replace("\n", "<br>") +
+                    "<h4>Colacion</h4>" +
+                    rtxtViernesColacion2.Text.Replace("\n", "<br>") +
+                    "<h4>Cena</h4>" +
+                    rtxtViernesCena.Text.Replace("\n", "<br>") +
+                    "<div style=\"page-break-after: always;\"></div>\n\t\t" +
+                    "<h1>Sabado</h1>\n\t\t" +
+                    "<h4>Desayuno</h4>" +
+                    rtxtSabadoDesayuno.Text.Replace("\n", "<br>") +
+                    "<h4>Colacion</h4>" +
+                    rtxtSabadoColacion.Text.Replace("\n", "<br>") +
+                    "<h4>Comida</h4>" +
+                    rtxtSabadoComida.Text.Replace("\n", "<br>") +
+                    "<h4>Colacion</h4>" +
+                    rtxtSabadoColacion2.Text.Replace("\n", "<br>") +
+                    "<h4>Cena</h4>" +
+                    rtxtSabadoCena.Text.Replace("\n", "<br>") +
+                    "<div style=\"page-break-after: always;\"></div>\n\t\t" +
+                    "<h1>Domingo</h1>\n\t\t" +
+                    "<h4>Desayuno</h4>" +
+                    rtxtDomingoDesayuno.Text.Replace("\n", "<br>") +
+                    "<h4>Colacion</h4>" +
+                    rtxtDomingoColacion.Text.Replace("\n", "<br>") +
+                    "<h4>Comida</h4>" +
+                    rtxtDomingoComida.Text.Replace("\n", "<br>") +
+                    "<h4>Colacion</h4>" +
+                    rtxtDomingoColacion2.Text.Replace("\n", "<br>") +
+                    "<h4>Cena</h4>" +
+                    rtxtDomingoCena.Text.Replace("\n", "<br>") +
+                    "<div style=\"page-break-after: always;\"></div>\n\t\t");
+                if (ChecarRecomendaciones())
+                {
+                    sw.WriteLine("<h2>Recomendaciones</h2>" +
+                    rtxtRecordatorio.Text.Replace("\n", "<br>") +
+                    "</body>\n</html>");
+                }
+                else
+                {
+                    sw.WriteLine("</body>\n</html>");
+                }
+                    
+            }
+            var outputPath = @"./Planes/" + nombrePaciente + "/" + archivo + ".pdf";
+            using (FileStream htmlSource = File.Open(fileName, FileMode.Open))
+            using (FileStream pdfDest = File.Open(outputPath, FileMode.OpenOrCreate))
+            {
+                ConverterProperties converterProperties = new ConverterProperties();
+                HtmlConverter.ConvertToPdf(htmlSource, pdfDest, converterProperties);
             }
         }
 

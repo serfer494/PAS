@@ -27,9 +27,38 @@ namespace Ingeneria_Software
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
             var cru = new ControladorRegistrarUsuario();
-            if(cbxTipo.SelectedIndex == 0)
+            //mensaje = cru.AgregarUsuario(txtUsuario.Text, txtContrasena.Text, cbxTipo.SelectedIndex + 1);
+            mensaje = cru.Validar(txtUsuario.Text, txtContrasena.Text);
+            if (mensaje != "")
             {
-                if(PedirAutorizacion() == true)
+                MessageBox.Show("Error: " + mensaje);
+            }
+            else
+            {
+                if (cbxTipo.SelectedIndex == 0)
+                {
+                    if (PedirAutorizacion() == true)
+                    {
+                        if (cru.RevisarSiYaExiste(txtUsuario.Text) == false)
+                        {
+                            mensaje = cru.AgregarUsuario(txtUsuario.Text, txtContrasena.Text, cbxTipo.SelectedIndex + 1);
+                            if(mensaje == "")
+                            {
+                                MessageBox.Show("Usuario agregado exitosamente");
+                                Limpiar();
+                            }
+                            else
+                            {
+                                MessageBox.Show("Error: " + mensaje);
+                            }
+                        }
+                        else
+                        {
+                            MessageBox.Show("Ese usuario ya existe");
+                        }
+                    }
+                }
+                else
                 {
                     if (cru.RevisarSiYaExiste(txtUsuario.Text) == false)
                     {
@@ -50,19 +79,7 @@ namespace Ingeneria_Software
                     }
                 }
             }
-            else
-            {
-                mensaje = cru.AgregarUsuario(txtUsuario.Text, txtContrasena.Text, cbxTipo.SelectedIndex + 1);
-                if (mensaje == "")
-                {
-                    MessageBox.Show("Usuario agregado exitosamente");
-                    Limpiar();
-                }
-                else
-                {
-                    MessageBox.Show("Error: " + mensaje);
-                }
-            }
+            
         }
 
         private void txtUsuario_KeyPress(object sender, KeyPressEventArgs e)

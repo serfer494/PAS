@@ -1,0 +1,17 @@
+C:\Users\Sergio\Desktop\Ingeneria Software e3\Pruebas\bin\Debug\netstandard2.0\Pruebas.deps.json
+C:\Users\Sergio\Desktop\Ingeneria Software e3\Pruebas\bin\Debug\netstandard2.0\Pruebas.dll
+C:\Users\Sergio\Desktop\Ingeneria Software e3\Pruebas\obj\Debug\netstandard2.0\Pruebas.csprojAssemblyReference.cache
+C:\Users\Sergio\Desktop\Ingeneria Software e3\Pruebas\obj\Debug\netstandard2.0\Pruebas.AssemblyInfoInputs.cache
+C:\Users\Sergio\Desktop\Ingeneria Software e3\Pruebas\obj\Debug\netstandard2.0\Pruebas.AssemblyInfo.cs
+C:\Users\Sergio\Desktop\Ingeneria Software e3\Pruebas\bin\Debug\netstandard2.0\NUnit3.TestAdapter.dll
+C:\Users\Sergio\Desktop\Ingeneria Software e3\Pruebas\bin\Debug\netstandard2.0\NUnit3.TestAdapter.pdb
+C:\Users\Sergio\Desktop\Ingeneria Software e3\Pruebas\bin\Debug\netstandard2.0\nunit.engine.dll
+C:\Users\Sergio\Desktop\Ingeneria Software e3\Pruebas\bin\Debug\netstandard2.0\nunit.engine.api.dll
+C:\Users\Sergio\Desktop\Ingeneria Software e3\Pruebas\bin\Debug\netstandard2.0\Pruebas.pdb
+C:\Users\Sergio\Desktop\Ingeneria Software e3\Pruebas\bin\Debug\netstandard2.0\CONTROLADOR.dll
+C:\Users\Sergio\Desktop\Ingeneria Software e3\Pruebas\bin\Debug\netstandard2.0\MODELO.dll
+C:\Users\Sergio\Desktop\Ingeneria Software e3\Pruebas\bin\Debug\netstandard2.0\CONTROLADOR.pdb
+C:\Users\Sergio\Desktop\Ingeneria Software e3\Pruebas\bin\Debug\netstandard2.0\MODELO.pdb
+C:\Users\Sergio\Desktop\Ingeneria Software e3\Pruebas\obj\Debug\netstandard2.0\Pruebas.csproj.CopyComplete
+C:\Users\Sergio\Desktop\Ingeneria Software e3\Pruebas\obj\Debug\netstandard2.0\Pruebas.dll
+C:\Users\Sergio\Desktop\Ingeneria Software e3\Pruebas\obj\Debug\netstandard2.0\Pruebas.pdb

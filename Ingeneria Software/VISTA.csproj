@@ -99,6 +99,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BDRespaldo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BDRespaldo.Designer.cs">
+      <DependentUpon>BDRespaldo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Citas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -197,6 +203,9 @@
     <Compile Include="VerDatosGenerales2.Designer.cs">
       <DependentUpon>VerDatosGenerales2.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="BDRespaldo.resx">
+      <DependentUpon>BDRespaldo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Citas.resx">
       <DependentUpon>Citas.cs</DependentUpon>
     </EmbeddedResource>
@@ -272,6 +281,8 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\1828427.png" />
+    <None Include="Resources\database.png" />
     <None Include="Imagenes\36962.png" />
     <None Include="Imagenes\img_414950.png" />
     <None Include="Imagenes\49116.png" />

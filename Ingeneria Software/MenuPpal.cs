@@ -35,7 +35,9 @@ namespace Ingeneria_Software
                 btnEliminar.Visible = false;
                 btnSeleccionar.Visible = false;
                 button2.Visible = false;
+                btnDB.Visible = false;
             }
+            
         }
 
         public MenuPpal()
@@ -120,7 +122,8 @@ namespace Ingeneria_Software
 
         private void button2_Click(object sender, EventArgs e)
         {
-            AbrirFormHija(new Plan());
+            string cadena = cbxCliente.Text;
+            AbrirFormHija(new Plan(cadena));
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -344,6 +347,23 @@ namespace Ingeneria_Software
             {
                 MessageBox.Show("Seleccione un cliente");
                 cbxCliente.SelectedIndex = 0;
+            }
+        }
+
+        private void btnDB_Click(object sender, EventArgs e)
+        {
+            BDRespaldo respaldo = new BDRespaldo(tipo);
+            respaldo.ShowDialog(this);
+        }
+
+        private void btnCerrarSesion_Click(object sender, EventArgs e)
+        {
+            DialogResult dialogResult = MessageBox.Show("¿Esta seguro que desea cerrar sesión?", "Cerrar Sesión", MessageBoxButtons.YesNo);
+            if(dialogResult == DialogResult.Yes)
+            {
+                Inicio inicio = new Inicio();
+                inicio.Show();
+                this.Close();
             }
         }
     }

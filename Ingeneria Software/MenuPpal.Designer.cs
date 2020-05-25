@@ -30,8 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuPpal));
             this.Barra = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Bases = new System.Windows.Forms.Panel();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnSeleccionar = new System.Windows.Forms.Button();
@@ -47,17 +45,22 @@
             this.Comidas = new System.Windows.Forms.Button();
             this.agenda = new System.Windows.Forms.Button();
             this.cont = new System.Windows.Forms.Panel();
+            this.btnDB = new System.Windows.Forms.Button();
+            this.btnCerrarSesion = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Barra.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.Bases.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // Barra
             // 
             this.Barra.BackColor = System.Drawing.Color.SteelBlue;
             this.Barra.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Barra.Controls.Add(this.btnCerrarSesion);
             this.Barra.Controls.Add(this.pictureBox2);
             this.Barra.Controls.Add(this.pictureBox1);
             this.Barra.Dock = System.Windows.Forms.DockStyle.Top;
@@ -66,32 +69,11 @@
             this.Barra.Size = new System.Drawing.Size(1100, 40);
             this.Barra.TabIndex = 0;
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(1019, 3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(38, 34);
-            this.pictureBox2.TabIndex = 3;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1063, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(34, 34);
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
             // Bases
             // 
             this.Bases.BackColor = System.Drawing.Color.Teal;
             this.Bases.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Bases.Controls.Add(this.btnDB);
             this.Bases.Controls.Add(this.btnEliminar);
             this.Bases.Controls.Add(this.btnSeleccionar);
             this.Bases.Controls.Add(this.cbxCliente);
@@ -130,6 +112,7 @@
             // 
             // cbxCliente
             // 
+            this.cbxCliente.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxCliente.FormattingEnabled = true;
             this.cbxCliente.Location = new System.Drawing.Point(38, 155);
             this.cbxCliente.Name = "cbxCliente";
@@ -146,7 +129,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.Transparent;
-            this.button2.Location = new System.Drawing.Point(38, 485);
+            this.button2.Location = new System.Drawing.Point(9, 488);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(161, 59);
             this.button2.TabIndex = 2;
@@ -181,12 +164,11 @@
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(3, 41);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(0, 18);
+            this.label2.Size = new System.Drawing.Size(171, 63);
             this.label2.TabIndex = 6;
             // 
             // Cliente
@@ -243,7 +225,7 @@
             this.alimentos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.alimentos.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.alimentos.ForeColor = System.Drawing.Color.Transparent;
-            this.alimentos.Location = new System.Drawing.Point(38, 41);
+            this.alimentos.Location = new System.Drawing.Point(3, 41);
             this.alimentos.Name = "alimentos";
             this.alimentos.Size = new System.Drawing.Size(134, 41);
             this.alimentos.TabIndex = 4;
@@ -260,7 +242,7 @@
             this.Comidas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Comidas.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Comidas.ForeColor = System.Drawing.Color.Transparent;
-            this.Comidas.Location = new System.Drawing.Point(38, 88);
+            this.Comidas.Location = new System.Drawing.Point(3, 88);
             this.Comidas.Name = "Comidas";
             this.Comidas.Size = new System.Drawing.Size(121, 41);
             this.Comidas.TabIndex = 3;
@@ -277,7 +259,7 @@
             this.agenda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.agenda.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.agenda.ForeColor = System.Drawing.Color.Transparent;
-            this.agenda.Location = new System.Drawing.Point(38, 5);
+            this.agenda.Location = new System.Drawing.Point(3, 5);
             this.agenda.Name = "agenda";
             this.agenda.Size = new System.Drawing.Size(121, 30);
             this.agenda.TabIndex = 0;
@@ -293,6 +275,58 @@
             this.cont.TabIndex = 2;
             this.cont.Paint += new System.Windows.Forms.PaintEventHandler(this.cont_Paint);
             // 
+            // btnDB
+            // 
+            this.btnDB.BackgroundImage = global::Ingeneria_Software.Properties.Resources.database;
+            this.btnDB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnDB.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDB.FlatAppearance.BorderSize = 0;
+            this.btnDB.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PaleTurquoise;
+            this.btnDB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDB.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDB.ForeColor = System.Drawing.Color.Transparent;
+            this.btnDB.Location = new System.Drawing.Point(135, 28);
+            this.btnDB.Name = "btnDB";
+            this.btnDB.Size = new System.Drawing.Size(51, 54);
+            this.btnDB.TabIndex = 11;
+            this.btnDB.UseVisualStyleBackColor = true;
+            this.btnDB.Click += new System.EventHandler(this.btnDB_Click);
+            // 
+            // btnCerrarSesion
+            // 
+            this.btnCerrarSesion.BackgroundImage = global::Ingeneria_Software.Properties.Resources._1828427;
+            this.btnCerrarSesion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCerrarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCerrarSesion.ForeColor = System.Drawing.Color.SteelBlue;
+            this.btnCerrarSesion.Location = new System.Drawing.Point(3, 3);
+            this.btnCerrarSesion.Name = "btnCerrarSesion";
+            this.btnCerrarSesion.Size = new System.Drawing.Size(42, 30);
+            this.btnCerrarSesion.TabIndex = 4;
+            this.btnCerrarSesion.UseVisualStyleBackColor = true;
+            this.btnCerrarSesion.Click += new System.EventHandler(this.btnCerrarSesion_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(1019, 3);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(38, 34);
+            this.pictureBox2.TabIndex = 3;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(1063, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(34, 34);
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // MenuPpal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -306,16 +340,17 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MenuPpal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MenuPpal";
             this.Activated += new System.EventHandler(this.MenuPpal_Activated);
             this.Load += new System.EventHandler(this.MenuPpal_Load);
             this.Barra.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.Bases.ResumeLayout(false);
             this.Bases.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -340,5 +375,7 @@
         public System.Windows.Forms.ComboBox cbxCliente;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.Button btnDB;
+        private System.Windows.Forms.Button btnCerrarSesion;
     }
 }

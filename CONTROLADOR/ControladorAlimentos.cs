@@ -18,6 +18,20 @@ namespace CONTROLADOR
     {
         public string error = "";
         //Facade
+
+        public static int PruebasAlimentos(string port)
+        {
+            if (!port.StartsWith("COM"))
+            {
+                throw new FormatException("Port is not in a correct format.");
+            }
+            else
+            {
+                const int lastIndexOfPrefix = 3;
+                string portNumber = port.Substring(lastIndexOfPrefix);
+                return int.Parse(portNumber);
+            }
+        }
         public void AgregarAlimento(string nombre, string energia, string hidratos, string grasa, string proteinas)
         {
             var validac = new Validacion();

@@ -30,6 +30,7 @@ namespace Ingeneria_Software
             dataGridView1.DataSource = controladorAlimento.GetTable();
         }
 
+        
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {

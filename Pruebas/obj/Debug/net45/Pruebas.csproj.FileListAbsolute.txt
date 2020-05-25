@@ -1,0 +1,3 @@
+C:\Users\Sergio\Desktop\Ingeneria Software e3\Pruebas\obj\Debug\net45\Pruebas.csprojAssemblyReference.cache
+C:\Users\Sergio\Desktop\Ingeneria Software e3\Pruebas\obj\Debug\net45\Pruebas.AssemblyInfoInputs.cache
+C:\Users\Sergio\Desktop\Ingeneria Software e3\Pruebas\obj\Debug\net45\Pruebas.AssemblyInfo.cs

@@ -177,3 +177,4 @@ C:\Users\Sergio\Desktop\Ingeneria Software e3\Ingeneria Software\bin\Debug\itext
 C:\Users\Sergio\Desktop\Ingeneria Software e3\Ingeneria Software\bin\Debug\itext.sign.xml
 C:\Users\Sergio\Desktop\Ingeneria Software e3\Ingeneria Software\bin\Debug\itext.styledxmlparser.xml
 C:\Users\Sergio\Desktop\Ingeneria Software e3\Ingeneria Software\bin\Debug\itext.svg.xml
+C:\Users\Sergio\Desktop\Ingeneria Software e3\Ingeneria Software\obj\Debug\Ingeneria_Software.BDRespaldo.resources

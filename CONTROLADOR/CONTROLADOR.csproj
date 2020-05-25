@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ControladorAlimentos.cs" />
+    <Compile Include="ControladorBDRespaldo.cs" />
     <Compile Include="ControladorCitas.cs" />
     <Compile Include="ControladorComida.cs" />
     <Compile Include="ControladorDatosGenerales.cs" />
