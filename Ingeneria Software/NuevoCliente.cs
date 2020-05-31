@@ -16,9 +16,11 @@ namespace Ingeneria_Software
     /// </summary>
     public partial class NuevoCliente : Form
     {
-        public NuevoCliente()
+        private string usuario;
+        public NuevoCliente(string usuario)
         {
             InitializeComponent();
+            this.usuario = usuario;
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)
@@ -40,7 +42,7 @@ namespace Ingeneria_Software
                 txtEmail.Text = "";
                 rtxtMotivos.Text = "";
                 MessageBox.Show("Cliente agregado");
-                MenuPpal menu = new MenuPpal(1);
+                MenuPpal menu = new MenuPpal(1, usuario);
                 menu.FillClients();
             }
         }

@@ -77,6 +77,10 @@ namespace WindowsFormsApp1
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            this.Activate();
+            this.BringToFront();
+            this.Focus();
+            
             RellenarComidas();
             pilaLunesDesayuno.Push(0);
             pilaLunesColacion.Push(0);
@@ -196,9 +200,9 @@ namespace WindowsFormsApp1
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            MenuPpal mp = new MenuPpal(1);
-            this.Close();
-            mp.Show();
+            //MenuPpal mp = new MenuPpal(1);
+            //this.Close();
+            //mp.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)

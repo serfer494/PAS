@@ -32,9 +32,9 @@
             this.btnBackup = new System.Windows.Forms.Button();
             this.btnRestaurar = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.rbtnDia = new System.Windows.Forms.RadioButton();
-            this.rbtnSemana = new System.Windows.Forms.RadioButton();
             this.rbtnMes = new System.Windows.Forms.RadioButton();
+            this.rbtnSemana = new System.Windows.Forms.RadioButton();
+            this.rbtnDia = new System.Windows.Forms.RadioButton();
             this.btnProgramar = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -96,16 +96,16 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Respaldar base de datos cada:";
             // 
-            // rbtnDia
+            // rbtnMes
             // 
-            this.rbtnDia.AutoSize = true;
-            this.rbtnDia.Location = new System.Drawing.Point(6, 34);
-            this.rbtnDia.Name = "rbtnDia";
-            this.rbtnDia.Size = new System.Drawing.Size(41, 17);
-            this.rbtnDia.TabIndex = 0;
-            this.rbtnDia.TabStop = true;
-            this.rbtnDia.Text = "Dia";
-            this.rbtnDia.UseVisualStyleBackColor = true;
+            this.rbtnMes.AutoSize = true;
+            this.rbtnMes.Location = new System.Drawing.Point(299, 34);
+            this.rbtnMes.Name = "rbtnMes";
+            this.rbtnMes.Size = new System.Drawing.Size(45, 17);
+            this.rbtnMes.TabIndex = 2;
+            this.rbtnMes.TabStop = true;
+            this.rbtnMes.Text = "Mes";
+            this.rbtnMes.UseVisualStyleBackColor = true;
             // 
             // rbtnSemana
             // 
@@ -118,16 +118,16 @@
             this.rbtnSemana.Text = "Semana";
             this.rbtnSemana.UseVisualStyleBackColor = true;
             // 
-            // rbtnMes
+            // rbtnDia
             // 
-            this.rbtnMes.AutoSize = true;
-            this.rbtnMes.Location = new System.Drawing.Point(299, 34);
-            this.rbtnMes.Name = "rbtnMes";
-            this.rbtnMes.Size = new System.Drawing.Size(45, 17);
-            this.rbtnMes.TabIndex = 2;
-            this.rbtnMes.TabStop = true;
-            this.rbtnMes.Text = "Mes";
-            this.rbtnMes.UseVisualStyleBackColor = true;
+            this.rbtnDia.AutoSize = true;
+            this.rbtnDia.Location = new System.Drawing.Point(6, 34);
+            this.rbtnDia.Name = "rbtnDia";
+            this.rbtnDia.Size = new System.Drawing.Size(41, 17);
+            this.rbtnDia.TabIndex = 0;
+            this.rbtnDia.TabStop = true;
+            this.rbtnDia.Text = "Dia";
+            this.rbtnDia.UseVisualStyleBackColor = true;
             // 
             // btnProgramar
             // 
@@ -148,6 +148,7 @@
             // 
             // BDRespaldo
             // 
+            this.AcceptButton = this.btnBackup;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(375, 339);

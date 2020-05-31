@@ -56,5 +56,27 @@ namespace MODELO
                 }
             }
         }
+
+        public int ObtenerNumero(int id, string campo, string tabla, string campoID)
+        {
+            string query = "SELECT " + campo + " FROM " + tabla + " WHERE " + campoID + "=@id";
+            using (SqlConnection conexion = new SqlConnection(Conexion.ObtenerConexion()))
+            {
+                try
+                {
+                    conexion.Open();
+                    using (SqlCommand cmd = new SqlCommand(query, conexion))
+                    {
+                        cmd.Parameters.Add("@id", SqlDbType.Int).Value = id;
+                        return Convert.ToInt32(cmd.ExecuteScalar());
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Error: " + ex.ToString());
+                    return 0;
+                }
+            }
+        }
     }
 }

@@ -32,7 +32,9 @@ namespace Ingeneria_Software
             date = monthMod.SelectionStart;
             var controladorCitas = new ControladorCitas();
             dataGridView1.DataSource = controladorCitas.GetTable(date);
-            
+            this.Activate();
+            this.BringToFront();
+            this.Focus();
         }
 
         /// <summary>
@@ -109,7 +111,7 @@ namespace Ingeneria_Software
         {
             string hora = dataGridView1.Rows[dataGridView1.SelectedRows[0].Index].Cells[3].Value.ToString();
             var controladorCitas = new ControladorCitas();
-            id = controladorCitas.ObtenerId(hora);
+            id = controladorCitas.ObtenerId(hora, date);
             if(id > 0)
             {
                 btnEliminar.Visible = true;

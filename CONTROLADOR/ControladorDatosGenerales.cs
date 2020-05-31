@@ -392,7 +392,7 @@ namespace CONTROLADOR
             var validac = new Validacion();
             var fechahoy = DateTime.Today;
             var fechalimite = new DateTime(1900, 1, 1);
-            if(validac.Longitud(nombre, 1, 50) && validac.Longitud(genero, 1, 10) && validac.Longitud(estadoCivil, 1, 10) && validac.Longitud(escolaridad, 1, 50) && validac.Longitud(ocupacion, 1, 50) && validac.Longitud(motivos, 1, 100))
+            if(validac.Longitud(nombre, 2, 50) && validac.Longitud(genero, 1, 10) && validac.Longitud(estadoCivil, 1, 10) && validac.Longitud(escolaridad, 1, 50) && validac.Longitud(ocupacion, 1, 50) && validac.Longitud(motivos, 1, 100))
             {
                 if(validac.FechaMayorA(fechaNacimiento, fechalimite) && validac.FechaMenorA(fechaNacimiento, fechahoy))
                 {
@@ -499,8 +499,16 @@ namespace CONTROLADOR
             }
             else
             {
-                error = "Los campos Nombre, Genero, Estado Civil, Escolaridad, Ocupacion y Motivos de Consulta no deben estar vacios";
-                return;
+                if(validac.Longitud(nombre, 1, 1))
+                {
+                    error = "El campo de Nombre debe de tener al menos 2 caracteres";
+                    return;
+                }
+                else
+                {
+                    error = "Los campos Nombre, Genero, Estado Civil, Escolaridad, Ocupacion y Motivos de Consulta no deben estar vacios";
+                    return;
+                }
             }
         }
         //Facade

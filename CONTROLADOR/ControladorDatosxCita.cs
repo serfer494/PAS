@@ -20,39 +20,104 @@ namespace CONTROLADOR
         public void AgregarDatosCita(string grasaVis, string CMB, string cirCad, string bodyAge, string cirCin, string musculoPorc, string grasaPorc, string IMC, string peso, DateTime fecha, int id)
         {
             var validac = new Validacion();
-            if(validac.Longitud(grasaVis, 1, 5) && validac.Longitud(CMB, 1, 5) && validac.Longitud(cirCad, 1, 5) && validac.Longitud(bodyAge, 1, 3) && validac.Longitud(cirCin, 1, 5) && validac.Longitud(musculoPorc, 1, 3) && validac.Longitud(grasaPorc, 1, 3) && validac.Longitud(IMC, 1, 5) && validac.Longitud(peso, 1, 5))
+            if(validac.Longitud(grasaVis, 1, 4) && validac.Longitud(CMB, 1, 4) && validac.Longitud(cirCad, 1, 5) && validac.Longitud(bodyAge, 1, 2) && validac.Longitud(cirCin, 1, 5) && validac.Longitud(musculoPorc, 1, 4) && validac.Longitud(grasaPorc, 1, 4) && validac.Longitud(IMC, 1, 4) && validac.Longitud(peso, 1, 5))
             {
-                if (validac.MayorA(Convert.ToInt32(grasaVis), 0) && validac.MayorA(Convert.ToInt32(CMB), 0) && validac.MayorA(Convert.ToInt32(cirCad), 0) && validac.MayorA(Convert.ToInt32(bodyAge), 0) && validac.MayorA(Convert.ToInt32(cirCin), 0) && validac.MayorA(Convert.ToInt32(musculoPorc), 0) && validac.MayorA(Convert.ToInt32(grasaPorc), 0) && validac.MayorA(Convert.ToInt32(IMC), 0) && validac.MayorA(Convert.ToInt32(peso), 0))
+                if (validac.MayorIgualA(Convert.ToDecimal(grasaVis), 5) && validac.MayorIgualA(Convert.ToDecimal(CMB), 10) && validac.MayorIgualA(Convert.ToDecimal(cirCad), 40) && validac.MayorIgualA(Convert.ToInt32(bodyAge), 12) && validac.MayorIgualA(Convert.ToDecimal(cirCin), 40) && validac.MayorIgualA(Convert.ToDecimal(musculoPorc), 20) && validac.MayorIgualA(Convert.ToDecimal(grasaPorc), 10) && validac.MayorIgualA(Convert.ToDecimal(IMC), 16) && validac.MayorIgualA(Convert.ToDecimal(peso), 30))
                 {
-                    if(validac.MenorA(Convert.ToInt32(peso), 801) && validac.MenorA(Convert.ToInt32(grasaPorc), 101) && validac.MenorA(Convert.ToInt32(musculoPorc), 101) && validac.MenorA(Convert.ToInt32(bodyAge), 101))
+                    if(validac.MenorIgualA(Convert.ToDecimal(peso), 200) && validac.MenorIgualA(Convert.ToDecimal(grasaPorc), 50) && validac.MenorIgualA(Convert.ToDecimal(musculoPorc), 60) && validac.MenorIgualA(Convert.ToInt32(bodyAge), 90) && validac.MenorIgualA(Convert.ToInt32(IMC), 50) && validac.MenorIgualA(Convert.ToInt32(grasaVis), 50) && validac.MenorIgualA(Convert.ToInt32(CMB), 40) && validac.MenorIgualA(Convert.ToInt32(cirCad), 150) && validac.MenorIgualA(Convert.ToInt32(cirCin), 150))
                     {
-                        if (validac.FechaMayorIgualA(fecha, DateTime.Today))
+                        bool pesoPunto = false;
+                        bool cirCaderaPunto = false ;
+                        bool cirCinturaPunto = false;
+                        bool grasaVisPunto = false;
+                        bool CMBPunto = false;
+                        bool IMCPunto = false;
+                        bool musculoPorcPunto = false;
+                        bool grasaPorcPunto = false;
+
+                        if (peso.Contains('.'))
                         {
-                            try
+                            if (Punto(peso, 1, 2) == true) pesoPunto = true;
+                        }
+                        if (cirCad.Contains('.'))
+                        {
+                            if (Punto(cirCad, 1, 2) == true) cirCaderaPunto = true;
+                        }
+                        if (cirCin.Contains('.'))
+                        {
+                            if (Punto(cirCin, 1, 2) == true) cirCinturaPunto = true;
+                        }
+                        if (grasaVis.Contains('.'))
+                        {
+                            if (Punto(grasaVis, 1, 1) == true) grasaVisPunto = true;
+                        }
+                        if (CMB.Contains('.'))
+                        {
+                            if (Punto(CMB, 1, 1) == true) CMBPunto = true;
+                        }
+                        if (IMC.Contains('.'))
+                        {
+                            if (Punto(IMC, 1, 1) == true) IMCPunto = true;
+                        }
+                        if (musculoPorc.Contains('.'))
+                        {
+                            if (Punto(musculoPorc, 1, 1) == true) musculoPorcPunto = true;
+                        }
+                        if (grasaPorc.Contains('.'))
+                        {
+                            if (Punto(grasaPorc, 1, 1) == true) grasaPorcPunto = true;
+                        }
+                        if ((peso.Contains('.') && pesoPunto == true) && (cirCad.Contains('.') && cirCaderaPunto == true && cirCin.Contains('.') && cirCinturaPunto == true && grasaVis.Contains('.') && grasaVisPunto == true && CMB.Contains('.') && CMBPunto == true && IMC.Contains('.') && IMCPunto == true && musculoPorc.Contains('.') && musculoPorcPunto == true && grasaPorc.Contains('.') && grasaPorcPunto == true))
+                        {
+                            var modelodc = new ModeloDatosxCita();
+                            
                             {
-                                var modelodc = new ModeloDatosxCita();
-                                modelodc.AgregarDatosCita(grasaVis, CMB, cirCad, bodyAge, cirCin, musculoPorc, grasaPorc, IMC, peso, fecha, id);
+                                try
+                                {
+                                    modelodc = new ModeloDatosxCita();
+                                    modelodc.AgregarDatosCita(grasaVis, CMB, cirCad, bodyAge, cirCin, musculoPorc, grasaPorc, IMC, peso, fecha, id);
+                                }
+                                catch (Exception ex)
+                                {
+                                    error = modelodc.error;
+                                    return;
+                                }
                             }
-                            catch (Exception ex)
-                            {
-                                throw new Exception(ex.Message);
-                            }
+                            
+                        }
+                        else if((peso.Contains('.') && pesoPunto == false) || (cirCad.Contains('.') && cirCaderaPunto == false) || (cirCin.Contains('.') && cirCinturaPunto == false) || (grasaVis.Contains('.') && grasaVisPunto == false) || (CMB.Contains('.') && CMBPunto == false) || (IMC.Contains('.') && IMCPunto == false) || (musculoPorc.Contains('.') && musculoPorcPunto == false) || (grasaPorc.Contains('.') && grasaPorcPunto == false))
+                        {
+                            error = "Revise el formato correcto en la parte derecha de los campos.";
+                            return;
                         }
                         else
                         {
-                            error = "Fecha invalida";
-                            return;
+                            var modelodc = new ModeloDatosxCita();
+                            
+                            {
+                                try
+                                {
+                                    modelodc = new ModeloDatosxCita();
+                                    modelodc.AgregarDatosCita(grasaVis, CMB, cirCad, bodyAge, cirCin, musculoPorc, grasaPorc, IMC, peso, fecha, id);
+                                }
+                                catch (Exception ex)
+                                {
+                                    error = modelodc.error;
+                                    return;
+                                }
+                            }
+                            
                         }
                     }
                     else
                     {
-                        error = "Alguna cantidad paso el rango establecido";
+                        error = "Las cantidades deben de estar dentro de los rangos permitidos";
                         return;
                     }
                 }
                 else
                 {
-                    error = "Las cantidades deben ser mayor a cero";
+                    error = "Las cantidades deben de estar dentro de los rangos permitidos";
                     return;
                 }
             }
@@ -66,31 +131,108 @@ namespace CONTROLADOR
         public void ModificarDatosCita(string grasaVis, string CMB, string cirCad, string bodyAge, string cirCin, string musculoPorc, string grasaPorc, string IMC, string peso, DateTime fecha, int id, int idCita)
         {
             var validac = new Validacion();
-            if (validac.Longitud(grasaVis, 1, 5) && validac.Longitud(CMB, 1, 5) && validac.Longitud(cirCad, 1, 5) && validac.Longitud(bodyAge, 1, 3) && validac.Longitud(cirCin, 1, 5) && validac.Longitud(musculoPorc, 1, 3) && validac.Longitud(grasaPorc, 1, 3) && validac.Longitud(IMC, 1, 5) && validac.Longitud(peso, 1, 5))
+            if (validac.Longitud(grasaVis, 1, 4) && validac.Longitud(CMB, 1, 4) && validac.Longitud(cirCad, 1, 5) && validac.Longitud(bodyAge, 1, 2) && validac.Longitud(cirCin, 1, 5) && validac.Longitud(musculoPorc, 1, 4) && validac.Longitud(grasaPorc, 1, 4) && validac.Longitud(IMC, 1, 4) && validac.Longitud(peso, 1, 5))
             {
-                if (validac.MayorA(Convert.ToInt32(grasaVis), 0) && validac.MayorA(Convert.ToInt32(CMB), 0) && validac.MayorA(Convert.ToInt32(cirCad), 0) && validac.MayorA(Convert.ToInt32(bodyAge), 0) && validac.MayorA(Convert.ToInt32(cirCin), 0) && validac.MayorA(Convert.ToInt32(musculoPorc), 0) && validac.MayorA(Convert.ToInt32(grasaPorc), 0) && validac.MayorA(Convert.ToInt32(IMC), 0) && validac.MayorA(Convert.ToInt32(peso), 0))
+                if (validac.MayorIgualA(Convert.ToDecimal(grasaVis), 5) && validac.MayorIgualA(Convert.ToDecimal(CMB), 10) && validac.MayorIgualA(Convert.ToDecimal(cirCad), 40) && validac.MayorIgualA(Convert.ToInt32(bodyAge), 12) && validac.MayorIgualA(Convert.ToDecimal(cirCin), 40) && validac.MayorIgualA(Convert.ToDecimal(musculoPorc), 20) && validac.MayorIgualA(Convert.ToDecimal(grasaPorc), 10) && validac.MayorIgualA(Convert.ToDecimal(IMC), 16) && validac.MayorIgualA(Convert.ToDecimal(peso), 30))
                 {
-                    if (validac.FechaMayorIgualA(fecha, DateTime.Today))
+                    if (validac.MenorIgualA(Convert.ToDecimal(peso), 200) && validac.MenorIgualA(Convert.ToDecimal(grasaPorc), 50) && validac.MenorIgualA(Convert.ToDecimal(musculoPorc), 60) && validac.MenorIgualA(Convert.ToInt32(bodyAge), 90) && validac.MenorIgualA(Convert.ToInt32(IMC), 50) && validac.MenorIgualA(Convert.ToInt32(grasaVis), 50) && validac.MenorIgualA(Convert.ToInt32(CMB), 40) && validac.MenorIgualA(Convert.ToInt32(cirCad), 150) && validac.MenorIgualA(Convert.ToInt32(cirCin), 150))
                     {
-                        try
+                        bool pesoPunto = false;
+                        bool cirCaderaPunto = false;
+                        bool cirCinturaPunto = false;
+                        bool grasaVisPunto = false;
+                        bool CMBPunto = false;
+                        bool IMCPunto = false;
+                        bool musculoPorcPunto = false;
+                        bool grasaPorcPunto = false;
+
+                        if (peso.Contains('.'))
                         {
-                            var modelodc = new ModeloDatosxCita();
-                            modelodc.ModificarDatosCita(grasaVis, CMB, cirCad, bodyAge, cirCin, musculoPorc, grasaPorc, IMC, peso, fecha, id, idCita);
+                            if (Punto(peso, 1, 2) == true) pesoPunto = true;
                         }
-                        catch (Exception ex)
+                        if (cirCad.Contains('.'))
                         {
-                            throw new Exception(ex.Message);
+                            if (Punto(cirCad, 1, 2) == true) cirCaderaPunto = true;
+                        }
+                        if (cirCin.Contains('.'))
+                        {
+                            if (Punto(cirCin, 1, 2) == true) cirCinturaPunto = true;
+                        }
+                        if (grasaVis.Contains('.'))
+                        {
+                            if (Punto(grasaVis, 1, 1) == true) grasaVisPunto = true;
+                        }
+                        if (CMB.Contains('.'))
+                        {
+                            if (Punto(CMB, 1, 1) == true) CMBPunto = true;
+                        }
+                        if (IMC.Contains('.'))
+                        {
+                            if (Punto(IMC, 1, 1) == true) IMCPunto = true;
+                        }
+                        if (musculoPorc.Contains('.'))
+                        {
+                            if (Punto(musculoPorc, 1, 1) == true) musculoPorcPunto = true;
+                        }
+                        if (grasaPorc.Contains('.'))
+                        {
+                            if (Punto(grasaPorc, 1, 1) == true) grasaPorcPunto = true;
+                        }
+                        if ((peso.Contains('.') && pesoPunto == true) && (cirCad.Contains('.') && cirCaderaPunto == true && cirCin.Contains('.') && cirCinturaPunto == true && grasaVis.Contains('.') && grasaVisPunto == true && CMB.Contains('.') && CMBPunto == true && IMC.Contains('.') && IMCPunto == true && musculoPorc.Contains('.') && musculoPorcPunto == true && grasaPorc.Contains('.') && grasaPorcPunto == true))
+                        {
+                            if (validac.FechaMayorIgualA(fecha, DateTime.Today))
+                            {
+                                try
+                                {
+                                    var modelodc = new ModeloDatosxCita();
+                                    modelodc.ModificarDatosCita(grasaVis, CMB, cirCad, bodyAge, cirCin, musculoPorc, grasaPorc, IMC, peso, id, idCita);
+                                }
+                                catch (Exception ex)
+                                {
+                                    throw new Exception(ex.Message);
+                                }
+                            }
+                            else
+                            {
+                                error = "Fecha invalida";
+                                return;
+                            }
+                        }
+                        else if ((peso.Contains('.') && pesoPunto == false) || (cirCad.Contains('.') && cirCaderaPunto == false) || (cirCin.Contains('.') && cirCinturaPunto == false) || (grasaVis.Contains('.') && grasaVisPunto == false) || (CMB.Contains('.') && CMBPunto == false) || (IMC.Contains('.') && IMCPunto == false) || (musculoPorc.Contains('.') && musculoPorcPunto == false) || (grasaPorc.Contains('.') && grasaPorcPunto == false))
+                        {
+                            error = "Revise el formato correcto en la parte derecha de los campos.";
+                            return;
+                        }
+                        else
+                        {
+                            if (validac.FechaMayorIgualA(fecha, DateTime.Today))
+                            {
+                                try
+                                {
+                                    var modelodc = new ModeloDatosxCita();
+                                    modelodc.ModificarDatosCita(grasaVis, CMB, cirCad, bodyAge, cirCin, musculoPorc, grasaPorc, IMC, peso, id, idCita);
+                                }
+                                catch (Exception ex)
+                                {
+                                    throw new Exception(ex.Message);
+                                }
+                            }
+                            else
+                            {
+                                error = "Fecha invalida";
+                                return;
+                            }
                         }
                     }
                     else
                     {
-                        error = "Fecha invalida";
+                        error = "Las cantidades deben de estar dentro de los rangos permitidos";
                         return;
                     }
                 }
                 else
                 {
-                    error = "Las cantidades deben ser mayor a cero";
+                    error = "Las cantidades deben de estar dentro de los rangos permitidos";
                     return;
                 }
             }
@@ -150,6 +292,21 @@ namespace CONTROLADOR
             catch (Exception ex)
             {
                 throw new Exception(ex.Message);
+            }
+        }
+
+        public bool Punto(string cantidad, int Min, int Max)
+        {
+            string[] variableArray;
+
+            variableArray = cantidad.Split('.');
+            if (variableArray[1].Length == Max || variableArray[1].Length == Min)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
             }
         }
     }

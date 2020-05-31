@@ -58,11 +58,11 @@ namespace CONTROLADOR
             {
                 if((validac.Longitud(id1.ToString(), 1, 50) && validac.Longitud(cant1, 1, 5) && validac.MayorA(id1, 0)) || (validac.Longitud(id2.ToString(), 1, 50) && validac.Longitud(cant2, 1, 5) && validac.MayorA(id2, 0)) || (validac.Longitud(id3.ToString(), 1, 50) && validac.Longitud(cant3, 1, 5) && validac.MayorA(id3, 0)) || (validac.Longitud(id4.ToString(), 1, 50) && validac.Longitud(cant4, 1, 5) && validac.MayorA(id4, 0)) || (validac.Longitud(id5.ToString(), 1, 50) && validac.Longitud(cant5, 1, 5) && validac.MayorA(id5, 0)))
                 {
-                    if (validac.Longitud(id1.ToString(), 1, 50) && validac.Longitud(cant1, 1, 5)) novacio1 = true;
-                    if (validac.Longitud(id2.ToString(), 1, 50) && validac.Longitud(cant2, 1, 5)) novacio2 = true;
-                    if (validac.Longitud(id3.ToString(), 1, 50) && validac.Longitud(cant3, 1, 5)) novacio3 = true;
-                    if (validac.Longitud(id4.ToString(), 1, 50) && validac.Longitud(cant4, 1, 5)) novacio4 = true;
-                    if (validac.Longitud(id5.ToString(), 1, 50) && validac.Longitud(cant5, 1, 5)) novacio5 = true;
+                    if (validac.Longitud(id1.ToString(), 1, 50) && validac.Longitud(cant1, 1, 5) && validac.MayorA(id1, 0)) novacio1 = true;
+                    if (validac.Longitud(id2.ToString(), 1, 50) && validac.Longitud(cant2, 1, 5) && validac.MayorA(id2, 0)) novacio2 = true;
+                    if (validac.Longitud(id3.ToString(), 1, 50) && validac.Longitud(cant3, 1, 5) && validac.MayorA(id3, 0)) novacio3 = true;
+                    if (validac.Longitud(id4.ToString(), 1, 50) && validac.Longitud(cant4, 1, 5) && validac.MayorA(id4, 0)) novacio4 = true;
+                    if (validac.Longitud(id5.ToString(), 1, 50) && validac.Longitud(cant5, 1, 5) && validac.MayorA(id5, 0)) novacio5 = true;
                     if (novacio1 == true && Convert.ToInt32(cant1) == 0) positivo = false;
                     if (novacio2 == true && Convert.ToInt32(cant2) == 0) positivo = false;
                     if (novacio3 == true && Convert.ToInt32(cant3) == 0) positivo = false;
@@ -80,14 +80,30 @@ namespace CONTROLADOR
                     if (novacio4 == true && novacio5 == true && id4 == id5) noIgual = false;
                     if (positivo == true && noIgual == true)
                     {
+
                         try
                         {
                             var modeloComida = new ModeloComida();
-                            modeloComida.AgregarComida(nombre, id1, id2, id3, id4, id5, cant1, cant2, cant3, cant4, cant5);
+                            if(modeloComida.VerificarRepetido(nombre) == false)
+                            {
+                                try
+                                {
+                                    modeloComida = new ModeloComida();
+                                    modeloComida.AgregarComida(nombre, id1, id2, id3, id4, id5, cant1, cant2, cant3, cant4, cant5);
+                                }
+                                catch (Exception ex)
+                                {
+                                    error = modeloComida.error;
+                                }
+                            }
+                            else
+                            {
+                                error = modeloComida.error;
+                            }
                         }
-                        catch (Exception ex)
+                        catch(Exception ex)
                         {
-                            throw new Exception(ex.Message);
+                            error = ex.Message;
                         }
                     }
                     else
@@ -179,14 +195,41 @@ namespace CONTROLADOR
                     if (novacio1 == true && Convert.ToInt32(cant) == 0) positivo = false;
                     if(positivo == true)
                     {
-                        try
+                        var modeloObtener = new Obtener();
+                        string nombreBD = modeloObtener.ObtenerTexto(idComida, "nombre", "COMIDA", "idComida");
+                        int alimentoBD = modeloObtener.ObtenerNumero(idComidaAlimento, "idAlimento", "COMIDA_INGREDIENTES", "idComidaAlimento");
+                        var modeloComida = new ModeloComida();
+                        if(nombre == nombreBD && idAlimento == alimentoBD)
                         {
-                            var modeloComida = new ModeloComida();
-                            modeloComida.ModificarComida(nombre, idAlimento, idComida, cant, idComidaAlimento);
+                            try
+                            {
+                                modeloComida = new ModeloComida();
+                                modeloComida.ModificarComida(nombre, idAlimento, idComida, cant, idComidaAlimento);
+                            }
+                            catch (Exception ex)
+                            {
+                                error = ex.Message;
+                            }
                         }
-                        catch (Exception ex)
+                        else if(nombre == nombreBD && modeloComida.VerificarAlimentoRepetido(idAlimento, idComida) == true)
                         {
-                            throw new Exception(ex.Message);
+                            error = modeloComida.error;
+                        }
+                        else if(modeloComida.VerificarRepetido(nombre) == false)
+                        {
+                            try
+                            {
+                                modeloComida = new ModeloComida();
+                                modeloComida.ModificarComida(nombre, idAlimento, idComida, cant, idComidaAlimento);
+                            }
+                            catch (Exception ex)
+                            {
+                                error = modeloComida.error;
+                            }
+                        }
+                        else
+                        {
+                            error = modeloComida.error;
                         }
                     }
                     else

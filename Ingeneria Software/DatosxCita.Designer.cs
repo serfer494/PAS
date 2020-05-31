@@ -62,6 +62,22 @@
             this.label30 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -75,6 +91,7 @@
             this.label1.Size = new System.Drawing.Size(71, 22);
             this.label1.TabIndex = 45;
             this.label1.Text = "Fecha:";
+            this.label1.Visible = false;
             // 
             // label2
             // 
@@ -90,7 +107,7 @@
             // txtPeso
             // 
             this.txtPeso.Location = new System.Drawing.Point(150, 81);
-            this.txtPeso.MaxLength = 5;
+            this.txtPeso.MaxLength = 6;
             this.txtPeso.Name = "txtPeso";
             this.txtPeso.Size = new System.Drawing.Size(75, 20);
             this.txtPeso.TabIndex = 46;
@@ -110,7 +127,7 @@
             // txtGrasaPorc
             // 
             this.txtGrasaPorc.Location = new System.Drawing.Point(150, 155);
-            this.txtGrasaPorc.MaxLength = 3;
+            this.txtGrasaPorc.MaxLength = 4;
             this.txtGrasaPorc.Name = "txtGrasaPorc";
             this.txtGrasaPorc.Size = new System.Drawing.Size(75, 20);
             this.txtGrasaPorc.TabIndex = 50;
@@ -130,7 +147,7 @@
             // txtIMC
             // 
             this.txtIMC.Location = new System.Drawing.Point(150, 115);
-            this.txtIMC.MaxLength = 5;
+            this.txtIMC.MaxLength = 4;
             this.txtIMC.Name = "txtIMC";
             this.txtIMC.Size = new System.Drawing.Size(75, 20);
             this.txtIMC.TabIndex = 48;
@@ -151,7 +168,7 @@
             // txtGrasaVis
             // 
             this.txtGrasaVis.Location = new System.Drawing.Point(166, 240);
-            this.txtGrasaVis.MaxLength = 5;
+            this.txtGrasaVis.MaxLength = 4;
             this.txtGrasaVis.Name = "txtGrasaVis";
             this.txtGrasaVis.Size = new System.Drawing.Size(75, 20);
             this.txtGrasaVis.TabIndex = 54;
@@ -171,7 +188,7 @@
             // txtMusculoPorc
             // 
             this.txtMusculoPorc.Location = new System.Drawing.Point(150, 201);
-            this.txtMusculoPorc.MaxLength = 3;
+            this.txtMusculoPorc.MaxLength = 4;
             this.txtMusculoPorc.Name = "txtMusculoPorc";
             this.txtMusculoPorc.Size = new System.Drawing.Size(75, 20);
             this.txtMusculoPorc.TabIndex = 52;
@@ -211,7 +228,7 @@
             // txtCMB
             // 
             this.txtCMB.Location = new System.Drawing.Point(150, 280);
-            this.txtCMB.MaxLength = 5;
+            this.txtCMB.MaxLength = 4;
             this.txtCMB.Name = "txtCMB";
             this.txtCMB.Size = new System.Drawing.Size(75, 20);
             this.txtCMB.TabIndex = 56;
@@ -231,7 +248,7 @@
             // txtBodyAge
             // 
             this.txtBodyAge.Location = new System.Drawing.Point(150, 399);
-            this.txtBodyAge.MaxLength = 3;
+            this.txtBodyAge.MaxLength = 2;
             this.txtBodyAge.Name = "txtBodyAge";
             this.txtBodyAge.Size = new System.Drawing.Size(75, 20);
             this.txtBodyAge.TabIndex = 62;
@@ -263,6 +280,7 @@
             this.dtpFecha.Name = "dtpFecha";
             this.dtpFecha.Size = new System.Drawing.Size(211, 20);
             this.dtpFecha.TabIndex = 64;
+            this.dtpFecha.Visible = false;
             // 
             // btnCrear
             // 
@@ -434,6 +452,183 @@
             this.label35.Size = new System.Drawing.Size(17, 24);
             this.label35.TabIndex = 109;
             this.label35.Text = "*";
+            this.label35.Visible = false;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.Teal;
+            this.label11.Location = new System.Drawing.Point(231, 286);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(26, 14);
+            this.label11.TabIndex = 110;
+            this.label11.Text = "CM";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.Teal;
+            this.label12.Location = new System.Drawing.Point(231, 324);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(26, 14);
+            this.label12.TabIndex = 111;
+            this.label12.Text = "CM";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.Teal;
+            this.label13.Location = new System.Drawing.Point(231, 364);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(26, 14);
+            this.label13.TabIndex = 112;
+            this.label13.Text = "CM";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.Teal;
+            this.label14.Location = new System.Drawing.Point(231, 89);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(26, 14);
+            this.label14.TabIndex = 113;
+            this.label14.Text = "KG";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.Teal;
+            this.label15.Location = new System.Drawing.Point(254, 89);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(60, 14);
+            this.label15.TabIndex = 114;
+            this.label15.Text = "(30 - 200)";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.Teal;
+            this.label16.Location = new System.Drawing.Point(254, 118);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(53, 14);
+            this.label16.TabIndex = 115;
+            this.label16.Text = "(16 - 50)";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.Teal;
+            this.label17.Location = new System.Drawing.Point(254, 161);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(53, 14);
+            this.label17.TabIndex = 116;
+            this.label17.Text = "(10 - 50)";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.Color.Teal;
+            this.label18.Location = new System.Drawing.Point(254, 204);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(53, 14);
+            this.label18.TabIndex = 117;
+            this.label18.Text = "(20 - 60)";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.ForeColor = System.Drawing.Color.Teal;
+            this.label19.Location = new System.Drawing.Point(279, 243);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(46, 14);
+            this.label19.TabIndex = 118;
+            this.label19.Text = "(5 - 50)";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.Color.Teal;
+            this.label20.Location = new System.Drawing.Point(254, 286);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(53, 14);
+            this.label20.TabIndex = 119;
+            this.label20.Text = "(10 - 40)";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.ForeColor = System.Drawing.Color.Teal;
+            this.label21.Location = new System.Drawing.Point(254, 324);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(60, 14);
+            this.label21.TabIndex = 120;
+            this.label21.Text = "(40 - 150)";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.ForeColor = System.Drawing.Color.Teal;
+            this.label22.Location = new System.Drawing.Point(254, 363);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(60, 14);
+            this.label22.TabIndex = 121;
+            this.label22.Text = "(40 - 150)";
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label32.ForeColor = System.Drawing.Color.Teal;
+            this.label32.Location = new System.Drawing.Point(254, 403);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(53, 14);
+            this.label32.TabIndex = 122;
+            this.label32.Text = "(12 - 90)";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.ForeColor = System.Drawing.Color.Teal;
+            this.label33.Location = new System.Drawing.Point(247, 243);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(17, 14);
+            this.label33.TabIndex = 123;
+            this.label33.Text = "%";
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label34.ForeColor = System.Drawing.Color.Teal;
+            this.label34.Location = new System.Drawing.Point(231, 206);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(17, 14);
+            this.label34.TabIndex = 124;
+            this.label34.Text = "%";
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.ForeColor = System.Drawing.Color.Teal;
+            this.label36.Location = new System.Drawing.Point(231, 158);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(17, 14);
+            this.label36.TabIndex = 125;
+            this.label36.Text = "%";
             // 
             // DatosxCita
             // 
@@ -441,6 +636,22 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(884, 544);
+            this.Controls.Add(this.label36);
+            this.Controls.Add(this.label34);
+            this.Controls.Add(this.label33);
+            this.Controls.Add(this.label32);
+            this.Controls.Add(this.label22);
+            this.Controls.Add(this.label21);
+            this.Controls.Add(this.label20);
+            this.Controls.Add(this.label19);
+            this.Controls.Add(this.label18);
+            this.Controls.Add(this.label17);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.label11);
             this.Controls.Add(this.label35);
             this.Controls.Add(this.label31);
             this.Controls.Add(this.label30);
@@ -520,5 +731,21 @@
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Label label36;
     }
 }

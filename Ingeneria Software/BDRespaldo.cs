@@ -20,6 +20,9 @@ namespace Ingeneria_Software
             InitializeComponent();
             usuario = numUsuario;
             if (usuario != 0) btnRestaurar.Visible = false;
+            this.Activate();
+            this.BringToFront();
+            this.Focus();
         }
 
         private void btnBackup_Click(object sender, EventArgs e)

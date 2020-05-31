@@ -42,12 +42,32 @@ namespace CONTROLADOR
                     try
                     {
                         var modeloAlimento = new ModeloAlimento();
-                        modeloAlimento.AgregarAlimento(nombre, energia, hidratos, grasa, proteinas);
+                        if(modeloAlimento.VerificarRepetido(nombre) == false)
+                        {
+                            try
+                            {
+                                modeloAlimento = new ModeloAlimento();
+                                modeloAlimento.AgregarAlimento(nombre, energia, hidratos, grasa, proteinas);
+                                return;
+                            }
+                            catch (Exception ex)
+                            {
+                                error = modeloAlimento.error;
+                                return;
+                            }
+                        }
+                        else
+                        {
+                            error = "Este alimento ya existe.";
+                            return;
+                        }
                     }
-                    catch (Exception ex)
+                    catch(Exception ex)
                     {
-                        throw new Exception(ex.Message);
+                        error = ex.Message;
+                        return;
                     }
+                    
                 }
                 else
                 {
@@ -84,15 +104,23 @@ namespace CONTROLADOR
                     if (Convert.ToInt32(energia) > 0 && Convert.ToInt32(hidratos) > 0 && Convert.ToInt32(grasa) > 0 &&
                         Convert.ToInt32(proteinas) > 0)
                     {
+                        var modeloAlimento = new ModeloAlimento();
+                        if (modeloAlimento.VerificarMismo(id, nombre) == true && modeloAlimento.VerificarRepetido(nombre))
+                        {
                         try
                         {
-                            var modeloAlimento = new ModeloAlimento();
+                            modeloAlimento = new ModeloAlimento();
                             modeloAlimento.ModificarAlimento(nombre, energia, hidratos, grasa, proteinas, id);
                         }
                         catch (Exception ex)
                         {
                             throw new Exception(ex.Message);
                         }
+                    }
+                    else
+                    {
+                        error = modeloAlimento.error;
+                    }    
                     }
                     else
                     {

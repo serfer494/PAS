@@ -9,7 +9,7 @@ namespace MODELO
 {
     public class ModeloBDRespaldo
     {
-        string connectionString = "server=DESKTOP-J7FIT5H; database=msdb; integrated security=true";
+        string connectionString = "server=localhost; database=msdb; integrated security=true";
         public string Respaldo(string nombre)
         {
             string query = @"BACKUP DATABASE DBPAS TO DISK = 'C:\DBPAS\" + nombre + "'";

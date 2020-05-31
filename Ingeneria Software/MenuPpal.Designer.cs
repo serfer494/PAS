@@ -30,7 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuPpal));
             this.Barra = new System.Windows.Forms.Panel();
+            this.btnCerrarSesion = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Bases = new System.Windows.Forms.Panel();
+            this.btnDB = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnSeleccionar = new System.Windows.Forms.Button();
             this.cbxCliente = new System.Windows.Forms.ComboBox();
@@ -45,21 +49,21 @@
             this.Comidas = new System.Windows.Forms.Button();
             this.agenda = new System.Windows.Forms.Button();
             this.cont = new System.Windows.Forms.Panel();
-            this.btnDB = new System.Windows.Forms.Button();
-            this.btnCerrarSesion = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lblUsuario = new System.Windows.Forms.Label();
             this.Barra.SuspendLayout();
-            this.Bases.SuspendLayout();
-            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.Bases.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // Barra
             // 
             this.Barra.BackColor = System.Drawing.Color.SteelBlue;
             this.Barra.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Barra.Controls.Add(this.lblUsuario);
+            this.Barra.Controls.Add(this.label3);
             this.Barra.Controls.Add(this.btnCerrarSesion);
             this.Barra.Controls.Add(this.pictureBox2);
             this.Barra.Controls.Add(this.pictureBox1);
@@ -68,6 +72,41 @@
             this.Barra.Name = "Barra";
             this.Barra.Size = new System.Drawing.Size(1100, 40);
             this.Barra.TabIndex = 0;
+            // 
+            // btnCerrarSesion
+            // 
+            this.btnCerrarSesion.BackgroundImage = global::Ingeneria_Software.Properties.Resources._1828427;
+            this.btnCerrarSesion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCerrarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCerrarSesion.ForeColor = System.Drawing.Color.SteelBlue;
+            this.btnCerrarSesion.Location = new System.Drawing.Point(3, 3);
+            this.btnCerrarSesion.Name = "btnCerrarSesion";
+            this.btnCerrarSesion.Size = new System.Drawing.Size(42, 30);
+            this.btnCerrarSesion.TabIndex = 4;
+            this.btnCerrarSesion.UseVisualStyleBackColor = true;
+            this.btnCerrarSesion.Click += new System.EventHandler(this.btnCerrarSesion_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(1019, 3);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(38, 34);
+            this.pictureBox2.TabIndex = 3;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(1063, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(34, 34);
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // Bases
             // 
@@ -89,6 +128,23 @@
             this.Bases.Size = new System.Drawing.Size(200, 560);
             this.Bases.TabIndex = 1;
             this.Bases.Paint += new System.Windows.Forms.PaintEventHandler(this.Bases_Paint);
+            // 
+            // btnDB
+            // 
+            this.btnDB.BackgroundImage = global::Ingeneria_Software.Properties.Resources.database;
+            this.btnDB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnDB.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDB.FlatAppearance.BorderSize = 0;
+            this.btnDB.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PaleTurquoise;
+            this.btnDB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDB.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDB.ForeColor = System.Drawing.Color.Transparent;
+            this.btnDB.Location = new System.Drawing.Point(135, 28);
+            this.btnDB.Name = "btnDB";
+            this.btnDB.Size = new System.Drawing.Size(51, 54);
+            this.btnDB.TabIndex = 11;
+            this.btnDB.UseVisualStyleBackColor = true;
+            this.btnDB.Click += new System.EventHandler(this.btnDB_Click);
             // 
             // btnEliminar
             // 
@@ -275,57 +331,26 @@
             this.cont.TabIndex = 2;
             this.cont.Paint += new System.Windows.Forms.PaintEventHandler(this.cont_Paint);
             // 
-            // btnDB
+            // label3
             // 
-            this.btnDB.BackgroundImage = global::Ingeneria_Software.Properties.Resources.database;
-            this.btnDB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnDB.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDB.FlatAppearance.BorderSize = 0;
-            this.btnDB.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PaleTurquoise;
-            this.btnDB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDB.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDB.ForeColor = System.Drawing.Color.Transparent;
-            this.btnDB.Location = new System.Drawing.Point(135, 28);
-            this.btnDB.Name = "btnDB";
-            this.btnDB.Size = new System.Drawing.Size(51, 54);
-            this.btnDB.TabIndex = 11;
-            this.btnDB.UseVisualStyleBackColor = true;
-            this.btnDB.Click += new System.EventHandler(this.btnDB_Click);
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(79, 8);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(80, 22);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "Usuario";
             // 
-            // btnCerrarSesion
+            // lblUsuario
             // 
-            this.btnCerrarSesion.BackgroundImage = global::Ingeneria_Software.Properties.Resources._1828427;
-            this.btnCerrarSesion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnCerrarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCerrarSesion.ForeColor = System.Drawing.Color.SteelBlue;
-            this.btnCerrarSesion.Location = new System.Drawing.Point(3, 3);
-            this.btnCerrarSesion.Name = "btnCerrarSesion";
-            this.btnCerrarSesion.Size = new System.Drawing.Size(42, 30);
-            this.btnCerrarSesion.TabIndex = 4;
-            this.btnCerrarSesion.UseVisualStyleBackColor = true;
-            this.btnCerrarSesion.Click += new System.EventHandler(this.btnCerrarSesion_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(1019, 3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(38, 34);
-            this.pictureBox2.TabIndex = 3;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1063, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(34, 34);
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.lblUsuario.AutoSize = true;
+            this.lblUsuario.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsuario.ForeColor = System.Drawing.Color.White;
+            this.lblUsuario.Location = new System.Drawing.Point(184, 8);
+            this.lblUsuario.Name = "lblUsuario";
+            this.lblUsuario.Size = new System.Drawing.Size(0, 22);
+            this.lblUsuario.TabIndex = 13;
             // 
             // MenuPpal
             // 
@@ -345,12 +370,13 @@
             this.Activated += new System.EventHandler(this.MenuPpal_Activated);
             this.Load += new System.EventHandler(this.MenuPpal_Load);
             this.Barra.ResumeLayout(false);
+            this.Barra.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.Bases.ResumeLayout(false);
             this.Bases.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -377,5 +403,7 @@
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnDB;
         private System.Windows.Forms.Button btnCerrarSesion;
+        private System.Windows.Forms.Label lblUsuario;
+        private System.Windows.Forms.Label label3;
     }
 }

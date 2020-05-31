@@ -49,6 +49,30 @@ namespace CONTROLADOR
             }
         }
 
+        public bool MayorA(Decimal cantidad, Decimal limite)
+        {
+            if (cantidad > limite)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public bool MayorIgualA(Decimal cantidad, Decimal limite)
+        {
+            if (cantidad >= limite)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
         /// <summary>
         /// El metodo MenorA toma una cantidad y verifica si es menor a un limite establecido.
         /// </summary>
@@ -58,6 +82,30 @@ namespace CONTROLADOR
         public bool MenorA(int cantidad, int limite)
         {
             if(cantidad < limite)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public bool MenorA(Decimal cantidad, Decimal limite)
+        {
+            if (cantidad < limite)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public bool MenorIgualA(Decimal cantidad, Decimal limite)
+        {
+            if (cantidad <= limite)
             {
                 return true;
             }

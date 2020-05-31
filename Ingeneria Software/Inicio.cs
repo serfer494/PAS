@@ -37,7 +37,7 @@ namespace Ingeneria_Software
                 MessageBox.Show("Autentificacion exitosa");
                 int tipo;
                 tipo = controladorInicio.ObtenerTipo(txtUsuario.Text);
-                MenuPpal mp = new MenuPpal(tipo);
+                MenuPpal mp = new MenuPpal(tipo, txtUsuario.Text);
                 mp.Show();
                 this.Hide();
             }

@@ -28,6 +28,9 @@ namespace Ingeneria_Software
         {
             var controladorAlimento = new ControladorAlimentos();
             dataGridView1.DataSource = controladorAlimento.GetTable();
+            this.Activate();
+            this.BringToFront();
+            this.Focus();
         }
 
         

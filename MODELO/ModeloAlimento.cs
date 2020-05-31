@@ -52,6 +52,82 @@ namespace MODELO
                 }
             }
         }
+
+        public bool VerificarRepetido(string nombre)
+        {
+            int contador = 0;
+            string query = "SELECT nombreAlimento FROM ALIMENTO WHERE nombreAlimento=@nombre";
+            using (SqlConnection conexion = new SqlConnection(Conexion.ObtenerConexion()))
+            {
+                try
+                {
+                    conexion.Open();
+                    using (SqlCommand cmd = new SqlCommand(query, conexion))
+                    {
+                        cmd.Parameters.Add("@nombre", SqlDbType.VarChar).Value = nombre;
+                        SqlDataReader reader = cmd.ExecuteReader();
+                        while (reader.Read())
+                        {
+                            contador++;
+                        }
+                    }
+                    if (contador > 0)
+                    {
+                        error = "";
+                        return true;
+                    }
+                    else
+                    {
+                        error = "";
+                        return false;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    error = ex.ToString();
+                    Console.WriteLine(ex.ToString());
+                    return true;
+                }
+            }
+        }
+        
+        public bool VerificarMismo(int id, string nombre)
+        {
+            int contador = 0;
+            string query = "SELECT idAlimento, nombreAlimento FROM ALIMENTO WHERE idAlimento=@id AND nombreAlimento=@nombre";
+            using (SqlConnection conexion = new SqlConnection(Conexion.ObtenerConexion()))
+            {
+                try
+                {
+                    conexion.Open();
+                    using (SqlCommand cmd = new SqlCommand(query, conexion))
+                    {
+                        cmd.Parameters.Add("@id", SqlDbType.Int).Value = id;
+                        cmd.Parameters.Add("@nombre", SqlDbType.VarChar).Value = nombre;
+                        SqlDataReader reader = cmd.ExecuteReader();
+                        while (reader.Read())
+                        {
+                            contador++;
+                        }
+                    }
+                    if (contador > 0)
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        error = "Ese alimento ya existe";
+                        return false;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    error = ex.ToString();
+                    Console.WriteLine(ex.ToString());
+                    return false;
+                }
+            }
+        }
         //Singleton
         public DataTable GetTable()
         {

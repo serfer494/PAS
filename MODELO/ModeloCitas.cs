@@ -14,6 +14,7 @@ namespace MODELO
     /// </summary>
     public class ModeloCitas
     {
+        public string error = "";
         //Proxy
         public DateTime[] GetDates()
         {
@@ -108,6 +109,84 @@ namespace MODELO
                 }
             }
         }
+
+        public bool VerificarRepetido(DateTime fecha, string hora)
+        {
+            int contador = 0;
+            string query = "SELECT fechaAgenda, hora FROM AGENDA WHERE fechaAgenda=@fecha AND hora=@hora";
+            using (SqlConnection conexion = new SqlConnection(Conexion.ObtenerConexion()))
+            {
+                try
+                {
+                    conexion.Open();
+                    using (SqlCommand cmd = new SqlCommand(query, conexion))
+                    {
+                        cmd.Parameters.Add("@fecha", SqlDbType.Date).Value = fecha;
+                        cmd.Parameters.Add("@hora", SqlDbType.VarChar).Value = hora;
+                        SqlDataReader reader = cmd.ExecuteReader();
+                        while (reader.Read())
+                        {
+                            contador++;
+                        }
+                    }
+                    if (contador > 0)
+                    {
+                        error = "Ya existe una cita para esa hora";
+                        return true;
+                    }
+                    else
+                    {
+                        error = "";
+                        return false;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    error = ex.ToString();
+                    Console.WriteLine(ex.ToString());
+                    return true;
+                }
+            }
+        }
+
+        public bool VerificarMismo(int id, DateTime fecha, string hora)
+        {
+            int contador = 0;
+            string query = "SELECT fechaAgenda, hora FROM AGENDA WHERE fechaAgenda=@fecha AND hora=@hora AND idAgenda=@id";
+            using (SqlConnection conexion = new SqlConnection(Conexion.ObtenerConexion()))
+            {
+                try
+                {
+                    conexion.Open();
+                    using (SqlCommand cmd = new SqlCommand(query, conexion))
+                    {
+                        cmd.Parameters.Add("@fecha", SqlDbType.Date).Value = fecha;
+                        cmd.Parameters.Add("@hora", SqlDbType.VarChar).Value = hora;
+                        cmd.Parameters.Add("@id", SqlDbType.Int).Value = id;
+                        SqlDataReader reader = cmd.ExecuteReader();
+                        while (reader.Read())
+                        {
+                            contador++;
+                        }
+                    }
+                    if (contador > 0)
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        error = "Esa cita ya existe";
+                        return false;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    error = ex.ToString();
+                    Console.WriteLine(ex.ToString());
+                    return false;
+                }
+            }
+        }
         //facade
         public void ModificarCita(DateTime fecha, string nombre, string apellido, string telefono, string hora, int id)
         {
@@ -136,9 +215,9 @@ namespace MODELO
             }
         }
         
-        public int ObtenerId(string str)
+        public int ObtenerId(string str, DateTime fecha)
         {
-            string query = "SELECT idAgenda FROM AGENDA WHERE hora=@hora";
+            string query = "SELECT idAgenda FROM AGENDA WHERE hora=@hora AND fechaAgenda=@fecha";
             string hora = str;
             using (SqlConnection conexion = new SqlConnection(Conexion.ObtenerConexion()))
             {
@@ -148,6 +227,7 @@ namespace MODELO
                     using (SqlCommand cmd = new SqlCommand(query, conexion))
                     {
                         cmd.Parameters.Add("@hora", SqlDbType.VarChar).Value = hora;
+                        cmd.Parameters.Add("@fecha", SqlDbType.Date).Value = fecha;
                         return Convert.ToInt32(cmd.ExecuteScalar());
                     }
                 }

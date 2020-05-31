@@ -49,7 +49,7 @@ namespace Ingeneria_Software
             try
             {
                 var controladordc = new ControladorDatosxCita();
-                controladordc.AgregarDatosCita(txtGrasaVis.Text, txtCMB.Text, txtCirCad.Text, txtBodyAge.Text, txtCirCin.Text, txtMusculoPorc.Text, txtGrasaPorc.Text, txtIMC.Text, txtPeso.Text, dtpFecha.Value, id);
+                controladordc.AgregarDatosCita(txtGrasaVis.Text, txtCMB.Text, txtCirCad.Text, txtBodyAge.Text, txtCirCin.Text, txtMusculoPorc.Text, txtGrasaPorc.Text, txtIMC.Text, txtPeso.Text, DateTime.Now, id);
                 if (controladordc.error != "")
                 {
                     MessageBox.Show(controladordc.error);
@@ -81,7 +81,7 @@ namespace Ingeneria_Software
                     try
                     {
                         var controladordc = new ControladorDatosxCita();
-                        controladordc.ModificarDatosCita(txtGrasaVis.Text, txtCMB.Text, txtCirCad.Text, txtBodyAge.Text, txtCirCin.Text, txtMusculoPorc.Text, txtGrasaPorc.Text, txtIMC.Text, txtPeso.Text, dtpFecha.Value, id, idCita);
+                        controladordc.ModificarDatosCita(txtGrasaVis.Text, txtCMB.Text, txtCirCad.Text, txtBodyAge.Text, txtCirCin.Text, txtMusculoPorc.Text, txtGrasaPorc.Text, txtIMC.Text, txtPeso.Text, DateTime.Now, id, idCita);
                         if (controladordc.error != "")
                         {
                             MessageBox.Show(controladordc.error);
@@ -202,62 +202,145 @@ namespace Ingeneria_Software
 
         private void txtPeso_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            if (txtPeso.Text.Contains('.'))
             {
-                e.Handled = true;
+                if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+                {
+                    e.Handled = true;
+                }
+            }
+            else
+            {
+                if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar) && e.KeyChar != '.')
+                {
+                    e.Handled = true;
+                }
             }
         }
 
         private void txtIMC_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            if (txtIMC.Text.Contains('.'))
             {
-                e.Handled = true;
+                if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+                {
+                    e.Handled = true;
+                }
+            }
+            else
+            {
+                if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar) && e.KeyChar != '.')
+                {
+                    e.Handled = true;
+                }
             }
         }
 
         private void txtGrasaPorc_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            if (txtGrasaPorc.Text.Contains('.'))
             {
-                e.Handled = true;
+                if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+                {
+                    e.Handled = true;
+                }
+            }
+            else
+            {
+                if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar) && e.KeyChar != '.')
+                {
+                    e.Handled = true;
+                }
             }
         }
 
         private void txtMusculoPorc_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            if (txtMusculoPorc.Text.Contains('.'))
             {
-                e.Handled = true;
+                if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+                {
+                    e.Handled = true;
+                }
+            }
+            else
+            {
+                if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar) && e.KeyChar != '.')
+                {
+                    e.Handled = true;
+                }
             }
         }
 
         private void txtGrasaVis_KeyPress(object sender, KeyPressEventArgs e)
         {
-
+            if (txtGrasaVis.Text.Contains('.'))
+            {
+                if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+                {
+                    e.Handled = true;
+                }
+            }
+            else
+            {
+                if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar) && e.KeyChar != '.')
+                {
+                    e.Handled = true;
+                }
+            }
         }
 
         private void txtCMB_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            if (txtCMB.Text.Contains('.'))
             {
-                e.Handled = true;
+                if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+                {
+                    e.Handled = true;
+                }
+            }
+            else
+            {
+                if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar) && e.KeyChar != '.')
+                {
+                    e.Handled = true;
+                }
             }
         }
 
         private void txtCirCad_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            if (txtCirCad.Text.Contains('.'))
             {
-                e.Handled = true;
+                if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+                {
+                    e.Handled = true;
+                }
+            }
+            else
+            {
+                if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar) && e.KeyChar != '.')
+                {
+                    e.Handled = true;
+                }
             }
         }
 
         private void txtCirCin_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            if (txtCirCin.Text.Contains('.'))
             {
-                e.Handled = true;
+                if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+                {
+                    e.Handled = true;
+                }
+            }
+            else
+            {
+                if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar) && e.KeyChar != '.')
+                {
+                    e.Handled = true;
+                }
             }
         }
 

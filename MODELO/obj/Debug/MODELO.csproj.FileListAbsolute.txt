@@ -26,3 +26,4 @@ C:\Users\Sergio\Desktop\Ingeneria Software e3\MODELO\bin\Debug\MODELO.dll
 C:\Users\Sergio\Desktop\Ingeneria Software e3\MODELO\bin\Debug\MODELO.pdb
 C:\Users\Sergio\Desktop\Ingeneria Software e3\MODELO\obj\Debug\MODELO.dll
 C:\Users\Sergio\Desktop\Ingeneria Software e3\MODELO\obj\Debug\MODELO.pdb
+C:\Users\Sergio\Desktop\Ingeneria Software e3\MODELO\obj\Debug\MODELO.csprojAssemblyReference.cache

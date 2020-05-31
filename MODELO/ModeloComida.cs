@@ -16,6 +16,8 @@ namespace MODELO
     {
         //Proxy
 
+        public string error = "";
+
         public List<string> ObtenerAlimentos()
         {
             List<string> lista = new List<string>();
@@ -265,6 +267,82 @@ namespace MODELO
                     {
                         Console.WriteLine(ex.ToString());
                     }
+                }
+            }
+        }
+
+        public bool VerificarRepetido(string nombre)
+        {
+            int contador = 0;
+            string query = "SELECT nombre FROM COMIDA WHERE nombre=@nombre";
+            using (SqlConnection conexion = new SqlConnection(Conexion.ObtenerConexion()))
+            {
+                try
+                {
+                    conexion.Open();
+                    using (SqlCommand cmd = new SqlCommand(query, conexion))
+                    {
+                        cmd.Parameters.Add("@nombre", SqlDbType.VarChar).Value = nombre;
+                        SqlDataReader reader = cmd.ExecuteReader();
+                        while (reader.Read())
+                        {
+                            contador++;
+                        }
+                    }
+                    if (contador > 0)
+                    {
+                        error = "La comida ya existe.";
+                        return true;
+                    }
+                    else
+                    {
+                        error = "";
+                        return false;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    error = ex.ToString();
+                    Console.WriteLine(ex.ToString());
+                    return true;
+                }
+            }
+        }
+
+        public bool VerificarAlimentoRepetido(int id, int idComida)
+        {
+            int contador = 0;
+            string query = "SELECT idAlimento FROM COMIDA_INGREDIENTES WHERE idAlimento=@id AND idComida=@idComida";
+            using (SqlConnection conexion = new SqlConnection(Conexion.ObtenerConexion()))
+            {
+                try
+                {
+                    conexion.Open();
+                    using (SqlCommand cmd = new SqlCommand(query, conexion))
+                    {
+                        cmd.Parameters.Add("@id", SqlDbType.Int).Value = id;
+                        cmd.Parameters.Add("@idComida", SqlDbType.Int).Value = idComida;
+                        SqlDataReader reader = cmd.ExecuteReader();
+                        while (reader.Read())
+                        {
+                            contador++;
+                        }
+                    }
+                    if (contador > 0)
+                    {
+                        error = "Esa comida ya contiene ese alimento";
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    error = ex.ToString();
+                    Console.WriteLine(ex.ToString());
+                    return false;
                 }
             }
         }

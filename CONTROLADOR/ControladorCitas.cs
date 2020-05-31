@@ -54,7 +54,7 @@ namespace CONTROLADOR
             horavar = horavar.Replace(" ", "");
             var validac = new Validacion();
 
-            if (validac.Longitud(nombre, 1, 50) == true && validac.Longitud(apellido, 1, 50) == true && validac.Longitud(hora, 1, 50) == true)
+            if (validac.Longitud(nombre, 2, 50) == true && validac.Longitud(apellido, 2, 50) == true && validac.Longitud(hora, 1, 50) == true)
             {
                 if (validac.Longitud(horavar, 4, 4))
                 {
@@ -73,11 +73,26 @@ namespace CONTROLADOR
                                     try
                                     {
                                         var modeloCitas = new ModeloCitas();
-                                        modeloCitas.AgregarCita(fecha, nombre, apellido, telefono, hora);
+                                        if(modeloCitas.VerificarRepetido(fecha, hora) == false)
+                                        {
+                                            try
+                                            {
+                                                modeloCitas = new ModeloCitas();
+                                                modeloCitas.AgregarCita(fecha, nombre, apellido, telefono, hora);
+                                            }
+                                            catch (Exception ex)
+                                            {
+                                                error = ex.Message;
+                                            }
+                                        }
+                                        else
+                                        {
+                                            error = modeloCitas.error;
+                                        }
                                     }
-                                    catch (Exception ex)
+                                    catch(Exception ex)
                                     {
-                                        throw new Exception(ex.Message);
+                                        error = ex.Message;
                                     }
                                 }
                                 else
@@ -118,8 +133,17 @@ namespace CONTROLADOR
             }
             else
             {
-                error = "Los campos con * son obligatorios";
-                return;
+                if(validac.Longitud(nombre, 1, 1) || validac.Longitud(nombre, 1, 1))
+                {
+                    error = "Nombre y Apellido deben de tener al menos dos caracteres";
+                    return;
+                }
+                else
+                {
+                    error = "Los campos con * son obligatorios";
+                    return;
+                }
+                
             }
         }
         //Facade
@@ -152,13 +176,44 @@ namespace CONTROLADOR
                                 {
                                     try
                                     {
+                                        var modeloObtener = new Obtener();
                                         var modeloCitas = new ModeloCitas();
-                                        modeloCitas.ModificarCita(fecha, nombre, apellido, telefono, hora, id);
+                                        string horaBD = modeloObtener.ObtenerTexto(id, "hora", "AGENDA", "idAgenda");
+                                        DateTime fechaBD = modeloObtener.ObtenerFecha(id, "fechaAgenda", "AGENDA", "idAgenda");
+                                        if (hora == horaBD && fecha == fechaBD)
+                                        {
+                                            try
+                                            {
+                                                modeloCitas = new ModeloCitas();
+                                                modeloCitas.ModificarCita(fecha, nombre, apellido, telefono, hora, id);
+                                            }
+                                            catch (Exception ex)
+                                            {
+                                                error = ex.Message;
+                                            }
+                                        }
+                                        else if (modeloCitas.VerificarRepetido(fecha, hora) == false)
+                                        {
+                                            try
+                                            {
+                                                modeloCitas = new ModeloCitas();
+                                                modeloCitas.ModificarCita(fecha, nombre, apellido, telefono, hora, id);
+                                            }
+                                            catch (Exception ex)
+                                            {
+                                                error = ex.Message;
+                                            }
+                                        }
+                                        else
+                                        {
+                                            error = modeloCitas.error;
+                                        }
                                     }
-                                    catch (Exception ex)
+                                    catch(Exception ex)
                                     {
-                                        throw new Exception(ex.Message);
+                                        error = ex.Message;
                                     }
+                                    
                                 }
                                 else
                                 {
@@ -205,12 +260,12 @@ namespace CONTROLADOR
         }
         //command
 
-        public int ObtenerId(string str)
+        public int ObtenerId(string str, DateTime fecha)
         {
             try
             {
                 var modeloCitas = new ModeloCitas();
-                return modeloCitas.ObtenerId(str);
+                return modeloCitas.ObtenerId(str, fecha);
             }
             catch (Exception ex)
             {

@@ -35,11 +35,11 @@ namespace Ingeneria_Software
             }
             else
             {
-                if (cbxTipo.SelectedIndex == 0)
+                if (cru.RevisarSiYaExiste(txtUsuario.Text) == false)
                 {
-                    if (PedirAutorizacion() == true)
+                    if (cbxTipo.SelectedIndex == 0)
                     {
-                        if (cru.RevisarSiYaExiste(txtUsuario.Text) == false)
+                        if (PedirAutorizacion() == true)
                         {
                             mensaje = cru.AgregarUsuario(txtUsuario.Text, txtContrasena.Text, cbxTipo.SelectedIndex + 1);
                             if(mensaje == "")
@@ -52,15 +52,8 @@ namespace Ingeneria_Software
                                 MessageBox.Show("Error: " + mensaje);
                             }
                         }
-                        else
-                        {
-                            MessageBox.Show("Ese usuario ya existe");
-                        }
                     }
-                }
-                else
-                {
-                    if (cru.RevisarSiYaExiste(txtUsuario.Text) == false)
+                    else
                     {
                         mensaje = cru.AgregarUsuario(txtUsuario.Text, txtContrasena.Text, cbxTipo.SelectedIndex + 1);
                         if (mensaje == "")
@@ -73,10 +66,10 @@ namespace Ingeneria_Software
                             MessageBox.Show("Error: " + mensaje);
                         }
                     }
-                    else
-                    {
-                        MessageBox.Show("Ese usuario ya existe");
-                    }
+                }
+                else
+                {
+                    MessageBox.Show("Ese usuario ya existe");
                 }
             }
             
@@ -101,7 +94,6 @@ namespace Ingeneria_Software
         public bool PedirAutorizacion()
         {
             PedirPermisos pP = new PedirPermisos();
-
             // Show testDialog as a modal dialog and determine if DialogResult = OK.
             if (pP.ShowDialog(this) == DialogResult.OK)
             {

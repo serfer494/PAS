@@ -64,19 +64,11 @@
             this.btnEliminar = new System.Windows.Forms.Button();
             this.dgvAlimento = new System.Windows.Forms.DataGridView();
             this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAlimento)).BeginInit();
             this.SuspendLayout();
@@ -470,17 +462,6 @@
             this.label14.TabIndex = 91;
             this.label14.Text = "*";
             // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.Color.DarkRed;
-            this.label15.Location = new System.Drawing.Point(0, 274);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(17, 24);
-            this.label15.TabIndex = 92;
-            this.label15.Text = "*";
-            // 
             // label16
             // 
             this.label16.AutoSize = true;
@@ -502,61 +483,6 @@
             this.label17.Size = new System.Drawing.Size(17, 24);
             this.label17.TabIndex = 94;
             this.label17.Text = "*";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.Color.DarkRed;
-            this.label18.Location = new System.Drawing.Point(199, 140);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(17, 24);
-            this.label18.TabIndex = 95;
-            this.label18.Text = "*";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.Color.DarkRed;
-            this.label19.Location = new System.Drawing.Point(199, 230);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(17, 24);
-            this.label19.TabIndex = 96;
-            this.label19.Text = "*";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.Color.DarkRed;
-            this.label20.Location = new System.Drawing.Point(199, 187);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(17, 24);
-            this.label20.TabIndex = 97;
-            this.label20.Text = "*";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.ForeColor = System.Drawing.Color.DarkRed;
-            this.label21.Location = new System.Drawing.Point(199, 276);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(17, 24);
-            this.label21.TabIndex = 98;
-            this.label21.Text = "*";
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.ForeColor = System.Drawing.Color.DarkRed;
-            this.label25.Location = new System.Drawing.Point(0, 141);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(17, 24);
-            this.label25.TabIndex = 99;
-            this.label25.Text = "*";
             // 
             // label26
             // 
@@ -591,28 +517,6 @@
             this.label28.TabIndex = 102;
             this.label28.Text = "* los campos son obligatorios";
             // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.ForeColor = System.Drawing.Color.DarkRed;
-            this.label30.Location = new System.Drawing.Point(0, 230);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(17, 24);
-            this.label30.TabIndex = 104;
-            this.label30.Text = "*";
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.ForeColor = System.Drawing.Color.DarkRed;
-            this.label31.Location = new System.Drawing.Point(0, 184);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(17, 24);
-            this.label31.TabIndex = 105;
-            this.label31.Text = "*";
-            // 
             // label29
             // 
             this.label29.AutoSize = true;
@@ -626,24 +530,17 @@
             // 
             // Comida
             // 
+            this.AcceptButton = this.btnAgregar;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(844, 544);
             this.Controls.Add(this.label29);
-            this.Controls.Add(this.label31);
-            this.Controls.Add(this.label30);
             this.Controls.Add(this.label28);
             this.Controls.Add(this.label27);
             this.Controls.Add(this.label26);
-            this.Controls.Add(this.label25);
-            this.Controls.Add(this.label21);
-            this.Controls.Add(this.label20);
-            this.Controls.Add(this.label19);
-            this.Controls.Add(this.label18);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.label16);
-            this.Controls.Add(this.label15);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.dgvAlimento);
             this.Controls.Add(this.btnEliminar);
@@ -727,19 +624,11 @@
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.DataGridView dgvAlimento;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Label label29;
     }
 }

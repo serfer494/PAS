@@ -48,6 +48,7 @@
             this.label20 = new System.Windows.Forms.Label();
             this.mtxtTelefono = new System.Windows.Forms.MaskedTextBox();
             this.mtxtHora = new System.Windows.Forms.MaskedTextBox();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -271,17 +272,30 @@
             this.mtxtHora.Mask = "00:00";
             this.mtxtHora.Name = "mtxtHora";
             this.mtxtHora.ResetOnSpace = false;
-            this.mtxtHora.Size = new System.Drawing.Size(157, 20);
+            this.mtxtHora.Size = new System.Drawing.Size(45, 20);
             this.mtxtHora.TabIndex = 68;
             this.mtxtHora.ValidatingType = typeof(System.DateTime);
             this.mtxtHora.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.mtxtHora_KeyPress);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Teal;
+            this.label4.Location = new System.Drawing.Point(160, 355);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(24, 12);
+            this.label4.TabIndex = 69;
+            this.label4.Text = "Hrs";
+            // 
             // Citas
             // 
+            this.AcceptButton = this.btnNueva;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(884, 544);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.mtxtHora);
             this.Controls.Add(this.mtxtTelefono);
             this.Controls.Add(this.label20);
@@ -333,6 +347,7 @@
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.MaskedTextBox mtxtTelefono;
         private System.Windows.Forms.MaskedTextBox mtxtHora;
+        private System.Windows.Forms.Label label4;
     }
 }
 

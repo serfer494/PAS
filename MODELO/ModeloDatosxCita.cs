@@ -14,6 +14,7 @@ namespace MODELO
     /// </summary>
     public class ModeloDatosxCita
     {
+        public string error = "";
         public void AgregarDatosCita(string grasaVis, string CMB, string cirCad, string bodyAge, string cirCin, string musculoPorc, string grasaPorc, string IMC, string peso, DateTime fecha, int id)
         {
             string query = "INSERT INTO DATOSCT ([grasaVisceral], [cmb], [cirCadera], [bodyAge], [cirCintura], [porcMusculo], " +
@@ -26,15 +27,15 @@ namespace MODELO
                     conexion.Open();
                     using (SqlCommand cmd = new SqlCommand(query, conexion))
                     {
-                        cmd.Parameters.Add("@grasavis", SqlDbType.Float).Value = grasaVis;
-                        cmd.Parameters.Add("@cmb", SqlDbType.Float).Value = CMB;
-                        cmd.Parameters.Add("@cirCad", SqlDbType.Float).Value = cirCad;
+                        cmd.Parameters.Add("@grasavis", SqlDbType.Float).Value = Convert.ToDecimal(grasaVis);
+                        cmd.Parameters.Add("@cmb", SqlDbType.Float).Value = Convert.ToDecimal(CMB);
+                        cmd.Parameters.Add("@cirCad", SqlDbType.Float).Value = Convert.ToDecimal(cirCad);
                         cmd.Parameters.Add("@bodyage", SqlDbType.Int).Value = Convert.ToInt32(bodyAge);
-                        cmd.Parameters.Add("@circin", SqlDbType.Float).Value = cirCin;
-                        cmd.Parameters.Add("@porcmus", SqlDbType.Int).Value = Convert.ToInt32(musculoPorc);
-                        cmd.Parameters.Add("@porcgra", SqlDbType.Int).Value = Convert.ToInt32(grasaPorc);
-                        cmd.Parameters.Add("@imc", SqlDbType.Float).Value = IMC;
-                        cmd.Parameters.Add("@peso", SqlDbType.Float).Value = peso;
+                        cmd.Parameters.Add("@circin", SqlDbType.Float).Value = Convert.ToDecimal(cirCin);
+                        cmd.Parameters.Add("@porcmus", SqlDbType.Float).Value = Convert.ToDecimal(musculoPorc);
+                        cmd.Parameters.Add("@porcgra", SqlDbType.Float).Value = Convert.ToDecimal(grasaPorc);
+                        cmd.Parameters.Add("@imc", SqlDbType.Float).Value = Convert.ToDecimal(IMC);
+                        cmd.Parameters.Add("@peso", SqlDbType.Float).Value = Convert.ToDecimal(peso);
                         cmd.Parameters.Add("@cita", SqlDbType.DateTime2).Value = fecha;
                         cmd.Parameters.Add("@idpac", SqlDbType.Int).Value = id;
 
@@ -56,11 +57,52 @@ namespace MODELO
             }
         }
 
-        public void ModificarDatosCita(string grasaVis, string CMB, string cirCad, string bodyAge, string cirCin, string musculoPorc, string grasaPorc, string IMC, string peso, DateTime fecha, int id, int idCita)
+        public bool VerificarRepetido(string today, int paciente)
+        {
+            int contador = 0;
+            string query = "SELECT idDatosCt FROM DATOSCT WHERE idPaciente=@paciente AND fechaCita=@today";
+            using (SqlConnection conexion = new SqlConnection(Conexion.ObtenerConexion()))
+            {
+                try
+                {
+                    conexion.Open();
+                    using (SqlCommand cmd = new SqlCommand(query, conexion))
+                    {
+                        cmd.Parameters.Add("@paciente", SqlDbType.Int).Value = paciente;
+                        cmd.Parameters.Add("@today", SqlDbType.Date).Value = today;
+                        SqlDataReader reader = cmd.ExecuteReader();
+                        while (reader.Read())
+                        {
+                            contador++;
+                        }
+                    }
+                    if (contador > 0)
+                    {
+                        error = "Una cita ya existe ese mismo dia.";
+                        return true;
+                    }
+                    else
+                    {
+                        error = "";
+                        return false;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    error = ex.ToString();
+                    Console.WriteLine(ex.ToString());
+                    return true;
+                }
+            }
+        }
+
+
+
+        public void ModificarDatosCita(string grasaVis, string CMB, string cirCad, string bodyAge, string cirCin, string musculoPorc, string grasaPorc, string IMC, string peso, int id, int idCita)
         {
             string query = "UPDATE DATOSCT SET grasaVisceral=@grasavis , cmb=@cmb , cirCadera=@cirCad , " +
                 "bodyAge=@bodyage , cirCintura=@circin , porcMusculo=@porcmus , porcGrasa=@porcgra , " +
-                "imc=@imc , peso=@peso , fechaCita=@cita WHERE idPaciente=@idpac AND idDatosCt=@idDatos";
+                "imc=@imc , peso=@peso  WHERE idPaciente=@idpac AND idDatosCt=@idDatos";
 
             using (SqlConnection conexion = new SqlConnection(Conexion.ObtenerConexion()))
             {
@@ -69,16 +111,15 @@ namespace MODELO
                     conexion.Open();
                     using (SqlCommand cmd = new SqlCommand(query, conexion))
                     {
-                        cmd.Parameters.Add("@grasavis", SqlDbType.Float).Value = grasaVis;
-                        cmd.Parameters.Add("@cmb", SqlDbType.Float).Value = CMB;
-                        cmd.Parameters.Add("@cirCad", SqlDbType.Float).Value = cirCad;
+                        cmd.Parameters.Add("@grasavis", SqlDbType.Float).Value = Convert.ToDecimal(grasaVis);
+                        cmd.Parameters.Add("@cmb", SqlDbType.Float).Value = Convert.ToDecimal(CMB);
+                        cmd.Parameters.Add("@cirCad", SqlDbType.Float).Value = Convert.ToDecimal(cirCad);
                         cmd.Parameters.Add("@bodyage", SqlDbType.Int).Value = Convert.ToInt32(bodyAge);
-                        cmd.Parameters.Add("@circin", SqlDbType.Float).Value = cirCin;
-                        cmd.Parameters.Add("@porcmus", SqlDbType.Int).Value = Convert.ToInt32(musculoPorc);
-                        cmd.Parameters.Add("@porcgra", SqlDbType.Int).Value = Convert.ToInt32(grasaPorc);
-                        cmd.Parameters.Add("@imc", SqlDbType.Float).Value = IMC;
-                        cmd.Parameters.Add("@peso", SqlDbType.Float).Value = peso;
-                        cmd.Parameters.Add("@cita", SqlDbType.DateTime).Value = fecha;
+                        cmd.Parameters.Add("@circin", SqlDbType.Float).Value = Convert.ToDecimal(cirCin);
+                        cmd.Parameters.Add("@porcmus", SqlDbType.Float).Value = Convert.ToDecimal(musculoPorc);
+                        cmd.Parameters.Add("@porcgra", SqlDbType.Float).Value = Convert.ToDecimal(grasaPorc);
+                        cmd.Parameters.Add("@imc", SqlDbType.Float).Value = Convert.ToDecimal(IMC);
+                        cmd.Parameters.Add("@peso", SqlDbType.Float).Value = Convert.ToDecimal(peso);
                         cmd.Parameters.Add("@idpac", SqlDbType.Int).Value = id;
                         cmd.Parameters.Add("@idDatos", SqlDbType.Int).Value = idCita;
                         cmd.ExecuteNonQuery();

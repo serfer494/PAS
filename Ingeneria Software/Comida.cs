@@ -114,6 +114,9 @@ namespace Ingeneria_Software
             }
             Limpiar();
             dgvAlimento.DataSource = controladorComida.GetTable();
+            this.Activate();
+            this.BringToFront();
+            this.Focus();
         }
 
         private void cbxAlimento1_SelectedIndexChanged(object sender, EventArgs e)
@@ -194,21 +197,26 @@ namespace Ingeneria_Software
         /// <param name="e"></param>
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            var controladorComida = new ControladorComida();
-            controladorComida.AgregarComida(txtNombre.Text, id1, id2, id3, id4, id5, txtPorcion1.Text, txtPorcion2.Text, txtPorcion3.Text, txtPorcion4.Text, txtPorcion5.Text);
-            if(controladorComida.error == "")
+            if(id1 != 0 && txtPorcion1.Text == "" || id2 != 0 && txtPorcion2.Text == "" || id3 != 0 && txtPorcion3.Text == "" || id4 != 0 && txtPorcion4.Text == "" || id5 != 0 && txtPorcion5.Text == "")
             {
-                
-                dgvAlimento.DataSource = controladorComida.GetTable();
-                MessageBox.Show("Comida Agregada");
-                Limpiar();
+                MessageBox.Show("Se debe introducir una cantidad junto con el alimento");
             }
             else
             {
-                MessageBox.Show(controladorComida.error);
-            }
-            
+                var controladorComida = new ControladorComida();
+                controladorComida.AgregarComida(txtNombre.Text, id1, id2, id3, id4, id5, txtPorcion1.Text, txtPorcion2.Text, txtPorcion3.Text, txtPorcion4.Text, txtPorcion5.Text);
+                if (controladorComida.error == "")
+                {
 
+                    dgvAlimento.DataSource = controladorComida.GetTable();
+                    MessageBox.Show("Comida Agregada");
+                    Limpiar();
+                }
+                else
+                {
+                    MessageBox.Show(controladorComida.error);
+                }
+            }
         }
 
         private void dgvAlimento_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)

@@ -20,10 +20,11 @@ namespace Ingeneria_Software
     /// </summary>
     public partial class MenuPpal : Form
     {
-        public MenuPpal(int tipo)
+        public MenuPpal(int tipo, string usuario)
         {
             
             InitializeComponent();
+            lblUsuario.Text = usuario;
             panel1.Visible = false;
             this.tipo = tipo;
             if(tipo == 2)
@@ -37,7 +38,6 @@ namespace Ingeneria_Software
                 button2.Visible = false;
                 btnDB.Visible = false;
             }
-            
         }
 
         public MenuPpal()
@@ -74,8 +74,16 @@ namespace Ingeneria_Software
             this.WindowState = FormWindowState.Minimized;
         }
 
+
         private void agenda_Click(object sender, EventArgs e)
         {
+            agenda.BackColor = Color.CadetBlue;
+            alimentos.BackColor = Color.Teal;
+            Comidas.BackColor = Color.Teal;
+            button2.BackColor = Color.Teal;
+            btnDB.BackColor = Color.Teal;
+            button3.BackColor = Color.Teal;
+            button4.BackColor = Color.Teal;
             AbrirFormHija(new Citas());
         }
 
@@ -93,7 +101,7 @@ namespace Ingeneria_Software
         {
             if(cbxCliente.SelectedIndex == 0)
             {
-                NuevoCliente nc = new NuevoCliente();
+                NuevoCliente nc = new NuevoCliente(lblUsuario.Text);
                 nc.Show();
             }
             else
@@ -107,27 +115,62 @@ namespace Ingeneria_Software
 
         private void alimentos_Click(object sender, EventArgs e)
         {
+            agenda.BackColor = Color.Teal;
+            alimentos.BackColor = Color.CadetBlue;
+            Comidas.BackColor = Color.Teal;
+            button2.BackColor = Color.Teal;
+            btnDB.BackColor = Color.Teal;
+            button3.BackColor = Color.Teal;
+            button4.BackColor = Color.Teal;
             AbrirFormHija(new Alimentos());
         }
 
         private void Comidas_Click(object sender, EventArgs e)
         {
+            agenda.BackColor = Color.Teal;
+            alimentos.BackColor = Color.Teal;
+            Comidas.BackColor = Color.CadetBlue;
+            button2.BackColor = Color.Teal;
+            btnDB.BackColor = Color.Teal;
+            button3.BackColor = Color.Teal;
+            button4.BackColor = Color.Teal;
             AbrirFormHija(new Comida());
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
+            agenda.BackColor = Color.Teal;
+            alimentos.BackColor = Color.Teal;
+            Comidas.BackColor = Color.Teal;
+            button2.BackColor = Color.Teal;
+            btnDB.BackColor = Color.Teal;
+            button3.BackColor = Color.Teal;
+            button4.BackColor = Color.CadetBlue;
             AbrirFormHija(new DatosxCita(id));
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
+            agenda.BackColor = Color.Teal;
+            alimentos.BackColor = Color.Teal;
+            Comidas.BackColor = Color.Teal;
+            button2.BackColor = Color.CadetBlue;
+            btnDB.BackColor = Color.Teal;
+            button3.BackColor = Color.Teal;
+            button4.BackColor = Color.Teal;
             string cadena = cbxCliente.Text;
             AbrirFormHija(new Plan(cadena));
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
+            agenda.BackColor = Color.Teal;
+            alimentos.BackColor = Color.Teal;
+            Comidas.BackColor = Color.Teal;
+            button2.BackColor = Color.Teal;
+            btnDB.BackColor = Color.Teal;
+            button3.BackColor = Color.CadetBlue;
+            button4.BackColor = Color.Teal;
             AbrirFormHija(new DatosGenerales(id));
         }
 
@@ -164,6 +207,7 @@ namespace Ingeneria_Software
             cbxCliente.Items.Clear();
             cbxCliente.Text = "";
             cbxCliente.Items.Add("Nuevo cliente");
+            cbxCliente.SelectedIndex = 0;
             string query = "SELECT nombrePaciente FROM PACIENTE";
             using (SqlConnection conexion = new SqlConnection(Conexion.ObtenerConexion()))
             {
